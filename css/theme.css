@@ -5170,18 +5170,12 @@ display:block;
     text-align: center;
   }
 }
-.bg--secondary .on-boarding{
-width:100%;
-margin-top:3em;
-margin-bottom:5em;
-}
-
 .use-cases a{
 cursor:pointer;
 }
 .use-cases{
-	background-color:#334054;
 	transform: skewY(-3deg);
+	margin-bottom:-2em;
 }
 .use-cases .row{
    transform: skewY(3deg);
@@ -6967,6 +6961,12 @@ a.block:hover > .feature {
   }
 }
 /*! -- Stack CTA -- */
+.cta-bgd{
+  background-color:#334054;
+  width:100%;
+  padding:.5em 0 .5em 0;
+  margin-bottom:1em;
+    }
 .cta .btn:first-child:not(:last-child) {
   margin-bottom: 1.85714286em;
 }
