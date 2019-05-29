@@ -7513,13 +7513,13 @@ color:#fff;
  margin-bottom:2em;
  }
  .code-bgd{
-  background-color:#C9C9C9;
+  background-color:#516482;
   border-radius:6px;
   height:22em;
   width: 38em;
  }
  .dropbtn{
- color:#334054;
+ color:#283242;
  background-color:transparent;
  font-weight:700;
  border:none;
@@ -7535,10 +7535,11 @@ color:#fff;
  .dropdownContent pre{
   height:21em;
   width: 44em;
-  color:#282828;
+  color:#FFF;
   background-color:transparent;
   border:none;
   text-align:left;
+  margin-left:1em;
   font-size:.8em;
   overflow-y: scroll;
   }
