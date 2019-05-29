@@ -5170,8 +5170,17 @@ display:block;
     text-align: center;
   }
  }
+ /*! -- Use Cases Section -- */
 	.use-cases a{
 	cursor:pointer;
+	background-color:#2C3747;
+  	border: 1px solid #252E3D;
+  	box-shadow: #252E3D 0px 0px 0px 1px, #252E3D 0px 2px 8px 1px;
+  	border-radius: 4px;
+	}
+	.use-cases a:hover{
+  	background-color: #1C232D;
+  	text-decoration:none;
 	}
 	.use-cases{
 	transform: skewY(-3deg);
@@ -5194,6 +5203,8 @@ display:block;
 	.use-cases .globe-icons{
 	display:grid;
 	grid-template-columns: auto auto auto auto;
+	    grid-gap: 1em 1em;
+
 	width:55%;
 	z-index:312;
 	right:4em;
@@ -5212,18 +5223,24 @@ display:block;
 	.use-cases .globe-icons{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
+	grid-gap: 1em 1em;
+	margin-bottom:4em;
 }
 }
 @media all and (max-width:900px) {
 	.use-cases .globe-icons{
 	display: grid;
 	grid-template-columns: auto auto auto;
+	    grid-gap: 1em 1em;
+
 }
 }
 @media all and (max-width: 767px) {
 	.use-cases .globe-icons{
 	display: grid;
 	grid-template-columns: auto auto;
+	    grid-gap: 1em 1em;
+
 }
 }
 /*! -- Alerts -- */
