@@ -5189,6 +5189,7 @@ display:block;
 	z-index:299;
 	width:80%;
 	top:1em;
+	left:-2em;
 }
 	.use-cases .globe-icons{
 	display:grid;
@@ -7488,40 +7489,40 @@ color:#fff;
   margin-left: auto;
   margin-right: auto;
  }
- /* Programmable building blocks section */
- .text-center .middle-title{
-  margin-top:5em;
-  margin-bottom:5em;
-  right:5em;
-  z-index:2;
- } 
+ /* Intergate in minutes section */
+
 .middle-content{
- margin-top:5em;
+ margin-top:2em;
+ margin-bottom:2em;
  }
  .code-bgd{
-  background-color:#39475B;
+  background-color:#C9C9C9;
+  border-radius:6px;
   height:22em;
   width: 38em;
  }
  .dropbtn{
- color:#FFE161;
-  background-color:transparent;
+ color:#334054;
+ background-color:transparent;
+ font-weight:700;
  border:none;
  padding-left:1em;
  padding-right:1em;
+ margin-top:.5em;
  }
   .dropbtn:hover{
-   color:#fff;
-    background-color:#1fbad6;
+  color:#000;
+  background-color:#FFE161;
+  border-radius:6px;
   }
  .dropdownContent pre{
-   height:22em;
+  height:21em;
   width: 44em;
- color:#fff;
- background-color:transparent;
- border:none;
- text-align:left;
- font-size:.8em;
+  color:#282828;
+  background-color:transparent;
+  border:none;
+  text-align:left;
+  font-size:.8em;
   overflow-y: scroll;
   }
   .dropdownContent2 {
@@ -7529,18 +7530,21 @@ color:#fff;
   }
  .middle-list{
   position:absolute;
-  right:0;
-  margin-top:3em;
-  top:9em;
+  right:-4em;
+  top:2em;
   color:#fff;
-  font-size:1.3em;
-
+  text-align:left;
+}
+ .middle-list h3{
+ font-weight:700;
  }
-  .middle-list h4{
-  color:#FFE161;
-  margin-bottom:1em;
+ .middle-list h4{
+ max-width:80%;
+ margin-bottom:1em;
  }
- 
+ .middle-list span{
+ color:#1fbad6;
+ }
 @media all and (max-width: 1140px) {
  .dropdownContent pre{
  height:20em;
@@ -7549,17 +7553,18 @@ color:#fff;
  margin-top: .5em;
  }
   .middle-list{
-  margin-top:5em;
-font-size:1em;
+  font-size:1em;
 }
 }
 @media all and (max-width: 900px) {
   .middle-list{
-  margin-top:5em;
-font-size:90%;
+  font-size:90%;
 }
 }
 @media all and (max-width: 767px) {
+section .code .text-center {
+ margin-bottom:0;
+}
  .code-bgd{
  width:90%;
  }
@@ -7573,8 +7578,6 @@ width:90%;
 }
  .middle-list{
 position:relative;
-margin-top:-4em;
-margin-bottom:6em;
 left:10%;
 font-size:1.2em;
 }
