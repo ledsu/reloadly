@@ -661,8 +661,18 @@ using (var httpClient = new HttpClient{ BaseAddress = baseAddress })
         <script src="js/spectragram.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
        <script>
-			function cURLFunction(){
+      $('button').on('click', function(){
+    	$('button').removeClass('active_button');
+    	$(this).addClass('active_button');
+		});
+
+	//Home button active on page load
+		$(document).ready(function(){
+  		 $('#codeBtn-cURL').addClass('active_button');
+		});
+			function cURLFunction(){		
 				document.getElementById('code-cURL').style.display = "block";
 				document.getElementById('code-PHP').style.display = "none";
 				document.getElementById('code-NodeJS').style.display = "none";

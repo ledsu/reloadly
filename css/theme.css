@@ -7519,21 +7519,26 @@ color:#fff;
   width: 38em;
  }
  .dropbtn{
+   height:1.8em;
  color:#283242;
  background-color:transparent;
  font-weight:700;
  border:none;
  padding-left:1em;
  padding-right:1em;
- margin-top:.5em;
+ margin-top:.8em;
  }
   .dropbtn:hover{
   color:#000;
   background-color:#FFE161;
   border-radius:6px;
   }
+ .active_button{
+  background-color: #FFE161;
+    border-radius:6px;
+}
  .dropdownContent pre{
-  height:21em;
+  height:22em;
   width: 44em;
   color:#FFF;
   background-color:transparent;
@@ -7565,11 +7570,9 @@ color:#fff;
  }
 @media all and (max-width: 1140px) {
  .dropdownContent pre{
- height:20em;
+ height:21em;
  }
- .dropbtn{
- margin-top: .5em;
- }
+
   .middle-list{
   font-size:1em;
 }
@@ -7588,10 +7591,9 @@ section .code .text-center {
  }
  .dropbtn{
  padding:.2em;
- margin-top:.3em;
  }
  .dropdownContent pre{
-height:20em;
+height:21em;
 width:90%;
 }
  .middle-list{
