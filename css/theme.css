@@ -232,7 +232,7 @@ a:active {
   text-decoration: underline;
 }
 .type--body-font {
-  font-family: 'Futura PT', 'Helvetica';
+  font-family: 'Futura PT Book', 'Helvetica';
 }
 /**! 03. Position **/
 body {
@@ -847,7 +847,7 @@ div[data-overlay] ul {
 }
 /**! 06. Buttons **/
 .btn {
-  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT Book', 'Helvetica', 'Arial', sans-serif;
   transition: 0.1s linear;
   -webkit-transition: 0.1s linear;
   -moz-transition: 0.1s linear;
@@ -3017,7 +3017,7 @@ form[action*='createsend.com'] p > label:first-child {
   margin-bottom: 0.92857143em;
 }
 form[action*='list-manage.com'] h2 {
-  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT Book', 'Helvetica', 'Arial', sans-serif;
   color: #252525;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
@@ -4819,7 +4819,7 @@ section.parallax .row .background-image-holder {
 /*! -- Bars -- */
 .menu-horizontal > li,
 .menu-vertical > li {
-  font-family: 'Futura PT', 'Roboto', 'Helvetica', Sans-Serif;
+  font-family: 'Futura PT Book', 'Roboto', 'Helvetica', Sans-Serif;
 }
 .bar .logo {
   max-height: 6em;
