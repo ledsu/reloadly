@@ -59,7 +59,7 @@ a {
   margin: 0;
   padding: 0;
 }
-**! 02. Typography **/
+/**! 02. Typography **/
 html {
   font-size: 87.5%;
 }
@@ -73,7 +73,7 @@ body {
   line-height: 1.85714286em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'PT sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
   color: #BABABA;
   font-weight: 400;
 }
@@ -88,7 +88,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'PT sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
   color: #fff;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
@@ -97,7 +97,7 @@ h6,
 }
 h1,
 .h1 {
-  font-family: 'PT sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
   color: #fff;
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
@@ -225,7 +225,7 @@ a:active {
   text-decoration: underline;
 }
 .type--body-font {
-  font-family: 'PT sans', 'Helvetica';
+  font-family: 'Karla', 'Helvetica';
 }
 /**! 03. Position **/
 body {
@@ -843,7 +843,7 @@ div[data-overlay] ul {
 }
 /**! 06. Buttons **/
 .btn {
-  font-family: 'PT sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
   transition: 0.1s linear;
   -webkit-transition: 0.1s linear;
   -moz-transition: 0.1s linear;
@@ -3014,7 +3014,7 @@ form[action*='createsend.com'] p > label:first-child {
   margin-bottom: 0.92857143em;
 }
 form[action*='list-manage.com'] h2 {
-  font-family: 'PT sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
   color: #252525;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
@@ -4817,7 +4817,7 @@ section.parallax .row .background-image-holder {
 /*! -- Bars -- */
 .menu-horizontal > li,
 .menu-vertical > li {
-  font-family: 'PT sans', 'Roboto', 'Helvetica', Sans-Serif;
+  font-family: 'Karla', 'Roboto', 'Helvetica', Sans-Serif;
 }
 .bar .logo {
   max-height: 6em;
@@ -6145,7 +6145,7 @@ p .material-icons:first-child {
   font-weight: 600;
   border-radius: 2px;
   z-index: 2;
-  font-family: 'PT sans';
+  font-family: 'Karla';
 }
 [data-tooltip]:not(:hover):after {
   opacity: 0;
