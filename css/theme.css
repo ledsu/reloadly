@@ -68,12 +68,12 @@ html {
 @font-face {
 font-family: "Futura PT Bold";
 font-weight: bold;
-src: url("/ftn85-webfont.woff") format("woff");
+src: url("/Fonts/Futura-PT-Bold-Webfont/Webfonts/futurapt_bold_macroman/ftn85-webfont.woff") format("woff");
 }
 @font-face {
 font-family: "Futura PT Book";
 font-weight: book;
-src: url("/ftn45-webfont.woff") format("woff");
+src: url("/Fonts/Futura-PT-Book-Webfont/Webfonts/futurapt_book_macroman/ftn45-webfont.woff") format("woff");
 }
 body {
   font-size: 1em;
