@@ -66,15 +66,14 @@ html {
   }
 }
 body {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.85714286em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Futura PT Bold', 'Futura PT Bold', 'Arial', sans-serif;
-  color: #BABABA;
+  font-family: 'Futura PT Book', 'Arial', sans-serif;
+  color: #fff;
   font-weight: 400;
 }
-h2,
 h3,
 h4,
 h5,
@@ -105,6 +104,7 @@ h1,
 }
 h2,
 .h2 {
+  font-family: 'Futura PT Bold', 'Helvetica', 'Arial', sans-serif;
   font-size: 2.35714286em;
   line-height: 1.36363636em;
 }
@@ -661,7 +661,7 @@ img {
 [data-scrim-bottom]:not(.image--light) h4,
 [data-scrim-bottom]:not(.image--light) h5,
 [data-scrim-bottom]:not(.image--light) h6 {
-  color: #a5a5a5;
+  color: #fff;
   color: #f1f1f1;
 }
 [data-scrim-bottom]:not(.image--light) p,
@@ -797,7 +797,7 @@ img {
 .imagebg:not(.image--light) .bg--white h4,
 .imagebg:not(.image--light) .bg--white h5,
 .imagebg:not(.image--light) .bg--white h6 {
-  color: #252525;
+  color: #fff;
 }
 .imagebg:not(.image--light) .bg--white p,
 .imagebg:not(.image--light) .bg--white ul {
@@ -2799,7 +2799,7 @@ a {
 .bg--white h5,
 .bg--white h6,
 .bg--white i {
-  color: #252525;
+  color: #fff;
 }
 .bg--error {
   background: #e23636;
@@ -2820,7 +2820,7 @@ a {
 .imagebg:not(.image--light) .bg--white h5,
 .imagebg:not(.image--light) .bg--white h6,
 .imagebg:not(.image--light) .bg--white i {
-  color: #252525;
+  color: #fff;
 }
 .imagebg:not(.image--light) .bg--secondary {
   background: rgba(250, 250, 250, 0.2);
@@ -3008,7 +3008,7 @@ form[action*='createsend.com'] p > label:first-child {
 }
 form[action*='list-manage.com'] h2 {
   font-family: 'Futura PT Book', 'Helvetica', 'Arial', sans-serif;
-  color: #252525;
+  color: #fff;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
   margin-top: 0;
@@ -4411,7 +4411,7 @@ ol.lead li:not(:last-child) {
   z-index: 100;
 }
 .middle-part .container{
-padding-top:1em;
+padding-top:2em;
 padding-bottom:1em;
 }
 section.middle-part{
@@ -4440,7 +4440,7 @@ cursor:pointer;
   }
   .switchable__text{
 width:100%;
-margin-left:3em;
+margin-left:1em;
 margin-bottom:3em; 
 }
   .switchable__text .lead{
@@ -5185,23 +5185,24 @@ display:block;
    margin-bottom: 10em;
    justify-content: center;
  }
+ 	.use-cases h2{
+ 	margin-bottom:1em;
+ 	}
 @media all and (min-width: 1200px) {
 	.use-cases .globe-bgd{
+	top:1.5em;
 	z-index:299;
-	width:80%;
-	top:1em;
-	left:-2em;
+	width:40%;
   }
 	.use-cases .globe-icons{
 	display:grid;
 	grid-template-columns: auto auto auto auto;
-	    grid-gap: 1em 1em;
-
+	grid-gap: 1em 1em;
 	width:55%;
 	z-index:312;
 	right:4em;
 	position:absolute;
-	top:5em;
+	top:7em;
 	padding-left:5em;
   }
 }
@@ -7497,7 +7498,7 @@ color:#fff;
  }
  /* Code screen section */
 .middle-content{
- margin-top:2em;
+ margin-top:3em;
  margin-bottom:2em;
  }
  .code-bgd{
@@ -7552,6 +7553,7 @@ color:#fff;
  .middle-list h4{
  max-width:80%;
  margin-bottom:1em;
+ color:#CCCCCC;
  }
  .middle-list span{
  color:#1fbad6;
@@ -7611,7 +7613,7 @@ section.four-features{
   margin:1em;
   height:10em;
   width: 45%;
-  padding-top:1.5em;
+  padding-top:1em;
   float:left;
 }
 .row .process__body:hover{
@@ -7636,6 +7638,7 @@ float:left;
 }
 .row .process__body p{
 margin-bottom: 0;
+padding-right:.5em;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -7647,7 +7650,7 @@ margin-bottom: 0;
 .row .process__body{
   width: 100%;
   margin: 0 auto 1em;
-  height:15em;
+  height:13em;
   float:none;
   clear:both;
 }
