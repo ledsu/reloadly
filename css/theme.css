@@ -65,8 +65,8 @@ html {
     font-size: 81.25%;
   }
 }
-@import 'https://raw.githubusercontent.com/ledsu/reloadly/blob/master/fonts/Futura%20PT%20Bold-Webfont/Webfonts/futurapt_bold_macroman/stylesheet.css';
-@import 'https://raw.githubusercontent.com/ledsu/reloadly/blob/master/fonts/Futura%20PT%20Book-Webfont/Webfonts/futurapt_book_macroman/stylesheet.css';
+@import 'https://raw.githubusercontent.com/reloadly/blob/master/fonts/Futura%20PT%20Bold-Webfont/Webfonts/futurapt_bold_macroman/stylesheet.css';
+@import 'https://raw.githubusercontent.com/reloadly/blob/master/fonts/Futura%20PT%20Book-Webfont/Webfonts/futurapt_book_macroman/stylesheet.css';
 body {
   font-size: 1em;
   line-height: 1.85714286em;
