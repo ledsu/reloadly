@@ -1,4 +1,3 @@
-/**!**************/
 /**! Contents **/
 /**! 01. Reset **/
 /**! 02. Typography **/
@@ -42,9 +41,7 @@
 /**! 40. Alerts **/
 /**! 41. Progress - Horizontal **/
 /**! 42. Theme Overrides **/
-/**!**************/
-/**!**************/
-/**!**************/
+
 /**! 01. Reset **/
 *,
 h1,
@@ -73,7 +70,8 @@ body {
   line-height: 1.85714286em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Futura PT", 'Arial', sans-serif;
+	url(https://www.dropbox.com/s/rmrpgq5a32f1ho3/ftn85-webfont.woff?dl=0);
   color: #BABABA;
   font-weight: 400;
 }
@@ -88,7 +86,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
   color: #fff;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
@@ -97,7 +95,7 @@ h6,
 }
 h1,
 .h1 {
-  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
   color: #fff;
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
@@ -225,7 +223,7 @@ a:active {
   text-decoration: underline;
 }
 .type--body-font {
-  font-family: 'Karla', 'Helvetica';
+  font-family: 'Futura PT', 'Helvetica';
 }
 /**! 03. Position **/
 body {
@@ -423,9 +421,6 @@ img {
   max-width: 100%;
   margin-bottom: 1.85714286em;
 }
-/*p+img, img:last-child{
-	margin-bottom: 0;
-}*/
 .img--fullwidth {
   width: 100%;
 }
@@ -843,7 +838,7 @@ div[data-overlay] ul {
 }
 /**! 06. Buttons **/
 .btn {
-  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
   transition: 0.1s linear;
   -webkit-transition: 0.1s linear;
   -moz-transition: 0.1s linear;
@@ -935,7 +930,6 @@ div[data-overlay] ul {
 .btn:first-child {
   margin-left: 0;
 }
-
 .btn--xs {
   padding-top: 0;
   padding-bottom: 0;
@@ -3014,7 +3008,7 @@ form[action*='createsend.com'] p > label:first-child {
   margin-bottom: 0.92857143em;
 }
 form[action*='list-manage.com'] h2 {
-  font-family: 'Karla', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
   color: #252525;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
@@ -3711,7 +3705,7 @@ section.unpad--top {
   height: 100%;
 }
 /**! 42. Theme Overrides **/
-/*! -- Stack Customizers -- */
+/*! -- Customizers -- */
 .box-shadow {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
 }
@@ -3764,7 +3758,7 @@ section.unpad--top {
 body.boxed-layout .modal-container section:not([class*='bg-']) {
   background: none;
 }
-/*! -- Stack Helpers -- */
+/*! -- Helpers -- */
 @media all and (max-width: 767px) {
   .block--xs {
     margin-top: 0.92857143em;
@@ -3815,7 +3809,7 @@ body.boxed-layout .modal-container section:not([class*='bg-']) {
 .disable-scroll-bars::-webkit-scrollbar {
   display: none;
 }
-/*! -- Stack Animations -- */
+/*! -- Animations -- */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -3992,7 +3986,7 @@ body.boxed-layout .modal-container section:not([class*='bg-']) {
     transform: scale(1.1);
   }
 }
-/*! -- Stack Sections -- */
+/*! -- Sections -- */
 section:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.unpad--bottom):not(.border--bottom):not(.space--xxs) + section:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.border--bottom):not(.space--xxs) {
   padding-top: 0;
 }
@@ -4022,7 +4016,7 @@ section.text-center div[class*='col-']:first-child:last-child {
   z-index: 2;
   position: relative;
 }
-/*! -- Stack Typography -- */
+/*! -- Typography -- */
 @media all and (max-width: 1024px) {
   html {
     font-size: 80%;
@@ -4453,7 +4447,6 @@ margin-bottom:3em;
   .switchable__text .lead{
   margin-left:0;
   }
-
 }
 /*! -- Rules -- */
 hr:first-child {
@@ -4817,7 +4810,7 @@ section.parallax .row .background-image-holder {
 /*! -- Bars -- */
 .menu-horizontal > li,
 .menu-vertical > li {
-  font-family: 'Karla', 'Roboto', 'Helvetica', Sans-Serif;
+  font-family: 'Futura PT', 'Roboto', 'Helvetica', Sans-Serif;
 }
 .bar .logo {
   max-height: 6em;
@@ -5199,7 +5192,7 @@ display:block;
 	width:80%;
 	top:1em;
 	left:-2em;
-}
+  }
 	.use-cases .globe-icons{
 	display:grid;
 	grid-template-columns: auto auto auto auto;
@@ -5211,29 +5204,28 @@ display:block;
 	position:absolute;
 	top:5em;
 	padding-left:5em;
-}
+  }
 }
 @media all and (max-width: 1199px) {
 	.use-cases .row{
 	margin-bottom:2em;
-}
+  }
 	.use-cases .globe-bgd{
 	display:none;
-}
+  }
 	.use-cases .globe-icons{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-gap: 1em 1em;
 	margin-bottom:4em;
-}
+  }
 }
 @media all and (max-width:900px) {
 	.use-cases .globe-icons{
 	display: grid;
 	grid-template-columns: auto auto auto;
-	    grid-gap: 1em 1em;
-
-}
+	grid-gap: 1em 1em;
+  }
 }
 @media all and (max-width: 767px) {
 	.use-cases .globe-icons{
@@ -5306,7 +5298,7 @@ display:block;
 .bar-stacked .logo {
   margin-bottom: 3.71428571em;
 }
-/*! -- Stack Nav Side Menu -- */
+/*! -- Nav Side Menu -- */
 .notification.side-menu {
   z-index: 9999;
   background: #ffffff;
@@ -5597,8 +5589,6 @@ display:none;
     width:100%;
   }
 }
-
-
 nav{
   overflow-x: hidden;
 }
@@ -5765,7 +5755,7 @@ nav a:hover{
     height: 18px;
   }
 }
-/*! -- Stack Twitter Feeds -- */
+/*! -- Twitter Feeds -- */
 .tweets-feed .interact {
   display: none;
 }
@@ -6145,12 +6135,12 @@ p .material-icons:first-child {
   font-weight: 600;
   border-radius: 2px;
   z-index: 2;
-  font-family: 'Karla';
+  font-family: 'Futura PT';
 }
 [data-tooltip]:not(:hover):after {
   opacity: 0;
 }
-/*! -- Stack Boxes -- */
+/*! -- Boxes -- */
 .boxed {
   border-radius: 6px;
 }
@@ -6229,7 +6219,7 @@ p .material-icons:first-child {
     -webkit-transform: scale(1.075);
   }
 }
-/*! -- Stack Features Small -- */
+/*! -- Features Small -- */
 .feature:not(.boxed) {
   margin-bottom: 60px;
 }
@@ -6524,7 +6514,7 @@ a.block:hover > .feature {
     min-height: 2.736842105263158em;
   }
 }
-/*! -- Stack Features Large -- */
+/*! -- Features Large -- */
 @media all and (min-width: 768px) {
   .staggered div[class*='col-']:nth-child(2):last-child {
     margin-top: 13em;
@@ -6672,7 +6662,7 @@ a.block:hover > .feature {
 .bg--primary .accordion li .accordion__title {
   border-color: rgba(255, 255, 255, 0.3);
 }
-/*! -- Stack Tabs -- */
+/*! -- Tabs -- */
 .tabs-container.tabs--vertical {
   overflow: hidden;
 }
@@ -7216,7 +7206,7 @@ a[data-lightbox]:hover {
   opacity: .8;
   cursor: zoom-in;
 }
-/*! -- Stack Covers -- */
+/*! -- Covers -- */
 .cover .typed-headline {
   margin-bottom: 3.71428571em;
 }
@@ -7506,8 +7496,7 @@ color:#fff;
   margin-left: auto;
   margin-right: auto;
  }
- /* Intergate in minutes section */
-
+ /* Code screen section */
 .middle-content{
  margin-top:2em;
  margin-bottom:2em;
@@ -7602,7 +7591,6 @@ left:10%;
 font-size:1.2em;
 }
 }
-
 /* Four-features section */
 section.four-features{   
  background-color:#334054;
@@ -7656,7 +7644,6 @@ margin-bottom: 0;
   display: table;
   clear: both;
 }
-
 @media screen and (max-width: 767px) {
 .row .process__body{
   width: 100%;
@@ -9683,6 +9670,11 @@ section.unpad > article .imagebg + div {
     margin-bottom: 0.92857143em;
   }
 }
+/*! -- About page -- */
+.about{
+background-color:#fff;
+}
+
 /*! -- Footers -- */
 footer .type--fine-print:not(p) {
   opacity: .5;
