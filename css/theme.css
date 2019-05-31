@@ -66,9 +66,12 @@ html {
   }
 }
 @font-face {
-font-family: "Futura PT";
+font-family: "Futura PT Bold";
 font-weight: bold;
 src: url("https://github.com/ledsu/reloadly/blob/master/fonts/Futura-PT-Bold-Webfont/Webfonts/futurapt_bold_macroman/ftn85-webfont.woff") format("woff");
+}
+@font-face {
+font-family: "Futura PT Book";
 font-weight: book;
 src: url("https://github.com/ledsu/reloadly/blob/master/fonts/Futura-PT-Book-Webfont/Webfonts/futurapt_book_macroman/ftn45-webfont.woff") format("woff");
 }
@@ -77,7 +80,7 @@ body {
   line-height: 1.85714286em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Futura PT', 'Arial', sans-serif;
+  font-family: 'Futura PT Bold', 'Futura PT Bold', 'Arial', sans-serif;
   color: #BABABA;
   font-weight: 400;
 }
@@ -92,7 +95,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT Book', 'Helvetica', 'Arial', sans-serif;
   color: #fff;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
@@ -101,7 +104,7 @@ h6,
 }
 h1,
 .h1 {
-  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT Bold', 'Helvetica', 'Arial', sans-serif;
   color: #fff;
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
