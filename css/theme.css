@@ -103,7 +103,7 @@ h6,
 }
 h1,
 .h1 {
-  font-family: 'ftn85','ftn45', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
   color: #fff;
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
@@ -231,7 +231,7 @@ a:active {
   text-decoration: underline;
 }
 .type--body-font {
-  font-family: 'ftn85','ftn45', 'Helvetica';
+  font-family: 'Futura PT', 'Helvetica';
 }
 /**! 03. Position **/
 body {
@@ -846,7 +846,7 @@ div[data-overlay] ul {
 }
 /**! 06. Buttons **/
 .btn {
-  font-family: 'ftn85','ftn45', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
   transition: 0.1s linear;
   -webkit-transition: 0.1s linear;
   -moz-transition: 0.1s linear;
@@ -3016,7 +3016,7 @@ form[action*='createsend.com'] p > label:first-child {
   margin-bottom: 0.92857143em;
 }
 form[action*='list-manage.com'] h2 {
-  font-family: 'ftn85','ftn45', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Futura PT', 'Helvetica', 'Arial', sans-serif;
   color: #252525;
   font-weight: 300;
   font-variant-ligatures: common-ligatures;
@@ -4818,7 +4818,7 @@ section.parallax .row .background-image-holder {
 /*! -- Bars -- */
 .menu-horizontal > li,
 .menu-vertical > li {
-  font-family: 'ftn85','ftn45', 'Roboto', 'Helvetica', Sans-Serif;
+  font-family: 'Futura PT', 'Roboto', 'Helvetica', Sans-Serif;
 }
 .bar .logo {
   max-height: 6em;
