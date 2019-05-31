@@ -65,13 +65,19 @@ html {
     font-size: 81.25%;
   }
 }
+@include font-face("Futura PT Bold", font-files("ftn85-webfont.woff", "ftn85-webfont.woff2"))
+@include font-face("Futura PT Book", font-files("ftn45-webfont.woff", "ftn45-webfont.woff2"))
+
 body {
   font-size: 1em;
   line-height: 1.85714286em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Futura PT", 'Arial', sans-serif;
-	url(https://www.dropbox.com/s/rmrpgq5a32f1ho3/ftn85-webfont.woff?dl=0);
+  font-family: 'Futura PT Book', 'Futura PT Book', 'Arial', sans-serif;
+    src: url(/fonts/ftn45-webfont.woff) format('woff');
+    src: url(/fonts/ftn85-webfont.woff) format('woff');
+    src: url(/fonts/ftn45-webfont.woff2) format('woff2');
+    src: url(/fonts/ftn85-webfont.woff2) format('woff2');
   color: #BABABA;
   font-weight: 400;
 }
