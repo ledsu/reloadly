@@ -13,7 +13,10 @@
         <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
         <meta name="Description" content="The Reloadly API platform is built for developers, the worldÂ’s first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
         <meta property="Keywords" content="Top Up API, Mobile Recharge API, Prepaid top up API, Telecom API, Mobile Airtime API">
-
+		<style type="text/css" media="screen">
+            @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
+			@font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
+		</style>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
@@ -26,7 +29,7 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-<body class=" ">
+<body id="secondary-page">
         <a id="start"></a>
                        
         
@@ -36,7 +39,7 @@
             <div class="row">
         	  <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
             	 <div class="col-3 col-md-2">
-                        <a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a>
+                        <a href="index.html"><img class="logo" alt="logo" src="img/logo-dark.svg" /> </a>
                  </div> 
                  <div class="bar__module">
                         <a class="btn signup btn--sm type--uppercase" href="#"><span class="btn__text">Sign up</span></a>
@@ -53,6 +56,8 @@
     <span></span>
     <span></span>
     <ul id="menu">
+     <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="registration.html" target="_blank">Sign up</a></div></li>
+      <li><div class="login hidden-sm hidden-md hidden-lg"><a href="registration.html" target="_blank">Log in</a></div></li>
 	  <li><a href="index.html" target="_blank">Home</a></li>
       <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
       <li><a href="mobile-topup.html" target="_blank">Mobile Top Up</a></li>
@@ -68,7 +73,7 @@
 	</div><!--end module-->
         <div class="main-container">
            
-            <section class="top-part text-center">
+            <section class="top-part text-left">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10">
@@ -87,36 +92,21 @@
            <br>
         
 			
-			<section class="text-center middle-part">
+			<section class="text-left middle-part">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="switchable__text col-md-10 col-lg-8">
-                            <h2>BREAKING THE MOLD</h2>
+                        <div class="switchable__text col-md-11 col-lg-9">
+                            <h3>BREAKING THE MOLD</h3>
                                 <p class="lead">As is often the case with game-changing companies, Reloadly was born out of frustration. The co-founders Michel Francis and Emmanuel Piard created the platform after actually having dealt with many traditional airtime companies for more than 5 years and seeing an opportunity to improve cumbersome mobile airtime transfer experience not just for businesses, but also for web developers and customers.
 Reloadly is a b2b cloud API platform for mobile top ups that lets business owners, developers and other users to setup an account online and start sending mobile top up airtime around the world in as little as 30 minutes. With a process as simple as writing few lines of codes or using our portal directly; essentially, cutting down a traditionally 3 to 6 months process down to minutes and saving businesses and developers resources, time and money.
                   			</p>
-                     	</div>
-                    </div><!--end of row-->
-                </div><!--end of container-->
-            </section>
-            
-          <section class="text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-lg-8">
-                                <h2>CUTTING THE RED TAPE</h2>
+
+                                <h3>CUTTING THE RED TAPE</h3>
                                 <p class="lead">
                                 To fully understand how freeing Reloadly is for business owners & web developers, consider how limiting and cumbersome getting access to traditional airtime companies currently is. One has to sign over-complicated contracts, coordinate tech teams to setup inter-connections, review lengthy files documentations of unclear APIs, which are often not well designed or build using outdated and unreliable technologies. This often leads to new or more infrastructure design and/or planning by the consumers of these APIs. Further, these platform or APIs are more than often counter intuitive and donâ€™t provide full set of features and capabilities that businesses and developers need and want. This translate directly into them dictating what businesses or developers can do or build. 
 								</p>
-                        </div>
-                    </div><!--end of row-->
-                </div><!--end of container-->
-			</section>
-  			<section class="text-center middle-part">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="switchable__text col-md-10 col-lg-8">
-                            <h2>USER EXPERIENCE</h2>
+
+                            <h3>USER EXPERIENCE</h3>
                                 <p class="lead"> 
                                 Reloadly is easier to setup and use than other traditional player in the same space.
 We accomplish that by eliminating the friction of starting up by cutting out the bureaucracy and making the process, from start to finish, a completely self served and very intuitive one. In a matter of minutes, a user can sign up and readily have access to all the tools & credentials needed to start integration or use our portal directly.
@@ -146,57 +136,44 @@ Reloadly offers a a clean, user-friendly and well documented REST API. Reloadlyâ
                                     </div>
                                     </div>
                                         <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-12">
+                                        <div class="team-members">
                                             <div class="feature feature-8">
                                                 <img alt="Image" src="img/avatar-round-1.png" />
-                                                <h5>Vera Duncan</h5>
-                                                <span>Founder &amp; CEO</span>
+                                                <h5>Michel Francis</h5>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
+                                    
                                             <div class="feature feature-8">
                                                 <img alt="Image" src="img/avatar-round-1.png" />
-                                                <h5>Vera Duncan</h5>
-                                                <span>Founder &amp; CEO</span>
+                                                <h5>Emmanuel Gregory Piard</h5>
                                             </div>
-                                        </div>
-                                        <div class="col-md-3">
+                                        
                                             <div class="feature feature-8">
                                                 <img alt="Image" src="img/avatar-round-3.png" />
-                                                <h5>Zach Smith</h5>
-                                                <span>Co-Founder &amp; CTO</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="feature feature-8">
-                                                <img alt="Image" src="img/avatar-round-2.png" />
-                                                <h5>Bernice Lucas</h5>
-                                                <span>Chief of Operations</span>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="feature feature-8">
-                                                <img alt="Image" src="img/avatar-round-4.png" />
-                                                <h5>Cameron Nguyen</h5>
-                                                <span>Lead Designer</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="feature feature-8">
-                                                <img alt="Image" src="img/avatar-round-5.png" />
-                                                <h5>Josie Web</h5>
-                                                <span>Head of Development</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="feature feature-8">
-                                                <img alt="Image" src="img/avatar-round-6.png" />
-                                                <h5>Bryce Vaughn</h5>
-                                                <span>Marketing Director</span>
+                                                <h5>Daniel Allien</h5>
                                             </div>
                                        
+                                            <div class="feature feature-8">
+                                                <img alt="Image" src="img/avatar-round-2.png" />
+                                                <h5>Jean-Olivier Buteau</h5>
+                                            </div>
+                                       
+                                            <div class="feature feature-8">
+                                                <img alt="Image" src="img/avatar-round-4.png" />
+                                                <h5> Enrique Hirlemann</h5>
+                                            </div>
+                                      
+                                            <div class="feature feature-8">
+                                                <img alt="Image" src="img/avatar-round-5.png" />
+                                                <h5>Anand Gururajan</h5>
+                                            </div>
+                                      
+                                            <div class="feature feature-8">
+                                                <img alt="Image" src="img/avatar-round-6.png" />
+                                                <h5>Roy Fernandez</h5>
+                                            </div>
+                                          </div>
+                                       </div>
                                     </div>
                                     <!--end of row-->
                                 </div>
@@ -206,72 +183,77 @@ Reloadly offers a a clean, user-friendly and well documented REST API. Reloadlyâ
                     </li>
             
            
-            <section class="switchable bg--secondary middle-part">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="switchable__text col-md-12 text-center">
-                            <h2>CONTACT US</h2>
-                                  <h4>Inquiries</h4>
-                                  <a href="#">hello@reloadly.com</a>
-                                  <h4>Sales</h4>
-                                  <a href="#">sales@reloadly.com</a>
-                                  <h4>Support</h4>
-                                  <a href="#">support@reloadly.com</a>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
-            
-            <section>
+            <section class="">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="cta cta-1 cta--horizontal text-center-xs row justify-content-center">
-                                <div class="col-md-6">
+                      <div class="switchable__text col-md-12 text-center">
+                        <h2>OUR OFFICES</h2>
+                        <div class="office-contacts">
+                           		<div class="office-address">
+                           	<img alt="Image" src="img/miami.svg" />
+							<h4>Miami</h4>
+                            <span>Miami 78 sw </span><br><span>7th St. Miami</span><br><span>FL USA 5th Floor</span><br><span>USA</span>
+                            </div>
+                           	<div class="office-address">
+                            <img alt="Image" src="img/barcelona.svg" />
+                            <h4>Barcelona</h4>
+                            <span>Barcelona Luxa</span><br><span>C/TÃ¡nger-Badajoz</span><br><span>BarcelonaÂ BÂ 08018</span><br><span>Spain</span>
+                            </div>
+                          	<div class="office-address">
+                           	<img alt="Image" src="img/paris.svg" />                            
+                            <h4>Paris</h4>
+                            <span>40 rue du ColisÃ©e</span><br><span>Paris 75 75008</span><br><span>France</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div><!--end of row-->
+                </div><!--end of container-->
+            </section>
+            
+        <section class="cta-bgd">
+                <div class="container">
+                    <div class="row">
+                        <div class="cta col-md-12">
+                                <div class="cta-text col-md-7">
                                     <h3>Make Your First API Call Today with Reloadly</h3>
                                     <p>Signup for a developer account and connect to our API in minutes</p>
                                 </div>
-                                <div class="col-lg-4 text-right">
+                                <div class="cta-button col-md-3">
                                     <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
-                                        <span class="btn__text" >
-                                        Get Your Free API Key
-                                        </span>
+                                        <span class="btn__text" >Get your free API key</span>
                                     </a>
-                                </div>
                             </div>
-                        </div>
+					</div>
+
                     </div>
                     <!--end of row-->
-                                            				<div class="footer-bgd"></div>
-
                 </div>
                 <!--end of container-->
 
             </section>
 
-            <footer class="space--sm footer-1 text-center-xs ">
+<footer class="space--sm footer-2 text-center-xs ">
              <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-6 text-center">
-                             <ul class="list-inline list--hover">
-                                <li><a href="#"><span>Top Up</span>
+                        <div class="col-12 text-center">
+                             <ul class="options list-inline list--hover">
+                                <li><a href="#"><span class="lead">Top Up</span>
                                     </a>
                                 </li>
-                                <li><a href="#"><span>Support</span>
+                                <li><a href="#"><span class="lead">Support</span>
                                     </a>
                                 </li>
-                                <li><a href="#"><span>Blog</span>
+                                <li><a href="#"><span class="lead">Blog</span>
                                     </a>
                                 </li>
-                                <li><a href="#"><span>Careers</span>
+                                <li><a href="#"><span class="lead">Careers</span>
+                                    </a>
+                                </li>
+                                <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-lg-6 text-right">
-                            <ul class="social-list list-inline list--hover">
+                             <ul class="social-list list-inline list--hover">
                                 <li>
                                     <a href="https://twitter.com/Reloadly" target="_blank">
                                         <i class="socicon socicon-twitter icon icon--xs"></i>
@@ -293,24 +275,24 @@ Reloadly offers a a clean, user-friendly and well documented REST API. Reloadlyâ
                                     </a>
                                 </li>
                             </ul>
-                            <a href="#" class="btn type--uppercase">
-                                <span class="btn__text">
-                                    Contact Us
-                                </span>
-                            </a>
-                        </div>
+                            
+                       </div>
+                        
                     </div>
                     <!--end of row-->
                     <div class="row ">
-                        <div class="col-12 text-center">
-                            <span class="type--fine-print">&copy;
+                    <div class="col-12 text-center">
+                        <span class="type--fine-print">&copy;
                                 <span class="update-year"></span> Reloadly</span>
+                        </div>
+                        <div class="col-12 text-center">
                             <a class="type--fine-print" href="#">Terms of Use</a>
                             <a class="type--fine-print" href="#">Security Information</a>
                             <a class="type--fine-print" href="#">User Agreement</a>
                             <a class="type--fine-print" href="#">Cookie Policy</a>
                             <a class="type--fine-print" href="#">Privacy Policy</a>
                         </div>
+                        
                     </div>
                     <!--end of row-->
                 </div>
@@ -338,5 +320,6 @@ Reloadly offers a a clean, user-friendly and well documented REST API. Reloadlyâ
         <script src="js/spectragram.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  </body>
 </html>
