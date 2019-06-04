@@ -107,6 +107,7 @@ h2,
   font-family: 'Futura PT Book', 'Helvetica', 'Arial', sans-serif;
   font-size: 2.35714286em;
   line-height: 1.36363636em;
+    font-weight: 600;
 }
 h3,
 .h3 {
@@ -5265,7 +5266,7 @@ display:block;
 	.use-cases .row{
    transform: skewY(3deg);
    max-width:100%;
-   padding-top:5em;
+   padding-top:2em;
    margin-bottom: 10em;
    justify-content: center;
  }
@@ -7760,8 +7761,10 @@ color:#fff;
   top:2em;
   color:#fff;
   text-align:left;
-  font-size:1.2em;
 }
+ .middle-list{
+   font-size:1.2em;
+ }
  .middle-list h3{
  font-weight:700;
  margin-bottom:.7em;
@@ -7774,6 +7777,12 @@ color:#fff;
  .middle-list span{
  color:#1fbad6;
  }
+ .middle-list .btn{
+    background: none;
+    border-color: #d3d3d3;
+    
+}
+ }
 @media all and (max-width: 1140px) {
  .dropdownContent pre{
  height:17em;
@@ -7783,7 +7792,7 @@ color:#fff;
 }
 }
 @media all and (max-width: 900px) {
-  .middle-list{
+  .middle-list li{
   font-size:90%;
 }
  .code-bgd{
@@ -7803,7 +7812,7 @@ section .code .text-center {
  margin-bottom:0;
 }
  .dropbtn{
-  margin-top:.3em;
+ margin-top:.3em;
  margin-bottom:.3em;
  padding-left:1em;
  padding-right:1em;
@@ -7819,6 +7828,9 @@ section .code .text-center {
  .middle-list{
 position:relative;
 left:10%;
+font-size:1.2em;
+}
+ .middle-list li{
 font-size:1.2em;
 }
 }
