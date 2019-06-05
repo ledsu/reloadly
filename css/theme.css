@@ -5728,7 +5728,7 @@ nav a:hover{
 #menuToggle span:nth-last-child(2){
   transform-origin: 0% 100%;
 }
-/* Transform hamburger into a cross */
+/* Transform hamburger into a cross*/ 
 #menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
@@ -5742,6 +5742,7 @@ nav a:hover{
   opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
 }
+
 #menu{
   position: absolute;
   width: 300px;
@@ -5757,8 +5758,27 @@ nav a:hover{
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 #menu li{
+position:relative;
   padding: 10px 0;
   font-size: 1.25em;
+}
+#menu li ul{
+  position: absolute;
+  left: -99999px; 
+  display:none;
+  margin-left:1em;
+  font-size:.85em;
+  width:80%;
+}
+
+#menu li:hover ul {
+position: relative;
+  left: 0px;
+display:inline-block;
+}
+nav ul li :hover > ul{
+display:inline-block;
+
 }
 #menuToggle input:checked ~ ul{
   transform: scale(1.0, 1.0);
@@ -7778,9 +7798,8 @@ color:#fff;
  color:#1fbad6;
  }
  .middle-list .btn{
-    background: none;
-    border-color: #d3d3d3;
-    
+font-size:.85em;
+padding:.3em 1em .3em;
 }
  }
 @media all and (max-width: 1140px) {

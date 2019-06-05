@@ -790,7 +790,19 @@ mr = (function (mr, $, window, document){
 }(mr, jQuery, window, document));
 
 
-
+//Open and close menu
+window.nav = {
+  status: false,
+  menu: function(){
+    if (nav.status){
+      document.getElementById("menu").className = "menu menuopen";
+      nav.status = false;
+    } else {
+      document.getElementById("menu").className = "menu";
+      nav.status = true;
+    } 
+  }
+}
 
 //////////////// Forms
 

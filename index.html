@@ -47,15 +47,15 @@
          </div> 
      </div>
 <nav role='navigation'>
-  <div id="menuToggle">
+  <div id="menuToggle" onclick="nav.menu()">
     <input type="checkbox"/><span></span><span></span><span></span>
-    <ul id="menu">
+    <ul id="menu" class="main-menu">
       <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="registration.html" target="_blank">Sign up</a></div></li>
       <li><div class="login hidden-sm hidden-md hidden-lg"><a href="registration.html" target="_blank">Log in</a></div></li>
 	  <li><a href="index.html" target="_blank">Home</a></li>
 	  <li><a href="about.html" target="_blank">About Us</a></li>
 	  <li><a href="#" id="products">Products</a>
-	  	<ul class="sub-menu">
+	  	<ul id="sub-menu">
 	  		<li><a href="airtime.html" target="_blank">Airtime</a></li>
 	  		<li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
 	  		<li><a href="digital-goods-and-services.html" target="_blank">Digital goods & services</a></li>
@@ -70,6 +70,8 @@
     </ul>
   </div>
 </nav>
+
+
 	</div><!--end module-->
         <div class="main-container">
            <section class="top-image">
@@ -372,18 +374,6 @@ func main() {
 }                           	
 										</code></pre></div>
                            				<div id ="code-Java" class="dropdownContent dropdownContent2"><pre><code>
-// Maven : Add these dependecies to your pom.xml (java6+)
-// <dependency>
-//     <groupId>org.glassfish.jersey.core</groupId>
-//     <artifactId>jersey-client</artifactId>
-//     <version>2.8</version>
-// </dependency>
-// <dependency>
-//     <groupId>org.glassfish.jersey.media</groupId>
-//     <artifactId>jersey-media-json-jackson</artifactId>
-//     <version>2.8</version>
-// </dependency>
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -463,7 +453,7 @@ using (var httpClient = new HttpClient{ BaseAddress = baseAddress })
                             <li><span>&ofcir;</span> Libraries for popular languages</li>
                             <li><span>&ofcir;</span> Intuitive, easy-to-use tutorials</li>
                             <br>
-							<a class="btn btn--sm type--uppercase" href="#">
+							<a class="btn btn--xs btn--primary type--uppercase" href="#">
                                 <span class="btn__text">Explore documentation</span>
                             </a>
                         </div>
@@ -676,8 +666,23 @@ using (var httpClient = new HttpClient{ BaseAddress = baseAddress })
 </script>
 
 <script> 
-</script>
+function validate() {
+        if (document.getElementById('#menuToggle').checked) {
+            window.addEventListener('mouseup', function(event){
+            var menu = document.getElementById('#menu');
+            document.onclick = function(e){
+               if(event.target.id != '#menu' && event.target.id !='#menu'){
+                  menu.style.display = 'none';
+               }
+            };
+         });
+        } else {
+            alert("You didn't check it! Let me check it for you.");
+        }
+    }
 
+</script>
+<script>
 	//Home button active on page load
 		$(document).ready(function(){
   		 $('#codeBtn-cURL').addClass('active_button');
