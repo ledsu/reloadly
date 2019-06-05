@@ -797,13 +797,23 @@ window.nav = {
     if (nav.status){
       document.getElementById("menu").className = "menu menuopen";
       nav.status = false;
+      document.getElementById('menuToggle').setAttribute('checked', 'checked');
     } else {
       document.getElementById("menu").className = "menu";
       nav.status = true;
+      document.getElementById('menuToggle').removeAttribute('checked');
     } 
   }
 }
-
+//close menu on click outside of it
+function validate() {
+            window.addEventListener('click', function(event){
+            var menubox = document.getElementById('menu');
+               if(event.target != menubox && event.target.parentNode != menubox){
+                  menubox.style.display = 'none';
+            };
+         });
+    }
 //////////////// Forms
 
 mr = (function (mr, $, window, document){

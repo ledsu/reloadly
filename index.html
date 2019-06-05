@@ -665,20 +665,7 @@ using (var httpClient = new HttpClient{ BaseAddress = baseAddress })
 </script>
 
 <script> 
-function validate() {
-        if (document.getElementById('#menuToggle').checked) {
-            window.addEventListener('mouseup', function(event){
-            var menu = document.getElementById('#menu');
-            document.onclick = function(e){
-               if(event.target.id != '#menu' && event.target.id !='#menu'){
-                  menu.style.display = 'none';
-               }
-            };
-         });
-        } else {
-            alert("You didn't check it! Let me check it for you.");
-        }
-    }
+
 
 </script>
 <script>
