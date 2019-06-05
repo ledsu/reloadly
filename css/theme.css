@@ -5585,6 +5585,7 @@ body.dropdowns--hover .nav-sidebar-column .dropdown:hover > .dropdown__container
     right: 20.42857143em;
   }
 }
+
 @media all and (max-width: 767px) {
 .nav-container .bar__module .btn{
 display:none;
@@ -5674,6 +5675,7 @@ display:none;
     width:100%;
   }
 }
+
 nav{
   overflow-x: hidden;
 }
@@ -9956,7 +9958,9 @@ footer a.type--fine-print:not(:first-child) {
 footer ul:not(.list-inline):not(.slides) > li {
   line-height: 2.32142857em !important;
 }
-
+footer .options a{
+font-size:.85em;
+}
 #secondary-page footer{
 margin-top:0;
 }
