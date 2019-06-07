@@ -197,28 +197,19 @@
                             		<button onclick="JavaFunction()" id="codeBtn-Java" class="dropbtn">Java</button>
                             		<button onclick="CFunction()" id="codeBtn-C#" class="dropbtn">C#</button>
                             		
-                            		<div id ="code-cURL" class="dropdownContent"><pre><code>curl --include \
-     --request POST \
-     --header "Content-Type: application/json" \
-     --header "Accept: application/com.reloadly.topups-v1+json" \
-     --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa" \
-     --data-binary "{
-  \"recipientPhone\": {
-    \"countryCode\": \"HT\",
-    \"number\": \"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)
-  },
-  \"senderPhone\": {
-    \"countryCode\": \"US\",
-    \"number\": \"+13059547862\" //(Note the \"+1\" country dialing code for USA)
-  },
-  \"operatorId\": 173,
-  \"amount\": 15,
-  \"customIdentifier\": \"transaction by john@example.com\"
-}" \
-'https://topups.reloadly.com/topups'
+                            		<div id ="code-cURL" class="dropdownContent"><pre><code>  "transactionId": 1,
+  "recipientPhone": "50936377111",
+  "senderPhone": "13059547862",
+  "countryCode": "HT",
+  "operatorId": 173,
+  "requestedAmount": 15,
+  "requestedAmountCurrencyCode": "USD",
+  "deliveredAmount": 997.2,
+  "deliveredAmountCurrencyCode": "HTG",
+  "customIdentifier": "transaction by john@example.com",
+  "transactionDate": "2018-06-26 07:43:36"
 										</code></pre></div>
-                            			<div id ="code-PHP" class="dropdownContent dropdownContent2"><pre><code>
-?php
+                            			<div id ="code-PHP" class="dropdownContent dropdownContent2"><pre><code>?php
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, "https://topups.reloadly.com/topups");
@@ -252,8 +243,7 @@ curl_close($ch);
 
 var_dump($response);
 										</code></pre></div>
-                           			 	<div id ="code-NodeJS" class="dropdownContent dropdownContent2"><pre><code>
-var request = require('request');
+                           			 	<div id ="code-NodeJS" class="dropdownContent dropdownContent2"><pre><code>var request = require('request');
 
 request({
   method: 'POST',
@@ -282,8 +272,7 @@ request({
   console.log('Response:', body);
 });
 										</code></pre></div>
-                            			<div id ="code-Ruby" class="dropdownContent dropdownContent2"><pre><code>
-require 'rubygems' if RUBY_VERSION < '1.9'
+                            			<div id ="code-Ruby" class="dropdownContent dropdownContent2"><pre><code>require 'rubygems' if RUBY_VERSION < '1.9'
 require 'rest_client'
 
 values = {
@@ -309,8 +298,7 @@ headers = {
 response = RestClient.post 'https://topups.reloadly.com/topups', values, headers
 puts responseResponse
 										</code></pre></div>
-                           		 		<div id ="code-Python" class="dropdownContent dropdownContent2"><pre><code>
-from urllib2 import Request, urlopen
+                           		 		<div id ="code-Python" class="dropdownContent dropdownContent2"><pre><code>from urllib2 import Request, urlopen
 
 values = """
 {
@@ -337,8 +325,7 @@ request = Request('https://topups.reloadly.com/topups', data=values, headers=hea
 response_body = urlopen(request).read()
 print response_bodyResponse 
 										</code></pre></div>
-                            			<div id ="code-Go" class="dropdownContent dropdownContent2"><pre><code>
-package main
+                            			<div id ="code-Go" class="dropdownContent dropdownContent2"><pre><code>package main
 
 import (
 	"bytes"
@@ -372,8 +359,7 @@ func main() {
 	fmt.Println(string(resp_body))
 }                           	
 										</code></pre></div>
-                           				<div id ="code-Java" class="dropdownContent dropdownContent2"><pre><code>
-import javax.ws.rs.client.Client;
+                           				<div id ="code-Java" class="dropdownContent dropdownContent2"><pre><code>import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Response;
@@ -403,8 +389,7 @@ System.out.println("status: " + response.getStatus());
 System.out.println("headers: " + response.getHeaders());
 System.out.println("body:" + response.readEntity(String.class)); 
 										</code></pre></div>
-                            			<div id ="code-C#" class="dropdownContent dropdownContent2"><pre><code>
-//Common testing requirement. If you are consuming an API in a sandbox/test region, uncomment this line of code ONLY for non production uses.
+                            			<div id ="code-C#" class="dropdownContent dropdownContent2"><pre><code>//Common testing requirement. If you are consuming an API in a sandbox/test region, uncomment this line of code ONLY for non production uses.
 //System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
 
 //Be sure to run "Install-Package Microsoft.Net.Http" from your nuget command line.
