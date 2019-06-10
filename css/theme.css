@@ -183,8 +183,8 @@ ol {
   list-style-position: inside;
 }
 blockquote {
-  font-size: 1.78571429em;
-  line-height: 1.5em;
+  font-size: 1.5em;
+  line-height: 1.6em;
   padding: 0;
   margin: 0;
   border-left: 0;
@@ -2930,6 +2930,9 @@ background-color:#fff;
 #secondary-page ul,
 #secondary-page a {
   color:#232D3D;
+}
+#secondary-page h3{
+  font-weight:bold;
 }
 #secondary-page .signup .btn__text{
   color:#232D3D;
@@ -6613,6 +6616,9 @@ a.block:hover > .feature {
 }
 .feature-8 img {
   max-height: 14.85714286em;
+  max-width:8em; 
+  border-radius:50%;
+
 }
 .feature-9 h4 {
   margin: 0;
@@ -6994,31 +7000,70 @@ a.block:hover > .feature {
     margin-top: 1.85714286em;
   }
 }
-/*! --About page - Team section -- */
-	.team{
-	margin:5em auto 5em;
+/*! --About page -- */
+.about-bgd{
+position:absolute;
+background-color:#F4F9F9;
+height:25em;
+width:100%;
+z-index:-700;
+transform: skewY(25deg);
+}
+.about-top{
+max-width:90%;
+margin:auto;
+}
+.about-text{
+float:left;
+margin-bottom:2em;
+padding-left:0;
+}
+.about-text:not(:last-child){
+margin-right:8em;
+
+}
+.horizontal-line{
+ border-top: 1px solid #FFE161;
+ max-width:50%;
+ margin:3em auto -2em;
+}
+.about-middle{
+	margin:1em auto 5em;
 	}
-	.team-members {
+.team-members {
 	display:grid;
-  	grid-template-columns: auto auto auto auto auto auto auto; 	
+  	grid-template-columns: auto auto auto auto auto auto; 	
 	padding: 1em 0 1em 0;
+	margin-top:-18em;
 	}
-/*! -- About page - contacts -- */
-	.office-contacts{
+.office-contacts{
+	margin-top:4em;
 	display:grid;
-	grid-template-columns: auto auto auto; 	
+	grid-template-columns: auto auto auto auto; 	
 	}
-	.office-contacts img{
+.office-contacts img{
 	margin-bottom:0;
+	max-width:235px;
 	}
-	.office-address{
+.office-address{
 	margin-top:-2em;
 	margin-bottom:3em;
 	}
-	.email-contacts{
+.email-contacts{
 	position:absolute;
 	top:40%;
 	right:10% ;
+	}
+.investors h3{
+	margin-bottom:2em;
+	}
+.investors-text{
+	position:absolute;
+	top:5em;
+	right:0;
+	}
+.investors-text p{
+	margin-bottom:1em;
 	}
 @media all and (max-width: 990px) {
 .team-members {
@@ -7031,10 +7076,6 @@ a.block:hover > .feature {
 	display:grid;
   	grid-template-columns: auto; 	
 	}
-.office-contacts{
-	display:grid;
-	grid-template-columns: auto; 	
-}
 }
 /*! -- Mobile App page -- */
 #secondary-page .badges li{
@@ -7058,6 +7099,10 @@ width:100%;
 z-index:-700;
 transform: skewY(-10deg);
 }
+.airtime-img-1{
+ transform:rotate(-25deg);
+ margin-left:7em;
+}
 .airtime-1{
 margin-bottom:4em;
 }
@@ -7065,52 +7110,68 @@ margin-bottom:4em;
 width:100px;
 float:left;
 }
-.airtime-rows{
-float:left;
-width:240px;
-margin-right: 4em;
-margin-left:2.5em;
-}
 .airtime-1 h3{
 font-weight:bold;
 padding-top:.8em;
+margin-bottom:1.5em;
 }
-.airtime-img-1{
- transform:rotate(-25deg);
- margin-left:7em;
+.airtime-rows{
+margin:0 2em 2em;
+display:grid;
+float:left;
 }
-.horizontal_dotted_line{
- border-bottom: .1em solid #FFE161;
- width:70%;
+.vertical_line{
+ border-right: .1em solid #FFE161;
+ height:20em;
+ width:50%;
 }
 .airtime-list{
 color:#232D3D;
-margin-top:4em;
+position:absolute;
+top:1.5em;
+right:0;
 margin-bottom:3em;
+}
+.airtime-list li{
+margin-bottom:1em;
+}
+.airtime-list-link{
+font-weight:bold;
 }
  #secondary-page .airtime-list span{
 color:#1fbad6;
 }
 .section-bgd{
 width:100%;
-height:22em;
+height:20em;
 background-color:#F4F9F9;
 z-index:-600;
 transform: skewY(5deg);
 }
 .airtime-quote{
+color:#232D3D;
 position:absolute;
-margin-top:-23em;
+margin-top:-22em;
 }
-.pricing-text{
-display:grid;
-grid-template-columns: auto auto auto; 	
+ #secondary-page .airtime-quote span{
+color:#1fbad6;
+display:table;
+margin:0 auto;
+}
+.airtime-2 .pricing-text{
+margin:2em 10% 2em;
+width:30%;
+float:left;
+}
+.airtime-2 .pricing-text img{
+width:5em;
+float:left;
 }
 /*! -- CTA section -- */
 .cta-bgd{
   background-color:#334054;
   width:100%;
-  padding:.5em 0 .5em 0;
+  padding:.5em 0 .5em;
   margin-bottom:1em;
     }
  #secondary-page .cta-bgd {
@@ -7914,6 +7975,7 @@ padding-right:1em;
   display: table;
   clear: both;
 }
+
 @media screen and (max-width: 1000px) {
 .row .process__body{
   height:13em;
