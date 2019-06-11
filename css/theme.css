@@ -4411,7 +4411,7 @@ ol.lead li:not(:last-child) {
 	max-width:50%;
 	}
 	#secondary-page .top-part{
-	margin-bottom:2em;
+
 	}
 	#secondary-page .top-part .btn span{
 	color:#232D3D;
@@ -7004,7 +7004,7 @@ a.block:hover > .feature {
 .about-bgd{
 position:absolute;
 background-color:#F4F9F9;
-height:25em;
+height:26em;
 width:100%;
 z-index:-700;
 transform: skewY(25deg);
@@ -7020,7 +7020,6 @@ padding-left:0;
 }
 .about-text:not(:last-child){
 margin-right:8em;
-
 }
 .horizontal-line{
  border-top: 1px solid #FFE161;
@@ -7038,6 +7037,7 @@ margin-right:8em;
 	}
 .office-contacts{
 	margin-top:4em;
+	margin-bottom:-7em;
 	display:grid;
 	grid-template-columns: auto auto auto auto; 	
 	}
@@ -7099,9 +7099,25 @@ width:100%;
 z-index:-700;
 transform: skewY(-10deg);
 }
+.top-buttons{
+margin-top:5em;
+}
+.top-buttons .btn--primary{
+background-color:#1fbad6;
+border-color:#1fbad6;
+}
+#secondary-page .top-buttons .btn--primary span{
+color:#fff;
+}
 .airtime-img-1{
- transform:rotate(-25deg);
- margin-left:7em;
+ transform:rotate(-20deg);
+ margin-left:4em;
+}
+.airtime-img-2{
+position:absolute;
+left:-28em;
+top:-10em;
+z-inidex:10;
 }
 .airtime-1{
 margin-bottom:4em;
@@ -7122,19 +7138,21 @@ float:left;
 }
 .vertical_line{
  border-right: .1em solid #FFE161;
- height:20em;
- width:50%;
+ height:18em;
+ width:53%;
 }
 .airtime-list{
 color:#232D3D;
 position:absolute;
-top:1.5em;
-right:0;
+top:0;
+right:3em;
 margin-bottom:3em;
 }
 .airtime-list li{
 margin-bottom:1em;
+margin-left:2em;
 }
+
 .airtime-list-link{
 font-weight:bold;
 }
@@ -7158,14 +7176,25 @@ color:#1fbad6;
 display:table;
 margin:0 auto;
 }
+.discounts{
+width:100%;
+margin:0 auto 2em;
+}
+.discounts h3{
+width:60%;
+margin:0 auto 1.5em;
+
+}
+.airtime-2 {
+max-width:100%;
+display:grid;
+grid-template-columns: auto auto auto auto;
+}
 .airtime-2 .pricing-text{
-margin:2em 10% 2em;
-width:30%;
-float:left;
+margin:1em 1em 1em;
 }
 .airtime-2 .pricing-text img{
-width:5em;
-float:left;
+width:8em;
 }
 /*! -- CTA section -- */
 .cta-bgd{
