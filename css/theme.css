@@ -4410,9 +4410,6 @@ ol.lead li:not(:last-child) {
 	line-height: 1.68421053em;
 	max-width:50%;
 	}
-	#secondary-page .top-part{
-
-	}
 	#secondary-page .top-part .btn span{
 	color:#232D3D;
 	}	
@@ -7099,14 +7096,15 @@ width:100%;
 z-index:-700;
 transform: skewY(-10deg);
 }
-.top-buttons{
+.top-button-1, .top-button-2{
 margin-top:5em;
+padding:.3em .7em .3em;
 }
-.top-buttons .btn--primary{
+#secondary-page .top-part .top-button-1{
 background-color:#1fbad6;
 border-color:#1fbad6;
 }
-#secondary-page .top-buttons .btn--primary span{
+#secondary-page .top-part .top-button-1 span{
 color:#fff;
 }
 .airtime-img-1{
