@@ -7129,6 +7129,9 @@ width:100px;
 float:left;
 margin-top:-1em;
 }
+.airtime-1{
+margin-top:-2em;
+}
 .airtime-1 h2{
 margin-bottom:2em;
 }
@@ -7187,7 +7190,7 @@ display:table;
 margin:0 auto;
 }
 .discounts{
-margin:0 auto 2em;
+margin:-2em auto 2em;
 }
 .discounts h3{
 width:60%;
@@ -7227,6 +7230,10 @@ padding:.3em .7em .3em;
 }
 .airtime-1 {
 margin-top:9em;
+}
+.airtime-getting-started-list img{
+margin-top:-2em;
+float:left;
 }
 .airtime-3 {
 display:grid;
