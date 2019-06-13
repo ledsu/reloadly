@@ -7196,6 +7196,11 @@ margin:-2em auto 2em;
 width:60%;
 margin:0 auto 1.5em;
 }
+.discounts h4{
+width:80%;
+margin-left:100px;
+}
+
 .airtime-3 {
 max-width:100%;
 display:grid;
