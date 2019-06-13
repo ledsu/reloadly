@@ -925,7 +925,7 @@ div[data-overlay] ul {
 .btn.bg--error .btn__text i {
   color: #fff;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1200px) {
   .btn + .btn {
     margin-left: 1.85714286em;
   }
@@ -4726,9 +4726,7 @@ h2 + .btn,
   margin-top: 0.92857143em;
 }
 /*! -- Images -- */
-img:last-child {
-  margin-bottom: 0;
-}
+
 img.flag {
   max-height: 1.85714286em;
 }
@@ -7009,19 +7007,24 @@ z-index:-700;
 transform: skewY(25deg);
 }
 .about-top{
-max-width:90%;
+max-width:100%;
 margin:auto;
 }
 .about-text{
 float:left;
 margin-bottom:2em;
-padding-left:0;
 }
 .about-text:not(:last-child){
 margin-right:8em;
 }
+.about-top-image{
+position:absolute;
+right:0;
+margin-top:2em;
+width:40%;
+}
 .horizontal-line{
- border-top: 2px solid #1FBAD6;
+ border-top: .12em solid #1FBAD6;
  max-width:50%;
  margin:3em auto -2em;
 }
@@ -7031,8 +7034,8 @@ margin-right:8em;
 .team-members {
 	display:grid;
   	grid-template-columns: auto auto auto auto auto auto; 	
-	padding: 1em 0 1em 0;
-	margin-top:-18em;
+	padding: 1em 0 1em;
+	margin:-18em 0 1em;
 	}
 .office-contacts{
 	margin-top:4em;
@@ -7041,7 +7044,6 @@ margin-right:8em;
 	grid-template-columns: auto auto auto auto; 	
 	}
 .office-contacts img{
-	margin-bottom:0;
 	max-width:235px;
 	}
 .office-address{
@@ -7100,14 +7102,10 @@ transform: skewY(-5deg);
 position:absolute;
 top:-25%;
 background-color:#F4F9F9;
-height:55em;
+height:45em;
 width:100%;
 z-index:-700;
 transform: skewY(-10deg);
-}
-.top-button-1, .top-button-2{
-margin-top:5em;
-padding:.3em .7em .3em;
 }
 #secondary-page .top-part .top-button-1{
 background-color:#1fbad6;
@@ -7124,7 +7122,6 @@ color:#fff;
 .airtime-img-2{
 position:absolute;
 left:-28em;
-z-inidex:10;
 }
 .title-icon{
 width:100px;
@@ -7138,6 +7135,13 @@ margin-bottom:2em;
 padding-top:.8em;
 margin-bottom:1.5em;
 }
+#secondary-page h4{
+margin-bottom:.7em;
+font-weight:600;
+}
+#secondary-page .airtime-1 p{
+font-size:1.1em;
+}
 .airtime-rows-list{
 display:grid;	
 grid-template-columns: auto auto auto; 	
@@ -7146,10 +7150,11 @@ grid-template-columns: auto auto auto;
 display:grid;	
 grid-template-columns: auto auto auto auto; 	
 color:#232D3D;
-margin-bottom:3em;
+margin:0 auto 2em;
+width:100%;
 }
 .airtime-rows{
-margin:0 4em 2em;
+margin:0 2.5em 2em;
 }
 #secondary-page .airtime-getting-started-list a{
 font-weight:600;
@@ -7160,15 +7165,15 @@ margin-top:7em;
 }
 .section-bgd{
 width:100%;
-height:20em;
+height:24em;
 background-color:#F4F9F9;
 z-index:-600;
 transform: skewY(5deg);
 }
 .airtime-quote{
 color:#232D3D;
-position:absolute;
-margin-top:-22em;
+margin-top:-26em;
+position:relative;
 }
  #secondary-page .airtime-quote span{
 color:#1fbad6;
@@ -7176,7 +7181,7 @@ display:table;
 margin:0 auto;
 }
 .discounts{
-margin-bottom:4em;
+margin-bottom:2em;
 }
 .discounts h3{
 width:60%;
@@ -7188,10 +7193,71 @@ display:grid;
 grid-template-columns: auto auto auto auto;
 }
 .airtime-3 .pricing-text{
-margin:1em 2em 1em;
+margin:0em auto 1em;
+}
+.airtime-3 .pricing-text p{
+margin:0 1.6em 0;
 }
 .airtime-3 .pricing-text img{
 width:8em;
+}
+@media all and (min-width: 991px) {
+.airtime-img-2{
+margin-top:-3em;
+left:-23em;
+}
+}
+@media all and (max-width: 990px) {
+.bgd{
+height:43em;
+}
+.airtime-img-2{
+margin-top:3em;
+left:-14em;
+}
+#secondary-page .top-part .top-button-1, #secondary-page .top-part .top-button-2{
+margin:3em 1em 2em;
+padding:.3em .7em .3em;
+}
+.airtime-1 {
+margin-top:9em;
+}
+.airtime-3 {
+display:grid;
+grid-template-columns: auto auto;
+}
+}
+@media all and (max-width: 767px) {
+.bgd{
+height:52em;
+}
+.airtime-img-1{
+margin-left:0;
+ margin-top:0;
+}
+.airtime-img-2{
+display:none;
+}
+.airtime-rows-list{
+display:grid;	
+grid-template-columns: auto; 	
+}
+.airtime-getting-started-list{
+display:grid;	
+grid-template-columns: auto; 	
+}
+.airtime-3 {
+display:grid;
+grid-template-columns: auto;
+}
+.airtime-1 {
+margin-top:0;
+}
+}
+@media all and (max-width: 490px) {
+.section-bgd{
+height:26em;
+}
 }
 /*! -- CTA section -- */
 .cta-bgd{
@@ -7208,7 +7274,7 @@ width:8em;
   margin-bottom: 1.85714286em;
 }
 .cta h3{
-margin-top:1.9em;
+margin-top:1.3em;
 margin-bottom:0;
 }
 .cta p{
@@ -7238,6 +7304,10 @@ height:12em;
   float:right;
   top:-7em;
   	}
+  	.cta h3{
+margin-top:1.1em;
+margin-bottom:0;
+}
 	.cta-1 > div[class*='col-'] {
     padding-left: 0;
     padding-right: 0;
