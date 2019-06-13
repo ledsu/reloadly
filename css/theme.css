@@ -7119,9 +7119,10 @@ color:#fff;
  margin-left:4em;
  margin-top:-6em;
 }
-.airtime-img-2{
+.airtime-top-line{
 position:absolute;
 left:-28em;
+margin-top:-1em;
 }
 .title-icon{
 width:100px;
@@ -7142,6 +7143,9 @@ font-weight:600;
 #secondary-page .airtime-1 p{
 font-size:1.1em;
 }
+.airtime-2 h2{
+margin-bottom:1em;
+}
 .airtime-rows-list{
 display:grid;	
 grid-template-columns: auto auto auto; 	
@@ -7150,8 +7154,10 @@ grid-template-columns: auto auto auto;
 display:grid;	
 grid-template-columns: auto auto auto auto; 	
 color:#232D3D;
-margin:0 auto 2em;
 width:100%;
+}
+.airtime-getting-started-list img{
+max-width:8em;
 }
 .airtime-rows{
 margin:0 2.5em 2em;
@@ -7202,8 +7208,8 @@ margin:0 1.6em 0;
 width:11em;
 }
 @media all and (min-width: 991px) {
-.airtime-img-2{
-margin-top:-3em;
+.airtime-top-line{
+margin-top:-7em;
 left:-23em;
 }
 }
@@ -7211,8 +7217,8 @@ left:-23em;
 .bgd{
 height:43em;
 }
-.airtime-img-2{
-margin-top:3em;
+.airtime-top-line{
+margin-top:-3em;
 left:-14em;
 }
 #secondary-page .top-part .top-button-1, #secondary-page .top-part .top-button-2{
@@ -7235,7 +7241,7 @@ height:52em;
 margin-left:0;
  margin-top:0;
 }
-.airtime-img-2{
+.airtime-top-line{
 display:none;
 }
 .airtime-rows-list{
@@ -7265,11 +7271,7 @@ height:26em;
   width:100%;
   padding:.5em 0 .5em;
   margin-bottom:1em;
-    }
- #secondary-page .cta-bgd {
-   background-color:#F4F9F9;
-   margin-top:5em;
- }
+}
 .cta .btn:first-child:not(:last-child) {
   margin-bottom: 1.85714286em;
 }
@@ -7290,6 +7292,9 @@ margin-bottom:0;
   .cta .cta-text{
 	top:1.3em;
     padding-right:5em;
+  }
+   #secondary-page  .cta .cta-text h3,  #secondary-page  .cta .cta-text p{
+	color:#fff;
   }
 }
 @media all and (min-width: 768px) {
@@ -7321,6 +7326,9 @@ margin-bottom:0;
     .cta-3 .switchable__text {
     margin-top: 5.57142857em;
 }
+   #secondary-page  .cta .cta-text h3,  #secondary-page  .cta .cta-text p{
+	color:#fff;
+  }
 }
 @media all and (max-width: 767px) {
 .cta-bgd{
@@ -7339,6 +7347,9 @@ text-align:center;
 	margin:2em auto 4em;
   }
 }
+   #secondary-page  .cta .cta-text h3,  #secondary-page  .cta .cta-text p{
+	color:#fff;
+  }
 @media all and (max-width: 435px) {
 .cta-bgd{
 height:17em;
