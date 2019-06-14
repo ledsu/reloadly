@@ -6572,7 +6572,7 @@ a.block:hover > .feature {
 }
 .row--gapless .feature-7:before {
   border-radius: 0;
-}
+}	
 @media all and (max-width: 767px) {
   .feature-7 .pos-vertical-center {
     top: 50%;
@@ -6615,8 +6615,8 @@ a.block:hover > .feature {
   max-height: 14.85714286em;
   max-width:8em; 
   border-radius:50%;
-
 }
+
 .feature-9 h4 {
   margin: 0;
 }
@@ -7010,16 +7010,19 @@ transform: skewY(25deg);
 max-width:100%;
 margin:auto;
 }
+.about-top h2{
+margin-left:.5em;
+}
 .about-text{
 float:left;
 margin-bottom:2em;
 }
 .about-text:not(:last-child){
-margin-right:8em;
+margin-right:5em;
 }
 .about-top-image{
 position:absolute;
-right:0;
+right:10%;
 margin-top:2em;
 width:40%;
 }
@@ -7029,30 +7032,37 @@ width:40%;
  margin:3em auto -2em;
 }
 .about-middle{
-	margin:1em auto 5em;
+	margin-top:4em auto 4em;
 	}
+.team-bgd{
+  background-color:#F4F9F9;
+  width:100%;
+  height:12em;
+  padding:.5em 0 .5em;
+  margin:8em auto 1em;
+}
 .team-members {
 	display:grid;
   	grid-template-columns: auto auto auto auto auto auto; 	
-	padding: 1em 0 1em;
-	margin:-18em 0 1em;
+	padding: 1em 0 4em;
+	margin:-18em 0 4em;
 	}
+#secondary-page .feature-8:hover{
+cursor:pointer;
+}
 .office-contacts{
 	margin-top:4em;
-	margin-bottom:-7em;
 	display:grid;
 	grid-template-columns: auto auto auto auto; 	
 	}
-.office-contacts img{
-	max-width:235px;
-	}
 .office-address{
-	margin-top:-2em;
+	margin-top:-3em;
 	margin-bottom:3em;
 	}
 .office-address img{
-max-width:13em;
-max-height:13em;
+max-width:14em;
+max-height:14em;
+margin-bottom:0;
 }
 .email-contacts{
 	position:absolute;
@@ -7063,13 +7073,18 @@ max-height:13em;
 	margin-bottom:2em;
 	}
 .investors-text{
-	position:absolute;
-	top:5em;
-	right:0;
+	float:left;
+	margin-left:-15px;
 	}
 .investors-text p{
 	margin-bottom:1em;
 	}
+.investors-presentation{
+position:absolute;
+top:2em;
+right:0;
+max-width:45%;
+}
 .investors-logos{
 	margin-top:5em;
 	}
@@ -7080,10 +7095,16 @@ max-height:13em;
 	}
 }
 @media all and (max-width: 767px) {
+.about-top-image{
+display:none;
+}
 .team-members {
 	display:grid;
   	grid-template-columns: auto; 	
 	}
+#secondary-page .about-text p{
+width:150%;
+}
 }
 /*! -- Mobile App page -- */
 #secondary-page .badges li{
