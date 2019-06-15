@@ -7049,6 +7049,9 @@ z-index:-701;
 color:#1FBAD6;
 margin-top:2em;
 }
+ #secondary-page .about-investors h4{
+ color:#1FBAD6;
+ }
 .team-bgd{
   background-color:#F4F9F9;
   width:100%;
@@ -7099,7 +7102,7 @@ margin-bottom:0;
 	}
 .investors-presentation{
 position:absolute;
-top:25em;
+top:26em;
 right:0;
 max-width:45%;
 }
