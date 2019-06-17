@@ -4574,7 +4574,7 @@ hr[data-title]:before {
 }
 .btn.type--uppercase .btn__text {
   letter-spacing: .5px;
-  margin-right: -0.5px;
+  margin:auto;
 }
 .btn .label {
   top: -0.92857143em;
@@ -7016,23 +7016,19 @@ z-index:20;
 transform: skewY(-7deg);
 }
 .about-top{
-max-width:100%;
+background-color:#fff;
 margin:auto;
+margin:2em;
+}
+.about-top p{
 float:left;
-margin-bottom:2em;
-}
-.about-top h2{
-margin-left:.5em;
-}
-.about-text .lead{
-margin-bottom:7em;
+width: 45%;
+margin:0 2em 1em;
 }
 .about-top-image{
-background-color:#334054;
 position:absolute;
-right:10%;
 margin-top:1em;
-width:40%;
+width:100%;
 z-index:-701;
 }
 .horizontal-line{
@@ -7278,7 +7274,7 @@ height:43em;
 margin-top:-2em;
 }
 .secondary-page .top-part .top-button-1, .secondary-page .top-part .top-button-2{
-margin:3em 1em 2em;
+margin:1em 1em 1em;
 padding:.3em .7em .3em;
 }
 .airtime-1 {
@@ -7349,27 +7345,31 @@ margin-left:8em;
 transform: rotate(-13deg);
 width:20em;
 }
-@media all and (max-width: 1100px) {
-.topup-icon{
-width:90%;
-right:-60%;
-}
+@media all and (max-width: 1199px) {
 #data-bundles .databundles-img1{
 margin-left:7em;
 }
 .databundles-1{
-width:20em;
-height:20em;
+width:25em;
+height:25em;
+}
+}
+@media all and (max-width: 990px) {
+.topup-icon{
+margin-right:-6em;
 }
 }
 @media all and (max-width: 767px) {
 .topup-icon{
+margin:3em auto 0;
+width:100%;
+right:0;
 
-margin:auto;
 }
 #data-bundles .databundles-img1{
-
 margin:1em auto 1em;
+width:75%;
+
 }
 }
 /*! -- CTA section -- */
@@ -7449,7 +7449,6 @@ text-align:center;
   }
   .cta .btn{
   text-align:center;
-    width:70%;
 	display:block;
 	margin:2em auto 4em;
   }
