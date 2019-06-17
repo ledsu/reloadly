@@ -59,6 +59,7 @@ a {
 /**! 02. Typography **/
 html {
   font-size: 87.5%;
+   overflow-y:scroll;
 }
 @media all and (max-width: 768px) {
   html {
@@ -5688,7 +5689,7 @@ nav a:hover{
   position: fixed;
   top: 2.8em;
   right: 1.85714286em;
-  z-index:1000;
+  z-index:9999;
   color:#fff;
   display: block;
   -webkit-user-select: none;
@@ -7363,11 +7364,11 @@ height:20em;
 }
 @media all and (max-width: 767px) {
 .topup-icon{
-width:80%;
+
 margin:auto;
 }
 #data-bundles .databundles-img1{
-width:15em;
+
 margin:1em auto 1em;
 }
 }
