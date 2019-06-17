@@ -2929,7 +2929,7 @@ background-color:#fff;
 .secondary-page h6,
 .secondary-page p,
 .secondary-page ul,
-.secondary-page a {
+.secondary-page a{
   color:#232D3D;
 }
 
@@ -4408,9 +4408,7 @@ ol.lead li:not(:last-child) {
 	margin-top:1em;
 	font-size:.9em;
 	}
-	.secondary-page .top-part p{
-	max-width:50%;
-	}
+
 	.secondary-page .top-part .lead{
 	font-size: 1.35714286em;
 	line-height: 1.68421053em;
@@ -7007,34 +7005,31 @@ width:100%;
 z-index:-700;
 transform: skewY(7deg);
 }
-.about-bgd-2{
-position:absolute;
-background-color:#F4F9F9;
-height:5em;
-width:100%;
-z-index:20;
-transform: skewY(-7deg);
-}
-.about-top{
-background-color:#fff;
-margin:auto;
-margin:2em;
-}
-.about-top p{
-float:left;
-width: 45%;
-margin:0 2em 1em;
-}
 .about-top-image{
 position:absolute;
-margin-top:1em;
+margin-top:-5em;
 width:100%;
-z-index:-701;
+right:0;
+z-index:-3;
+}
+.about-top{
+margin-top:12em;
+}
+.about-text{
+background-color:#fff;
+padding:6em 2em 2em;
+margin-top:-3em;
 }
 .horizontal-line{
  border-top: .12em solid #1FBAD6;
  max-width:50%;
  margin:-1.5em auto -2em;
+}
+#about .horizontal-line{
+ margin:3em auto -2em;
+}
+.about-text-2{
+margin:4em auto 0;
 }
 .about-middle{
 	margin:2em auto 0;
@@ -7044,9 +7039,6 @@ z-index:-701;
 color:#1FBAD6;
 margin-top:2em;
 }
- .secondary-page .about-investors h4{
- color:#1FBAD6;
- }
 .team-bgd{
   background-color:#F4F9F9;
   width:100%;
@@ -7064,7 +7056,7 @@ margin-top:2em;
 cursor:pointer;
 }
 .about-address{
-margin-top:10em;
+margin-top:3em;
 }
 .office-contacts{
 	margin-top:4em;
@@ -7080,33 +7072,36 @@ max-width:14em;
 max-height:14em;
 margin-bottom:0;
 }
-.email-contacts{
-	position:absolute;
-	top:40%;
-	right:10% ;
+.secondary-page .office-address span {
+color: #232D3D;
 	}
 .investors h3{
 	margin-bottom:2em;
 	}
-.investors-text{
-	float:left;
-	margin-left:-15px;
-	}
+.investors-logos{
+margin-left:-2em;
+}
 .investors-text p{
 	margin-bottom:1em;
+	float:left;
 	}
 .investors-presentation{
 position:absolute;
-top:26em;
 right:0;
-max-width:45%;
+margin-top:-35%;
 }
-
+.investors-text{
+margin:8em 1.5em -2em;
+}
+.investors-text-list{
+  display:grid;
+  grid-template-columns: auto auto auto; 	
+}
 @media all and (max-width: 990px) {
 .team-members {
 	display:grid;
   	grid-template-columns: auto auto auto; 	
-	}
+}
 }
 @media all and (max-width: 767px) {
 .about-top-image{
