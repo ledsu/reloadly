@@ -7195,9 +7195,10 @@ margin-top:-4em;
 width:100px;
 float:left;
 margin-top:-1em;
+margin-bottom:-1em;
 }
 .airtime-1{
-margin-top:-2em;
+margin-top:1em;
 }
 .airtime-1 h2{
 margin-bottom:2em;
@@ -7268,7 +7269,6 @@ margin:0 auto 1.5em;
 width:80%;
 margin-left:100px;
 }
-
 .airtime-3 {
 max-width:100%;
 display:grid;
@@ -7311,6 +7311,9 @@ grid-template-columns: auto auto;
 .bgd{
 height:52em;
 }
+.title-icon{
+width:20%;
+}
 .airtime-img-1{
 margin-left:0;
  margin-top:0;
@@ -7321,6 +7324,11 @@ display:none;
 .airtime-rows-list{
 display:grid;	
 grid-template-columns: auto; 	
+}
+.airtime-2 .airtime-rows img{
+width:100%;
+margin-left:30%;
+margin-right:30%;
 }
 .airtime-getting-started-list{
 display:grid;	
@@ -7336,10 +7344,14 @@ margin-top:0;
 }
 @media all and (max-width: 490px) {
 .section-bgd{
-height:26em;
+height:30em;
+}
+.airtime-quote{
+margin-top:-34em;
 }
 .discounts h4{
 margin-left:0;
+width:100%;
 }
 }
 /*! --  Data-bundles page  -- */
@@ -7465,7 +7477,7 @@ height:15em;
   .cta .cta-text{
 text-align:center;
   }
-  .cta .btn{
+  .cta .btn, .secondary-page .top-part .top-button-1, .secondary-page .top-part .top-button-2{
   text-align:center;
 	display:block;
 	margin:2em auto 4em;
