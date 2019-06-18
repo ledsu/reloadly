@@ -7097,33 +7097,65 @@ margin:8em 1.5em -2em;
 }
 @media all and (max-width: 767px) {
 .about-top-image{
+}
+.about-top{
+margin-top:1em;
+}
+.about-top h2{
+margin-left:.5em;
+}
+.about-middle{
+margin-top:0;
+}
+.team-bgd{
 display:none;
 }
 .team-members {
 	display:grid;
-  	grid-template-columns: auto; 	
+  	grid-template-columns: auto;
+  	margin-top:0; 
+  	margin-bottom:0;	
 	}
+.team-members .feature{
+margin-bottom:1em;
+}
 .secondary-page .about-text p{
 width:150%;
 }
+.investors-presentation{
+display:none;
+}
+.investors-logos h2, .about-address h2{
+float:left;
+margin-bottom:1em;
+}
+.investors-text-list{
+  display:grid;
+  grid-template-columns: auto; 	
+}
+.office-contacts{
+clear:both;
+	grid-template-columns: auto; 	
+}
 }
 /*! -- Mobile App page -- */
-.secondary-page .bgd{
-transform: skewY(35deg);
-top:-40%;
+#mobile-app .top-part{
+margin-bottom:4em;
 }
 .top-part .badges {
 width:150px;
 right:35%;
-transform: rotate(-55deg);
+margin-top:8em;
 position:absolute;
+transform: rotate(-10deg);
 z-index:5;
 }
 .mobile-app-img1{
 position:absolute;
 right:9%;
-transform: rotate(35deg);
+transform: rotate(-10deg);
 margin-top:-7em;
+width:20em;
 }
 .secondary-page .three-steps-2{
 transform: skewY(-5deg);
@@ -7131,9 +7163,8 @@ transform: skewY(-5deg);
 .secondary-page .three-steps-1, .secondary-page .three-steps-3{
 transform: skewY(0deg);
 }
-
 /*-- Airtime page-- */
-#airtime .bgd{
+ .bgd{
 position:absolute;
 top:-25%;
 background-color:#F4F9F9;
@@ -7426,7 +7457,7 @@ margin-bottom:0;
 }
 @media all and (max-width: 767px) {
 .cta-bgd{
-height:13em;
+height:15em;
 }
   .cta .lead {
     margin: 1.36842105263158em 0;
