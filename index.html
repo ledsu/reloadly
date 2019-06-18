@@ -190,243 +190,117 @@
                             	<div class="dropdown">
                             		<button onclick="cURLFunction()" id="codeBtn-cURL" class="dropbtn">cURL</button>
                             		<button onclick="PHPFunction()" id="codeBtn-PHP" class="dropbtn">PHP</button>
-                            		<button onclick="NodeJSFunction()" id="codeBtn-NodeJS" class="dropbtn">NodeJS</button>
                             		<button onclick="RubyFunction()" id="codeBtn-Ruby" class="dropbtn">Ruby</button>
-                            		<button onclick="PythonFunction()" id="codeBtn-Python" class="dropbtn">Python</button>
-                            		<button onclick="GoFunction()" id="codeBtn-Go" class="dropbtn">Go</button>
                             		<button onclick="JavaFunction()" id="codeBtn-Java" class="dropbtn">Java</button>
-                            		<button onclick="CFunction()" id="codeBtn-C#" class="dropbtn">C#</button>
                             		
-                            		<div id ="code-cURL" class="dropdownContent"><pre><code>  "transactionId": 1,
-  "recipientPhone": "50936377111",
-  "senderPhone": "13059547862",
-  "countryCode": "HT",
-  "operatorId": 173,
-  "requestedAmount": 15,
-  "requestedAmountCurrencyCode": "USD",
-  "deliveredAmount": 997.2,
-  "deliveredAmountCurrencyCode": "HTG",
-  "customIdentifier": "transaction by john@example.com",
-  "transactionDate": "2018-06-26 07:43:36"
+                            		<div id ="code-cURL" class="dropdownContent">
+                            		<pre><code><span class="text-danger">"transactionId"</span> <span class="text-light">:</span> <span class="text-warning">1</span><span class="text-light">,</span>
+ <span class="text-danger">"recipientPhone"</span> <span class="text-light">:</span> <span class="text-info">"50936377111"</span><span class="text-light">,</span>
+  <span class="text-danger">"senderPhone"</span><span class="text-light">:</span> <span class="text-info">"13059547862"</span><span class="text-light">,</span>
+  <span class="text-danger">"countryCode"</span><span class="text-light">:</span> <span class="text-info">"HT"</span><span class="text-light">,</span>
+  <span class="text-danger">"operatorId"</span><span class="text-light">:</span> <span class="text-warning">173</span><span class="text-light">,</span>
+  <span class="text-danger">"requestedAmount"</span><span class="text-light">:</span> <span class="text-warning">15</span><span class="text-light">,</span>
+  <span class="text-danger">"requestedAmountCurrencyCode"</span><span class="text-light">:</span> <span class="text-info">"USD"</span><span class="text-light">,</span>
+  <span class="text-danger">"deliveredAmount"</span><span class="text-light">:</span> <span class="text-warning">997.2</span><span class="text-light">,</span>
+  <span class="text-danger">"deliveredAmountCurrencyCode"</span><span class="text-light">:</span> <span class="text-info">"HTG"</span><span class="text-light">,</span>
+  <span class="text-danger">"customIdentifier"</span><span class="text-light">:</span> <span class="text-info">"transaction by john@example.com"</span><span class="text-light">,</span>
+  <span class="text-danger">"transactionDate"</span><span class="text-light">:</span> <span class="text-info">"2018-06-26 07:43:36"</span>
 										</code></pre></div>
-                            			<div id ="code-PHP" class="dropdownContent dropdownContent2"><pre><code>?php
-$ch = curl_init();
+                            			<div id ="code-PHP" class="dropdownContent dropdownContent2">
+                            			<pre><code><span class="text-light">&lt? php</span>
+<span class="text-light">$ch</span><span class="text-danger"> = </span><span class="text-info">curl_init</span><span class="text-light">();</span>
 
-curl_setopt($ch, CURLOPT_URL, "https://topups.reloadly.com/topups");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_HEADER, FALSE);
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_URL</span><span class="text-light">,</span> <span class="text-warning">"https://topups.reloadly.com/topups"</span><span class="text-light">);</span>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_RETURNTRANSFER</span><span class="text-light">,</span> <span class="text-danger">TRUE</span><span class="text-light">);</span>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_HEADER</span><span class="text-light">,</span> <span class="text-danger">FALSE<span class="text-light">);</span>
 
-curl_setopt($ch, CURLOPT_POST, TRUE);
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_POST</span><span class="text-light">,</span> <span class="text-danger">TRUE<span class="text-light">);</span>
 
-curl_setopt($ch, CURLOPT_POSTFIELDS, {
-  \"recipientPhone\": {
-    \"countryCode\": \"HT\",
-    \"number\": \"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_POSTFIELDS</span><span class="text-light">,</span> <span class="text-light">{</span>
+  <span class="text-warning">\"recipientPhone\"</span><span class="text-danger">:</span> <span class="text-light">{</span>
+    <span class="text-warning">\"countryCode\"</span><span class="text-danger">: <span class="text-warning">\"HT\"</span><span class="text-light">,
+    <span class="text-warning">\"number\"</span><span class="text-danger">:</span> <span class="text-warning">\"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)</span>
   },
-  \"senderPhone\": {
-    \"countryCode\": \"US\",
-    \"number\": \"+13059547862\" //(Note the \"+1\" country dialing code for USA)
-  },
-  \"operatorId\": 173,
-  \"amount\": 15,
-  \"customIdentifier\": \"transaction by john@example.com\"
-});
+  <span class="text-warning">\"senderPhone\"</span><span class="text-danger">:</span> <span class="text-light">{</span>
+    <span class="text-warning">\"countryCode\"</span><span class="text-danger">:</span> <span class="text-warning">\"US\"</span><span class="text-light">,</span>
+    <span class="text-warning">\"number\"</span><span class="text-danger">:</span> <span class="text-warning">\"+13059547862\" //(Note the \"+1\" country dialing code for USA)</span><span class="text-light">
+  },</span>
+  <span class="text-warning">\"operatorId\"</span><span class="text-danger">:</span> 173<span class="text-light">,</span>
+  <span class="text-warning">\"amount\"</span><span class="text-danger">:</span> 15<span class="text-light">,</span>
+  <span class="text-warning">\"customIdentifier\"</span><span class="text-danger">:</span> <span class="text-warning">\"transaction by john@example.com\"</span>
+<span class="text-light">});</span>
 
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-  "Content-Type: application/json",
-  "Accept: application/com.reloadly.topups-v1+json",
-  "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa"
-));
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_HTTPHEADER</span><span class="text-light">,</span> array<span class="text-light">(</span>
+  <span class="text-warning">"Content-Type: application/json"</span><span class="text-light">,</span>
+  <span class="text-warning">"Accept: application/com.reloadly.topups-v1+json"</span><span class="text-light">,</span>
+  <span class="text-warning">"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa"</span>
+<span class="text-light">));
 
-$response = curl_exec($ch);
-curl_close($ch);
+$response</span> <span class="text-danger">=</span> <span class="text-info">curl_exec</span><span class="text-light">($ch);</span>
+<span class="text-info">curl_close</span><span class="text-light">($ch);</span>
 
-var_dump($response);
+<span class="text-info">var_dump</span><span class="text-light">($response</span><span class="text-light">);</span>
 										</code></pre></div>
-                           			 	<div id ="code-NodeJS" class="dropdownContent dropdownContent2"><pre><code>var request = require('request');
+                           			 	
+                            			<div id ="code-Ruby" class="dropdownContent dropdownContent2"><pre><code><span class="text-info">require 'rubygems'</span> <span class="text-danger">if</span> <span class="text-info">RUBY_VERSION</span> <span class="text-light">&lt;</span> <span class="text-info">'1.9'</span>
+<span class="text-info">require 'rest_client'</span>
 
-request({
-  method: 'POST',
-  url: 'https://topups.reloadly.com/topups',
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/com.reloadly.topups-v1+json',
-    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa'
-  },
-  body: "{
-  \"recipientPhone\": {
-    \"countryCode\": \"HT\",
-    \"number\": \"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)
-  },
-  \"senderPhone\": {
-    \"countryCode\": \"US\",
-    \"number\": \"+13059547862\" //(Note the \"+1\" country dialing code for USA)
-  },
-  \"operatorId\": 173,
-  \"amount\": 15,
-  \"customIdentifier\": \"transaction by john@example.com\"
-}"
-}, function (error, response, body) {
-  console.log('Status:', response.statusCode);
-  console.log('Headers:', JSON.stringify(response.headers));
-  console.log('Response:', body);
-});
+<span class="text-success">values</span> <span class="text-light">= {</span>
+  <span class="text-danger">"recipientPhone"</span><span class="text-light">: {</span>
+    <span class="text-danger">"countryCode"</span><span class="text-light">:</span> <span class="text-info">"HT"</span><span class="text-light">,</span>
+    <span class="text-danger">"number"<span class="text-light">: </span><span class="text-info">"+50936377111" </span><span class="text-light">//(Note the "+509" country dialing code for Haiti)</span>
+  <span class="text-light">},</span>
+  <span class="text-danger">"senderPhone"</span><span class="text-light">: {</span>
+    <span class="text-danger">"countryCode"</span><span class="text-light">:</span><span class="text-info"> "US"</span><span class="text-light">,</span>
+    <span class="text-danger">"number"</span><span class="text-light">:</span><span class="text-info"> "+13059547862"</span> <span class="text-light">//(Note the "+1" country dialing code for USA)</span>
+  <span class="text-light">},</span>
+  <span class="text-danger">"operatorId"</span><span class="text-light">:</span> <span class="text-info">173</span><span class="text-light">,</span>
+  <span class="text-danger">"amount"</span><span class="text-light">:</span> <span class="text-info">15</span><span class="text-light">,</span>
+  <span class="text-danger">"customIdentifier"</span><span class="text-light">:</span> <span class="text-info">"transaction by john@example.com"</span>
+<span class="text-light">}</span>
+
+<span class="text-success">headers</span> <span class="text-light">= {</span>
+ <span class="text-light"> :</span><span class="text-danger">content_type</span> <span class="text-light">=></span> <span class="text-info">'application/json'<span class="text-light">,</span>
+ <span class="text-light"> :</span><span class="text-danger">accept</span> <span class="text-light">=></span> <span class="text-info">'application/com.reloadly.topups-v1+json'<span class="text-light">,</span>
+ <span class="text-light"> :</span><span class="text-danger">authorization</span> <span class="text-light">=></span> <span class="text-info">'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa'</span>
+<span class="text-light">}</span>
+
+<span class="text-success">response</span> <span class="text-light">=</span> <span class="text-info">RestClient</span><span class="text-light">.</span><span class="text-info">post</span> <span class="text-info">'https://topups.reloadly.com/topups'</span><span class="text-light">,</span> values<span class="text-light">,</span> headers
+<span class="text-info">puts</span> responseResponse
 										</code></pre></div>
-                            			<div id ="code-Ruby" class="dropdownContent dropdownContent2"><pre><code>require 'rubygems' if RUBY_VERSION < '1.9'
-require 'rest_client'
+                           		 		
+                           				<div id ="code-Java" class="dropdownContent dropdownContent2">
+                           				<pre><code><span class="text-info">import javax.ws.rs.client.Client</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.client.ClientBuilder</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.client.Entity</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.core.Response</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.core.MediaType</span><span class="text-light">;</span>
 
-values = {
-  "recipientPhone": {
-    "countryCode": "HT",
-    "number": "+50936377111" //(Note the "+509" country dialing code for Haiti)
-  },
-  "senderPhone": {
-    "countryCode": "US",
-    "number": "+13059547862" //(Note the "+1" country dialing code for USA)
-  },
-  "operatorId": 173,
-  "amount": 15,
-  "customIdentifier": "transaction by john@example.com"
-}
+<span class="text-info">Client</span> <span class="text-danger">client <span class="text-secondary">=</span><span class="text-info"> ClientBuilder</span><span class="text-secondary">.</span><span class="text-light">newClient()<span class="text-light">;</span>
+<span class="text-info">Entity</span> <span class="text-danger">payload <span class="text-secondary">=</span><span class="text-info"> Entity</span><span class="text-secondary">.</span><span class="text-info">json<span class="text-light">("{</span>
+  <span class="text-danger">\"recipientPhone\"</span><span class="text-light">:</span> <span class="text-light">{</span>
+   <span class="text-danger"> \"countryCode\"</span><span class="text-light">:</span><span class="text-info"> \"HT\"</span><span class="text-light">,</span>
+   <span class="text-danger"> \"number\"</span><span class="text-light">:</span><span class="text-info"> \"+50936377111\" </span><span class="text-light">//(Note the \"+509\" country dialing code for Haiti)
+  },</span>
+ <span class="text-danger"> \"senderPhone\"</span><span class="text-light">:</span> <span class="text-light">{</span>
+   <span class="text-danger"> \"countryCode\"</span><span class="text-light">:</span><span class="text-info"> \"US\"</span><span class="text-light">,</span>
+   <span class="text-danger"> \"number\"</span><span class="text-light">:</span><span class="text-info"> \"+13059547862\" </span><span class="text-light">//(Note the \"+1\" country dialing code for USA)
+  },</span>
+ <span class="text-danger"> \"operatorId\"</span><span class="text-light">:</span><span class="text-info"> 173</span><span class="text-light">,</span>
+  <span class="text-danger">\"amount\"</span><span class="text-light">:</span><span class="text-info"> 15</span><span class="text-light">,</span>
+  <span class="text-danger">\"customIdentifier\"</span><span class="text-light">:</span> <span class="text-info">\"transaction by john@example.com\"</span>
+<span class="text-light">}");</span>
+<span class="text-info">Response</span> <span class="text-danger">response <span class="text-secondary">=</span> client</span><span class="text-secondary">.</span><span class="text-success">target<span class="text-light">(</span><span class="text-info">"https://topups.reloadly.com/topups"</span><span class="text-light">)</span>
+  <span class="text-secondary">.</span><span class="text-success">request<span class="text-light">(</span><span class="text-info">MediaType</span><span class="text-secondary">.</span><span class="text-danger">APPLICATION_JSON_TYPE<span class="text-light">)</span>
+  <span class="text-secondary">.</span><span class="text-success">header<span class="text-light">(</span><span class="text-info">"Accept"</span><span class="text-light">,</span> <span class="text-info">"application/com.reloadly.topups-v1+json"<span class="text-light">)</span>
+  <span class="text-secondary">.</span><span class="text-success">header<span class="text-light">(</span><span class="text-info">"Authorization"</span><span class="text-light">,</span> <span class="text-info">"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa"<span class="text-light">)</span>
+  <span class="text-secondary">.</span><span class="text-success">post<span class="text-light">(</span><span class="text-info">payload</span><span class="text-light">)<span class="text-light">;</span>
 
-headers = {
-  :content_type => 'application/json',
-  :accept => 'application/com.reloadly.topups-v1+json',
-  :authorization => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa'
-}
-
-response = RestClient.post 'https://topups.reloadly.com/topups', values, headers
-puts responseResponse
+<span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"status: "</span><span class="text-secondary"> + </span><span class="text-info">response<span class="text-secondary">.</span><span class="text-light">getStatus());</span>
+<span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"headers: "</span><span class="text-secondary"> +</span><span class="text-info"> response<span class="text-secondary">.</span><span class="text-light">getHeaders());</span>
+<span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"body:"</span> <span class="text-secondary">+ </span><span class="text-info">response<span class="text-secondary">.</span><span class="text-light">readEntity(<span class="text-info">String.class</span><span class="text-light">)); </span>
 										</code></pre></div>
-                           		 		<div id ="code-Python" class="dropdownContent dropdownContent2"><pre><code>from urllib2 import Request, urlopen
-
-values = """
-{
-  "recipientPhone": {
-    "countryCode": "HT",
-    "number": "+50936377111" //(Note the "+509" country dialing code for Haiti)
-  },
-  "senderPhone": {
-    "countryCode": "US",
-    "number": "+13059547862" //(Note the "+1" country dialing code for USA)
-  },
-  "operatorId": 173,
-  "amount": 15,
-  "customIdentifier": "transaction by john@example.com"
-}"""
-
-headers = {
-  'Content-Type': 'application/json',
-  'Accept': 'application/com.reloadly.topups-v1+json',
-  'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa'
-}
-request = Request('https://topups.reloadly.com/topups', data=values, headers=headers)
-
-response_body = urlopen(request).read()
-print response_bodyResponse 
-										</code></pre></div>
-                            			<div id ="code-Go" class="dropdownContent dropdownContent2"><pre><code>package main
-
-import (
-	"bytes"
-	"fmt"
-	"io/ioutil"
-	"net/http"
-)
-
-func main() {
-	client := &http.Client{}
-
-	body := []byte({\n  \"recipientPhone\": {\n    \"countryCode\": \"HT\",\n    \"number\": \"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)\n  },\n  \"senderPhone\": {\n    \"countryCode\": \"US\",\n    \"number\": \"+13059547862\" //(Note the \"+1\" country dialing code for USA)\n  },\n  \"operatorId\": 173,\n  \"amount\": 15,\n  \"customIdentifier\": \"transaction by john@example.com\"\n})
-
-	req, _ := http.NewRequest("POST", "https://topups.reloadly.com/topups", bytes.NewBuffer(body))
-
-	req.Header.Add("Content-Type", "application/json")
-	req.Header.Add("Accept", "application/com.reloadly.topups-v1+json")
-	req.Header.Add("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa")
-
-	resp, err := client.Do(req)
-
-	if err != nil {
-		fmt.Println("Errored when sending request to the server")
-		return
-	}
-
-	defer resp.Body.Close()
-	resp_body, _ := ioutil.ReadAll(resp.Body)
-
-	fmt.Println(resp.Status)
-	fmt.Println(string(resp_body))
-}                           	
-										</code></pre></div>
-                           				<div id ="code-Java" class="dropdownContent dropdownContent2"><pre><code>import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.Entity;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.MediaType;
-
-Client client = ClientBuilder.newClient();
-Entity payload = Entity.json("{
-  \"recipientPhone\": {
-    \"countryCode\": \"HT\",
-    \"number\": \"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)
-  },
-  \"senderPhone\": {
-    \"countryCode\": \"US\",
-    \"number\": \"+13059547862\" //(Note the \"+1\" country dialing code for USA)
-  },
-  \"operatorId\": 173,
-  \"amount\": 15,
-  \"customIdentifier\": \"transaction by john@example.com\"
-}");
-Response response = client.target("https://topups.reloadly.com/topups")
-  .request(MediaType.APPLICATION_JSON_TYPE)
-  .header("Accept", "application/com.reloadly.topups-v1+json")
-  .header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa")
-  .post(payload);
-
-System.out.println("status: " + response.getStatus());
-System.out.println("headers: " + response.getHeaders());
-System.out.println("body:" + response.readEntity(String.class)); 
-										</code></pre></div>
-                            			<div id ="code-C#" class="dropdownContent dropdownContent2"><pre><code>//Common testing requirement. If you are consuming an API in a sandbox/test region, uncomment this line of code ONLY for non production uses.
-//System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
-
-//Be sure to run "Install-Package Microsoft.Net.Http" from your nuget command line.
-using System;
-using System.Net.Http;
-
-var baseAddress = new Uri("https://topups.reloadly.com/");
-
-using (var httpClient = new HttpClient{ BaseAddress = baseAddress })
-{
-
-  
-  httpClient.DefaultRequestHeaders.TryAddWithoutValidation("accept", "application/com.reloadly.topups-v1+json");
-  
-  httpClient.DefaultRequestHeaders.TryAddWithoutValidation("authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa");
-  
-    using (var content = new StringContent("{
-  \"recipientPhone\": {
-    \"countryCode\": \"HT\",
-    \"number\": \"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)
-  },
-  \"senderPhone\": {
-    \"countryCode\": \"US\",
-    \"number\": \"+13059547862\" //(Note the \"+1\" country dialing code for USA)
-  },
-  \"operatorId\": 173,
-  \"amount\": 15,
-  \"customIdentifier\": \"transaction by john@example.com\"
-}", System.Text.Encoding.Default, "application/json"))
-    {
-      using (var response = await httpClient.PostAsync("topups", content))
-      {
-        string responseData = await response.Content.ReadAsStringAsync();
-      }
-  }
-}
-										</code></pre></div>        
+                            			
                         			</div>
                         		</div>
                          </div>
@@ -661,84 +535,28 @@ using (var httpClient = new HttpClient{ BaseAddress = baseAddress })
 			function cURLFunction(){		
 				document.getElementById('code-cURL').style.display = "block";
 				document.getElementById('code-PHP').style.display = "none";
-				document.getElementById('code-NodeJS').style.display = "none";
 				document.getElementById('code-Ruby').style.display = "none";
-				document.getElementById('code-Python').style.display = "none";
-				document.getElementById('code-Go').style.display = "none";
 				document.getElementById('code-Java').style.display = "none";
-				document.getElementById('code-C#').style.display = "none";
 			}
 			function PHPFunction(){
 				document.getElementById('code-cURL').style.display = "none";
 				document.getElementById('code-PHP').style.display = "block";
-				document.getElementById('code-NodeJS').style.display = "none";
 				document.getElementById('code-Ruby').style.display = "none";
-				document.getElementById('code-Python').style.display = "none";
-				document.getElementById('code-Go').style.display = "none";
 				document.getElementById('code-Java').style.display = "none";
-				document.getElementById('code-C#').style.display = "none";
-				}
-			function NodeJSFunction(){
-					document.getElementById('code-cURL').style.display = "none";
-					document.getElementById('code-PHP').style.display = "none";
-					document.getElementById('code-NodeJS').style.display = "block";
-				document.getElementById('code-Ruby').style.display = "none";
-				document.getElementById('code-Python').style.display = "none";
-				document.getElementById('code-Go').style.display = "none";
-				document.getElementById('code-Java').style.display = "none";
-				document.getElementById('code-C#').style.display = "none";
 				}
 			function RubyFunction(){
 					document.getElementById('code-cURL').style.display = "none";
 					document.getElementById('code-PHP').style.display = "none";
-					document.getElementById('code-NodeJS').style.display = "none";
 				document.getElementById('code-Ruby').style.display = "block";
-				document.getElementById('code-Python').style.display = "none";
-				document.getElementById('code-Go').style.display = "none";
 				document.getElementById('code-Java').style.display = "none";
-				document.getElementById('code-C#').style.display = "none";
 				}				
-			function PythonFunction(){
-					document.getElementById('code-cURL').style.display = "none";
-					document.getElementById('code-PHP').style.display = "none";
-					document.getElementById('code-NodeJS').style.display = "none";
-				document.getElementById('code-Ruby').style.display = "none";
-				document.getElementById('code-Python').style.display = "block";
-				document.getElementById('code-Go').style.display = "none";
-				document.getElementById('code-Java').style.display = "none";
-				document.getElementById('code-C#').style.display = "none";		
-			} 
-			function GoFunction(){
-					document.getElementById('code-cURL').style.display = "none";
-					document.getElementById('code-PHP').style.display = "none";
-					document.getElementById('code-NodeJS').style.display = "none";
-				document.getElementById('code-Ruby').style.display = "none";
-				document.getElementById('code-Python').style.display = "none";
-				document.getElementById('code-Go').style.display = "block";
-				document.getElementById('code-Java').style.display = "none";
-				document.getElementById('code-C#').style.display = "none";		
-			} 
 			function JavaFunction(){
 					document.getElementById('code-cURL').style.display = "none";
 					document.getElementById('code-PHP').style.display = "none";
-					document.getElementById('code-NodeJS').style.display = "none";
 				document.getElementById('code-Ruby').style.display = "none";
-				document.getElementById('code-Python').style.display = "none";
-				document.getElementById('code-Go').style.display = "none";
 				document.getElementById('code-Java').style.display = "block";
-				document.getElementById('code-C#').style.display = "none";		
 			} 
-			function CFunction(){
-					document.getElementById('code-cURL').style.display = "none";
-					document.getElementById('code-PHP').style.display = "none";
-					document.getElementById('code-NodeJS').style.display = "none";
-				document.getElementById('code-Ruby').style.display = "none";
-				document.getElementById('code-Python').style.display = "none";
-				document.getElementById('code-Go').style.display = "none";
-				document.getElementById('code-Java').style.display = "none";
-				document.getElementById('code-C#').style.display = "block";		
-			} 
-			          
+			
 </script>
  </body>
 </html>
