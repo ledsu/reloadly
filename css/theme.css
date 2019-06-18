@@ -2932,7 +2932,9 @@ background-color:#fff;
 .secondary-page a{
   color:#232D3D;
 }
-
+.secondary-page span{
+  color:#232D3D;
+}
 .secondary-page .signup .btn__text{
   color:#232D3D;
 }
@@ -7394,13 +7396,40 @@ margin-right:-6em;
 margin:3em auto 0;
 width:100%;
 right:0;
-
 }
 #data-bundles .databundles-img1{
 margin:1em auto 1em;
 width:75%;
-
 }
+}
+/*! -- Signup page -- */
+#signup .bgd, #login .bgd{
+transform: skewY(30deg);
+}
+#signup a{
+font-weight:600;
+}
+#signup h1{
+margin:-2em auto 1em;
+}
+#signup form{
+margin-top:2em;
+}
+/*! -- Login page -- */
+.forgot-password{
+float:left;
+}
+.forgot-password li:last-child{
+margin-top:-1.85714286em;
+}
+.login-fb, .already-account{
+margin-top:2em;
+}
+.login-fb a{
+font-weight:600;
+}
+#login h1{
+margin:2em auto 1em;
 }
 /*! -- CTA section -- */
 .cta-bgd{
