@@ -7402,7 +7402,7 @@ margin:1em auto 1em;
 width:75%;
 }
 }
-/*! -- Signup page -- */
+/*! -- Signup & Login pages -- */
 #signup .bgd, #login .bgd{
 transform: skewY(30deg);
 }
@@ -7415,7 +7415,6 @@ margin:-2em auto 1em;
 #signup form{
 margin-top:2em;
 }
-/*! -- Login page -- */
 .forgot-password{
 float:left;
 }
@@ -7430,6 +7429,14 @@ font-weight:600;
 }
 #login h1{
 margin:2em auto 1em;
+}
+@media all and (max-width: 767px) {
+#login h1{
+margin:0 auto 1em;
+}
+#signup h1{
+margin:0 auto 1em;
+}
 }
 /*! -- CTA section -- */
 .cta-bgd{
