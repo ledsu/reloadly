@@ -3,10 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 810.9 575.1" style="enable-background:new 0 0 810.9 575.1;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFE161;stroke-width:2;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#1EB9D5;stroke-width:2;stroke-miterlimit:10;}
-	.st2{clip-path:url(#SVGID_2_);fill:none;stroke:#FFE161;stroke-width:2;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFE161;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#1EB9D5;stroke-width:3;stroke-miterlimit:10;}
+	.st2{clip-path:url(#SVGID_2_);fill:none;stroke:#FFE161;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#231F20;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <title>homepic2</title>
 <polyline class="st0" points="498.6,248 501.9,253.8 478.5,294.2 431.8,294.2 408.4,253.8 431.8,213.3 478.5,213.3 492.2,237 "/>
@@ -41,14 +41,16 @@
 <polyline class="st0" points="203.2,401.6 201.5,408 156.4,420.1 123.3,387.1 135.4,341.9 180.5,329.8 213.6,362.9 206.5,389.3 "/>
 <g>
 	<g>
-		<defs>
-			<rect id="SVGID_1_" x="178.2" y="218" width="47.1" height="76.9"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-		</clipPath>
-		<polyline class="st2" points="258.4,238.7 261.6,244.3 239.1,283.2 194.2,283.2 171.7,243.3 194.2,204.4 239.1,205.4 252.3,228.1 
-					"/>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="178.2" y="218" width="47.1" height="76.9"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<polyline class="st2" points="258.4,238.7 261.6,244.3 239.1,283.2 194.2,283.2 171.7,243.3 194.2,204.4 239.1,205.4 
+				252.3,228.1 			"/>
+		</g>
 	</g>
 </g>
 <g>
