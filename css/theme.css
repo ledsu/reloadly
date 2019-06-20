@@ -5677,7 +5677,6 @@ display:none;
 }
 
 nav{
-  overflow-x: hidden;
   overflow-y: auto;
 }
 nav a{
