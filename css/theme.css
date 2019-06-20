@@ -5590,6 +5590,9 @@ body.dropdowns--hover .nav-sidebar-column .dropdown:hover > .dropdown__container
 .nav-container .bar__module .btn{
 display:none;
 }
+.nav-container{
+overflow-y:auto;
+}
 }
 /*! -- Nav Fullscreen -- */
 .menu-fullscreen {
