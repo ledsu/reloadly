@@ -71,10 +71,11 @@
                
                 <section>
                          <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-md-8 col-lg-7">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-5">
                                             <div class="text-center">
-                                                <h1>Sign up now!</h1>
+                                                <h2>Start coding</h2>
+                                                <p class="">Create an account, grab your API key and test for free.</p>
                                                 <form>
                                                     <div class="row">
                                                         <div class="col-12">
@@ -324,12 +325,18 @@
                                                             </div>
                                                             <span>Remember Me</span>
                                                         </div>
+                                                        <div class="g-recaptcha" id="rcaptcha"  data-sitekey="site key"></div>
+												<span id="captcha" style="color:red" /></span> <!-- this will show captcha errors -->
                                                         <div class="col-12">
                                                             <button type="submit" class="btn type--uppercase btn--primary">Create Account</button>
                                                         </div>
                                                         <hr />
                                                         <div class="col-12">
-                                                            <span class="type--fine-print">By signing up, you agree to the
+                                                        <div class="input-checkbox terms-agree">
+                                                                <input type="checkbox" name="agree" />
+                                                                <label></label>
+                                                            </div>
+                                                            <span class="type--fine-print">By signing up, I agree to the
                                                                 <a href="#">Terms of Service</a>
                                                             </span>
                                                         </div>
@@ -345,7 +352,9 @@
                                     </div><!--end of row-->
                                 </div><!--end of container-->
                             </section>
-
+                            <section>
+							<div class="vl"></div>
+							</section>
             <footer class="space--sm footer-1 text-center-xs ">
              <div class="container">
                     <div class="row">
@@ -435,6 +444,36 @@
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+function get_action(form) 
+{
+    var v = grecaptcha.getResponse();
+    if(v.length == 0)
+    {
+        document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+        return false;
+    }
+    else
+    {
+         document.getElementById('captcha').innerHTML="Captcha completed";
+        return true; 
+    };
+}
+</script>
+<script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-129794608-1', 'auto');
+    </script>
     </body>
 </html>

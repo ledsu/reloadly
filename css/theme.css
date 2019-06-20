@@ -5678,6 +5678,7 @@ display:none;
 
 nav{
   overflow-x: hidden;
+  overflow-y: auto;
 }
 nav a{
   text-decoration: none;
@@ -7422,7 +7423,7 @@ transform: skewY(30deg);
 #signup a{
 font-weight:600;
 }
-#signup h1{
+#signup h2{
 margin:-2em auto 1em;
 }
 #signup form{
@@ -7433,7 +7434,25 @@ margin-left:auto;}
 .phone-codes{
 z-index:500;
 }
-
+#signup .terms-agree label {
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  margin-bottom:.2em;
+}
+.vl{
+border-left: .1em solid #1fbad6;
+height:750px;
+margin-left:50%;
+position:absolute;
+top:11em;
+}
+ #login h2{
+ margin:6em auto 1em;
+ }
+ #login .vl{
+ height:400px;
+ }
 .forgot-password{
 float:left;
 }
@@ -7446,14 +7465,11 @@ margin-top:2em;
 .login-fb a{
 font-weight:600;
 }
-#login h1{
-margin:2em auto 1em;
-}
 @media all and (max-width: 767px) {
-#login h1{
+#login h2{
 margin:0 auto 1em;
 }
-#signup h1{
+#signup h2{
 margin:0 auto 1em;
 }
 }
