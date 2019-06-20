@@ -5768,6 +5768,7 @@ nav a:hover{
 position:relative;
   padding: 10px 0;
   font-size: 1.25em;
+  overflow-y:auto;
 }
 #menu li ul{
   position: absolute;
