@@ -7033,7 +7033,7 @@ overflow: hidden;
 }
 .horizontal-line{
  border-top: .12em solid #1FBAD6;
- max-width:50%;
+width:50%;
  margin:-1.5em auto -2em;
 }
 .about-middle{
@@ -7443,30 +7443,52 @@ z-index:500;
   border-radius: 50%;
   margin-bottom:.2em;
 }
-.vl{
-border-left: .1em solid #1fbad6;
-height:750px;
-margin-left:50%;
+.auth-pic{
 position:absolute;
+top:10em;
+right:-2em;
+}
+#signup .auth-pic{
+right:-30em;
 top:11em;
+}
+.already-account{
+margin-top:2em;
 }
  #login h2{
  margin:6em auto 1em;
  }
- #login .vl{
- height:400px;
- }
-.forgot-password{
-float:left;
+#login form .btn{
+width:20%;
+margin:auto;
+}
+#signup form .btn{
+width:40%;
+margin:auto;
+}
+#signup .horizontal-line, #login .horizontal-line{
+width:100%;
+margin:1em 0 1em;
 }
 .forgot-password li:last-child{
 margin-top:-1.85714286em;
 }
-.login-fb, .already-account{
+.or-login{
 margin-top:2em;
 }
-.login-fb a{
+#login .fb-login{
+float:right;
+}
+.login-fb a {
 font-weight:600;
+}
+#login .fb-login, #signup .fb-login{
+width:2em;
+height:2em;
+margin:0 .3em .5em;
+}
+#login footer{
+margin-top:-15em;
 }
 @media all and (max-width: 767px) {
 #login h2{
