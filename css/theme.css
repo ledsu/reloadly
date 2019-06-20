@@ -5591,6 +5591,7 @@ body.dropdowns--hover .nav-sidebar-column .dropdown:hover > .dropdown__container
 display:none;
 }
 .nav-container{
+position:absolute;
 overflow-y:auto;
 }
 }
