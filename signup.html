@@ -67,17 +67,21 @@
 </nav>
 
 <div class="main-container"> 
-         <div class="bgd"></div>
-               
+          			 <div class="forms-bgd col-md-8 col-lg-8 col-xl-8"><img alt="image" src="img/authentication.jpg"/></div>
+     
                 <section>
                          <div class="container">
                                     <div class="row">
-                                        <div class="col-md-6 col-lg-5">
+                                        <div class="signup-details col-xl-4 col-lg-5 col-md-12">
                                             <div class="text-center">
                                                 <h2>Start coding</h2>
-                                                <p class="">Create an account, grab your API key and test for free.</p>
+                                                <p class="lead">Create an account, grab your API key and test for free.</p>
                                                 <form>
                                                     <div class="row">
+                                                    <div class="text-center col-12">
+                            							<a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Sign up</span></a>
+                        								<a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+                 			 						</div>
                                                         <div class="col-12">
                                                             <input type="text" name="First Name" placeholder="Your name" />
                                                         </div>
@@ -87,7 +91,7 @@
                                                         <div class="col-12">
                                                             <input type="company-name" name="Company name" placeholder="Company name" />
                                                         </div>
-                                                        <div class="col-4 phone-codes">
+                                                        <div class="col-5 phone-codes">
                                                         <!-- country codes (ISO 3166) and Dial codes. -->
                                                         		
 														<select name="countryCode" id="">
@@ -309,7 +313,7 @@
 		<option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
 		<optgroup ></select>             
                                                		    </div> 
-                                               		    <div class="col-8 phone-number">        
+                                               		    <div class="col-7 phone-number">        
                                                         <input type="tel" id="telephone" placeholder="Phone number">
                                                         </div>
                                                         <div class="col-12">
@@ -327,18 +331,22 @@
                                                                 <a href="#">Terms of Service</a>
                                                             </span>
                                                         </div>
-                                                        <div class="col-12">
-                                                            <button type="submit" class="btn type--uppercase btn--primary">Create Account</button>
+                                                        <div class="col-12 make-account">
+                                                            <button type="submit" class=" btn type--uppercase btn--primary">Create Account</button>
                                                         </div>
                                                          <div class="col-12 text-center already-account">
                                                          <span>Already have an account? <a href="login.html" target="_blank">Sign In</a>
                                                			 </span>
                                                         </div>
                                                         
-                                                        <div class="text-center"><span>Or login with</span>
-                                						<a href=""><img class="fb-login" alt="link" src="img/facebook.svg"/></a>
-                                						</div>
-                                                     </div>
+                                                       <div class="col-12 text-center extra-login"><span>Or login with</span>
+                                </div>
+                                <div class="login-facebook col-12">
+                                <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
+                                <span class=" btn__text">
+                                    <i class="socicon-facebook"></i>Facebook</span>
+                            	</a>
+                            	</div>
                                                     <!--end row-->
                                                 </form>
                                             </div>
@@ -346,79 +354,9 @@
                                     </div><!--end of row-->
                                 </div><!--end of container-->
                             </section>
-                         
-             <section>
-				<div class=" col-md-10 auth-pic">
-				<img alt="image" src="img/authentication.jpg" />
-				</div>
-			</section>
+                
             
-            <footer class="space--sm footer-1 text-center-xs ">
-             <div class="container">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 text-center">
-                        </div>
-                        <div class="col-12 text-center">
-                             <ul class="options list-inline list--hover">
-                                <li><a href="#">TOP UP
-                                    </a>
-                                </li>
-                                <li><a href="#">SUPPORT
-                                    </a>
-                                </li>
-                                <li><a href="#">BLOG
-                                    </a>
-                                </li>
-                                <li><a href="#">CAREERS
-                                    </a>
-                                </li>
-                                <li><a href="mailto:hello@reloadly.com"><span>CONTACT US</span>
-                                    </a>
-                                </li>
-                            </ul>
-                             <ul class="social-list list-inline list--hover">
-                                <li>
-                                    <a href="https://twitter.com/Reloadly" target="_blank">
-                                        <i class="socicon socicon-twitter icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-facebook icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-instagram icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="https://github.com/ReloadlyNetworks" target="_blank">
-                                        <i class="socicon socicon-github icon icon--xs"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                       </div>
-                    </div>
-                    <!--end of row-->
-                    <div class="row ">
-                    <div class="col-12 text-center">
-                        <span class="type--fine-print">&copy;
-                                <span class="update-year"></span> Reloadly</span>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="type--fine-print" href="#">Terms of Use</a>
-                            <a class="type--fine-print" href="#">Security Information</a>
-                            <a class="type--fine-print" href="#">User Agreement</a>
-                            <a class="type--fine-print" href="#">Cookie Policy</a>
-                            <a class="type--fine-print" href="#">Privacy Policy</a>
-                        </div>
-                        
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </footer>
+          
        
         </div>
         <!--<div class="loader"></div>-->

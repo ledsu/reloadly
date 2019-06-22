@@ -66,36 +66,49 @@
   </div>
 </nav>
         <div class="main-container">
-         <div class="bgd"></div>
-
+			
+			 <div class="forms-bgd col-md-8 col-lg-8 col-xl-8"><img alt="image" src="img/authentication.jpg"/></div>
+				
             <section>
-                <div class="container pos-vertical-center">
+                <div class="container">
                     <div class="row">
-                       <div class="col-md-6 col-lg-5">
+                       <div class="login-details col-xl-4 col-lg-5 col-md-12">
                             <div class="text-center"><h2>Login</h2>
                         	</div>
                         	
                         	<form>
                             <div class="row">
+                             <div class="text-center col-12">
+                            	<a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Sign up</span></a>
+                        		<a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+                 			 </div>
                                 <div class="col-12">
                                     <input type="email" name="Email Address" placeholder="Email Address" />
                                 </div>
                                 <div class="col-12">
                                     <input type="password" name="password" placeholder="Password" />
                                 </div>
-                                <div class="col-8 forgot-password text-left">
-                                <span> <a href="#" class="type--fine-print">Forgot your Password?</a></span>
+                                <div class="col-5">
+                                	<div class="input-checkbox">
+                                         <input type="checkbox" name="agree" id="input-assigned-3">
+                                         <label for="input-assigned-3"></label>
+                                    </div>
+                                    <span>Remember Me</span>
                                 </div>
+                                <div class="col-7 text-right">
+                                <span class="type--fine-print"><a href="authentication.html">Forgot your password?</a><span>
+                            	</div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="btn type--uppercase btn--primary">Login</button>
-                                </div>
-                                <div class="text-center or-login"><span>Or login with</span>
-                                	<a href=""><img class="fb-login" alt="link" src="img/facebook.svg" />
-                                    </a>
+                                	<button type="submit" class="btn type--uppercase btn--primary">Login</button>
                                 </div>
                                 
-                                <div class="login-fb col-12 text-center">
-                            	<span>Dont't have an account? <a href="signup.html" target="_blank">Sign up!</a></span>
+                                <div class="col-12 text-center extra-login"><span>Or login with</span>
+                                </div>
+                                <div class="login-facebook col-12">
+                                <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
+                                <span class=" btn__text">
+                                    <i class="socicon-facebook"></i>Facebook</span>
+                            	</a>
                             	</div>
                             </div><!--end row-->
                         	</form>
@@ -103,71 +116,8 @@
                     </div><!--end of row-->
                 </div><!--end of container-->
             </section>
-           
-			<section>
-				<div class=" col-md-6 auth-pic">
-				<img alt="image" src="img/authentication.jpg" />
-				</div>
-			</section>				
-							
-		<footer class="space--sm footer-2 text-center-xs ">
-             <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                             <ul class="options list-inline list--hover">
-                                <li><a href="#"><span class="lead">Top Up</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Support</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Blog</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Careers</span>
-                                    </a>
-                                </li>
-                                <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
-                                    </a>
-                                </li>
-                            </ul>
-                             <ul class="social-list list-inline list--hover">
-                                <li><a href="https://twitter.com/Reloadly" target="_blank">
-                                        <i class="socicon socicon-twitter icon icon--xs"></i>
-                                    </a></li>
-                                <li><a href="https://www.facebook.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-facebook icon icon--xs"></i>
-                                    </a></li>
-                                <li><a href="https://www.instagram.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-instagram icon icon--xs"></i>
-                                    </a></li>
-                                 <li><a href="https://github.com/ReloadlyNetworks" target="_blank">
-                                        <i class="socicon socicon-github icon icon--xs"></i>
-                                    </a></li>
-                            </ul>
-                       </div>
-                        
-                    </div>
-                    <!--end of row-->
-                    <div class="row ">
-                    <div class="col-12 text-center">
-                        <span class="type--fine-print">&copy;
-                                <span class="update-year"></span> Reloadly</span>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="type--fine-print" href="#">Terms of Use</a>
-                            <a class="type--fine-print" href="#">Security Information</a>
-                            <a class="type--fine-print" href="#">User Agreement</a>
-                            <a class="type--fine-print" href="#">Cookie Policy</a>
-                            <a class="type--fine-print" href="#">Privacy Policy</a>
-                        </div>
-                        
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </footer>
-       
+          				
+		
         </div>
         <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">

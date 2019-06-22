@@ -1433,9 +1433,9 @@ button.bg--error {
   padding: 0;
 }
 .input-checkbox label {
-  width: 1.85714286em;
-  height: 1.85714286em;
-  border-radius: 6px;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
   background: #000;
 }
 .input-radio {
@@ -2894,7 +2894,7 @@ a {
   color: #053eff;
 }
 .bg--facebook {
-  background: #3b5998;
+  background: #1877f2;
   color: #fff;
 }
 .bg--twitter {
@@ -7166,21 +7166,20 @@ clear:both;
 #mobile-app .top-part{
 margin-bottom:4em;
 }
-.top-part .badges {
-width:150px;
-right:10%;
-margin-top:3em;
+.badges img{
+width:40%;
+margin-top:1em;
+margin-right:2em;
+}
+.topup-icon{
 position:absolute;
-transform: rotate(-10deg);
-z-index:5;
+width:25em;
+right:-60%;
 }
 .mobile-app-img1{
 margin-left:10em;
 margin-top:-5em;
 transform: rotate(-10deg);
-}
-.mobile-app-img1 img{
-width:70%;
 }
 .secondary-page .three-steps-2{
 transform: skewY(-5deg);
@@ -7188,36 +7187,27 @@ transform: skewY(-5deg);
 .secondary-page .three-steps-1, .secondary-page .three-steps-3{
 transform: skewY(0deg);
 }
-#mobile-app .cta-text img{
-height:2em;
-margin-top:2em;
-margin-left:2em;
+#mobile-app .cta-btn btn{
+margin-top:1em;
 }
-#mobile-app .cta-text h3{
-float:left;
-clear:both;
-}
-
-@media all and (max-width: 767px) {
-.mobile-app-img1{
-margin-top:14em;
-margin-left:1em;
-}
+@media all and (max-width: 990px) {
 .mobile-app-img1 img{
+margin-top:-6em;
+margin-left:4em;
+}
+.topup-icon{
+margin-right:-6em;
+}
+}
+@media all and (max-width: 767px) {
+.mobile-app-img1 {
+margin:1em auto 1em;
+width:75%;}
+
+.topup-icon{
+margin:3em auto 0;
 width:100%;
-}
-.top-part .badges {
-width:150px;
-right:30%;
-margin-top:18em;
-transform: rotate(0deg);
-z-index:5;
-}
-#mobile-app .top-part{
-margin-bottom:-8em;
-}
-#mobile-app .switchable__text  h3{
-width:90%;
+right:0;
 }
 }
 /*-- Airtime page-- */
@@ -7420,11 +7410,6 @@ position:relative;
 width:30em;
 height:30em;
 }
-.topup-icon{
-position:absolute;
-width:25em;
-right:-55%;
-}
 #data-bundles .databundles-img1{
 position:absolute;
 margin-top:-7em;
@@ -7439,11 +7424,6 @@ margin-left:7em;
 .databundles-1{
 width:25em;
 height:25em;
-}
-}
-@media all and (max-width: 990px) {
-.topup-icon{
-margin-right:-6em;
 }
 }
 @media all and (max-width: 767px) {
@@ -7469,7 +7449,7 @@ margin-top:-7em;
 }
 /*! -- Signup & Login pages -- */
 #signup .bgd, #login .bgd{
-transform: skewY(30deg);
+opacity:.6;
 }
 #signup a{
 font-weight:600;
@@ -7481,7 +7461,8 @@ margin:-2em auto 1em;
 margin-top:2em;
 }
 .phone-number{
-margin-left:auto;}
+margin-left:auto;
+}
 .phone-codes{
 z-index:500;
 }
@@ -7491,65 +7472,61 @@ z-index:500;
   border-radius: 50%;
   margin-bottom:.2em;
 }
-.auth-pic{
-position:absolute;
-top:10em;
-right:-2em;
+#login .forms-bgd, #signup .forms-bgd{
+	position: absolute;
+    height: 100%vh;
+    right:-36em;
+    top: 0;
+    bottom: 0;
 }
-#signup .auth-pic{
-right:-30em;
-top:11em;
+#login .forms-bgd img, #signup .forms-bgd img{
+max-width:none;
+max-height:none;
 }
 .already-account{
 margin-top:2em;
 }
  #login h2{
- margin:6em auto 1em;
+ margin:-2em auto 1em;
  }
-#login form .btn{
-width:20%;
+#signup form .btn, #login form .btn{
+width:30%;
+}
+#signup form .login-facebook .btn, #login form .login-facebook .btn{
+width:60%;
+}
+#signup .make-account .btn{
+width:50%;
 margin:auto;
 }
-#signup form .btn{
-width:40%;
-margin:auto;
+.extra-login{
+ margin-top:3em;
 }
-#signup .horizontal-line, #login .horizontal-line{
-width:100%;
-margin:1em 0 1em;
+ #signup .extra-login span, #login .extra-login span{
+    background-color: #fff;
+    padding: 1px 20px;
 }
-.forgot-password li:last-child{
-margin-top:-1.85714286em;
-}
-.or-login{
-margin-top:2em;
-}
-#login .fb-login{
-float:right;
-}
-.login-fb a {
-font-weight:600;
-}
-#login .fb-login, #signup .fb-login{
-width:2em;
-height:2em;
-margin:0 .3em .5em;
-}
+.extra-login span:before{
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 1px;
+    background: #383e50;
+    content: "";
+    z-index:-888;
+    }
 #login footer{
 margin-top:-15em;
 }
 @media all and (max-width: 767px) {
-.auth-pic{
+.forms-bgd{
 display:none;
 }
-#signup h2{
+#signup form .btn, #login form .btn{
 margin:0 auto 1em;
 }
-#signup form .btn, #login form .btn{
-width:100%;
-margin:auto;
-}
-#login h2{
+#signup h2, #login h2{
 margin:0 auto 1em;
 }
 }
