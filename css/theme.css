@@ -4116,7 +4116,7 @@ blockquote > p {
 }
 h4,
 .h4 {
-  font-weight: 400;
+  font-weight: 600;
 }
 h4.inline-block + .h4.inline-block:not(.typed-text),
 .h4.inline-block + .h4.inline-block:not(.typed-text) {
@@ -7025,9 +7025,9 @@ z-index:-300;
 margin-top:1em;
 z-index:5;
 }
-#about .top-part h2{
+#about .top-part h1{
 z-index:5000;
-margin-top:1.5em;
+margin-top:1em;
 }
 .about-text{
 float:left;
@@ -7142,7 +7142,10 @@ margin-left:1.5em;
 .investors-presentation{
 display:none;
 }
-.investors-logos h2, .about-address h2{
+.investors-logos h2{
+text-align: center;
+}
+.about-address h2{
 float:none;
 margin-bottom:1em;
 }
@@ -7186,6 +7189,9 @@ transform: skewY(-5deg);
 .secondary-page .three-steps-1, .secondary-page .three-steps-3{
 transform: skewY(0deg);
 }
+#mobile-app .three-steps-text{
+margin-top:5em;
+}
 #mobile-app .cta-btn btn{
 margin-top:1em;
 }
@@ -7202,11 +7208,22 @@ margin-right:-6em;
 .mobile-app-img1 {
 margin:1em auto 1em;
 width:75%;}
-
 .topup-icon{
 margin:3em auto 0;
 width:100%;
 right:0;
+}
+#mobile-app .switchable{
+margin-top:-5em;
+}
+.mobile-app-middle-h{
+width:90%;
+}
+#mobile-app .three-steps-text{
+margin-top:0;
+}
+.secondary-page .three-steps-3 img{
+margin-top:5em;
 }
 }
 /*-- Airtime page-- */
@@ -7238,16 +7255,19 @@ left:-30%;
 margin-top:-4em;
 }
 .title-icon{
-width:100px;
+width:6em;
 float:left;
 margin-top:-1em;
-margin-bottom:-1em;
 }
 .airtime-1{
 margin-top:1em;
 }
-.airtime-1 h2{
+.airtime-1 .top-part h2, #data-bundles .top-part h2, #digital-gifts .top-part h2{
+margin-left:0;
+}
+.airtime-1 h2, #data-bundles h2, #digital-gifts h2{
 margin-bottom:2em;
+margin-left:3em;
 }
 .airtime-1 h3{
 padding-top:.8em;
@@ -7367,7 +7387,10 @@ margin-left:0;
 .airtime-top-line{
 display:none;
 }
-.airtime-rows-list{
+#airtime .airtime-rows{
+margin:0 auto 2em;
+}
+#airtime .airtime-rows-list, #digital-gifts .airtime-rows-list, #data-bundles .airtime-rows-list{
 display:grid;	
 grid-template-columns: auto; 	
 }
@@ -7381,14 +7404,15 @@ display:grid;
 grid-template-columns: auto; 	
 }
 .section-bgd{
-height:45em;
+height:35em;
 }
 .airtime-quote{
-margin-top:-45em;
+margin-top:-36em;
 }
 .airtime-3 {
 display:grid;
 grid-template-columns: auto;
+margin-top:-5em;
 }
 .airtime-1 {
 margin-top:0;
@@ -7431,16 +7455,15 @@ margin:3em auto 0;
 width:100%;
 right:0;
 }
- #data-bundles .title-icon{
- margin-bottom:10em;
-  width:25%;
- }
 #data-bundles .databundles-img1{
 margin:1em auto 1em;
 width:75%;
 }
+#data-bundles .section-bgd{
+height:40em;
+}
  #data-bundles .airtime-quote{
-margin-top:-47em;
+margin-top:-41em;
 }
 #data-bundles .airtime-3{
 margin-top:-7em;
@@ -7550,7 +7573,7 @@ width:100%;
 right:0;
 }
 #digital-gifts .mobile-app-img1{
-margin-left:10em;
+margin-left:8em;
 }
 }
 /*! -- CTA section -- */
