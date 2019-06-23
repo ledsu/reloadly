@@ -7460,88 +7460,6 @@ margin-top:-41em;
 margin-top:-7em;
 }
 }
-/*! -- Signup & Login pages -- */
-#signup .bgd, #login .bgd{
-opacity:.8;
-z-index:2;
-height:17em;
-transform:skewY(7deg);
-}
-#signup a{
-font-weight:600;
-}
-#signup h2{
-margin:-3em auto 0;
-}
-#signup form{
-margin-top:2em;
-}
-.phone-number{
-margin-left:auto;
-}
-.phone-codes{
-z-index:500;
-}
-#signup .terms-agree label {
-  width: 1.3em;
-  height: 1.3em;
-  border-radius: 50%;
-  margin-bottom:.2em;
-}
-#login .forms-bgd, #signup .forms-bgd{
-	position: absolute;
-    right:-7em;
-    top: 0;
-}
-#login .forms-bgd img, #signup .forms-bgd img{
-	max-width:none;
-    max-height: 100vh;
-    top:2em; 
-    }
- #login h2{
-margin:-3em auto .5em;
- }
-#signup form .btn, #login form .btn{
-width:30%;
-}
-#signup form .login-facebook .btn, #login form .login-facebook .btn{
-width:60%;
-margin:auto;
-}
-#signup .make-account .btn{
-width:50%;
-margin:auto;
-}
- #signup .extra-login span, #login .extra-login span{
-    background-color: #fff;
-    padding: 1px 20px;
-}
-.extra-login span:before{
-    position: absolute;
-    left: 0;
-    margin-top: 10px;
-    width: 100%;
-    height: 1px;
-    background: #383e50;
-    content: "";
-    z-index:-888;
-    }
-#login footer{
-margin-top:-15em;
-}
-@media all and (max-width: 991px) {
-.forms-bgd{
-display:none;
-}
-}
-@media all and (max-width: 767px) {
-#signup form .btn, #login form .btn{
-margin:0 auto 1em;
-}
-#signup h2, #login h2{
-margin:0 auto 1em;
-}
-}
 /*! -- Digital gifts page -- */
 #digital-gifts .top-part h4{
 padding-left:0;
@@ -7550,6 +7468,9 @@ padding-left:0;
     position: absolute;
     width: 25em;
     right: -8em;
+}
+.dgifts-middle{
+margin-top:3em;
 }
 @media all and (max-width: 991px) {
 .dgifts-icon{
@@ -7565,6 +7486,9 @@ right:0;
 }
 #digital-gifts .mobile-app-img1{
 margin-left:8em;
+}
+.dgifts-middle{
+margin-top:0;
 }
 }
 /*! -- CTA section -- */
