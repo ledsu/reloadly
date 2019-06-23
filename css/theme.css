@@ -7019,13 +7019,9 @@ right:0;
 z-index:-300;
 opacity:.3;
 }
-.about-top{
-margin-top:1em;
-z-index:5;
-}
 #about .top-part h1{
 z-index:5000;
-margin-top:1em;
+margin-bottom:1em;
 }
 .about-text{
 float:left;
@@ -7035,7 +7031,7 @@ overflow: hidden;
 }
 .about-middle{
 width:100%;
-margin:5em auto 0;
+margin:7em auto 0;
 }
 .about-middle img{
 width:12em;
