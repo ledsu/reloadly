@@ -7005,13 +7005,11 @@ a.block:hover > .feature {
 }
 /*! --About page -- */
 #about .bgd{
-top:7em;
+top:-10em;
+height:62em;
 }
 #about .bar__module .btn:not(:last-child){
-border-color:#fff;
-}
-#about .bar__module .btn:not(:last-child) .btn__text{
-color:#fff;
+border-color:#000;
 }
 .about-top-image{
 position:absolute;
@@ -7019,6 +7017,7 @@ top:0;
 width:100%;
 right:0;
 z-index:-300;
+opacity:.3;
 }
 .about-top{
 margin-top:1em;
@@ -7027,7 +7026,6 @@ z-index:5;
 #about .top-part h1{
 z-index:5000;
 margin-top:1em;
-color:#fff;
 }
 .about-text{
 float:left;
@@ -7101,6 +7099,7 @@ margin:8em 1.5em -2em;
   display:grid;
   grid-template-columns: auto auto auto; 	
 }
+}
 @media all and (max-width: 990px) {
 .team-members {
 	display:grid;
@@ -7108,6 +7107,9 @@ margin:8em 1.5em -2em;
 }
 }
 @media all and (max-width: 767px) {
+#about .bgd{
+height: 58em;
+}
 .about-top{
 margin-top:1em;
 }
@@ -7115,8 +7117,7 @@ margin-top:1em;
 margin-left:.5em;
 }
 .about-middle{
-margin-top:0;
-
+margin-top:-1em;
 }
 .team-bgd{
 display:none;
