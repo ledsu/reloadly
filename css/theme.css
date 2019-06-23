@@ -7162,7 +7162,16 @@ margin-bottom:4em;
 .badges img{
 width:40%;
 margin-top:1em;
-margin-right:2em;
+margin-right:2em; 
+}
+#mobile-app .cta-button{
+margin-top:7%;
+}
+.cta .badges img{
+margin-top:.3em;
+margin-right:1em;
+box-shadow: #222B38 0px 0px 0px 1px, #222B38 0px 2px 8px 1px;
+
 }
 .topup-icon{
 position:absolute;
