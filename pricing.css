@@ -1,0 +1,146 @@
+#pricing .bgd{
+height:22em;
+}
+.countries{
+position:relative;
+display: inline-block;
+margin-top:-4.5em;
+}
+.down-open{
+position:relative;
+z-index:109;
+display: inline-block;
+vertical-align:top;
+width:2em;
+height:2em;
+margin-left:-2em;
+margin-top:-1em;
+}
+.pricing-tabs{
+margin-top:3em;
+display:grid;	
+grid-template-columns: auto auto auto; 
+}
+#pricing .pricing-tabs .btn{
+background-color:#fff;
+border-radius:0;
+border:none;
+}
+#pricing .pricing-tabs .active_button{
+border-bottom:solid 2px #1FBAD6;
+}
+#pricing .pricing-tabs .btn:not(.active_button){
+background-color:#F4F9F9;
+}
+#pricing .pricing-tabs .btn:hover{
+border-bottom:solid 2px #FFE161;
+}
+#pricing .pricing-tabs .btn .active_button:hover{
+border-bottom:solid 2px #1FBAD6;
+}
+.pricing-row{
+margin-top:3em;
+margin-left:3em;
+display:grid;	
+grid-template-columns: auto auto auto auto; 
+grid-column-gap: 0;	
+}
+#pricing .horizontal-line{
+margin-top:3em;
+margin-bottom:3em;
+width:100%;
+border:dashed .05em #1FBAD6;
+}
+.pricing-middle{
+margin-bottom:8em;
+}
+.pricing-middle .pricing-text{
+  border-top-style: none;
+}
+.pricing-text-2, .pricing-text-3{
+display:none;
+}
+#pricing .three-steps-1{
+margin-top:1.85714286em;
+margin-left:3em;
+}
+#pricing .three-steps-1 li span{
+color: #1FBAD6;
+}
+#pricing .three-steps-1 span a{
+font-weight:600;
+}
+#pricing .three-steps-1 span a:hover{
+  color: #1FBAD6;
+  cursor:pointer;
+}
+.sales-team{
+width:100%;
+margin:auto;
+}
+#pricing .form-sales-team{
+padding-top:0;
+width:100%;
+margin:auto;
+}
+.form-left, .form-right{
+float:left;
+}
+#pricing .type--fine-print{
+line-height:1.2em;
+}
+#pricing select{
+margin-top:1em;
+}
+.agree-check{
+float:left;
+margin-right:1em;
+}
+.form-agree{
+margin-top:1em;
+margin-bottom:2em;
+}
+@media all and (max-width: 991px) {
+.countries{
+float:none;
+margin-top:1em;
+}
+.down-open{
+margin-top:2.3em;
+}
+#pricing .section-bgd{
+margin-top:-36em;
+height:30em;
+}
+#pricing .form-sales-team{
+padding-top:0;
+}
+.form-agree{
+margin-top:1em;
+}
+}
+@media all and (max-width: 767px) {
+.countries{
+margin:auto;
+width:90%;
+}
+.down-open{
+margin-top:1.3em;
+}
+.pricing-tabs{	
+margin-top:0;}
+.pricing-row{	
+grid-template-columns: auto; 
+}
+#pricing .three-steps-1 {
+    margin-top: 0;
+    margin-left: 0;
+}
+#pricing .section-bgd{
+margin-top:-50em;
+height:40em;
+}
+#pricing .input-checkbox{
+margin-top:-0.5em;
+}
+}

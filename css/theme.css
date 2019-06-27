@@ -7584,6 +7584,10 @@ font-weight:600;
   color: #1FBAD6;
   cursor:pointer;
 }
+.sales-team{
+width:100%;
+margin:auto;
+}
 #pricing .form-sales-team{
 padding-top:0;
 width:100%;
