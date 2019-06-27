@@ -1302,27 +1302,27 @@ select:active {
 input[type]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
-  color: #b3b3b3;
+  color: #000;
   font-size: 1.14285714em;
 }
 input[type]:-moz-placeholder,
 textarea:-moz-placeholder,
 select:-moz-placeholder {
   /* Firefox 18- */
-  color: #b3b3b3;
+  color: #000;
   font-size: 1.14285714em;
 }
 input[type]::-moz-placeholder,
-textarea::-moz-placeholder,
+textarea::-moz- ,
 select::-moz-placeholder {
   /* Firefox 19+ */
-  color: #b3b3b3;
+  color: #000;
   font-size: 1.14285714em;
 }
 input[type]:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 select:-ms-input-placeholder {
-  color: #b3b3b3;
+  color: #000;
   font-size: 1.14285714em;
 }
 input[type="image"] {
@@ -7552,7 +7552,7 @@ border-bottom:solid 2px #1FBAD6;
 margin-top:3em;
 margin-left:3em;
 display:grid;	
-grid-template-columns: auto auto auto; 
+grid-template-columns: auto auto auto auto; 
 grid-column-gap: 0;	
 }
 #pricing .horizontal-line{
@@ -7562,10 +7562,9 @@ width:100%;
 border:dashed .05em #1FBAD6;
 }
 .pricing-middle{
-margin-bottom:3em;
+margin-bottom:8em;
 }
 .pricing-middle .pricing-text{
-  padding-bottom:6em;
   border-top-style: none;
 }
 .pricing-text-2, .pricing-text-3{
@@ -7589,6 +7588,32 @@ transform: skewY(3deg);
 #pricing .three-steps-1 span a{
 font-weight:600;
 }
+#pricing .three-steps-1 span a:hover{
+  color: #1FBAD6;
+  cursor:pointer;
+}
+#pricing .form-sales-team{
+padding-top:0;
+width:100%;
+margin:auto;
+}
+.form-left, .form-right{
+float:left;
+}
+#pricing .type--fine-print{
+line-height:1.2em;
+}
+#pricing select{
+margin-top:1em;
+}
+.agree-check{
+float:left;
+margin-right:1em;
+}
+.form-agree{
+margin-top:1em;
+margin-bottom:2em;
+}
 @media all and (max-width: 991px) {
 .countries{
 float:none;
@@ -7600,6 +7625,12 @@ margin-top:1.4em;
 #pricing .section-bgd{
 margin-top:-36em;
 height:30em;
+}
+#pricing .form-sales-team{
+padding-top:0;
+}
+.form-agree{
+margin-top:1em;
 }
 }
 @media all and (max-width: 767px) {
@@ -7622,6 +7653,9 @@ grid-template-columns: auto;
 #pricing .section-bgd{
 margin-top:-50em;
 height:40em;
+}
+#pricing .input-checkbox{
+margin-top:-0.5em;
 }
 }
 /*! -- CTA section -- */
