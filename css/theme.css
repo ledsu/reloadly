@@ -7509,7 +7509,7 @@ margin-top:0;
 }
 /*! --  Pricing page  -- */
 #pricing .bgd{
-height:25em;
+height:22em;
 }
 .countries{
 position:relative;
@@ -7576,14 +7576,6 @@ margin-left:3em;
 }
 #pricing .three-steps-1 li span{
 color: #1FBAD6;
-}
-#pricing .section-bgd{
-position:relative;
-margin-top:-30em;
-margin-bottom:-3em;
-height:25em;
-z-index:-2100;
-transform: skewY(3deg);
 }
 #pricing .three-steps-1 span a{
 font-weight:600;
