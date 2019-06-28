@@ -4181,11 +4181,10 @@ p strong {
 }
 pre {
   padding: 0.92857143em;
-  background: #fafafa;
-  border: 1px solid #ececec;
-  border-radius: 6px;
+  background: #F4F9F9;
   line-height: 20px;
   max-height: 500px;
+  width:100%;
 }
 .bg--secondary > pre {
   background: #f5f5f5;
@@ -4273,12 +4272,16 @@ table {
 }
 table th,
 table td {
-  padding: 0.92857143em;
+  padding: 0.5em;
+}
+table td {
+color: #000;
 }
 table th {
-  background: #fafafa;
+  background: #F4F9F9;
   color: #252525;
 }
+tr:nth-child(even) {background-color: #F4F9F9;}
 table tr:not(:last-of-type) {
   border-bottom: 1px solid #ececec;
 }
@@ -4305,6 +4308,10 @@ table.border--round {
 }
 .bg--dark .table--alternate-row tbody tr:nth-child(even) {
   background: #323232;
+}
+table td code{
+    white-space: nowrap;
+
 }
 /*! -- Lists -- */
 ul:not([class*='menu']) li > a {
@@ -7652,6 +7659,106 @@ height:40em;
 }
 #pricing .input-checkbox{
 margin-top:-0.5em;
+}
+}
+/*! -- API docs page -- */
+#api-docs .bgd{
+position:fixed;
+height:18em;
+transform: skewY(-3deg);
+top:-10em;
+background-color:#283142;
+z-index: 30;
+}
+#api-docs .logo{
+top:1em;
+left:10em;
+max-width:6em;
+position:fixed;
+}
+#api-docs .api-right{
+position:fixed;
+}
+#api-docs #menuToggle span{
+background-color:#fff;
+}
+.api-left{
+    overflow-y: auto;
+    overflow-x: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    background-color: #334054;
+}  
+#api-docs .api-left ul{
+position:fixed;
+margin:15em 1em  10em;
+}  
+#api-docs .sub-ul {
+margin:2em 1em 2em;
+overflow:auto;
+position: absolute;
+left: -99999px;
+display:none;
+}
+#api-docs li a:hover{
+font-weight:600;
+color:#1FBAD6;
+}
+#api-docs li:hover ul{
+position: relative;
+display:inline-block;
+}
+.api-left ul li:hover ul{
+display:inline-block;
+}
+#api-docs ul a {
+color:#fff;
+}  
+.right-bgd{
+    width: 35%;
+    background-color: #F4F9F9;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index:4;
+}
+.api-right{
+position:absolute;
+top:1em;
+right:10em;
+z-index:55;
+}
+#api-docs input{
+background-color:#334054;
+border-color:#1FBAD6;
+color:#fff;
+}
+#api-docs input[type="text"]::placeholder { 
+color: #1FBAD6; 
+} 
+.api-center {
+padding-left:16em;
+padding-top:7em;
+box-sizing: border-box;
+z-index:21;
+}
+.api-center a{
+color:#1FBAD6;
+}
+#api-docs code{
+font-size:70%;
+}
+.api-center h2, .api-center h3, .api-center h4{
+width:100%;
+.api-center table{
+overflow:auto;
+}
+.api-center pre .code-right {
+margin-left:50%;
 }
 }
 /*! -- CTA section -- */
