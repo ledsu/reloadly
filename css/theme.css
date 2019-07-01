@@ -7724,7 +7724,7 @@ color:#fff;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index:4;
+    z-index:-4;
 }
 .api-right{
 position:absolute;
@@ -7757,8 +7757,8 @@ width:100%;
 .api-center table{
 overflow:auto;
 }
-.api-center pre .code-right {
-margin-left:50%;
+.api-center.right-side{
+float:right;width:40%;"style="float:right;width:30%; overflow:auto;
 }
 }
 /*! -- CTA section -- */
