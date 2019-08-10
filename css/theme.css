@@ -1142,7 +1142,7 @@ ul:last-child {
 @media all and (min-width: 990px) {
   .menu-horizontal {
     display: inline-block;
-     
+
   }
   .menu-horizontal > li {
     display: inline-block;
@@ -1150,7 +1150,7 @@ ul:last-child {
   .menu-horizontal > li:not(:last-child) {
     margin-right: 1.85714286em;
   }
- 
+
   .menu-vertical .dropdown__container .dropdown__content:not([class*='bg-']) {
     background: #ffffff;
 
@@ -1200,7 +1200,7 @@ ul:last-child {
 @media all and (min-width: 991px) {
   .dropdown .dropdown__container:before {
     height: 0.92857143em;
-  
+
     content: '';
     display: block;
   }
@@ -2945,7 +2945,7 @@ background-color:#fff;
 }
 .secondary-page #menu .sign-up a, .secondary-page #menu .login a{
   color:#1fbad6;
-} 
+}
 .secondary-page #menu .login a:hover{
   color:#fff;
 }
@@ -3216,7 +3216,7 @@ form[action*='list-manage.com'] .small-meta {
 .bar .logo {
   z-index:100;
   overflow:hidden;
-  margin: 0;
+  margin-top: 1em;
   position: relative;
   top: 0;
   float:left;
@@ -3351,7 +3351,7 @@ z-index:1000;
   .bar__module .btn {
     display: block;
   }
- 
+
   .bar__module .btn + .btn {
     margin-left: 0 !important;
   }
@@ -4432,7 +4432,7 @@ ol.lead li:not(:last-child) {
 	}
 	.secondary-page .top-part .btn span{
 	color:#232D3D;
-	}	
+	}
 	.top-part .btn{
 	background: none;
 	border-color:#d3d3d3;
@@ -4491,11 +4491,11 @@ background-color:#F4F9F9;
 }
 .secondary-page .three-steps-1{
   margin-top:-2em;
-    transform: skewY(-5deg); 
+    transform: skewY(-5deg);
 }
 .secondary-page .three-steps-2{
   margin-top:4em;
-  transform: skewY(-5deg); 
+  transform: skewY(-5deg);
 }
 @media all and (max-width: 767px) {
 .secondary-page .three-steps-text{
@@ -4503,7 +4503,7 @@ background-color:#F4F9F9;
 }
 .secondary-page .three-steps-1,.secondary-page .three-steps-2{
   margin-top:0;
-  transform: skewY(-5deg); 
+  transform: skewY(-5deg);
 }
 }
 .middle-part .container{
@@ -4537,7 +4537,7 @@ cursor:pointer;
   .switchable__text{
 width:100%;
 margin-left:1em;
-margin-bottom:3em; 
+margin-bottom:3em;
 }
   .switchable__text .lead{
   margin-left:0;
@@ -4960,7 +4960,7 @@ display:block;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .5px;
-  
+
 }
 @media all and (min-width: 1024px) {
   .bar-1 .bar__module + .bar__module {
@@ -5709,7 +5709,7 @@ nav #menu{
   display: block;
   -webkit-user-select: none;
   user-select: none;
- 
+
 }
 #menuToggle input{
   display: block;
@@ -5743,7 +5743,7 @@ nav #menu{
 #menuToggle span:nth-last-child(2){
   transform-origin: 0% 100%;
 }
-/* Transform hamburger into a cross*/ 
+/* Transform hamburger into a cross*/
 #menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
@@ -5781,7 +5781,7 @@ position:relative;
 }
 #menu li ul{
   position: absolute;
-  left: -99999px; 
+  left: -99999px;
   display:none;
   margin-left:1em;
   font-size:.85em;
@@ -5822,10 +5822,10 @@ color:#1fbad6;
     }
   li .signup a:hover{
  	color:#fff;
-   } 
+   }
    li .login a:hover{
  	color:#fff;
-   }   
+   }
 }
 /**! 11. Dropdowns **/
 .dropdown {
@@ -6590,7 +6590,7 @@ a.block:hover > .feature {
 }
 .row--gapless .feature-7:before {
   border-radius: 0;
-}	
+}
 @media all and (max-width: 767px) {
   .feature-7 .pos-vertical-center {
     top: 50%;
@@ -6631,7 +6631,7 @@ a.block:hover > .feature {
 }
 .feature-8 img {
   max-height: 14.85714286em;
-  max-width:8em; 
+  max-width:8em;
   border-radius:50%;
 }
 
@@ -7060,7 +7060,7 @@ margin-top:2em;
 }
 .team-members {
 	display:grid;
-  	grid-template-columns: auto auto auto auto auto auto; 	
+  	grid-template-columns: auto auto auto auto auto auto;
 	padding: 1em 0 4em;
 	margin:-18em 0 4em;
 	}
@@ -7073,7 +7073,7 @@ margin-top:6em;
 .office-contacts{
 	margin-top:4em;
 	display:grid;
-	grid-template-columns: auto auto auto auto; 	
+	grid-template-columns: auto auto auto auto;
 	}
 .office-address{
 	margin-top:-3em;
@@ -7104,7 +7104,7 @@ margin:8em 1.5em -2em;
 }
 .investors-text-list{
   display:grid;
-  grid-template-columns: auto auto auto; 	
+  grid-template-columns: auto auto auto;
 }
 
 @media all and (max-width: 767px) {
@@ -7126,8 +7126,8 @@ display:none;
 .team-members {
 	display:grid;
   	grid-template-columns: auto;
-  	margin-top:0; 
-  	margin-bottom:0;	
+  	margin-top:0;
+  	margin-bottom:0;
 	}
 .team-members .feature{
 margin-bottom:1em;
@@ -7150,14 +7150,14 @@ margin:3em auto 1em;
 }
 .investors-text-list{
   display:grid;
-  grid-template-columns: auto; 	
+  grid-template-columns: auto;
 }
 .about-address{
 margin-top:0;
 }
 .office-contacts{
 clear:both;
-	grid-template-columns: auto; 	
+	grid-template-columns: auto;
 }
 }
 /*! -- Mobile App page -- */
@@ -7167,7 +7167,7 @@ margin-bottom:4em;
 .badges img{
 width:40%;
 margin-top:1em;
-margin-right:2em; 
+margin-right:2em;
 }
 #mobile-app .cta-button{
 margin-top:7%;
@@ -7295,13 +7295,13 @@ font-size:1.1em;
 margin-bottom:1em;
 }
 .airtime-rows-list{
-display:grid;	
-grid-template-columns: auto auto auto; 
-margin-bottom:4em;	
+display:grid;
+grid-template-columns: auto auto auto;
+margin-bottom:4em;
 }
 .airtime-getting-started-list{
-display:grid;	
-grid-template-columns: auto auto auto auto; 	
+display:grid;
+grid-template-columns: auto auto auto auto;
 color:#232D3D;
 width:100%;
 }
@@ -7402,8 +7402,8 @@ display:none;
 margin:0 auto 2em;
 }
 #airtime .airtime-rows-list, #digital-gifts .airtime-rows-list, #data-bundles .airtime-rows-list{
-display:grid;	
-grid-template-columns: auto; 	
+display:grid;
+grid-template-columns: auto;
 }
 .airtime-2 .airtime-rows img{
 width:100%;
@@ -7411,8 +7411,8 @@ margin-left:30%;
 margin-right:30%;
 }
 .airtime-getting-started-list{
-display:grid;	
-grid-template-columns: auto; 	
+display:grid;
+grid-template-columns: auto;
 }
 .section-bgd{
 height:35em;
@@ -7535,8 +7535,8 @@ margin-top:-1em;
 }
 .pricing-tabs{
 margin-top:3em;
-display:grid;	
-grid-template-columns: auto auto auto; 
+display:grid;
+grid-template-columns: auto auto auto;
 }
 #pricing .pricing-tabs .btn{
 background-color:#fff;
@@ -7558,9 +7558,9 @@ border-bottom:solid 2px #1FBAD6;
 .pricing-row{
 margin-top:3em;
 margin-left:3em;
-display:grid;	
-grid-template-columns: auto auto auto auto; 
-grid-column-gap: 0;	
+display:grid;
+grid-template-columns: auto auto auto auto;
+grid-column-gap: 0;
 }
 #pricing .horizontal-line{
 margin-top:3em;
@@ -7644,10 +7644,10 @@ width:90%;
 .down-open{
 margin-top:1.3em;
 }
-.pricing-tabs{	
+.pricing-tabs{
 margin-top:0;}
-.pricing-row{	
-grid-template-columns: auto; 
+.pricing-row{
+grid-template-columns: auto;
 }
 #pricing .three-steps-1 {
     margin-top: 0;
@@ -7675,8 +7675,8 @@ margin-top:2em;
 margin-top:8em;
 }
 #mobile-operators .airtime-getting-started-list{
-display:grid;	
-grid-template-columns: auto auto auto; 
+display:grid;
+grid-template-columns: auto auto auto;
 }
 #mobile-operators .airtime-getting-started-list:not(:last-child){
 margin-bottom:4em;
@@ -7710,6 +7710,12 @@ width:100%;
 margin:auto;
 }
 @media all and (max-width: 991px) {
+#mobile-operators .bgd{
+height:80em;
+}
+#mobile-operators .airtime-img-1{
+margin-left:0;
+}
 .customer-choice .airtime-rows:first-child{
 margin-top:3em;
 }
@@ -7719,8 +7725,23 @@ margin-top:2em;
 }
 @media all and (max-width: 767px) {
 #mobile-operators .airtime-getting-started-list{
-display:grid;	
-grid-template-columns: auto; 
+display:grid;
+grid-template-columns: auto;
+}
+#mobile-operators .airtime-img-1{
+margin-top:6em;
+}
+#mobile-operators .top-part{
+margin-bottom:-10em;
+}
+#mobile-operators .horizontal-line{
+margin-top:-6em;
+}
+#mobile-operators .discounts h4{
+padding-top:1em;
+}
+.modal-trigger{
+width:90%;
 }
 }
 /*! -- CTA section -- */
@@ -8368,7 +8389,7 @@ color:#fff;
  margin-bottom:6em;
  }
 .code{
-background-color:#334054; 
+background-color:#334054;
 transform:skewY(-3deg);
  }
 .code-skew-back{
@@ -8482,7 +8503,7 @@ font-size:1.2em;
 }
 }
 /* Four-features section */
-section.four-features{   
+section.four-features{
  transform: skewY(-3deg);
  padding-bottom:5em;
 }
@@ -8563,6 +8584,20 @@ margin-left:1em;
 .process_item img{
 width: 5em;
 }
+}
+/*! -- Error page -- */
+#error-page .top-image{
+  margin-top:-5em;
+}
+#error-page img{
+  max-height:500px;
+}
+#error-page a:hover{
+  cursor: pointer;
+  font-weight:bold;
+}
+#error-page sales-team h2{
+  color:#232D3D;
 }
 .bg--dark .process-3 li .process__number {
   background: #252525;
