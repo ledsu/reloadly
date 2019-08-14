@@ -7600,7 +7600,7 @@ padding-top:0;
 width:100%;
 margin:auto;
 }
-.form-left, .form-right{
+#pricing .form-left, #pricing .form-right{
 float:left;
 }
 #pricing .type--fine-print{
@@ -8596,6 +8596,42 @@ width: 5em;
 #error-page a:hover{
   cursor: pointer;
   font-weight:bold;
+}
+@media screen and (max-width: 767px) {
+  #error-page .top-image{
+margin-top:0;
+}
+#error-page .art-1{
+display:block;
+}
+}
+/*! -- Contact page -- */
+#contact span a{
+  font-weight:bold;
+}
+.contact-list span{
+  color:#1fbad6;
+}
+#contact .vertical-line{
+  border-left: .1em solid #1FBAD6;
+  height: 430px;
+  margin:0 1em 0;
+}
+.contact-main{
+  display: block;
+display: flex;
+width:100%;
+margin:5em auto 5em;
+}
+.contact-main > div {
+  flex: 1; /*grow*/
+}
+#contact select{
+  margin-top:1em;
+}
+.contact-main button{
+margin-top:1em;
+width:100px;
 }
 .bg--dark .process-3 li .process__number {
   background: #252525;
