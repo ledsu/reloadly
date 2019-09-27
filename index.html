@@ -16,22 +16,28 @@
 	  </head>
 	<style type="text/css">
   body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica', sans-serif; background:#283142; color:#ffffff; font-weight:300;
   }
   section{
    padding:4em;
   }
+  strong{
+    font-weight:700;
+  }
+  hr{
+    color:#1FBAD6; width: 250px; margin:auto;
+  }
   .bgd{
-    top:-10em; left:0; height:25em; width:100%; background:#F4F9F9; position:absolute; z-index:-100; transform:skewY(4deg);
+    background:#334054; height: 41em; width:100%; left:0; top:23em; margin-top:-5em; position:absolute; z-index:-101; transform:skewY(4deg);
   }
   .title {
-  color: #000000; font-weight:700; font-size:28px; margin-bottom:1em;
+  color: #ffffff;font-size:28px; margin-bottom:1em;
   }
   .subtitle{
-    color: #000000; font-weight:700; font-size:24px;
+    color: #ffffff; font-size:24px;
   }
   .text-part{
-  color: #000000;  font-weight:300; font-size:18px;
+  color: #ffffff; font-size:18px;
   }
   table{
     border-spacing: .7em;
@@ -43,22 +49,19 @@
     max-width:80px;
   }
   .stat-numbers{
-    font-size:30px; font-weight:700;
+    font-size:30px;
   }
   .changes{
     font-size:17px; font-weight:700;
   }
-  .going-down{
-    color:#ffffff; background:#1FBAD6; max-width:60px; margin:auto; padding:2px; border-radius:6px;
+  .going-up{
+    color:#ffffff; background:#09D67E; max-width:60px; margin:auto; padding:2px; border-radius:6px;
   }
   .no-change{
-    color:#ffffff; background:#c4c4c4; max-width:60px; margin:auto; padding:2px; border-radius:6px;
+    color:#ffffff; background:#878787; max-width:60px; margin:auto; padding:2px; border-radius:6px;
   }
-  .going-up{
+  .going-down{
     color:#ffffff; background:#FF6346; max-width:60px; margin:auto; padding:2px; border-radius:6px;
-  }
-  .destinations{
-    background-color:#F4F9F9; height: 36em; width:100%; left:0; margin-top:-5em; position:absolute; z-index:-101; transform:skewY(-4deg);
   }
   .destinations center{
     font-size: 23px;
@@ -74,16 +77,16 @@
             <section>
               <div class="bgd"></div>
 
-                  <center class="title">YOUR WEEK IN NUMBERS</center>
+                  <center class="title"><strong>YOUR WEEK IN NUMBERS</strong></center>
                   <center class="text-part">September 15 – September 21</center>
 
               </section>
                   <section>
                 <table width="500px" align="center">
                        <tr>
-                         <th><img class="img-1" alt="image" src="img/1.jpg"/></th>
-                         <th><img class="img-1" alt="image" src="img/2.jpg"/></th>
-                         <th><img class="img-1" alt="image" src="img/3.jpg"/></th>
+                         <th><img class="img-1" alt="image" src="img/1.svg"/></th>
+                         <th><img class="img-1" alt="image" src="img/2.svg"/></th>
+                         <th><img class="img-1" alt="image" src="img/3.svg"/></th>
                        </tr>
 
                        <tr class="stat-numbers">
@@ -97,16 +100,16 @@
                          <td align="center">Average transaction</td>
                        </tr>
                        <tr class="changes">
-                         <td><div class="going-down" align="center">&#8673; 51%</div></td>
+                         <td><div class="going-up" align="center">&#8673; 51%</div></td>
                         <td><div class="no-change" align="center">0%</div></td>
-                         <td><div class="going-up" align="center">&#8675; 23%</div></td>
+                         <td><div class="going-down" align="center">&#8675; 23%</div></td>
                        </tr>
                      </table>
                    <table width="500px" align="center">
                         <tr>
-                          <th><img class="img-1" alt="image" src="img/4.jpg"/></th>
-                          <th><img class="img-1" alt="image" src="img/5.jpg"/></th>
-                          <th><img class="img-1" alt="image" src="img/6.jpg"/></th>
+                          <th><img class="img-1" alt="image" src="img/4.svg"/></th>
+                          <th><img class="img-1" alt="image" src="img/5.svg"/></th>
+                          <th><img class="img-1" alt="image" src="img/6.svg"/></th>
                         </tr>
                         <tr class="stat-numbers">
                           <td align="center">24</td>
@@ -121,9 +124,9 @@
                       </table>
               </section>
               <section>
-                <div class="destinations"></div>
+                <div></div>
                   <div class="subtitle">
-                  <center>YOUR TOP 5 DESTINATIONS</center>
+                  <center><strong>YOUR TOP 5 DESTINATIONS</strong></center>
                   </div>
                   <table width="500px" align="center">
                          <tr>
@@ -166,6 +169,7 @@
                               </tr>
                             </table>
                </section>
+               <hr>
                <footer>
                    <center>Reloadly Inc.</center>
                    <center>78 sw 7th St. 5th Floor</center>
