@@ -7765,14 +7765,14 @@ margin-bottom:0;
   .cta .btn{
 	top:5em;
   }
- .secondary-page .cta .btn{
+ .secondary-page .cta .btn,  .landing-page .cta .btn{
 	top:2em;
   }
   .cta .cta-text{
 	top:1.3em;
     padding-right:5em;
   }
-   .secondary-page  .cta .cta-text h3,  .secondary-page  .cta .cta-text p{
+   .secondary-page  .cta .cta-text h3,  .secondary-page  .cta .cta-text p, .landing-page  .cta .cta-text h3,  .landing-page  .cta .cta-text p{
 	color:#fff;
   }
 }
@@ -7805,7 +7805,7 @@ margin-bottom:0;
     .cta-3 .switchable__text {
     margin-top: 5.57142857em;
 }
-   .secondary-page  .cta .cta-text h3,  .secondary-page  .cta .cta-text p{
+   .secondary-page  .cta .cta-text h3,  .secondary-page  .cta .cta-text p, .landing-page  .cta .cta-text h3,  .landing-page  .cta .cta-text p{
 	color:#fff;
   }
 }
@@ -8634,8 +8634,8 @@ margin-top:1em;
 width:100px;
 }
 /*! -- Money-transfer page -- */
-#money-transfer .bgd{
-  height:35em;
+#money-transfer .bgd, #money-transfer-2 .bgd{
+  height:44em;
 }
 #money-transfer .airtime-top-line{
 position:absolute;
@@ -8643,25 +8643,23 @@ max-height:25em;
 left:60%;
 margin-top:-8em;
 }
-#money-transfer .airtime-getting-started-list{
-  grid-auto-columns: 1fr;
-margin-bottom:1em;
+#money-transfer .three-columns{
+  grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+      margin-bottom:1em;
 }
 #money-transfer .airtime-rows{
 grid-row: 1;
 }
-#money-transfer .title-icon{
+#money-transfer .title-icon, #money-transfer-2 .title-icon{
   margin-bottom:0;
 }
-#money-transfer .customer-choice{
+#money-transfer .customer-choice, #money-transfer-2 .customer-choice{
 margin-bottom:0;
 }
 .value{
   margin-top:1em;
   margin-bottom:1em;
-}
-#money-transfer .bgd{
-  height:42em;
 }
 .section-bgd2{
   width:100%;
@@ -8671,35 +8669,70 @@ margin-bottom:0;
   transform: skewY(5deg);
   z-index:-400;
   position:absolute;
-  margin-top:3em;
+  margin-top:1em;
+}
+.additional{
+  margin-top:-2em;
 }
 .super-fast h4{
   margin-bottom:3em;
 }
 .super-fast .btn{
-  margin:4em auto 0;
+  margin:2em auto 0;
   width:100%;
 }
 #money-transfer .middle-list{
-  color:#000;
+  color:#232d3d;
   margin: 0 1em 0;
 }
-#money-transfer .discounts h4{
+#money-transfer .discounts h4, #money-transfer-2 .discounts h4{
 margin-left:0;
 max-width:100%;
 }
 .additional-value{
-  margin-bottom:-7em;
+  margin-bottom:5em;
   margin-top:3em;
 }
-#money-transfer .bottom-part{
-  margin:9em auto 1em;
+#money-transfer .bottom-part, #money-transfer-2 .bottom-part{
+  margin: 0 auto 1em;
 }
 /*! -- Money-transfer-2 page -- */
-#money-transfer-2{
+#money-transfer-2 .airtime-top-line{
+position:absolute;
+max-height:25em;
+left:60%;
+margin-top:-8em;
+}
+#money-transfer-2 .middle-list{
+  margin: 0 1em 0;
+}
+#money-transfer-2 .three-columns{
+  grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    margin-bottom:1em;
+}
+#money-transfer-2 .airtime-rows{
+grid-row: 1;
+}
+.landing-page{
   background:#232d3d;
   color:#ffffff;
 }
+.landing-page footer a,.landing-page footer .lead, .landing-page footer span, .landing-page .airtime-getting-started-list{
+  color:#ffffff;
+}
+.landing-page .bgd, .landing-page .section-bgd2, .landing-page .cta-bgd{
+  background: #334054;
+}
+.landing-page .top-part .top-button-1 {
+    background-color: #1fbad6;
+    border-color: #1fbad6;
+}
+.landing-page .top-part .lead {
+    font-size: 1.35714286em;
+    line-height: 1.68421053em;
+}
+
 
 
 
