@@ -8695,6 +8695,13 @@ max-width:100%;
 #money-transfer .bottom-part{
   margin:9em auto 1em;
 }
+/*! -- Money-transfer-2 page -- */
+#money-transfer-2{
+  background:#232d3d;
+  color:#fff;
+}
+
+
 
 .bg--dark .process-3 li .process__number {
   background: #252525;
