@@ -8644,7 +8644,11 @@ left:60%;
 margin-top:-8em;
 }
 #money-transfer .airtime-getting-started-list{
+  grid-auto-columns: 1fr;
 margin-bottom:1em;
+}
+#money-transfer .airtime-rows{
+grid-row: 1;
 }
 #money-transfer .title-icon{
   margin-bottom:0;
@@ -8668,6 +8672,13 @@ margin-bottom:0;
   z-index:-400;
   position:absolute;
   margin-top:3em;
+}
+.super-fast h4{
+  margin-bottom:3em;
+}
+.super-fast .btn{
+  margin:4em auto 0;
+  width:100%;
 }
 #money-transfer .middle-list{
   color:#000;
