@@ -30,22 +30,51 @@
     	</head>
 <body id="homepage">
         <a id="start"></a>
+
   <div class="nav-container">
     <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
        	 <div class="container">
             <div class="row">
         	  <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
-            	 <div class="col-3 col-md-2">
-                        <a href="index.html"><img class="logo" alt="logo" src="img/logo-white.svg" /> </a>
-                 </div>
-                 <div class="bar__module">
-                        <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
-                        <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
-                 </div>
+              <div class="bar__module text-right">
+                     <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+                     <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
               </div>
+
+            	 <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo-white.svg" /> </a></div>
+               <ul class="menu-line">
+               	  <li><a id="products-line" class="lead">Products</a>
+               	  	<ul class="sub-menu-line">
+                      <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+               	  		<li><a href="airtime.html" target="_blank">Airtime</a></li>
+               	  		<li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+               	  		<li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                    </ul></li>
+
+                     <li><a class="lead">Pricing</a>
+                     <ul class="sub-menu-line">
+                           <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                             <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                     </ul></li>
+                     <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                     </ul>
+
+                <ul class="about-menu-line">
+                     <li><a class="lead">Company</a>
+                     <ul class="sub-menu-line">
+                       <li><a href="about.html" target="_blank">About Us</a></li>
+                       <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                       <li><a href="careers.html" target="_blank">Careers</a></li>
+                      <li><a href="contact.html" target="_blank">Contact</a></li>
+                      </ul></li>
+                     <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                   </ul>
+              </div>
+
             </div>
          </div>
      </div>
+
 <nav role='navigation'>
   <div id="menuToggle" onclick="nav.menu()">
     <input type="checkbox"/><span></span><span></span><span></span>
@@ -523,6 +552,8 @@ $response</span> <span class="text-danger">=</span> <span class="text-info">curl
     	$(this).addClass('active_button');
 		});
 </script>
+
+
 <script>
 	//Home button active on page load
 		$(document).ready(function(){
