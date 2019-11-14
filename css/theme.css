@@ -3656,6 +3656,9 @@ section.unpad--top {
     margin: 0 auto;
   }
 }
+.nav-container{
+  margin-top:3em;
+}
 /**! 39. Wizard **/
 .wizard__body {
   list-style: none;
@@ -5829,18 +5832,18 @@ color:#1fbad6;
 display: inline-block;
 padding:1em;
 }
+
 .menu-line{
 margin: .2em 2em 0;
 }
 .about-menu-line{
-margin: .2em 1em 0 !important;
+margin: 0 1em 0 0 !important;
 }
+
 .menu-line a, .about-menu-line a{
   color:#ffffff;
 }
-.menu-line{
-  float:left;
-}
+
 .sub-menu-line{
   position:absolute;
   border:1px solid #1fbad6;
