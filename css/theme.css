@@ -5829,11 +5829,12 @@ padding:1em;
 }
 
 .menu-line{
-margin: .2em 2em 0;
-float:left;
+margin: .2em auto 0;
+width:400px;
+text-align: center;
 }
 .about-menu-line{
-margin: 0 1em 0 0 !important;
+margin: -4.4em 1em 0 0 !important;
 }
 .menu-line a, .about-menu-line a{
   color:#ffffff;
