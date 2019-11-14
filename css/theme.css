@@ -5867,7 +5867,9 @@ z-index:46;
 #menuToggle{
   display:none;
 }
-
+#homepage .bar__module{
+margin-top:1em;
+}
 }
 @media all and (max-width: 992px) {
 .menu-line, .about-menu-line, #homepage .bar__module{
