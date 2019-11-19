@@ -31,17 +31,26 @@
 </head>
 <style>
 #whitepaper .bgd{
-  height: 38em;
-  transform: skewY(-3deg);
+  height: 28em;
+  transform: skewY(20deg);
+  top:-27em;
 }
 #whitepaper .top-part h2{
-margin-top:-3em;
+margin-top:-2em;
+}
+#whitepaper .top-part{
+margin-left:2em;
+}
+.wp-art1{
+  max-width:350px;
+  margin-top:-6em;
+  margin-left:1em;
 }
 #whitepaper .contact-main{
-margin-top:9em;
+margin-top:1em;
 }
 .whitepaper-cover{
-  max-width:200px;
+  max-width:150px;
   margin:0 .5em 1em;
 }
 #whitepaper .contact-text,#whitepaper .form-contact{
@@ -49,7 +58,20 @@ margin-top:9em;
 }
 @media all and (max-width: 767px){
   #whitepaper .bgd{
-    height: 50em;
+    height: 64em;
+    transform: skewY(10deg);
+
+  }
+  .wp-art1{
+    margin-top:0;
+  }
+  #whitepaper .top-part{
+  margin-left:0;
+  }
+  #whitepaper .contact-main{
+  margin-top:-1em;
+  margin-bottom:0;
+
   }
     }
 .menu-line li, .about-menu-line li{
@@ -153,17 +175,52 @@ margin-top:9em;
               </div>
             </div>
           </div>
+          <nav role='navigation'>
+            <div id="menuToggle" onclick="nav.menu()">
+              <input type="checkbox"/><span></span><span></span><span></span>
+              <ul id="menu" class="main-menu">
+                <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+
+                <li><a id="products">Products</a>
+                  <ul class="sub-menu">
+                    <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                    <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                    <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                    <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                  </ul></li>
+                  <li><a>Pricing</a>
+                    <ul class="sub-menu">
+                      <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                      <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                    </ul></li>
+                    <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                    <li><a>Company</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html" target="_blank">About Us</a></li>
+                        <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                        <li><a href="careers.html" target="_blank">Careers</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                      </ul></li>
+                      <li><a href="support.html" target="_blank">Help</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div><!--end module-->
+
 
     <div class="main-container">
       <div class="bgd"></div>
       <section class="top-part">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-12 text-left">
-              <h2>Reach 5 Billion Prepaid Mobiles Worldwide</h2>
-              <p class="lead">The world of prepaid mobile plans is extremely complex, given that it connects billions of people without bank accounts. The answer to this complexity is through translating forms of gifting and rewards by topping up mobile phone balances via APIs.
+          <div class="row justify-content-left">
+            <div class="col-md-7 col-xs-12 text-left">
+              <h2>Free whitepaper that analyzes the state of the mobile top up industry</h2>
+              <p class="lead">The world of prepaid mobile plans is extremely complex, given that it connects billions of people without bank accounts. The answer to this complexity is through translating forms of gifting and rewards by topping up mobile phone balances via APIs
               </p>
             </div>
+            <img class="wp-art1 col-md-4 col-xs-12" alt="whitepaper" src="img/wp-art1.svg" />
+
           </div><!--end of row-->
         </div><!--end of container-->
       </section>
@@ -174,8 +231,7 @@ margin-top:9em;
             <img class="whitepaper-cover" alt="whitepaper" src="img/whitepaper.jpg" />
 
             <div class="contact-text col-sm-12 col-md-5">
-              <h4 class="">Free Whitepaper for whoever would be interested in learning this information
-              </h4>
+
               <p>The purpose of this 10-page whitepaper is to develop ideas about how to reach this market with products that are easy to integrate.
                 </p>
               <h4>What you’ll get from this whitepaper</h4>
