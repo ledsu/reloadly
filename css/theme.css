@@ -8607,13 +8607,12 @@ margin-bottom:0;
 }
 @media screen and (max-width: 1024px) {
   #mobile-reward .bgd{
-    height:70em;
+    height:59em;
   }
-
 }
 @media screen and (max-width: 767px) {
   #mobile-reward .bgd{
-    height:72em;
+    height:58em;
   }
   #mobile-reward .airtime-top-line{
   max-height:25em;
