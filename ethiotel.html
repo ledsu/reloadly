@@ -211,129 +211,126 @@
                       </div>
                     </div><!--end of row-->
                   </div><!--end of container-->
-                </section>
+</section>
+<section class="code text-center bg--secondary">
+  <div class="container code-skew-back col-12">
+    <div class="row middle-title justify-content-around">
+        <div class="col-sm-10 col-md-8 col-lg-11 col-xl-8">
+          <div class="container middle-content">
+            <div class="code-bgd">
+              <div class="dropdown">
+                <button onclick="cURLFunction()" id="codeBtn-cURL" class="dropbtn">cURL</button>
+                <button onclick="PHPFunction()" id="codeBtn-PHP" class="dropbtn">PHP</button>
+                <button onclick="RubyFunction()" id="codeBtn-Ruby" class="dropbtn">Ruby</button>
+                <button onclick="JavaFunction()" id="codeBtn-Java" class="dropbtn">Java</button>
+                  <div id ="code-cURL" class="dropdownContent">
+<pre><code><span class="text-danger">"transactionId"</span> <span class="text-light">:</span> <span class="text-warning">1</span><span class="text-light">,</span>
+<span class="text-danger">"recipientPhone"</span> <span class="text-light">:</span> <span class="text-info">"50936377111"</span><span class="text-light">,</span>
+<span class="text-danger">"senderPhone"</span><span class="text-light">:</span> <span class="text-info">"13059547862"</span><span class="text-light">,</span>
+<span class="text-danger">"countryCode"</span><span class="text-light">:</span> <span class="text-info">"HT"</span><span class="text-light">,</span>
+<span class="text-danger">"operatorId"</span><span class="text-light">:</span> <span class="text-warning">173</span><span class="text-light">,</span>
+<span class="text-danger">"requestedAmount"</span><span class="text-light">:</span> <span class="text-warning">15</span><span class="text-light">,</span>
+<span class="text-danger">"requestedAmountCurrencyCode"</span><span class="text-light">:</span> <span class="text-info">"USD"</span><span class="text-light">,</span>
+<span class="text-danger">"deliveredAmount"</span><span class="text-light">:</span> <span class="text-warning">997.2</span><span class="text-light">,</span>
+<span class="text-danger">"deliveredAmountCurrencyCode"</span><span class="text-light">:</span> <span class="text-info">"HTG"</span><span class="text-light">,</span>
+<span class="text-danger">"customIdentifier"</span><span class="text-light">:</span> <span class="text-info">"transaction by john@example.com"</span><span class="text-light">,</span>
+<span class="text-danger">"transactionDate"</span><span class="text-light">:</span> <span class="text-info">"2018-06-26 07:43:36"</span>
+</code></pre></div>
+<div id ="code-PHP" class="dropdownContent dropdownContent2">
+<pre><code><span class="text-light">&lt? php</span>
+<span class="text-light">$ch</span><span class="text-danger"> = </span><span class="text-info">curl_init</span><span class="text-light">();</span>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_URL</span><span class="text-light">,</span> <span class="text-warning">"https://topups.reloadly.com/topups"</span><span class="text-light">);</span>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_RETURNTRANSFER</span><span class="text-light">,</span> <span class="text-danger">TRUE</span><span class="text-light">);</span>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_HEADER</span><span class="text-light">,</span> <span class="text-danger">FALSE<span class="text-light">);</span>
 
-                <section class="code text-center bg--secondary">
-                  <div class="container code-skew-back col-12">
-                    <div class="row middle-title justify-content-around">
-                      <div class="col-sm-10 col-md-8 col-lg-11 col-xl-8">
-                        <div class="container middle-content">
-                          <div class="code-bgd">
-                            <div class="dropdown">
-                              <button onclick="cURLFunction()" id="codeBtn-cURL" class="dropbtn">cURL</button>
-                              <button onclick="PHPFunction()" id="codeBtn-PHP" class="dropbtn">PHP</button>
-                              <button onclick="RubyFunction()" id="codeBtn-Ruby" class="dropbtn">Ruby</button>
-                              <button onclick="JavaFunction()" id="codeBtn-Java" class="dropbtn">Java</button>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_POST</span><span class="text-light">,</span> <span class="text-danger">TRUE<span class="text-light">);</span>
 
-                              <div id ="code-cURL" class="dropdownContent">
-                                <pre><code><span class="text-danger">"transactionId"</span> <span class="text-light">:</span> <span class="text-warning">1</span><span class="text-light">,</span>
-                                  <span class="text-danger">"recipientPhone"</span> <span class="text-light">:</span> <span class="text-info">"50936377111"</span><span class="text-light">,</span>
-                                  <span class="text-danger">"senderPhone"</span><span class="text-light">:</span> <span class="text-info">"13059547862"</span><span class="text-light">,</span>
-                                  <span class="text-danger">"countryCode"</span><span class="text-light">:</span> <span class="text-info">"HT"</span><span class="text-light">,</span>
-                                  <span class="text-danger">"operatorId"</span><span class="text-light">:</span> <span class="text-warning">173</span><span class="text-light">,</span>
-                                  <span class="text-danger">"requestedAmount"</span><span class="text-light">:</span> <span class="text-warning">15</span><span class="text-light">,</span>
-                                  <span class="text-danger">"requestedAmountCurrencyCode"</span><span class="text-light">:</span> <span class="text-info">"USD"</span><span class="text-light">,</span>
-                                  <span class="text-danger">"deliveredAmount"</span><span class="text-light">:</span> <span class="text-warning">997.2</span><span class="text-light">,</span>
-                                  <span class="text-danger">"deliveredAmountCurrencyCode"</span><span class="text-light">:</span> <span class="text-info">"HTG"</span><span class="text-light">,</span>
-                                  <span class="text-danger">"customIdentifier"</span><span class="text-light">:</span> <span class="text-info">"transaction by john@example.com"</span><span class="text-light">,</span>
-                                  <span class="text-danger">"transactionDate"</span><span class="text-light">:</span> <span class="text-info">"2018-06-26 07:43:36"</span>
-                                </code></pre></div>
-                                <div id ="code-PHP" class="dropdownContent dropdownContent2">
-                                  <pre><code><span class="text-light">&lt? php</span>
-                                    <span class="text-light">$ch</span><span class="text-danger"> = </span><span class="text-info">curl_init</span><span class="text-light">();</span>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_POSTFIELDS</span><span class="text-light">,</span> <span class="text-light">{</span>
+<span class="text-warning">\"recipientPhone\"</span><span class="text-danger">:</span> <span class="text-light">{</span>
+<span class="text-warning">\"countryCode\"</span><span class="text-danger">: <span class="text-warning">\"HT\"</span><span class="text-light">,
+<span class="text-warning">\"number\"</span><span class="text-danger">:</span> <span class="text-warning">\"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)</span>
+},
+<span class="text-warning">\"senderPhone\"</span><span class="text-danger">:</span> <span class="text-light">{</span>
+<span class="text-warning">\"countryCode\"</span><span class="text-danger">:</span> <span class="text-warning">\"US\"</span><span class="text-light">,</span>
+<span class="text-warning">\"number\"</span><span class="text-danger">:</span> <span class="text-warning">\"+13059547862\" //(Note the \"+1\" country dialing code for USA)</span><span class="text-light">
+},</span>
+<span class="text-warning">\"operatorId\"</span><span class="text-danger">:</span> 173<span class="text-light">,</span>
+<span class="text-warning">\"amount\"</span><span class="text-danger">:</span> 15<span class="text-light">,</span>
+<span class="text-warning">\"customIdentifier\"</span><span class="text-danger">:</span> <span class="text-warning">\"transaction by john@example.com\"</span>
+<span class="text-light">});</span>
 
-                                    <span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_URL</span><span class="text-light">,</span> <span class="text-warning">"https://topups.reloadly.com/topups"</span><span class="text-light">);</span>
-                                    <span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_RETURNTRANSFER</span><span class="text-light">,</span> <span class="text-danger">TRUE</span><span class="text-light">);</span>
-                                    <span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_HEADER</span><span class="text-light">,</span> <span class="text-danger">FALSE<span class="text-light">);</span>
+<span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_HTTPHEADER</span><span class="text-light">,</span> array<span class="text-light">(</span>
+<span class="text-warning">"Content-Type: application/json"</span><span class="text-light">,</span>
+<span class="text-warning">"Accept: application/com.reloadly.topups-v1+json"</span><span class="text-light">,</span>
+<span class="text-warning">"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa"</span>
+<span class="text-light">));
 
-                                    <span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_POST</span><span class="text-light">,</span> <span class="text-danger">TRUE<span class="text-light">);</span>
+$response</span> <span class="text-danger">=</span> <span class="text-info">curl_exec</span><span class="text-light">($ch);</span>
+<span class="text-info">curl_close</span><span class="text-light">($ch);</span>
 
-                                    <span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_POSTFIELDS</span><span class="text-light">,</span> <span class="text-light">{</span>
-                                      <span class="text-warning">\"recipientPhone\"</span><span class="text-danger">:</span> <span class="text-light">{</span>
-                                        <span class="text-warning">\"countryCode\"</span><span class="text-danger">: <span class="text-warning">\"HT\"</span><span class="text-light">,
-                                          <span class="text-warning">\"number\"</span><span class="text-danger">:</span> <span class="text-warning">\"+50936377111\" //(Note the \"+509\" country dialing code for Haiti)</span>
-                                        },
-                                        <span class="text-warning">\"senderPhone\"</span><span class="text-danger">:</span> <span class="text-light">{</span>
-                                          <span class="text-warning">\"countryCode\"</span><span class="text-danger">:</span> <span class="text-warning">\"US\"</span><span class="text-light">,</span>
-                                          <span class="text-warning">\"number\"</span><span class="text-danger">:</span> <span class="text-warning">\"+13059547862\" //(Note the \"+1\" country dialing code for USA)</span><span class="text-light">
-                                          },</span>
-                                          <span class="text-warning">\"operatorId\"</span><span class="text-danger">:</span> 173<span class="text-light">,</span>
-                                          <span class="text-warning">\"amount\"</span><span class="text-danger">:</span> 15<span class="text-light">,</span>
-                                          <span class="text-warning">\"customIdentifier\"</span><span class="text-danger">:</span> <span class="text-warning">\"transaction by john@example.com\"</span>
-                                          <span class="text-light">});</span>
+<span class="text-info">var_dump</span><span class="text-light">($response</span><span class="text-light">);</span>
+</code></pre></div>
 
-                                          <span class="text-info">curl_setopt</span><span class="text-light">($ch,</span> <span class="text-primary">CURLOPT_HTTPHEADER</span><span class="text-light">,</span> array<span class="text-light">(</span>
-                                          <span class="text-warning">"Content-Type: application/json"</span><span class="text-light">,</span>
-                                          <span class="text-warning">"Accept: application/com.reloadly.topups-v1+json"</span><span class="text-light">,</span>
-                                          <span class="text-warning">"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa"</span>
-                                          <span class="text-light">));
+<div id ="code-Ruby" class="dropdownContent dropdownContent2"><pre><code><span class="text-info">require 'rubygems'</span> <span class="text-danger">if</span> <span class="text-info">RUBY_VERSION</span> <span class="text-light">&lt;</span> <span class="text-info">'1.9'</span>
+<span class="text-info">require 'rest_client'</span>
 
-                                            $response</span> <span class="text-danger">=</span> <span class="text-info">curl_exec</span><span class="text-light">($ch);</span>
-                                            <span class="text-info">curl_close</span><span class="text-light">($ch);</span>
+<span class="text-success">values</span> <span class="text-light">= {</span>
+<span class="text-danger">"recipientPhone"</span><span class="text-light">: {</span>
+<span class="text-danger">"countryCode"</span><span class="text-light">:</span> <span class="text-info">"HT"</span><span class="text-light">,</span>
+<span class="text-danger">"number"<span class="text-light">: </span><span class="text-info">"+50936377111" </span><span class="text-light">//(Note the "+509" country dialing code for Haiti)</span>
+<span class="text-light">},</span>
+<span class="text-danger">"senderPhone"</span><span class="text-light">: {</span>
+<span class="text-danger">"countryCode"</span><span class="text-light">:</span><span class="text-info"> "US"</span><span class="text-light">,</span>
+<span class="text-danger">"number"</span><span class="text-light">:</span><span class="text-info"> "+13059547862"</span> <span class="text-light">//(Note the "+1" country dialing code for USA)</span>
+<span class="text-light">},</span>
+<span class="text-danger">"operatorId"</span><span class="text-light">:</span> <span class="text-info">173</span><span class="text-light">,</span>
+<span class="text-danger">"amount"</span><span class="text-light">:</span> <span class="text-info">15</span><span class="text-light">,</span>
+<span class="text-danger">"customIdentifier"</span><span class="text-light">:</span> <span class="text-info">"transaction by john@example.com"</span>
+<span class="text-light">}</span>
 
-                                            <span class="text-info">var_dump</span><span class="text-light">($response</span><span class="text-light">);</span>
-                                          </code></pre></div>
+<span class="text-success">headers</span> <span class="text-light">= {</span>
+<span class="text-light"> :</span><span class="text-danger">content_type</span> <span class="text-light">=></span> <span class="text-info">'application/json'<span class="text-light">,</span>
+<span class="text-light"> :</span><span class="text-danger">accept</span> <span class="text-light">=></span> <span class="text-info">'application/com.reloadly.topups-v1+json'<span class="text-light">,</span>
+<span class="text-light"> :</span><span class="text-danger">authorization</span> <span class="text-light">=></span> <span class="text-info">'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa'</span>
+<span class="text-light">}</span>
 
-                                          <div id ="code-Ruby" class="dropdownContent dropdownContent2"><pre><code><span class="text-info">require 'rubygems'</span> <span class="text-danger">if</span> <span class="text-info">RUBY_VERSION</span> <span class="text-light">&lt;</span> <span class="text-info">'1.9'</span>
-                                            <span class="text-info">require 'rest_client'</span>
+<span class="text-success">response</span> <span class="text-light">=</span> <span class="text-info">RestClient</span><span class="text-light">.</span><span class="text-info">post</span> <span class="text-info">'https://topups.reloadly.com/topups'</span><span class="text-light">,</span> values<span class="text-light">,</span> headers
+<span class="text-info">puts</span> responseResponse
+</code></pre></div>
 
-                                            <span class="text-success">values</span> <span class="text-light">= {</span>
-                                              <span class="text-danger">"recipientPhone"</span><span class="text-light">: {</span>
-                                                <span class="text-danger">"countryCode"</span><span class="text-light">:</span> <span class="text-info">"HT"</span><span class="text-light">,</span>
-                                                <span class="text-danger">"number"<span class="text-light">: </span><span class="text-info">"+50936377111" </span><span class="text-light">//(Note the "+509" country dialing code for Haiti)</span>
-                                                <span class="text-light">},</span>
-                                                <span class="text-danger">"senderPhone"</span><span class="text-light">: {</span>
-                                                  <span class="text-danger">"countryCode"</span><span class="text-light">:</span><span class="text-info"> "US"</span><span class="text-light">,</span>
-                                                  <span class="text-danger">"number"</span><span class="text-light">:</span><span class="text-info"> "+13059547862"</span> <span class="text-light">//(Note the "+1" country dialing code for USA)</span>
-                                                  <span class="text-light">},</span>
-                                                  <span class="text-danger">"operatorId"</span><span class="text-light">:</span> <span class="text-info">173</span><span class="text-light">,</span>
-                                                  <span class="text-danger">"amount"</span><span class="text-light">:</span> <span class="text-info">15</span><span class="text-light">,</span>
-                                                  <span class="text-danger">"customIdentifier"</span><span class="text-light">:</span> <span class="text-info">"transaction by john@example.com"</span>
-                                                  <span class="text-light">}</span>
+<div id ="code-Java" class="dropdownContent dropdownContent2">
+<pre><code><span class="text-info">import javax.ws.rs.client.Client</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.client.ClientBuilder</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.client.Entity</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.core.Response</span><span class="text-light">;</span>
+<span class="text-info">import javax.ws.rs.core.MediaType</span><span class="text-light">;</span>
 
-                                                  <span class="text-success">headers</span> <span class="text-light">= {</span>
-                                                    <span class="text-light"> :</span><span class="text-danger">content_type</span> <span class="text-light">=></span> <span class="text-info">'application/json'<span class="text-light">,</span>
-                                                    <span class="text-light"> :</span><span class="text-danger">accept</span> <span class="text-light">=></span> <span class="text-info">'application/com.reloadly.topups-v1+json'<span class="text-light">,</span>
-                                                    <span class="text-light"> :</span><span class="text-danger">authorization</span> <span class="text-light">=></span> <span class="text-info">'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa'</span>
-                                                    <span class="text-light">}</span>
+<span class="text-info">Client</span> <span class="text-danger">client <span class="text-secondary">=</span><span class="text-info"> ClientBuilder</span><span class="text-secondary">.</span><span class="text-light">newClient()<span class="text-light">;</span>
+<span class="text-info">Entity</span> <span class="text-danger">payload <span class="text-secondary">=</span><span class="text-info"> Entity</span><span class="text-secondary">.</span><span class="text-info">json<span class="text-light">("{</span>
+<span class="text-danger">\"recipientPhone\"</span><span class="text-light">:</span> <span class="text-light">{</span>
+<span class="text-danger"> \"countryCode\"</span><span class="text-light">:</span><span class="text-info"> \"HT\"</span><span class="text-light">,</span>
+<span class="text-danger"> \"number\"</span><span class="text-light">:</span><span class="text-info"> \"+50936377111\" </span><span class="text-light">//(Note the \"+509\" country dialing code for Haiti)
+},</span>
+<span class="text-danger"> \"senderPhone\"</span><span class="text-light">:</span> <span class="text-light">{</span>
+<span class="text-danger"> \"countryCode\"</span><span class="text-light">:</span><span class="text-info"> \"US\"</span><span class="text-light">,</span>
+<span class="text-danger"> \"number\"</span><span class="text-light">:</span><span class="text-info"> \"+13059547862\" </span><span class="text-light">//(Note the \"+1\" country dialing code for USA)
+},</span>
+<span class="text-danger"> \"operatorId\"</span><span class="text-light">:</span><span class="text-info"> 173</span><span class="text-light">,</span>
+<span class="text-danger">\"amount\"</span><span class="text-light">:</span><span class="text-info"> 15</span><span class="text-light">,</span>
+<span class="text-danger">\"customIdentifier\"</span><span class="text-light">:</span> <span class="text-info">\"transaction by john@example.com\"</span>
+<span class="text-light">}");</span>
+<span class="text-info">Response</span> <span class="text-danger">response <span class="text-secondary">=</span> client</span><span class="text-secondary">.</span><span class="text-success">target<span class="text-light">(</span><span class="text-info">"https://topups.reloadly.com/topups"</span><span class="text-light">)</span>
+<span class="text-secondary">.</span><span class="text-success">request<span class="text-light">(</span><span class="text-info">MediaType</span><span class="text-secondary">.</span><span class="text-danger">APPLICATION_JSON_TYPE<span class="text-light">)</span>
+<span class="text-secondary">.</span><span class="text-success">header<span class="text-light">(</span><span class="text-info">"Accept"</span><span class="text-light">,</span> <span class="text-info">"application/com.reloadly.topups-v1+json"<span class="text-light">)</span>
+<span class="text-secondary">.</span><span class="text-success">header<span class="text-light">(</span><span class="text-info">"Authorization"</span><span class="text-light">,</span> <span class="text-info">"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa"<span class="text-light">)</span>
+<span class="text-secondary">.</span><span class="text-success">post<span class="text-light">(</span><span class="text-info">payload</span><span class="text-light">)<span class="text-light">;</span>
 
-                                                    <span class="text-success">response</span> <span class="text-light">=</span> <span class="text-info">RestClient</span><span class="text-light">.</span><span class="text-info">post</span> <span class="text-info">'https://topups.reloadly.com/topups'</span><span class="text-light">,</span> values<span class="text-light">,</span> headers
-                                                    <span class="text-info">puts</span> responseResponse
-                                                  </code></pre></div>
+<span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"status: "</span><span class="text-secondary"> + </span><span class="text-info">response<span class="text-secondary">.</span><span class="text-light">getStatus());</span>
+<span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"headers: "</span><span class="text-secondary"> +</span><span class="text-info"> response<span class="text-secondary">.</span><span class="text-light">getHeaders());</span>
+<span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"body:"</span> <span class="text-secondary">+ </span><span class="text-info">response<span class="text-secondary">.</span><span class="text-light">readEntity(<span class="text-info">String.class</span><span class="text-light">)); </span>
+</code></pre></div>
 
-                                                  <div id ="code-Java" class="dropdownContent dropdownContent2">
-                                                    <pre><code><span class="text-info">import javax.ws.rs.client.Client</span><span class="text-light">;</span>
-                                                      <span class="text-info">import javax.ws.rs.client.ClientBuilder</span><span class="text-light">;</span>
-                                                      <span class="text-info">import javax.ws.rs.client.Entity</span><span class="text-light">;</span>
-                                                      <span class="text-info">import javax.ws.rs.core.Response</span><span class="text-light">;</span>
-                                                      <span class="text-info">import javax.ws.rs.core.MediaType</span><span class="text-light">;</span>
-
-                                                      <span class="text-info">Client</span> <span class="text-danger">client <span class="text-secondary">=</span><span class="text-info"> ClientBuilder</span><span class="text-secondary">.</span><span class="text-light">newClient()<span class="text-light">;</span>
-                                                      <span class="text-info">Entity</span> <span class="text-danger">payload <span class="text-secondary">=</span><span class="text-info"> Entity</span><span class="text-secondary">.</span><span class="text-info">json<span class="text-light">("{</span>
-                                                        <span class="text-danger">\"recipientPhone\"</span><span class="text-light">:</span> <span class="text-light">{</span>
-                                                          <span class="text-danger"> \"countryCode\"</span><span class="text-light">:</span><span class="text-info"> \"HT\"</span><span class="text-light">,</span>
-                                                          <span class="text-danger"> \"number\"</span><span class="text-light">:</span><span class="text-info"> \"+50936377111\" </span><span class="text-light">//(Note the \"+509\" country dialing code for Haiti)
-                                                          },</span>
-                                                          <span class="text-danger"> \"senderPhone\"</span><span class="text-light">:</span> <span class="text-light">{</span>
-                                                            <span class="text-danger"> \"countryCode\"</span><span class="text-light">:</span><span class="text-info"> \"US\"</span><span class="text-light">,</span>
-                                                            <span class="text-danger"> \"number\"</span><span class="text-light">:</span><span class="text-info"> \"+13059547862\" </span><span class="text-light">//(Note the \"+1\" country dialing code for USA)
-                                                            },</span>
-                                                            <span class="text-danger"> \"operatorId\"</span><span class="text-light">:</span><span class="text-info"> 173</span><span class="text-light">,</span>
-                                                            <span class="text-danger">\"amount\"</span><span class="text-light">:</span><span class="text-info"> 15</span><span class="text-light">,</span>
-                                                            <span class="text-danger">\"customIdentifier\"</span><span class="text-light">:</span> <span class="text-info">\"transaction by john@example.com\"</span>
-                                                            <span class="text-light">}");</span>
-                                                            <span class="text-info">Response</span> <span class="text-danger">response <span class="text-secondary">=</span> client</span><span class="text-secondary">.</span><span class="text-success">target<span class="text-light">(</span><span class="text-info">"https://topups.reloadly.com/topups"</span><span class="text-light">)</span>
-                                                            <span class="text-secondary">.</span><span class="text-success">request<span class="text-light">(</span><span class="text-info">MediaType</span><span class="text-secondary">.</span><span class="text-danger">APPLICATION_JSON_TYPE<span class="text-light">)</span>
-                                                            <span class="text-secondary">.</span><span class="text-success">header<span class="text-light">(</span><span class="text-info">"Accept"</span><span class="text-light">,</span> <span class="text-info">"application/com.reloadly.topups-v1+json"<span class="text-light">)</span>
-                                                            <span class="text-secondary">.</span><span class="text-success">header<span class="text-light">(</span><span class="text-info">"Authorization"</span><span class="text-light">,</span> <span class="text-info">"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik0wWXpRa"<span class="text-light">)</span>
-                                                            <span class="text-secondary">.</span><span class="text-success">post<span class="text-light">(</span><span class="text-info">payload</span><span class="text-light">)<span class="text-light">;</span>
-
-                                                            <span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"status: "</span><span class="text-secondary"> + </span><span class="text-info">response<span class="text-secondary">.</span><span class="text-light">getStatus());</span>
-                                                            <span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"headers: "</span><span class="text-secondary"> +</span><span class="text-info"> response<span class="text-secondary">.</span><span class="text-light">getHeaders());</span>
-                                                            <span class="text-info">System.out.println</span><span class="text-light">(</span><span class="text-info">"body:"</span> <span class="text-secondary">+ </span><span class="text-info">response<span class="text-secondary">.</span><span class="text-light">readEntity(<span class="text-info">String.class</span><span class="text-light">)); </span>
-                                                          </code></pre></div>
-
-                                                        </div>
+</div>
                                                       </div>
                                                     </div>
                                                     <div class="middle-list col-md-12 col-lg-5">
