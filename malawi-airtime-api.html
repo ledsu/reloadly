@@ -12,7 +12,7 @@
   services connecting you to billions of mobile subscribers">
   <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
   <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
-  <meta property="Keywords" content="Top Up API, Mobile Recharge API, Prepaid top up API, Telecom API, Mobile Airtime API">
+  <meta property="Keywords" content="TNM Malawi airtime api, airtel Malawi airtime api">
   <style type="text/css" media="screen">
   @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
   @font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
@@ -31,6 +31,17 @@
 <style>
 .operator section {
   padding-bottom:0;
+}
+#nigeria .bgd{
+  height:44em;
+}
+.operator .top-part .title-icon{
+max-width:100px;
+margin:-4em 0 .5em;
+float:none;
+}
+.secondary-page  .make-blue{
+  color:#1fbad6;
 }
 .operator .menu-line a{
   color:#000;
@@ -52,11 +63,12 @@
   height:40em;
 }
 .operator .switchable img{
-  margin: 6em 0 0 2em;
+  margin: 0 0 0 2em;
 }
 .operator .switchable--switch img{
   max-width:300px;
-  margin-left: 100px;
+  margin: 6em 0 0 2em;
+
 }
 .operator .code{
   background-color: #F4F9F9;
@@ -88,7 +100,7 @@
     }
 }
 </style>
-<body class="secondary-page operator">
+<body class="secondary-page operator" id="nigeria">
   <div class="nav-container">
     <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
       <div class="container">
@@ -171,11 +183,15 @@
               <section class="top-part text-center">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-9">
-                      <h1>Ethiotel Airtime API</h1>
-                      <p class="lead">Connect to Ehiotel for Airtime and data recharges in minutes.
-                        Programmable and scalable API for distributing virtual airtime across Ethiotel mobile subscribers.</p>
+                    <div class="col-md-9"><img class="title-icon" alt="pic" src="img/malawi/malawi-flag.svg" />
+                      <h1>Malawi Airtime API</h1>
+                      <p class="lead">Connect to TNM and Airtel Malawi Airtime and data recharges in minutes.
+                      Programmable and scalable API for distributing virtual airtime across Malawi’s mobile subscribers.</p>
+                      <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="#">
+                        <span class="btn__text">Get Your Free API Key</span> </a>
                       </div>
+                    </div>
+
                     </div>
                   </div><!--end of row-->
                 </div><!--end of container-->
@@ -184,14 +200,16 @@
               <section class="switchable">
                 <div class="container">
                   <div class="row justify-content-center">
-                    <div class="col-md-5"><img alt="Image" src="img/operator/ethio-img1.svg" /></div>
+                    <div class="col-md-5"><img alt="Image" src="img/malawi/malawi-1.png" /></div>
                     <div class="col-md-5 col-lg-5">
                       <div class="switchable__text">
-                        <h2>About Ethiotel</h2>
-                        <p class="">Ethio Telecom is one of the mega state enterprises, which Ethiopian government has announced to partially privatize selling minority share to foreign investors. The telecom history of the country shows that telecommunications service was introduced in Ethiopia by Emperor Menelik II in 1894 when the construction of the telephone line from Harar to the capital city, Addis Ababa, was commenced.
-                        </p>
-                        <p class="">As of 2019, the total number of telecom service subscribers in Ethiopia has also reached 41.1 million. The total number of mobile data internet users in Ethiopia has reached 19.49 million. Most users still relay on prepaid scratch cards to top up their prepaid mobile balance.
-                        </p>
+                        <h2>About Malawi Telecoms</h2>
+                        <p class="">Malawi’s mobile penetration remains low comparison to the regional average and there’s substantial opportunities for growth, predominantly in the mobile broadband space. TMN was the first operator to launch an LTE-A service, followed by Airtel Malawi in January 2018. Malawi has approximately 7 million mobile subscribers combined with two major operators:
+
+                        <div>
+                          <li><span class="make-blue">&ofcir;</span><span> Airtel, 51% market share</span></li>
+                          <li><span class="make-blue">&ofcir;</span><span> TMN, 49% market share</span></li>
+                        </div></p>
                       </div>
                     </div>
                   </div><!--end of row-->
@@ -204,7 +222,7 @@
                     <div class="col-md-5 col-lg-5">
                       <div class="switchable__text">
                         <h2>Product Overview</h2>
-                        <p class="">Reloadly offers an airtime connection to Ethiotel customers with an instant prepaid balance top up mechanism and notifications for success or failure. Reloadly also provides attractive discounts on every transaction so you can save or earn profits.
+                        <p class="">Reloadly offers an airtime API connection to Malawian mobile subscribers with an instant prepaid balance top up mechanism and notifications for success or failure. Reloadly also provides attractive discounts on every transaction so you can save or earn profits. Airtime top ups are available in local Malawian kwacha values and for cross-border international mobile top ups as well. You can seamlessly decide which pricing pipe line you wish you use.
                         </p>
                         <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="#">
                           <span class="btn__text">View Pricing</span> </a>
@@ -314,7 +332,8 @@
                                                                  <div class="pricing-text">
                                                                      <img alt="Image" src="img/operator/reemit.svg" />
                                                                        <h4>Remittances</h4>
-                                                                       <p>Add more value to your international money transfer emittances by enabling your customers to send cross border airtime transfers.</p>
+                                                                       <p>Enable the transfer of cross-border mobile airtime for remittance services. International mobile top ups is a great value add for migrants and expats across the world.
+                                                                       </p>
                                                                  </div>
                                                                    <div class="pricing-text">
                                                    <img alt="Image" src="img/pricing-3.svg" />
