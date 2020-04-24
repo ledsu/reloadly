@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Reloadly Mobile Top Up API for Developers | Mobile Recharge API</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cross border mobile top up API to send credits to 5 billion phones designed for easy developer implementation on apps and other platforms.">
+        <meta property="og:url" content="https://reloadly.com">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Reloadly">
+        <meta property="og:description" content="The Reloadly API platform is built for developers, the world's first toolkit for mobile airtime and mobile operator
+  services connecting you to billions of mobile subscribers">
+        <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
+        <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
+        <meta property="Keywords" content="white label airtime top up app  key words: Saas airtime top up app">
+		<style type="text/css" media="screen">
+            @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
+			@font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
+		</style>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+  <style>
+  #white-label .menu-line a{
+    color:#000;
+  }
+  #white-label .about-menu-line a{
+    color:#000;
+  }
+  #white-label .menu-line a:hover{
+    color:#1fbad6;
+  }
+  #white-label .about-menu-line a:hover{
+    color:#1fbad6;
+  }
+
+    .secondary-page #white-label bgd{
+      height: 55em;
+    }
+    #white-label .middle-list{
+      float:left;
+    }
+.saas-li{
+  margin-top:6em;
+}
+#white-label .discounts p{
+  font-weight:600;
+}
+#white-label .modal-trigger{
+  font-weight:600;
+}
+#white-label .modal-trigger:hover{
+  color: #1FBAD6;
+  cursor:pointer;
+}
+.saas-cta{
+  margin:2em auto 2em;
+}
+#white-label .horizontal-line{
+margin-bottom:-5em;
+}
+#white-label .cta h3{
+margin-top:6%;
+}
+#white-label .cta-button {
+    margin-top: 6%;
+}
+  </style>
+
+<body class="secondary-page" id="white-label">
+  <div class="nav-container">
+    <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
+            <div class="bar__module text-right">
+              <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+              <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+            </div>
+            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
+            <ul class="menu-line">
+              <li><a id="products-line" class="lead">Products</a>
+                <ul class="sub-menu-line">
+                  <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                  <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                  <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                  <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                </ul></li>
+                <li><a class="lead">Pricing</a>
+                  <ul class="sub-menu-line">
+                    <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                    <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                  </ul></li>
+                  <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                </ul>
+
+                <ul class="about-menu-line">
+                  <li><a class="lead">Company</a>
+                    <ul class="sub-menu-line">
+                      <li><a href="about.html" target="_blank">About Us</a></li>
+                      <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                      <li><a href="careers.html" target="_blank">Careers</a></li>
+                      <li><a href="contact.html" target="_blank">Contact</a></li>
+                    </ul></li>
+                    <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <nav role='navigation'>
+            <div id="menuToggle" onclick="nav.menu()">
+              <input type="checkbox"/><span></span><span></span><span></span>
+              <ul id="menu" class="main-menu">
+                <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+
+                <li><a id="products">Products</a>
+                  <ul class="sub-menu">
+                    <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                    <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                    <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                    <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                  </ul></li>
+                  <li><a>Pricing</a>
+                    <ul class="sub-menu">
+                      <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                      <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                    </ul></li>
+                    <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                    <li><a>Company</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html" target="_blank">About Us</a></li>
+                        <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                        <li><a href="careers.html" target="_blank">Careers</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                      </ul></li>
+                      <li><a href="support.html" target="_blank">Help</a></li>
+                    </ul>
+                  </div>
+                </nav>
+
+              </div><!--end module-->
+
+        <div class="main-container">
+         <div class="bgd"></div>
+
+            <section class="top-part">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>White Label Mobile Top-up App </h2>
+                            <h4>SaaS solution for airtime mobile top up - Android and iOS Apps
+							</h4>
+              <p class="lead">Reloadly offers a SaaS solution airtime mobile top up app for your end users to instantly recharge their mobile phones, enabling your organization to tap into new digital channels. Our mobile apps are fully native built, with the highest standards for quality, reliability and user experience.
+              </p>
+							<a class="badges" href="https://itunes.apple.com/us/app/reloadly-mobile-topup/id1341658233?mt=8"><img src="img/download-app-store.svg"></a>
+                        	<a class="badges" href="https://play.google.com/store/apps/details?id=com.reloadly"><img src="img/google-play-badge.svg"></a>
+                          <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="https://reloadly.com/registration" target="_blank">
+                            <span class="btn__text" >Talk our Sales Experts for pricing</span></a>
+                        	</div>
+
+                            <div class="col-md-4 col-xs-12">
+                        <div class="topup-icon"><img alt="pic" src="img/topup-icon.svg" /></div>
+                         <div ><img class="mobile-app-img1" src="img/mobile-app.png"></div>
+                        </div>
+                    </div><!--end of row-->
+                </div> <!--end of container-->
+            </section>
+
+  <section class="saas-li">
+    <div class="container">
+        <div class="row">
+            <div class="discounts">
+              <p class="lead">The app is made for B2C channels (your end users)
+              </p>
+            <ul class="middle-list">
+              <li><span>&ofcir;</span> Integrate your own payment gateway – already prebuilt for Stripe integrations</li>
+              <li><span>&ofcir;</span> Accept payments in multiple currencies</li>
+              <li><span>&ofcir;</span> Seamless onboarding & signup</li>
+              <li><span>&ofcir;</span> Enable multiple mobile operators in one app</li>
+              <li><span>&ofcir;</span> CMS Module to manage customers, view reports and view transactions</li>
+              <li><span>&ofcir;</span> Customizable with your logo and branding colors</li>
+            </ul>
+            </div>
+
+            <div class="col-md-12 text-center saas-cta"><p class="lead">Are you sending high volumes or have a custom enquiry?
+          Get in touch with our <a class="modal-trigger" data-modal-index="0">Sales team</a></p> </div>
+          </div><!--end of row-->
+        </div> <!--end of container-->
+          </section>
+<hr class="horizontal-line">
+			<section class="switchable">
+                <div class="container">
+					<div class="row justify-content-center">
+                        <div class="switchable__text col-sm-12 text-center"><h2>Topup in 3 easy steps</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                    <div class="col-md-5 three-steps-1"><img alt="Image" src="img/3-steps-1.svg" /></div>
+                         <div class="col-md-5 col-lg-5">
+                            <div class="switchable__text three-steps-text">
+                                <h3>Topup from your contact list</h3>
+                                <p class="lead">You can select a top up a number from your contact list, just make sure the phone number country code is properly stored.
+If the phone number is not available on your contacts, simply select “type a number” tab to manually input the phone number you wish to recharge.
+								</p>
+                               </div>
+                     	</div>
+                    </div><!--end of row-->
+                </div><!--end of container-->
+            </section>
+
+            <section class="switchable switchable--switch feature-large middle-part">
+                <div class="container">
+                    <div class="row justify-content-around">
+                     <div class="col-md-5 three-steps-2"><img alt="Image" src="img/3-steps-2.svg" /></div>
+                         <div class="col-md-5 col-lg-5">
+                            <div class="switchable__text">
+                                <h3 class="mobile-app-middle-h">Autodetect the operator or choose it manually</h3>
+                                <p class="lead"> Our system will automatically detect the mobile operator based on the phone number that you have selected to recharge. If we can’t detect the operator for some reason, you will be prompted to choose it manually from the list available operators in the selected country.
+We carry over 600 mobile operators in our network. If we can’t detect the operator for some reason, you will be prompted to choose it manually from the list available operators in the selected country.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!--end of row-->
+                </div><!--end of container-->
+			</section>
+  			<section class="switchable feature-large">
+                <div class="container">
+                    <div class="row justify-content-center">
+                       <div class="col-md-5 three-steps-3"><img alt="Image" src="img/3-steps-3.svg" />
+                       </div>
+                        <div class="col-md-5 col-lg-5">
+                            <div class="switchable__text three-steps-text">
+                                <h3>Choose the amount and send it</h3>
+                                <p class="lead">
+                                Now you’re almost done, simply choose the amount to recharge. Enter your credit card info and send your top up. It’s that easy!
+                                </p>
+                                </div>
+                        </div>
+                    </div><!--end of row-->
+                </div><!--end of container-->
+			</section>
+
+      <section class="cta-bgd">
+              <div class="container">
+                  <div class="row">
+                          <div class="cta cta-1 col-md-12">
+                              <div class="cta-text col-md-7">
+                                  <h3>Top-Up Mobile Phones Worldwide with Reloadly</h3>
+                              </div>
+                              <div class="cta-button col-md-4 text-center">
+                                 <a class="badges" href="https://itunes.apple.com/us/app/reloadly-mobile-topup/id1341658233?mt=8"><img src="img/download-app-store.svg"></a>
+                        <a class="badges" href="https://play.google.com/store/apps/details?id=com.reloadly"><img src="img/google-play-badge.svg"></a>
+
+                          </div>
+                      </div>
+                  </div>
+                  <!--end of row-->
+              </div>
+              <!--end of container-->
+          </section>
+
+<footer class="space--sm footer-2 text-center-xs ">
+             <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                             <ul class="options list-inline list--hover">
+                                <li><a href="#"><span class="lead">Top Up</span>
+                                    </a>
+                                </li>
+                                <li><a href="#"><span class="lead">Support</span>
+                                    </a>
+                                </li>
+                                <li><a href="#"><span class="lead">Blog</span>
+                                    </a>
+                                </li>
+                                <li><a href="#"><span class="lead">Careers</span>
+                                    </a>
+                                </li>
+                                <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                             <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="https://twitter.com/Reloadly" target="_blank">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/reloadly" target="_blank">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/reloadly" target="_blank">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="https://github.com/ReloadlyNetworks" target="_blank">
+                                        <i class="socicon socicon-github icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                       </div>
+
+                    </div>
+                    <!--end of row-->
+                    <div class="row ">
+                    <div class="col-12 text-center">
+                        <span class="type--fine-print">&copy;
+                                <span class="update-year"></span> Reloadly</span>
+                        </div>
+                        <div class="col-12 text-center">
+                            <a class="type--fine-print" href="#">Terms of Use</a>
+                            <a class="type--fine-print" href="#">Security Information</a>
+                            <a class="type--fine-print" href="#">User Agreement</a>
+                            <a class="type--fine-print" href="#">Cookie Policy</a>
+                            <a class="type--fine-print" href="#">Privacy Policy</a>
+                        </div>
+
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+
+            <section class="hidden">
+               <div class="modal-instance">
+                   <div class="modal-container">
+                       <div class="modal-content">
+                           <section class="imageblock feature-large bg--white border--round">
+                               <div class="col-md-10 col-lg-10 text-center sales-team">
+                                 <h2>Contact our sales team</h2>
+                                      <p class="lead">A sales associate get back to you within 24hrs to better understand you needs</p>
+                                       </div>
+                                   <div class="form-sales-team col-sm-12 col-md-10 col-lg-8 justify-content-center">
+                                      <form data-success="Thanks for contacting us." data-error="Please double-check if you filled in all fields correctly.">
+                                     <div  class="form-left col-sm-12 col-md-6">
+                                     <input type="text" name="Name" placeholder="Your name" required/>
+                                     <input class="validate-required validate-email" type="email" name="Email" placeholder="Work email" required/>
+                                     <input type="tel" name="Telephone" placeholder="Phone number" required/>
+                                     <input type="text" name="Website" placeholder="Company website" required/>
+                                     <input type="text" name="Job title" placeholder="Job title" required/>
+                                     <input type="number" name="Employees" placeholder="N° of employees" min="1"required/>
+                                     <input type="hidden" class="form-control" name="country" value=""required/>
+                                     <select name="Country">
+                   <optgroup>
+            <option value="" disabled selected>Select your country</option>
+            <option data-countryCode="DZ">Algeria</option>
+            <option data-countryCode="AD">Andorra</option>
+            <option data-countryCode="AO">Angola</option>
+            <option data-countryCode="AI">Anguilla</option>
+            <option data-countryCode="AG">Antigua &amp; Barbuda</option>
+            <option data-countryCode="AR">Argentina</option>
+            <option data-countryCode="AM">Armenia</option>
+            <option data-countryCode="AW">Aruba</option>
+            <option data-countryCode="AU">Australia</option>
+            <option data-countryCode="AT">Austria</option>
+            <option data-countryCode="AZ">Azerbaijan</option>
+            <option data-countryCode="BS">Bahamas</option>
+            <option data-countryCode="BH">Bahrain</option>
+            <option data-countryCode="BD">Bangladesh</option>
+            <option data-countryCode="BB">Barbados</option>
+            <option data-countryCode="BY">Belarus</option>
+            <option data-countryCode="BE">Belgium</option>
+            <option data-countryCode="BZ">Belize</option>
+            <option data-countryCode="BJ">Benin</option>
+            <option data-countryCode="BM">Bermuda</option>
+            <option data-countryCode="BT">Bhutan</option>
+            <option data-countryCode="BO">Bolivia</option>
+            <option data-countryCode="BA">Bosnia Herzegovina</option>
+            <option data-countryCode="BW">Botswana</option>
+            <option data-countryCode="BR">Brazil</option>
+            <option data-countryCode="BN">Brunei</option>
+            <option data-countryCode="BG">Bulgaria</option>
+            <option data-countryCode="BF">Burkina Faso</option>
+            <option data-countryCode="BI">Burundi</option>
+            <option data-countryCode="KH">Cambodia</option>
+            <option data-countryCode="CM">Cameroon</option>
+            <option data-countryCode="CA">Canada</option>
+            <option data-countryCode="CV">Cape Verde Islands</option>
+            <option data-countryCode="KY">Cayman Islands</option>
+            <option data-countryCode="CF">Central African Republic</option>
+            <option data-countryCode="CL">Chile</option>
+            <option data-countryCode="CN">China</option>
+            <option data-countryCode="CO">Colombia</option>
+            <option data-countryCode="KM">Comoros</option>
+            <option data-countryCode="CG">Congo</option>
+            <option data-countryCode="CK">Cook Islands</option>
+            <option data-countryCode="CR">Costa Rica</option>
+            <option data-countryCode="HR">Croatia</option>
+            <option data-countryCode="CU">Cuba</option>
+            <option data-countryCode="CY">Cyprus North</option>
+            <option data-countryCode="CY">Cyprus South</option>
+            <option data-countryCode="CZ">Czech Republic</option>
+            <option data-countryCode="DK">Denmark</option>
+            <option data-countryCode="DJ">Djibouti</option>
+            <option data-countryCode="DM">Dominica</option>
+            <option data-countryCode="DO">Dominican Republic</option>
+            <option data-countryCode="EC">Ecuador</option>
+            <option data-countryCode="EG">Egypt</option>
+            <option data-countryCode="SV">El Salvador</option>
+            <option data-countryCode="GQ">Equatorial Guinea</option>
+            <option data-countryCode="ER">Eritrea</option>
+            <option data-countryCode="EE">Estonia</option>
+            <option data-countryCode="ET">Ethiopia</option>
+            <option data-countryCode="FK">Falkland Islands</option>
+            <option data-countryCode="FO">Faroe Islands</option>
+            <option data-countryCode="FJ">Fiji</option>
+            <option data-countryCode="FI">Finland</option>
+            <option data-countryCode="FR">France</option>
+            <option data-countryCode="GF">French Guiana</option>
+            <option data-countryCode="PF">French Polynesia</option>
+            <option data-countryCode="GA">Gabon</option>
+            <option data-countryCode="GM">Gambia</option>
+            <option data-countryCode="GE">Georgia</option>
+            <option data-countryCode="DE">Germany</option>
+            <option data-countryCode="GH">Ghana</option>
+            <option data-countryCode="GI">Gibraltar</option>
+            <option data-countryCode="GR">Greece</option>
+            <option data-countryCode="GL">Greenland</option>
+            <option data-countryCode="GD">Grenada</option>
+            <option data-countryCode="GP">Guadeloupe</option>
+            <option data-countryCode="GU">Guam</option>
+            <option data-countryCode="GT">Guatemala</option>
+            <option data-countryCode="GN">Guinea</option>
+            <option data-countryCode="GW">Guinea - Bissau</option>
+            <option data-countryCode="GY">Guyana</option>
+            <option data-countryCode="HT">Haiti</option>
+            <option data-countryCode="HN">Honduras</option>
+            <option data-countryCode="HK">Hong Kong</option>
+            <option data-countryCode="HU">Hungary</option>
+            <option data-countryCode="IS">Iceland</option>
+            <option data-countryCode="IN">India</option>
+            <option data-countryCode="ID">Indonesia</option>
+            <option data-countryCode="IR">Iran</option>
+            <option data-countryCode="IQ">Iraq</option>
+            <option data-countryCode="IE">Ireland</option>
+            <option data-countryCode="IL">Israel</option>
+            <option data-countryCode="IT">Italy</option>
+            <option data-countryCode="JM">Jamaica</option>
+            <option data-countryCode="JP">Japan</option>
+            <option data-countryCode="JO">Jordan</option>
+            <option data-countryCode="KZ">Kazakhstan</option>
+            <option data-countryCode="KE">Kenya</option>
+            <option data-countryCode="KI">Kiribati</option>
+            <option data-countryCode="KP">Korea North</option>
+            <option data-countryCode="KR">Korea South</option>
+            <option data-countryCode="KW">Kuwait</option>
+            <option data-countryCode="KG">Kyrgyzstan</option>
+            <option data-countryCode="LA">Laos</option>
+            <option data-countryCode="LV">Latvia</option>
+            <option data-countryCode="LB">Lebanon</option>
+            <option data-countryCode="LS">Lesotho</option>
+            <option data-countryCode="LR">Liberia</option>
+            <option data-countryCode="LY">Libya</option>
+            <option data-countryCode="LI">Liechtenstein</option>
+            <option data-countryCode="LT">Lithuania</option>
+            <option data-countryCode="LU">Luxembourg</option>
+            <option data-countryCode="MO">Macao</option>
+            <option data-countryCode="MK">Macedonia</option>
+            <option data-countryCode="MG">Madagascar</option>
+            <option data-countryCode="MW">Malawi</option>
+            <option data-countryCode="MY">Malaysia</option>
+            <option data-countryCode="MV">Maldives</option>
+            <option data-countryCode="ML">Mali</option>
+            <option data-countryCode="MT">Malta</option>
+            <option data-countryCode="MH">Marshall Islands</option>
+            <option data-countryCode="MQ">Martinique</option>
+            <option data-countryCode="MR">Mauritania</option>
+            <option data-countryCode="YT">Mayotte</option>
+            <option data-countryCode="MX">Mexico</option>
+            <option data-countryCode="FM">Micronesia</option>
+            <option data-countryCode="MD">Moldova</option>
+            <option data-countryCode="MC">Monaco</option>
+            <option data-countryCode="MN">Mongolia</option>
+            <option data-countryCode="MS">Montserrat</option>
+            <option data-countryCode="MA">Morocco</option>
+            <option data-countryCode="MZ">Mozambique</option>
+            <option data-countryCode="MN">Myanmar</option>
+            <option data-countryCode="NA">Namibia</option>
+            <option data-countryCode="NR">Nauru</option>
+            <option data-countryCode="NP">Nepal</option>
+            <option data-countryCode="NL">Netherlands</option>
+            <option data-countryCode="NC">New Caledonia</option>
+            <option data-countryCode="NZ">New Zealand</option>
+            <option data-countryCode="NI">Nicaragua</option>
+            <option data-countryCode="NE">Niger</option>
+            <option data-countryCode="NG">Nigeria</option>
+            <option data-countryCode="NU">Niue</option>
+            <option data-countryCode="NF">Norfolk Islands</option>
+            <option data-countryCode="NP">Northern Marianas</option>
+            <option data-countryCode="NO">Norway</option>
+            <option data-countryCode="OM">Oman</option>
+            <option data-countryCode="PW">Palau</option>
+            <option data-countryCode="PA">Panama</option>
+            <option data-countryCode="PG">Papua New Guinea</option>
+            <option data-countryCode="PY">Paraguay</option>
+            <option data-countryCode="PE">Peru</option>
+            <option data-countryCode="PH">Philippines</option>
+            <option data-countryCode="PL">Poland</option>
+            <option data-countryCode="PT">Portugal</option>
+            <option data-countryCode="PR">Puerto Rico</option>
+            <option data-countryCode="QA">Qatar</option>
+            <option data-countryCode="RE">Reunion</option>
+            <option data-countryCode="RO">Romania</option>
+            <option data-countryCode="RU">Russia</option>
+            <option data-countryCode="RW">Rwanda</option>
+            <option data-countryCode="SM">San Marino</option>
+            <option data-countryCode="ST">Sao Tome &amp; Principe</option>
+            <option data-countryCode="SA">Saudi Arabia</option>
+            <option data-countryCode="SN">Senegal</option>
+            <option data-countryCode="CS">Serbia</option>
+            <option data-countryCode="SC">Seychelles</option>
+            <option data-countryCode="SL">Sierra Leone</option>
+            <option data-countryCode="SG">Singapore</option>
+            <option data-countryCode="SK">Slovak Republic</option>
+            <option data-countryCode="SI">Slovenia</option>
+            <option data-countryCode="SB">Solomon Islands</option>
+            <option data-countryCode="SO">Somalia</option>
+            <option data-countryCode="ZA">South Africa</option>
+            <option data-countryCode="ES">Spain</option>
+            <option data-countryCode="LK">Sri Lanka</option>
+            <option data-countryCode="SH">St. Helena</option>
+            <option data-countryCode="KN">St. Kitts</option>
+            <option data-countryCode="SC">St. Lucia</option>
+            <option data-countryCode="SD">Sudan</option>
+            <option data-countryCode="SR">Suriname</option>
+            <option data-countryCode="SZ">Swaziland</option>
+            <option data-countryCode="SE">Sweden</option>
+            <option data-countryCode="CH">Switzerland</option>
+            <option data-countryCode="SI">Syria</option>
+            <option data-countryCode="TW">Taiwan</option>
+            <option data-countryCode="TJ">Tajikstan</option>
+            <option data-countryCode="TH">Thailand</option>
+            <option data-countryCode="TG">Togo</option>
+            <option data-countryCode="TO">Tonga</option>
+            <option data-countryCode="TT">Trinidad &amp; Tobago</option>
+            <option data-countryCode="TN">Tunisia</option>
+            <option data-countryCode="TR">Turkey</option>
+            <option data-countryCode="TM">Turkmenistan</option>
+            <option data-countryCode="TM">Turkmenistan</option>
+            <option data-countryCode="TC">Turks &amp; Caicos Islands</option>
+            <option data-countryCode="TV">Tuvalu</option>
+            <option data-countryCode="UG">Uganda</option>
+            <option data-countryCode="GB">UK</option>
+            <option data-countryCode="UA">Ukraine</option>
+            <option data-countryCode="AE">United Arab Emirates</option>
+            <option data-countryCode="UY">Uruguay</option>
+            <option data-countryCode="US">USA</option>
+            <option data-countryCode="UZ">Uzbekistan</option>
+            <option data-countryCode="VU">Vanuatu</option>
+            <option data-countryCode="VA">Vatican City</option>
+            <option data-countryCode="VE">Venezuela</option>
+            <option data-countryCode="VN">Vietnam</option>
+            <option data-countryCode="VG">Virgin Islands - British</option>
+            <option data-countryCode="VI">Virgin Islands - US</option>
+            <option data-countryCode="WF">Wallis &amp; Futuna</option>
+            <option data-countryCode="YE">Yemen (North)</option>
+            <option data-countryCode="YE">Yemen (South)</option>
+            <option data-countryCode="ZM">Zambia</option>
+            <option data-countryCode="ZW">Zimbabwe</option>
+               <optgroup ></select>
+               </div>
+               <div class="form-right col-sm-12 col-md-6">
+                                     <textarea name="message" placeholder="Hi, my question is..." class="validate-required" rows="4"required></textarea>
+                                   <div class="form-agree">
+                                     <div class="input-checkbox agree-check">
+                                           <input type="checkbox" name="agree" id="input-assigned-0">
+                                           <label for="input-assigned-0"></label>
+                                           </div>
+                                           <div class="form-agree type--fine-print"><span>Send me information on upcoming launches and product updates</span>
+                                           </div>
+                                           </div>
+                                           <button href="mailto:hello@reloadly.com" type="submit" class="btn btn--primary type--uppercase">Submit</button>
+                                       </div>
+                                       </form>
+
+                                      </div>
+                                   </div><!--end of row-->
+                               </div> <!--end of container-->
+                           </section>
+                       </div>
+                   </div>
+               </div>
+               <!--end modal instance-->
+            </section>
+
+
+        </div>
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ </body>
+</html>
