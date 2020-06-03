@@ -1,34 +1,34 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Reloadly Mobile Top Up API for Developers | Mobile Recharge API</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Cross border mobile top up API to send credits to 5 billion phones designed for easy developer implementation on apps and other platforms.">
-        <meta property="og:url" content="https://reloadly.com">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Reloadly">
-        <meta property="og:description" content="The Reloadly API platform is built for developers, the world's first toolkit for mobile airtime and mobile operator
+<head>
+  <meta charset="utf-8">
+  <title>Reloadly Mobile Top Up API for Developers | Mobile Recharge API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cross border mobile top up API to send credits to 5 billion phones designed for easy developer implementation on apps and other platforms.">
+  <meta property="og:url" content="https://reloadly.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reloadly">
+  <meta property="og:description" content="The Reloadly API platform is built for developers, the world's first toolkit for mobile airtime and mobile operator
   services connecting you to billions of mobile subscribers">
-        <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
-        <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
-        <meta property="Keywords" content="airtime aggregator, virtual airtime supplier, sim gateway airtime, sim server gsm gateway">
-		<style type="text/css" media="screen">
-            @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
-			@font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
-		</style>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
+  <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
+  <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
+  <meta property="Keywords" content="airtime aggregator, virtual airtime supplier, sim gateway airtime, sim server gsm gateway">
+  <style type="text/css" media="screen">
+  @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
+  @font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
+  </style>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 <style>
 #bulk-airtime .menu-line a{
   color:#000;
@@ -42,304 +42,378 @@
 #bulk-airtime .about-menu-line a:hover{
   color:#1fbad6;
 }
-#bulk-airtime .bgd{
-  height:49em;
+#bulk-airtime .discounts{
+  margin-top:0;
 }
-#bulk-airtime .switchable {
-  margin-top:-2em;
+#bulk-airtime .section-bgd{
+  height:17em;
 }
-#bulk-airtime .cta .btn{
-  margin-top:-4em;
+#bulk-airtime .open-source-app {
+  margin-top:-21em;
+}
+#bulk-airtime .open-source-app a{
+  color:#1FBAD6;
+}
+#bulk-airtime .open-source-app a:hover{
+  font-weight:700;
+}
+#bulk-airtime .open-source-app p{
+  width:90%;
+  margin:auto;
+}
+#bulk-airtime .title-icon{
+  margin:0;
+}
+#bulk-airtime .open-source-app .title-icon{
+  margin:-2em 0 0 1em;
+}
+#bulk-airtime .in-list-icon{
+  width:2.5em;
+  margin:-0.5em 0 0;
+}
+#bulk-airtime .open-source-list{
+  width:100%;
+  margin:5em auto 0;
+}
+#bulk-airtime .half-sized{
+  max-width:50%;
+  float:left;
+}
+#bulk-airtime .cta-button{
+  margin-top:3em;
 }
 @media all and (max-width: 990px) {
-  #bulk-airtime .bgd{
-    height:66em;
-  }
   #bulk-airtime .mobile-app-img1 {
     margin-left:0;
   }
   #bulk-airtime .topup-icon{
-margin-right:0;
+    margin-right:0;
   }
   #bulk-airtime .top-part {
     margin-bottom: 0;
-}
-#bulk-airtime .switchable {
-    margin-top: 0;
-}
+  }
+  #bulk-airtime .section-bgd{
+    height:24em;
+  }
+  #bulk-airtime .open-source-app {
+    margin-top:-29em;
+  }
+  #bulk-airtime .cta-button{
+    margin-top:1em;
+  }
 }
 @media all and (max-width: 767px) {
-  #bulk-airtime .bgd{
-    height:56em;
-  }
   #bulk-airtime .mobile-app-img1{
     max-width:60%;
     margin-left:2em;
   }
-  .airtime-rows-list {
+  #bulk-airtime  .airtime-rows-list {
     display: grid;
     grid-template-columns: auto;
     margin-bottom: -1em;
   }
-  #bulk-airtime .cta .btn {
-    margin-top: 3em;
-}
+  #bulk-airtime  .airtime-1{
+    margin-top:2em;
+  }
+  #bulk-airtime .section-bgd{
+    height:29em;
+  }
+  #bulk-airtime .open-source-app {
+    margin-top:-32em;
+  }
+  #bulk-airtime .half-sized{
+    max-width:100%;
+  }
 }
 </style>
 
 <body class="secondary-page" id="bulk-airtime">
-        <a id="start"></a>
-        <div class="nav-container">
-          <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
-                  <div class="bar__module text-right">
-                    <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
-                    <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
-                  </div>
-                  <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
-                  <ul class="menu-line">
-                    <li><a id="products-line" class="lead">Products</a>
-                      <ul class="sub-menu-line">
-                        <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
-                        <li><a href="airtime.html" target="_blank">Airtime</a></li>
-                        <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
-                        <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
-                      </ul></li>
-                      <li><a class="lead">Pricing</a>
-                        <ul class="sub-menu-line">
-                          <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
-                          <li><a href="pricing.html" target="_blank">Pricing</a></li>
-                        </ul></li>
-                        <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
-                      </ul>
+  <a id="start"></a>
+  <div class="nav-container">
+    <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
+            <div class="bar__module text-right">
+              <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+              <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+            </div>
+            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
+            <ul class="menu-line">
+              <li><a id="products-line" class="lead">Products</a>
+                <ul class="sub-menu-line">
+                  <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                  <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                  <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                  <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                </ul></li>
+                <li><a class="lead">Pricing</a>
+                  <ul class="sub-menu-line">
+                    <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                    <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                  </ul></li>
+                  <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                </ul>
 
-                      <ul class="about-menu-line">
-                        <li><a class="lead">Company</a>
-                          <ul class="sub-menu-line">
-                            <li><a href="about.html" target="_blank">About Us</a></li>
-                            <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
-                            <li><a href="careers.html" target="_blank">Careers</a></li>
-                            <li><a href="contact.html" target="_blank">Contact</a></li>
-                          </ul></li>
-                          <li><a href="support.html" target="_blank" class="lead">Help</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <ul class="about-menu-line">
+                  <li><a class="lead">Company</a>
+                    <ul class="sub-menu-line">
+                      <li><a href="about.html" target="_blank">About Us</a></li>
+                      <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                      <li><a href="careers.html" target="_blank">Careers</a></li>
+                      <li><a href="contact.html" target="_blank">Contact</a></li>
+                    </ul></li>
+                    <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                  </ul>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <nav role='navigation'>
-                  <div id="menuToggle" onclick="nav.menu()">
-                    <input type="checkbox"/><span></span><span></span><span></span>
-                    <ul id="menu" class="main-menu">
-                      <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
-                      <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+          <nav role='navigation'>
+            <div id="menuToggle" onclick="nav.menu()">
+              <input type="checkbox"/><span></span><span></span><span></span>
+              <ul id="menu" class="main-menu">
+                <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
 
-                      <li><a id="products">Products</a>
-                        <ul class="sub-menu">
-                          <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
-                          <li><a href="airtime.html" target="_blank">Airtime</a></li>
-                          <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
-                          <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
-                        </ul></li>
-                        <li><a>Pricing</a>
-                          <ul class="sub-menu">
-                            <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
-                            <li><a href="pricing.html" target="_blank">Pricing</a></li>
-                          </ul></li>
-                          <li><a href="api-docs.html" target="_blank">Developers</a></li>
-                          <li><a>Company</a>
-                            <ul class="sub-menu">
-                              <li><a href="about.html" target="_blank">About Us</a></li>
-                              <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
-                              <li><a href="careers.html" target="_blank">Careers</a></li>
-                              <li><a href="contact.html" target="_blank">Contact</a></li>
-                            </ul></li>
-                            <li><a href="support.html" target="_blank">Help</a></li>
-                          </ul>
+                <li><a id="products">Products</a>
+                  <ul class="sub-menu">
+                    <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                    <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                    <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                    <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                  </ul></li>
+                  <li><a>Pricing</a>
+                    <ul class="sub-menu">
+                      <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                      <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                    </ul></li>
+                    <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                    <li><a>Company</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html" target="_blank">About Us</a></li>
+                        <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                        <li><a href="careers.html" target="_blank">Careers</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                      </ul></li>
+                      <li><a href="support.html" target="_blank">Help</a></li>
+                    </ul>
+                  </div>
+                </nav>
+
+              </div><!--end module-->
+
+              <div class="main-container">
+                <div class="bgd"></div>
+
+                <section class="top-part">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2>Bulk Airtime Scheduling</h2>
+                        <h3>API & User Portal</h3>
+                        <p class="lead">A quick, easy, scalable API for distributing bulk airtime across 800 Telcos worldwide. Great use when telcos have scheduled promotions, sim GSM gateways, bulk orders for customers or taking top up orders from customers via csv file.
+                        </p>
+                      </div>
+                      <div class="col-md-4 col-xs-12">
+                        <div class="topup-icon"><img alt="pic" src="img/topup-icon.svg" /></div>
+                        <div ><img class="mobile-app-img1" src="img/screen-1.png"></div>
+                      </div>
+                    </div><!--end of row-->
+                  </div> <!--end of container-->
+                </section>
+
+                <section>
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="discounts col-md-9">
+                        <div><img class="title-icon" alt="pic" src="img/use-cases.svg"/>
+                          <h3>Schedule to process airtime top ups in bulk, with an easy API or directly from our web portal.</h3>
+                          <p class="text-center">Processing bulk airtime is a feature that allows users to upload a csv file in 3 easy steps.</p>
+                          </div>
+                        <div class="airtime-1 col-md-12 text-left">
+                          <div class="text-left airtime-getting-started-list col-sm-12">
+                            <div class="airtime-rows">
+                              <img alt="Image" src="img/number-icon-1.svg" />
+                              <p>Upload the csv file with the numbers and amounts you want to top up.</p>
+                            </div>
+                            <div class="airtime-rows">
+                              <img alt="Image" src="img/number-icon-2.svg" />
+                              <p>Select a date and time to start the bulk processing and easily setup up the schedule and Reloadly will processing the file.</p>
+                            </div>
+                            <div class="airtime-rows">
+                              <img alt="Image" src="img/number-icon-3.svg" />
+                              <p>Fix or remove any errors returned from Reloadly, and finally submit and schedule your bulk airtime processing file.</p>
+                            </div>
+                          </div>
                         </div>
-                      </nav>
+                        <p class="text-center">After submitting your file, all successful transactions will be available to on your Transaction Report in real-time.</p>
 
-                    </div><!--end module-->
-
-        <div class="main-container">
-         <div class="bgd"></div>
-
-            <section class="top-part">
-                <div class="container">
+                      </div>
+                    </div><!--end of row-->
+                  </div><!--end of container-->
+                </section>
+<div class="section-bgd"></div>
+                <section class=" text-left open-source-app">
+                  <div class="container">
                     <div class="row">
 
-                        <div class="col-md-6">
-                            <h2>Bulk Airtime Scheduling</h2>
-                            <h3>API & User Portal</h3>
-                            <p class="lead">A quick, easy, scalable API for distributing bulk airtime across 800 Telcos worldwide. Great use when telcos have scheduled promotions, sim GSM gateways, bulk orders for customers or taking top up orders from customers via csv file.
+                      <div class="col-md-9 discounts">
+                        <img class="title-icon" alt="Image" src="img/github-logo.svg"/>
+                        <h3>Open Source Bulk Airtime Application</h3>
+                        <p>Available for free on <a href="" target="_blank">Github</a> as a free open source application, pre-configured with Reloadly’s airtime API.
+                        <br><strong>Programming Language:</strong> PHP Laravel (For backend) and Vue.JS (Frontend)
+                        <br><strong>System Requirements:</strong> Docker + Make
+                        <br><strong>Authentication:</strong> You will need to create a <a href="https://reloadly.com/registration" target="_blank">Reloadly</a> Account, then update your API keys on the application.
+                      </p>
+                      </div>
+
+                      <div class="airtime-1 open-source-list text-left">
+                        <div class="half-sized">
+                          <div class="airtime-rows">
+                            <p><img class="in-list-icon" alt="Image" src="img/number-icon-1.svg"/>
+                              As this is a scheduling app, it works in the backend so an active system is required. Users may choose to run this on their personal systems, however it is not recommended to do so. We recommend to get any cheap server/droplet and let it run there.
                             </p>
-            </div>
-                        <div class="col-md-4 col-xs-12">
-                        <div class="topup-icon"><img alt="pic" src="img/topup-icon.svg" /></div>
-                         <div ><img class="mobile-app-img1" src="img/screen-1.png"></div>
+                          </div>
+                          <div class="airtime-rows">
+                            <p><img class="in-list-icon" alt="Image" src="img/number-icon-2.svg"/>
+                              The system is fully based on Docker. The amazing world of Docker makes it possible to create a clean fresh environment on the cloud that has everything needed for the application to run. This gives developers freedom to deploy anywhere that Docker is compatible with. This application runs independently from Reloadly’s platform. It will simply call Reloadly’s API to process the airtime top ups with your existing API keys.
+                            </p>
+                          </div>
+                          <div class="airtime-rows">
+                            <p><img class="in-list-icon" alt="Image" src="img/number-icon-3.svg"/>
+                              Port: As we do need a port of the system to have the application working. By default the system uses port 80 which can conflict in some situations. However the documentation on Github does explain how easy it is to simply edit a single text file and change port as needed.
+                            </p>
+                          </div>
                         </div>
+                        <div class="half-sized">
+                          <div class="airtime-rows">
+                            <p><img class="in-list-icon" alt="Image" src="img/number-icon-4.svg" />
+                              Database Security: Users might have questions on how to keep the database secure that is why the database is NOT accessible to outside world. This is done by creating a virtual network on Docker, and then have the database and the PHP system deployed within that network. The system will only allow database connections to systems that are within that virtual network.
+                            </p>
+                          </div>
+                          <div class="airtime-rows">
+                            <p><img class="in-list-icon" alt="Image" src="img/number-icon-5.svg" />
+                              Default credentials: The default credentials are available in the documentation on the Github. However users are not required to change DB creds as the DB access is secured already. It is essential to change the default user's creds to run the app on a public server in order to avoid other people from accessing your system. This can be done simply within the system -> Settings. No need to mess with any files to do so.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div><!--end of row-->
-                </div> <!--end of container-->
-            </section>
-
-            <section class="text-left">
-                <div class="container">
-                    <div class="row justify-content-center">
-                     <div class="airtime-1 col-md-12">
-                      <div class="col-md-8 "><img class="title-icon" alt="pic" src="img/use-cases.svg" />
-                       		<h3>Schedule to process airtime top ups in bulk, with an easy API or directly from our web portal.</h3>
-                          <p class="lead text-right">Processing bulk airtime is a feature that allows users to upload a csv file in 3 easy steps.</p>
-                      </div>
-                      <div class="airtime-2 col-md-12 text-left">
-                          <div class="text-left airtime-getting-started-list col-sm-12">
-                          <div class="airtime-rows">
-                            <img alt="Image" src="img/number-icon-1.svg" />
-              <p>Upload the csv file with the numbers and amounts you want to top up.</a></p>
-            </div>
-                          <div class="airtime-rows">
-                            <img alt="Image" src="img/number-icon-2.svg" />
-                            <p>Select a date and time to start the bulk processing and easily setup up the schedule and Reloadly will processing the file.</p>
-                          </div>
-                          <div class="airtime-rows">
-                            <img alt="Image" src="img/number-icon-3.svg" />
-                            <p>Fix or remove any errors returned from Reloadly, and finally submit and schedule your bulk airtime processing file.</p>
-                            </div>
+                  </div><!--end of container-->
+                </section>
+                <section class="cta-bgd">
+                  <div class="container">
+                    <div class="row">
+                      <div class="cta col-md-12">
+                        <div class="cta-text col-md-7">
+                          <h3>Make Your First API Call Today with Reloadly</h3>
+                          <p>Signup for a developer account and connect to our API in minutes</p>
                         </div>
-                  </div>
-                  <p class="lead text-center">After submitting your file, all successful transactions will be available to on your Transaction Report in real-time.</p>
-                  	  </div>
-                  </div><!--end of row-->
-                </div><!--end of container-->
-             </section>
-
-			
-      <hr class="horizontal-line">
-
-      <section class=" text-left">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-10 text-left discounts">
-                    <img class="title-icon" alt="Image" src="img/databundle-icon1.svg" />
-                      <h2 >Developers</h2>
-                      <h4>Reloadly’s meticulously-designed APIs and unmatched functionality helps you build creative products for mobile airtime applications.</h4>
-      </div>
-              </div><!--end of row-->
-          </div><!--end of container-->
-      </section>
-      <section class="cta-bgd">
-          <div class="container">
-              <div class="row">
-                      <div class="cta cta-1 col-md-12">
-                          <div class="cta-text col-md-7">
-                              <h3>Ready to get started and be awesome?</h3>
-                              <p>Try our platform today, sign up in seconds!</p>
-                          </div>
-                          <div class="cta-button col-md-3">
-                              <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
-                                  <span class="btn__text" >
-                                  Get Your Free API Key
-                                  </span>
-                              </a>
+                        <div class="cta-button col-md-3">
+                          <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
+                            <span class="btn__text" >Get your free API key</span>
+                          </a>
+                        </div>
                       </div>
+
+                    </div>
+                    <!--end of row-->
                   </div>
+                  <!--end of container-->
+
+                </section>
+
+
+                <footer class="space--sm footer-2 text-center-xs ">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <ul class="options list-inline list--hover">
+                          <li><a href="#"><span class="lead">Top Up</span>
+                          </a>
+                        </li>
+                        <li><a href="#"><span class="lead">Support</span>
+                        </a>
+                      </li>
+                      <li><a href="#"><span class="lead">Blog</span>
+                      </a>
+                    </li>
+                    <li><a href="#"><span class="lead">Careers</span>
+                    </a>
+                  </li>
+                  <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="social-list list-inline list--hover">
+                <li>
+                  <a href="https://twitter.com/Reloadly" target="_blank">
+                    <i class="socicon socicon-twitter icon icon--xs"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/reloadly" target="_blank">
+                    <i class="socicon socicon-facebook icon icon--xs"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/reloadly" target="_blank">
+                    <i class="socicon socicon-instagram icon icon--xs"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/ReloadlyNetworks" target="_blank">
+                    <i class="socicon socicon-github icon icon--xs"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <!--end of row-->
+          <div class="row ">
+            <div class="col-12 text-center">
+              <span class="type--fine-print">&copy;
+                <span class="update-year"></span> Reloadly</span>
               </div>
-              <!--end of row-->
+              <div class="col-12 text-center">
+                <a class="type--fine-print" href="#">Terms of Use</a>
+                <a class="type--fine-print" href="#">Security Information</a>
+                <a class="type--fine-print" href="#">User Agreement</a>
+                <a class="type--fine-print" href="#">Cookie Policy</a>
+                <a class="type--fine-print" href="#">Privacy Policy</a>
+              </div>
+
+            </div>
+            <!--end of row-->
           </div>
           <!--end of container-->
-      </section>
+        </footer>
 
-
-<footer class="space--sm footer-2 text-center-xs ">
-             <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                             <ul class="options list-inline list--hover">
-                                <li><a href="#"><span class="lead">Top Up</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Support</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Blog</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Careers</span>
-                                    </a>
-                                </li>
-                                <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
-                                    </a>
-                                </li>
-                            </ul>
-                             <ul class="social-list list-inline list--hover">
-                                <li>
-                                    <a href="https://twitter.com/Reloadly" target="_blank">
-                                        <i class="socicon socicon-twitter icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-facebook icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-instagram icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="https://github.com/ReloadlyNetworks" target="_blank">
-                                        <i class="socicon socicon-github icon icon--xs"></i>
-                                    </a>
-                                </li>
-                            </ul>
-
-                       </div>
-
-                    </div>
-                    <!--end of row-->
-                    <div class="row ">
-                    <div class="col-12 text-center">
-                        <span class="type--fine-print">&copy;
-                                <span class="update-year"></span> Reloadly</span>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="type--fine-print" href="#">Terms of Use</a>
-                            <a class="type--fine-print" href="#">Security Information</a>
-                            <a class="type--fine-print" href="#">User Agreement</a>
-                            <a class="type--fine-print" href="#">Cookie Policy</a>
-                            <a class="type--fine-print" href="#">Privacy Policy</a>
-                        </div>
-
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </footer>
-
-        </div>
-        <!--<div class="loader"></div>-->
-        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
-            <i class="stack-interface stack-up-open-big"></i>
-        </a>
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/flickity.min.js"></script>
-        <script src="js/easypiechart.min.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/datepicker.js"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/ytplayer.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/granim.min.js"></script>
-        <script src="js/jquery.steps.min.js"></script>
-        <script src="js/countdown.min.js"></script>
-        <script src="js/twitterfetcher.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
- </body>
-</html>
+      </div>
+      <!--<div class="loader"></div>-->
+      <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+        <i class="stack-interface stack-up-open-big"></i>
+      </a>
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/flickity.min.js"></script>
+      <script src="js/easypiechart.min.js"></script>
+      <script src="js/parallax.js"></script>
+      <script src="js/typed.min.js"></script>
+      <script src="js/datepicker.js"></script>
+      <script src="js/isotope.min.js"></script>
+      <script src="js/ytplayer.min.js"></script>
+      <script src="js/lightbox.min.js"></script>
+      <script src="js/granim.min.js"></script>
+      <script src="js/jquery.steps.min.js"></script>
+      <script src="js/countdown.min.js"></script>
+      <script src="js/twitterfetcher.min.js"></script>
+      <script src="js/spectragram.min.js"></script>
+      <script src="js/smooth-scroll.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </body>
+    </html>
