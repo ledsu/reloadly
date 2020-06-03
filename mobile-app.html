@@ -12,7 +12,7 @@
   services connecting you to billions of mobile subscribers">
         <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
         <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
-        <meta property="Keywords" content="Top Up API, Mobile Recharge API, Prepaid top up API, Telecom API, Mobile Airtime API">
+        <meta property="Keywords" content="airtime reseller app, airtime vendor app">
 		<style type="text/css" media="screen">
             @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
 			@font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
@@ -29,49 +29,159 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
+<style>
+#mobile-app .menu-line a{
+  color:#000;
+}
+#mobile-app .about-menu-line a{
+  color:#000;
+}
+#mobile-app .menu-line a:hover{
+  color:#1fbad6;
+}
+#mobile-app .about-menu-line a:hover{
+  color:#1fbad6;
+}
+#mobile-app .bgd{
+  height:49em;
+}
+#mobile-app .switchable {
+  margin-top:-2em;
+}
+#mobile-app .cta-button{
+  margin-top:9%;
+}
+#mobile-app .cta-text{
+  margin-bottom:0;
+}
+#mobile-app .cta-bgd{
+  height: 10em;
+}
+@media all and (max-width: 990px) {
+  #mobile-app .bgd{
+    height:66em;
+  }
+  #mobile-app .mobile-app-img1 {
+    margin-left:0;
+  }
+  #mobile-app .topup-icon{
+margin-right:0;
+  }
+  #mobile-app .top-part {
+    margin-bottom: 0;
+}
+#mobile-app .airtime-1{
+  margin-top:1em;
+}
+#mobile-app .switchable {
+    margin-top: 0;
+}
+#mobile-app .cta-bgd{
+  height: 7em;
+}
+#mobile-app .cta-button{
+  margin-top:11%;
+}
+}
+@media all and (max-width: 767px) {
+  #mobile-app .bgd{
+    height:56em;
+  }
+  #mobile-app .mobile-app-img1{
+    max-width:60%;
+    margin-left:2em;
+  }
+  #mobile-app .airtime-rows-list {
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: -1em;
+  }
+  #mobile-app .cta-bgd{
+    height: 18em;
+  }
+  #mobile-app .cta .badges img{
+  width:50%;
+  margin-left:22%;
+  }
+}
+</style>
+
 <body class="secondary-page" id="mobile-app">
         <a id="start"></a>
-  <div class="nav-container">
-    <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
-       	 <div class="container">
-            <div class="row">
-        	  <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
-            	 <div class="col-3 col-md-2">
-                        <a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a>
-                 </div>
-                 <div class="bar__module">
-                        <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
-                        <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
-                 </div>
-              </div>
-            </div>
-         </div>
-     </div>
+        <div class="nav-container">
+          <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
+                  <div class="bar__module text-right">
+                    <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+                    <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+                  </div>
+                  <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
+                  <ul class="menu-line">
+                    <li><a id="products-line" class="lead">Products</a>
+                      <ul class="sub-menu-line">
+                        <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                        <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                        <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                        <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                      </ul></li>
+                      <li><a class="lead">Pricing</a>
+                        <ul class="sub-menu-line">
+                          <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                          <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                        </ul></li>
+                        <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                      </ul>
 
-<nav role='navigation'>
-  <div id="menuToggle" onclick="nav.menu()">
-    <input type="checkbox"/><span></span><span></span><span></span>
-    <ul id="menu" class="main-menu">
-      <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
-      <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
-	  <li><a href="index.html" target="_blank">Home</a></li>
-	  <li><a href="about.html" target="_blank">About Us</a></li>
-	  <li><a href="#" id="products">Products</a>
-	  	<ul id="sub-menu">
-	  		<li><a href="airtime.html" target="_blank">Airtime</a></li>
-	  		<li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
-	  		<li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
-       </ul></li>
-      <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
-      <li><a href="pricing.html" target="_blank">Pricing</a></li>
-      <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
-      <li><a href="support.html" target="_blank">Support</a></li>
-      <li><a href="blog.html" target="_blank">Blog</a></li>
-      <li><a href="careers.html" target="_blank">Careers</a></li>
-      <li><a href="api-docs.html" target="_blank">API Docs</a></li>
-    </ul>
-  </div>
-</nav>
+                      <ul class="about-menu-line">
+                        <li><a class="lead">Company</a>
+                          <ul class="sub-menu-line">
+                            <li><a href="about.html" target="_blank">About Us</a></li>
+                            <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                            <li><a href="careers.html" target="_blank">Careers</a></li>
+                            <li><a href="contact.html" target="_blank">Contact</a></li>
+                          </ul></li>
+                          <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <nav role='navigation'>
+                  <div id="menuToggle" onclick="nav.menu()">
+                    <input type="checkbox"/><span></span><span></span><span></span>
+                    <ul id="menu" class="main-menu">
+                      <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                      <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+
+                      <li><a id="products">Products</a>
+                        <ul class="sub-menu">
+                          <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                          <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                          <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                          <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                        </ul></li>
+                        <li><a>Pricing</a>
+                          <ul class="sub-menu">
+                            <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                            <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                          </ul></li>
+                          <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                          <li><a>Company</a>
+                            <ul class="sub-menu">
+                              <li><a href="about.html" target="_blank">About Us</a></li>
+                              <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                              <li><a href="careers.html" target="_blank">Careers</a></li>
+                              <li><a href="contact.html" target="_blank">Contact</a></li>
+                            </ul></li>
+                            <li><a href="support.html" target="_blank">Help</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+
+                    </div><!--end module-->
 
         <div class="main-container">
          <div class="bgd"></div>
@@ -81,19 +191,48 @@
                     <div class="row">
 
                         <div class="col-md-6">
-                            <h2>Top up any country around the world, from the touch of your fingertips</h2>
-                            <p class="lead">The Reloadly app enables you to recharge mobile phones to any mobile operator around the world.
+                            <h2>B2B Airtime Top up App. From the touch of your fingertips.</h2>
+                            <p class="lead">The Reloadly Partner App enables you to manage your account, process airtime top ups while being fully mobile. Our apps are available for both Android and IOS devices.
 							</p>
-							<a class="badges" href="https://itunes.apple.com/us/app/reloadly-mobile-topup/id1341658233?mt=8"><img src="img/download-app-store.svg"></a>
+              <p class="lead">Not yet a Reloadly partner? No problem! Download, and register for free directly from the app. Within a few minutes, you’ll be able to start processing airtime top ups across 130 countries.
+              </p>
+              <a class="badges" href="https://itunes.apple.com/us/app/reloadly-mobile-topup/id1341658233?mt=8"><img src="img/download-app-store.svg"></a>
                         	<a class="badges" href="https://play.google.com/store/apps/details?id=com.reloadly"><img src="img/google-play-badge.svg"></a>
-                        	</div>
+            </div>
                         <div class="col-md-4 col-xs-12">
                         <div class="topup-icon"><img alt="pic" src="img/topup-icon.svg" /></div>
-                         <div ><img class="mobile-app-img1" src="img/mobile-app.png"></div>
+                         <div ><img class="mobile-app-img1" src="img/screen-1.png"></div>
                         </div>
                     </div><!--end of row-->
                 </div> <!--end of container-->
             </section>
+
+            <section class="text-left">
+                <div class="container">
+                    <div class="row justify-content-center">
+                     <div class="airtime-1 col-md-12">
+                      <div class="col-md-8 "><img class="title-icon" alt="pic" src="img/use-cases.svg" />
+                       		<h2>Use Cases</h2>
+                      </div>
+                       		<div class="text-left airtime-rows-list col-sm-12">
+                            	<div class="airtime-rows">
+                            		<h4>Retailers & Distributors</h4>
+                            		<p>Retail shop owners, top up directly from the app. No computers needed.</p>
+                        		</div>
+                        		<div class="airtime-rows">
+                            		<h4>Mobile Airtime Vendors</h4>
+                            		<p>Perfect for street vendors, taxi drivers, and clerks.</p>
+                        		</div>
+                        		<div class="airtime-rows">
+                            		<h4>Developers</h4>
+                            		<p>Great to stay updated with your Reloadly account.</p>
+                        		</div>
+                        	</div>
+                  	  </div>
+                  </div><!--end of row-->
+                </div><!--end of container-->
+             </section>
+             <hr class="horizontal-line">
 
 			<section class="switchable">
                 <div class="container">
@@ -146,25 +285,38 @@ We carry over 600 mobile operators in our network. If we can’t detect the oper
                     </div><!--end of row-->
                 </div><!--end of container-->
 			</section>
+      <hr class="horizontal-line">
 
-        <section class="cta-bgd">
-                <div class="container">
-                    <div class="row">
-                            <div class="cta cta-1 col-md-12">
-                                <div class="cta-text col-md-7">
-                                    <h3>Top-Up Mobile Phones Worldwide with Reloadly</h3>
-                                </div>
-                                <div class="cta-button col-md-4 text-center">
-                                   <a class="badges" href="https://itunes.apple.com/us/app/reloadly-mobile-topup/id1341658233?mt=8"><img src="img/download-app-store.svg"></a>
-                        	<a class="badges" href="https://play.google.com/store/apps/details?id=com.reloadly"><img src="img/google-play-badge.svg"></a>
+      <section class=" text-left">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 text-left discounts">
+                    <img class="title-icon" alt="Image" src="img/databundle-icon1.svg" />
+                      <h2 >Developers</h2>
+                      <h4>Reloadly’s meticulously-designed APIs and unmatched functionality helps you build creative products for mobile airtime applications.</h4>
+      </div>
+              </div><!--end of row-->
+          </div><!--end of container-->
+      </section>
+      <section class="cta-bgd">
+          <div class="container">
+              <div class="row">
+                      <div class="cta cta-1 col-md-12">
+                          <div class="cta-text col-md-7">
+                              <h3>Ready to get started?</h3>
+                          </div>
+                          <div class="cta-button col-md-3">
+                            <a class="badges" href="https://itunes.apple.com/us/app/reloadly-mobile-topup/id1341658233?mt=8"><img src="img/download-app-store.svg"></a>
+                            <a class="badges" href="https://play.google.com/store/apps/details?id=com.reloadly"><img src="img/google-play-badge.svg"></a>
+                              </a>
+                      </div>
+                  </div>
+              </div>
+              <!--end of row-->
+          </div>
+          <!--end of container-->
+      </section>
 
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
 
 <footer class="space--sm footer-2 text-center-xs ">
              <div class="container">

@@ -7028,9 +7028,7 @@ width:40%;
 margin-top:1em;
 margin-right:2em;
 }
-#mobile-app .cta-button{
-margin-top:7%;
-}
+
 .cta .badges img{
 margin-top:.3em;
 margin-right:1em;
@@ -7079,10 +7077,6 @@ right:0;
 #mobile-app .badges img{
 width:50%;
 margin-left:22%;
-}
-#mobile-app .cta .badges img{
-width:50%;
-margin:0 auto 1em;
 }
 #mobile-app .switchable{
 margin-top:-5em;

@@ -12,7 +12,7 @@
   services connecting you to billions of mobile subscribers">
         <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
         <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
-        <meta property="Keywords" content="airtime reseller app, airtime vendor app">
+        <meta property="Keywords" content="airtime aggregator, virtual airtime supplier, sim gateway airtime, sim server gsm gateway">
 		<style type="text/css" media="screen">
             @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
 			@font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
@@ -30,49 +30,49 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 <style>
-#mobile-app .menu-line a{
+#bulk-airtime .menu-line a{
   color:#000;
 }
-#mobile-app .about-menu-line a{
+#bulk-airtime .about-menu-line a{
   color:#000;
 }
-#mobile-app .menu-line a:hover{
+#bulk-airtime .menu-line a:hover{
   color:#1fbad6;
 }
-#mobile-app .about-menu-line a:hover{
+#bulk-airtime .about-menu-line a:hover{
   color:#1fbad6;
 }
-#mobile-app .bgd{
+#bulk-airtime .bgd{
   height:49em;
 }
-#mobile-app .switchable {
+#bulk-airtime .switchable {
   margin-top:-2em;
 }
-#mobile-app .cta .btn{
+#bulk-airtime .cta .btn{
   margin-top:-4em;
 }
 @media all and (max-width: 990px) {
-  #mobile-app .bgd{
+  #bulk-airtime .bgd{
     height:66em;
   }
-  #mobile-app .mobile-app-img1 {
+  #bulk-airtime .mobile-app-img1 {
     margin-left:0;
   }
-  #mobile-app .topup-icon{
+  #bulk-airtime .topup-icon{
 margin-right:0;
   }
-  #mobile-app .top-part {
+  #bulk-airtime .top-part {
     margin-bottom: 0;
 }
-#mobile-app .switchable {
+#bulk-airtime .switchable {
     margin-top: 0;
 }
 }
 @media all and (max-width: 767px) {
-  #mobile-app .bgd{
+  #bulk-airtime .bgd{
     height:56em;
   }
-  #mobile-app .mobile-app-img1{
+  #bulk-airtime .mobile-app-img1{
     max-width:60%;
     margin-left:2em;
   }
@@ -81,13 +81,13 @@ margin-right:0;
     grid-template-columns: auto;
     margin-bottom: -1em;
   }
-  #mobile-app .cta .btn {
+  #bulk-airtime .cta .btn {
     margin-top: 3em;
 }
 }
 </style>
 
-<body class="secondary-page" id="mobile-app">
+<body class="secondary-page" id="bulk-airtime">
         <a id="start"></a>
         <div class="nav-container">
           <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
@@ -172,11 +172,10 @@ margin-right:0;
                     <div class="row">
 
                         <div class="col-md-6">
-                            <h2>B2B Airtime Top up App. From the touch of your fingertips.</h2>
-                            <p class="lead">The Reloadly Partner App enables you to manage your account, process airtime top ups while being fully mobile. Our apps are available for both Android and IOS devices.
-							</p>
-              <p class="lead">Not yet a Reloadly partner? No problem! Download, and register for free directly from the app. Within a few minutes, you’ll be able to start processing airtime top ups across 130 countries.
-              </p>
+                            <h2>Bulk Airtime Scheduling</h2>
+                            <h3>API & User Portal</h3>
+                            <p class="lead">A quick, easy, scalable API for distributing bulk airtime across 800 Telcos worldwide. Great use when telcos have scheduled promotions, sim GSM gateways, bulk orders for customers or taking top up orders from customers via csv file.
+                            </p>
             </div>
                         <div class="col-md-4 col-xs-12">
                         <div class="topup-icon"><img alt="pic" src="img/topup-icon.svg" /></div>
@@ -191,79 +190,32 @@ margin-right:0;
                     <div class="row justify-content-center">
                      <div class="airtime-1 col-md-12">
                       <div class="col-md-8 "><img class="title-icon" alt="pic" src="img/use-cases.svg" />
-                       		<h2>Use Cases</h2>
+                       		<h3>Schedule to process airtime top ups in bulk, with an easy API or directly from our web portal.</h3>
+                          <p class="lead text-right">Processing bulk airtime is a feature that allows users to upload a csv file in 3 easy steps.</p>
                       </div>
-                       		<div class="text-left airtime-rows-list col-sm-12">
-                            	<div class="airtime-rows">
-                            		<h4>Retailers & Distributors</h4>
-                            		<p>Retail shop owners, top up directly from the app. No computers needed.</p>
-                        		</div>
-                        		<div class="airtime-rows">
-                            		<h4>Mobile Airtime Vendors</h4>
-                            		<p>Perfect for street vendors, taxi drivers, and clerks.</p>
-                        		</div>
-                        		<div class="airtime-rows">
-                            		<h4>Developers</h4>
-                            		<p>Great to stay updated with your Reloadly account.</p>
-                        		</div>
-                        	</div>
+                      <div class="airtime-2 col-md-12 text-left">
+                          <div class="text-left airtime-getting-started-list col-sm-12">
+                          <div class="airtime-rows">
+                            <img alt="Image" src="img/number-icon-1.svg" />
+              <p>Upload the csv file with the numbers and amounts you want to top up.</a></p>
+            </div>
+                          <div class="airtime-rows">
+                            <img alt="Image" src="img/number-icon-2.svg" />
+                            <p>Select a date and time to start the bulk processing and easily setup up the schedule and Reloadly will processing the file.</p>
+                          </div>
+                          <div class="airtime-rows">
+                            <img alt="Image" src="img/number-icon-3.svg" />
+                            <p>Fix or remove any errors returned from Reloadly, and finally submit and schedule your bulk airtime processing file.</p>
+                            </div>
+                        </div>
+                  </div>
+                  <p class="lead text-center">After submitting your file, all successful transactions will be available to on your Transaction Report in real-time.</p>
                   	  </div>
                   </div><!--end of row-->
                 </div><!--end of container-->
              </section>
-             <hr class="horizontal-line">
 
-			<section class="switchable">
-                <div class="container">
-					<div class="row justify-content-center">
-                        <div class="switchable__text col-sm-12 text-center"><h2>Topup in 3 easy steps</h2>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                    <div class="col-md-5 three-steps-1"><img alt="Image" src="img/3-steps-1.svg" /></div>
-                         <div class="col-md-5 col-lg-5">
-                            <div class="switchable__text three-steps-text">
-                                <h3>Topup from your contact list</h3>
-                                <p class="lead">You can select a top up a number from your contact list, just make sure the phone number country code is properly stored.
-If the phone number is not available on your contacts, simply select “type a number” tab to manually input the phone number you wish to recharge.
-								</p>
-                               </div>
-                     	</div>
-                    </div><!--end of row-->
-                </div><!--end of container-->
-            </section>
-
-            <section class="switchable switchable--switch feature-large middle-part">
-                <div class="container">
-                    <div class="row justify-content-around">
-                     <div class="col-md-5 three-steps-2"><img alt="Image" src="img/3-steps-2.svg" /></div>
-                         <div class="col-md-5 col-lg-5">
-                            <div class="switchable__text">
-                                <h3 class="mobile-app-middle-h">Autodetect the operator or choose it manually</h3>
-                                <p class="lead"> Our system will automatically detect the mobile operator based on the phone number that you have selected to recharge. If we can’t detect the operator for some reason, you will be prompted to choose it manually from the list available operators in the selected country.
-We carry over 600 mobile operators in our network. If we can’t detect the operator for some reason, you will be prompted to choose it manually from the list available operators in the selected country.
-                                </p>
-                            </div>
-                        </div>
-                    </div><!--end of row-->
-                </div><!--end of container-->
-			</section>
-  			<section class="switchable feature-large">
-                <div class="container">
-                    <div class="row justify-content-center">
-                       <div class="col-md-5 three-steps-3"><img alt="Image" src="img/3-steps-3.svg" />
-                       </div>
-                        <div class="col-md-5 col-lg-5">
-                            <div class="switchable__text three-steps-text">
-                                <h3>Choose the amount and send it</h3>
-                                <p class="lead">
-                                Now you’re almost done, simply choose the amount to recharge. Enter your credit card info and send your top up. It’s that easy!
-                                </p>
-                                </div>
-                        </div>
-                    </div><!--end of row-->
-                </div><!--end of container-->
-			</section>
+			
       <hr class="horizontal-line">
 
       <section class=" text-left">
