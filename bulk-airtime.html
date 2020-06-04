@@ -43,6 +43,14 @@
   color:#1fbad6;
 }
 #bulk-airtime .discounts{
+  margin-top:3em;
+}
+#bulk-airtime .topup-icon{
+  right:-40%;
+  margin-top:-5em;
+}
+#bulk-airtime .topup-icon:first-child{
+  margin-right:-6em;
   margin-top:0;
 }
 #bulk-airtime .section-bgd{
@@ -83,43 +91,52 @@ margin-left:4em;
   margin-top:3em;
 }
 @media all and (max-width: 990px) {
-  #bulk-airtime .mobile-app-img1 {
-    margin-left:0;
+  #bulk-airtime .bgd{
+    height:53em;
   }
-  #bulk-airtime .topup-icon{
-    margin-right:0;
-  }
+  #bulk-airtime .topup-icon:first-child{
+    margin-top:-2em;
+}
+#bulk-airtime .topup-icon:nth-child(2){
+margin-right:2em;
+max-width:310px;
+}
   #bulk-airtime .top-part {
     margin-bottom: 0;
   }
+  #bulk-airtime .discounts {
+    margin-top: 0;
+}
   #bulk-airtime .section-bgd{
     height:24em;
   }
   #bulk-airtime .open-source-app {
-    margin-top:-29em;
+    margin-top:-31em;
   }
   #bulk-airtime .cta-button{
     margin-top:1em;
   }
 }
 @media all and (max-width: 767px) {
-  #bulk-airtime .mobile-app-img1{
-    max-width:60%;
-    margin-left:2em;
+  #bulk-airtime .bgd{
+    height:50em;
   }
   #bulk-airtime  .airtime-rows-list {
     display: grid;
     grid-template-columns: auto;
     margin-bottom: -1em;
   }
-  #bulk-airtime  .airtime-1{
+  #bulk-airtime .topup-icon{
+    display:none;
+  }
+  #bulk-airtime .airtime-1{
     margin-top:2em;
   }
   #bulk-airtime .section-bgd{
-    height:29em;
+    height:31em;
   }
   #bulk-airtime .open-source-app {
-    margin-top:-32em;
+    margin-top:-34em;
   }
   #bulk-airtime .half-sized{
     max-width:100%;
@@ -218,7 +235,7 @@ margin-left:4em;
                       </div>
                       <div class="col-md-4 col-xs-12">
                         <div class="topup-icon"><img alt="pic" src="img/topup-icon.svg" /></div>
-                        <div ><img class="mobile-app-img1" src="img/screen-1.png"></div>
+                        <div class="topup-icon"><img alt="pic" src="img/bulk-airtime.png" /></div>
                       </div>
                     </div><!--end of row-->
                   </div> <!--end of container-->
