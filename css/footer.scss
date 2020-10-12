@@ -1,0 +1,51 @@
+footer {
+    padding-bottom: 0 !important;
+    .type--fine-print {
+        &.white {
+            color: #fff;
+        }
+    }
+    a:hover {
+        cursor: pointer;
+    }
+    .col {
+        text-align: left;
+        @media (max-width: 1024px) {
+            flex: 27%;
+        }
+        @media (max-width: 600px) {
+            flex: 50%;
+        }
+        p {
+            color: #a6b7bf;
+            font-size: 90%;
+        }
+        img, h5 {
+            margin-bottom: 0.85em !important;
+        }
+    ul {
+        li {
+            a {
+                color: #a6b7bf;
+                &:hover {
+                    color: #1fbad6;
+                }
+            }
+        }
+    .down-footer {
+        width: 100%;
+        background: #334054;
+        padding: 1em 0;
+        margin-top: 2em;
+        span {
+            color: #a6b7bf;
+            font-size: 16px;
+            fa-icon {
+                font-size: 14px;
+            }
+        }
+        .heart {
+            color: #42acba;
+        }
+    }
+}
