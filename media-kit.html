@@ -55,6 +55,8 @@
 }
 #media-kit blockquote{
   color:#000000;
+}
+#media-kit .mission{
   margin-bottom:4em;
 }
 #media-kit .discounts h3{
@@ -390,19 +392,19 @@
                     <div class="row justify-content-center">
                       <div class="text-left airtime-rows-list col-sm-12">
                         <div class="airtime-rows">
-                          <img alt="Image" src="img/media-kit-mockup3.svg"/>
+                          <img alt="Image" src="img/mkitsm1.png"/>
                           <h4>Product screenshots</h4>
                           <p>Need some screenshots of our API interface, developer toolkit and other products? We’ve got you covered. Download high-resolution images of Reloadly’s core product offerings for media publication.
                           </p>
                         </div>
                         <div class="airtime-rows">
-                          <img alt="Image" src="img/media-kit-mockup3.svg"/>
+                          <img alt="Image" src="img/mkitsm2.jpg"/>
                           <h4>Leadership photos</h4>
                           <p>Get high-resolution portrait photos of the Reloadly leadership team, including our founder, Michel Francis. For interview requests, please email <strong>press [at] reloadly [dot] com</strong>.
                           </p>
                         </div>
                         <div class="airtime-rows">
-                          <img alt="Image" src="img/media-kit-mockup3.svg"/>
+                          <img alt="Image" src="img/mkitsm3.jpg"/>
                           <h4>Our people</h4>
                           <p>We are a growth stage startup that employs talented professionals across 5 continents. Here you can download photos of our diverse team to publish and share.
                           </p>
@@ -418,9 +420,24 @@
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="col-sm-10 col-md-10 col-lg-9">
-                      <div class=" text-center"><h2>Our mission</h2>
-                        <blockquote class="col-sm-12">Reloadly was founded to make it easier to directly connect with global telcos. We find that current airtime APIs on the market are too bulky, so we created lightweight technology and the world’s first top-up developer toolkit that enables our users to simply integrate our API to mobile apps and websites.
+                      <div class=" text-center"><h2>Our story</h2>
+                        <div class=" text-center"><h4>as told by founder Michel Francis</h4>
+                        <blockquote class="col-sm-12">In 2017, I was living in Miami when I decided to reconnect with a former employee and close friend, Emmanuel Piard. Emmanuel and I shared a lot in common: both of us are originally from Haiti, and, as a result of that upbringing, we both intimately understand the pain of maintaining a prepaid balance on your phone to stay connected...
                         </blockquote>
+                        <blockquote class="col-sm-12">This common experience underscored for us the daily necessity of mobile top-ups that emerging markets like Haiti still struggle with meeting today. Emmanuel was previously one of the top engineers at my then-company CallDirek, which I eventually sold in 2016. Then in 2010, he moved away from Miami to North Carolina to work at the Royal Bank of Canada, where he was now a lead API developer.
+                        </blockquote>
+                        <blockquote class="col-sm-12">
+                          We got to talking about how the cloud API industry was making big moves, but lamented that major disruption had yet to truly arrive to the global telecom market. In particular, the airtime and data top-up industry was outdated and had failed to deliver on what we saw as the clear-cut virtues of the open API movement. The telcos and their traditional airtime distributors were still operating the same way they did 20 years ago. It was a business model that was full of complexities and depended on outdated technology that prevented them from being able to scale to digital channels. This couldn’t stand.
+                        </blockquote>
+                        <div id="ourMission" style="display:none;">
+                        <blockquote class="col-sm-12">Reloadly’s mission is to reinvent and break down barriers in the global telco industry by empowering developers and brands to fuel mobile access across the world.
+                        </blockquote>
+                        <blockquote class=" col-sm-12">In 2018, Emmanuel and I decided to start a new company to shake up the status quo. Reloadly was born out of frustration to disrupt the airtime top-up industry by offering a plug-and-play solution for developers with no contracts and no shenanigans. Instead, we would build simple open APIs and developer tools that better enable companies and developers around the world to connect with their telcos. We’d not only make our technology easy to trial and access; we wanted to also focus our solution around solving problems and pain points from the developers’ perspective.
+                        </blockquote>
+                        <blockquote class=" col-sm-12">Reloadly moved our headquarters to Barcelona in late 2019. But we have been a fully distributed team from day one, with employees based across six continents. As Reloadly has grown, Emmanuel and I have both promised to keep true to our original big, bold dream. The vast majority of the world -- about 78% -- still depend on prepaid plans. Our mission is to reinvent and break down barriers in the global telco industry by empowering developers and brands to fuel mobile access in markets across the world, most of which have been underserved for far too long.
+                        </blockquote>
+                      </div>
+                     <a id="missionBtn" onclick="myFunction()" class="btn signup btn--xs type--uppercase"><span class="btn__text" id="readMore">Read the full story</span></a>
                       </div>
                     </div><!--end of row-->
                   </div><!--end of container-->
@@ -694,5 +711,19 @@
                 <script src="js/smooth-scroll.min.js"></script>
                 <script src="js/scripts.js"></script>
                 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                <script>function myFunction() {
+                  var x = document.getElementById("ourMission");
+                  if (ourMission.style.display === "none") {
+                    ourMission.style.display = "block";
+                  } else {
+                    ourMission.style.display = "none";
+                  }
+                }
+                </script>
+                <script> function change() {
+                  var ch = document.getElementById("readMore");
+                  {$("#readMore").html("Read less")}
+                }
+                </script>
               </body>
               </html>
