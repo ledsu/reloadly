@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Reloadly Mobile Top Up API for Developers | Mobile Recharge API</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cross border mobile top up API to send credits to 5 billion phones designed for easy developer implementation on apps and other platforms.">
+        <meta property="og:url" content="https://reloadly.com">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Reloadly">
+        <meta property="og:description" content="The Reloadly API platform is built for developers, the world's first toolkit for mobile airtime and mobile operator
+  services connecting you to billions of mobile subscribers">
+        <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
+        <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
+        <meta property="Keywords" content="airtime reseller app, airtime vendor app">
+		<style type="text/css" media="screen">
+            @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
+			@font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
+		</style>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/footer.scss" rel="stylesheet" type="text/css" media="all" />
+
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+<style>
+#team-photos .menu-line a{
+  color:#000;
+}
+#team-photos .about-menu-line a{
+  color:#000;
+}
+#team-photos .menu-line a:hover{
+  color:#1fbad6;
+}
+#team-photos .about-menu-line a:hover{
+  color:#1fbad6;
+}
+#team-photos .bgd{
+  height:25em;
+  transform: skewY(6deg);
+}
+#team-photos .top-part {
+  margin-bottom:1.5em;
+}
+#team-photos .brandbtn span{
+  color:#fff;
+}
+#team-photos .brandbtn{
+margin-bottom:4em;
+}
+#team-photos .airtime-rows{
+  margin: 0 1.5em 0;
+}
+#team-photos .airtime-rows img:hover{
+  position:relative;
+  top:-2px;
+}
+
+#team-photos .airtime-rows-list{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+#team-photos .airtime-rows-list:last-child {
+  margin-bottom: 5em;
+}
+#team-photos .cta-button{
+  margin-top:8%;
+  max-width:400px;
+}
+#team-photos .cta-text{
+  margin-bottom:0;
+}
+#team-photos .cta-bgd{
+  height: 10em;
+  margin-bottom:0;
+}
+#team-photos .footer-1{
+  background-color: #232e3d;
+  padding-top:2em;
+}
+.down-footer {
+  width: 100%;
+  background: #334054;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+.down-footer span{
+  color: #a6b7bf;
+  font-size: 16px;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+  color: #42acba;
+  vertical-align: -0.125em;
+}
+#team-photos ul, #team-photos .footer-1 p, #team-photos .footer-1 a {
+  color:#a6b7bf;
+}
+@media all and (max-width: 990px) {
+#team-photos .cta-bgd{
+  height: 7em;
+}
+#team-photos .cta-button{
+  margin-top:10%;
+  max-width:220px;
+}
+}
+@media all and (max-width: 767px) {
+  #team-photos .team-photos-img1{
+    max-width:60%;
+    margin-left:2em;
+  }
+  #team-photos .airtime-rows-list {
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: -1em;
+  }
+  #team-photos .cta-bgd{
+    height: 18em;
+  }
+  #team-photos .cta-button{
+    max-width:100%;
+  margin: 2em auto 0;
+  }
+}
+</style>
+
+<body class="secondary-page" id="team-photos">
+        <a id="start"></a>
+        <div class="nav-container">
+          <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
+                  <div class="bar__module text-right">
+                    <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+                    <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+                  </div>
+                  <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
+                  <ul class="menu-line">
+                    <li><a id="products-line" class="lead">Products</a>
+                      <ul class="sub-menu-line">
+                        <li><a href="team-photos.html" target="_blank">Mobile App</a></li>
+                        <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                        <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                        <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                      </ul></li>
+                      <li><a class="lead">Pricing</a>
+                        <ul class="sub-menu-line">
+                          <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                          <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                        </ul></li>
+                        <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                      </ul>
+
+                      <ul class="about-menu-line">
+                        <li><a class="lead">Company</a>
+                          <ul class="sub-menu-line">
+                            <li><a href="about.html" target="_blank">About Us</a></li>
+                            <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                            <li><a href="careers.html" target="_blank">Careers</a></li>
+                            <li><a href="contact.html" target="_blank">Contact</a></li>
+                          </ul></li>
+                          <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <nav role='navigation'>
+                  <div id="menuToggle" onclick="nav.menu()">
+                    <input type="checkbox"/><span></span><span></span><span></span>
+                    <ul id="menu" class="main-menu">
+                      <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                      <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+
+                      <li><a id="products">Products</a>
+                        <ul class="sub-menu">
+                          <li><a href="team-photos.html" target="_blank">Mobile App</a></li>
+                          <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                          <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                          <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                        </ul></li>
+                        <li><a>Pricing</a>
+                          <ul class="sub-menu">
+                            <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                            <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                          </ul></li>
+                          <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                          <li><a>Company</a>
+                            <ul class="sub-menu">
+                              <li><a href="about.html" target="_blank">About Us</a></li>
+                              <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                              <li><a href="careers.html" target="_blank">Careers</a></li>
+                              <li><a href="contact.html" target="_blank">Contact</a></li>
+                            </ul></li>
+                            <li><a href="support.html" target="_blank">Help</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div><!--end module-->
+
+        <div class="main-container">
+         <div class="bgd"></div>
+
+            <section class="">
+                <div class="container">
+                    <div class="row justify-content-center">
+                     <div class="">
+                       <div class="top-part col-md-12"><h2>Team photos</h2>
+                     </div>
+                       		<div class="text-left airtime-rows-list">
+                        		<div class="airtime-rows">
+                              <img src="img/team-p/team1.jpg">
+                                	</div>
+                        		<div class="airtime-rows">
+                              <img src="img/team-p/team2.jpg">
+                              </div>
+                              <div class="airtime-rows">
+                                <img src="img/team-p/team3.jpg">
+                                </div>
+                                <div class="airtime-rows">
+                                  <img src="img/team-p/team4.jpg">
+                                  </div>
+                              <div class="airtime-rows">
+                                <img src="img/team-p/team5.jpg">
+                                    </div>
+                        	</div>
+
+                          <div class="text-left airtime-rows-list">
+                        		<div class="airtime-rows">
+                              <img src="img/team-p/team6.jpg">
+                              </div>
+                              <div class="airtime-rows">
+                                <img src="img/team-p/team7.jpg">
+                                </div>
+                        	</div>
+
+                          <div class="text-left airtime-rows-list">
+                            	<div class="airtime-rows">
+                                <img src="img/team-p/team8.jpg">
+                                </div>
+                        		<div class="airtime-rows">
+                              <img src="img/team-p/team9.jpg">
+                                	</div>
+                                  <div class="airtime-rows">
+                                    <img src="img/team-p/team10.jpg">
+                                      	</div>
+                        	</div>
+                          <div class="col-md-12 text-center"><a class="btn btn--primary type--uppercase brandbtn" href="#"><span class="btn__text">Download All</span></a>
+                  	  </div></div>
+                  </div><!--end of row-->
+                </div><!--end of container-->
+             </section>
+
+
+
+      <section class="cta-bgd">
+          <div class="container">
+              <div class="row">
+                      <div class="cta cta-1 col-md-12">
+                          <div class="cta-text col-md-8">
+                              <h3>Ready to get started? Download now:</h3>
+                          </div>
+                          <div class="cta-button col-md-3">
+                            <a class="badges" href="https://itunes.apple.com/us/app/reloadly-mobile-topup/id1341658233?mt=8"><img src="img/download-app-store.svg"></a>
+                            <a class="badges" href="https://play.google.com/store/apps/details?id=com.reloadly"><img src="img/google-play-badge.svg"></a>
+                              </a>
+                      </div>
+                  </div>
+              </div>
+              <!--end of row-->
+          </div>
+          <!--end of container-->
+      </section>
+
+
+      <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a routerLink="/">
+                <img src="https://cdn.reloadly.com/assets-v2/images/logo.svg" alt="Reloadly" width="150px">
+              </a>
+              <p>First mobile Top-up API made for developers. Enable your apps and websites to send mobile top-up
+                worldwide.
+              </p>
+            </div>
+            <div class="col">
+              <h5 class="text-white">Products</h5>
+              <ul>
+                <li>
+                  <a routerLink="/products/airtime">Airtime</a>
+                </li>
+                <li>
+                  <a routerLink="/products/data-bundles">Data bundles</a>
+                </li>
+              </ul>
+              <h5 class="text-white">Operators</h5>
+              <ul>
+                <li>
+                  <a href="https://operators.reloadly.com/">Global Mobile Operator Network</a>
+                </li>
+                <li>
+                  <a href="https://operators.reloadly.com/orange-international-mobile-airtime-api/">Orange Mobile
+                    Network</a>
+                  </li>
+                  <li>
+                    <a href="https://operators.reloadly.com/claro-dominican-republic-airtime-api/">Claro Dominican
+                      Republic</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h5 class="text-white">Customer stories</h5>
+                  <ul>
+                    <li>
+                      <a routerLink="/customerstory/julaya">Julaya</a>
+                    </li>
+                    <li>
+                      <a routerLink="/customerstory/cash-team-photos">CashMobile App</a>
+                    </li>
+                  </ul>
+                  <h5 class="text-white">Use cases</h5>
+                  <ul>
+                    <li>
+                      <a routerLink="/mobile-rewards">Rewards & Incentives</a>
+                    </li>
+                    <li>
+                      <a routerLink="/money-transmitters">Money transmitters</a>
+                    </li>
+                    <li>
+                      <a routerLink="/usecase/moneytransfer">Money transfer</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h5 class="text-white">Resources</h5>
+                  <ul>
+                    <li>
+                      <a href="https://faq.reloadly.com">Support</a>
+                    </li>
+                    <li>
+                      <a href="https://developers.reloadly.com/">Developers</a>
+                    </li>
+                    <li>
+                      <a (click)="socialIcon('github', 'https://github.com/ReloadlyNetworks')">GitHub</a>
+                    </li>
+                    <li>
+                      <a href="https://reloadly.com/blog/">Blog</a>
+                    </li>
+                    <li>
+                      <a routerLink="/promotions">Promotions</a>
+                    </li>
+                    <li>
+                      <a routerLink="/white-paper">White paper</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h5 class="text-white">Company</h5>
+                  <ul>
+                    <li>
+                      <a routerLink="/about-us">About us</a>
+                    </li>
+                    <li>
+                      <a href="mailto:hello@reloadly.com">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="https://reloadly.com/blog/careers/">Careers</a>
+                    </li>
+                    <li>
+                      <a routerLink="/pricing">Pricing</a>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="col">
+                  <h5 class="text-white">Legal</h5>
+                  <ul>
+                    <li>
+                      <a routerLink="/terms-of-use">Terms of use</a>
+                    </li>
+                    <li>
+                      <a routerLink="/privacy-policy">Privacy policy</a>
+                    </li>
+                    <li>
+                      <a routerLink="/security-information">Security information</a>
+                    </li>
+                    <li>
+                      <a routerLink="/cookie-policy">Cookie policy</a>
+                    </li>
+                    <li>
+                      <a routerLink="/user-agreement">User agreement</a>
+                    </li>
+                    <li>
+                      <a routerLink="/gdpr">GDPR</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h5 class="text-white">Social</h5>
+                  <ul>
+                    <li>
+                      <a (click)="socialIcon('twitter', 'https://twitter.com/Reloadly')">Twitter</a>
+                    </li>
+                    <li>
+                      <a (click)="socialIcon('instagram', 'https://www.instagram.com/reloadly')">Instagram</a>
+                    </li>
+                    <li>
+                      <a (click)="socialIcon('facebook', 'https://www.facebook.com/reloadly')">Facebook</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/Reloadly" target="_blank">GitHub</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--end of row-->
+            </div>
+            <!--end of container-->
+
+
+            <div  class="down-footer"><div class="col-12 text-center"><span class="type--fine-print white"> Powered by <fa-icon class="heart ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+            </fa-icon>&nbsp;from Reloadly, Barcelona - Miami - Paris </span><br>
+            <span  class="type--fine-print white">Copyright ©
+              <span  class="update-year">2020</span> Reloadly Inc. </span></div>
+            </div>
+          </footer>
+
+        </div>
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ </body>
+</html>
