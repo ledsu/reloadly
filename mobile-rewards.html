@@ -55,22 +55,30 @@ margin-top:5em;
   margin-bottom:0;
 }
 #mobile-reward .airtime-top-line{
-position:absolute;
 max-height:25em;
-left:50%;
+left:0;
 margin-top:-8em;
 }
-#mobile-reward .airtime-getting-started-list{
-margin-bottom:1em;
+#mobile-reward .airtime-rows {
+margin: 0 1em 2em;
+}
+#mobile-reward div[class*='col-'] > div[class*='col-']:last-child{
+padding-right:15px;
 }
 #mobile-reward .airtime-getting-started-list img{
 max-width:80%;
 height:200px;
 margin:auto;
 }
-#mobile-reward .airtime-getting-started-list:nth-child(2){
+#mobile-reward .airtime-getting-started-list:last-child{
 margin-bottom:3em;
 }
+#mobile-reward .airtime-getting-started-list :not(:last-child){
+  grid-template-columns: repeat(2, minmax(0, 650px));
+  }
+  #mobile-reward .airtime-getting-started-list :last-child{
+    grid-template-columns: auto auto auto;
+    }
 #mobile-reward .title-icon{
   margin-bottom:0;
 }
@@ -89,7 +97,7 @@ margin-bottom:3em;
   margin-top:3em;
 }
 #mobile-reward .three-steps-1{
-margin-top:2em;
+margin-top:3em;
 }
 #mobile-reward .switchable__text{
   margin-top:0;
@@ -97,7 +105,6 @@ margin-top:2em;
 #mobile-reward .wallet-management{
   margin-top:1em;
   transform: skewY(3deg);
-
 }
 #mobile-reward .middle-list{
   color:#fff;
@@ -108,7 +115,7 @@ margin-top:2em;
   margin-bottom:.5em;
 }
 #mobile-reward hr{
-margin:3em auto 3em;
+margin:2em auto 3em;
 }
 #mobile-reward .customer-stories{
   margin-top:4em;
@@ -257,7 +264,6 @@ margin:3em auto 3em;
       <section class="top-part">
         <div class="container">
           <div class="row">
-            <div class="col-md-12"><img class="airtime-top-line" alt="pic" src="img/hero-gifts.svg" /></div>
             <div class="col-md-5 col-sm-12 text-left">
               <h2>Hello Borderless Rewards And Incentives</h2>
               <p class="lead">Delight mobile phone users across the world with your incentives program
@@ -268,6 +274,8 @@ margin:3em auto 3em;
                 <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
                   <span class="btn__text" >Talk to an expert</span></a>
                 </div>
+                <div class="col-md-7"><img class="airtime-top-line" alt="pic" src="img/hero-gifts.svg" /></div>
+
               </div><!--end of row-->
             </div><!--end of container-->
           </section>
@@ -278,8 +286,8 @@ margin:3em auto 3em;
             <div class="container">
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <p class="lead">Send top-up values as little as <a class="highlighted">$0.50</a> to over <a class="highlighted"> 140 countries</a>
-                  </p>
+                  <h3>Send top-up values as little as <a class="highlighted">$0.50</a> to over <a class="highlighted"> 140 countries</a>
+                  </h3>
                 </div>
               </div><!--end of row-->
             </div> <!--end of container-->
@@ -290,10 +298,10 @@ margin:3em auto 3em;
               <div class="row justify-content-center">
                 <div class="col-md-4 "><img class="" alt="Image" src="img/users.png"/>
                 </div>
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-7 col-lg-7">
                 <div class="col-sm-11 switchable__text"><h3>Reward the world through mobile phones</h3>
-                  <p>Today’s ubiquitous mobile phone usage now enables your incentives programs to become borderless.</p>
-                  <p>Simply integrate Reloadly’s contract-free airtime and data top-up API into your mobile or web application, and then start sendings mobile phone rewards and incentives through a vast global telecom network of over 750 operators.
+                  <p class="lead">Today’s ubiquitous mobile phone usage now enables your incentives programs to become borderless.</p>
+                  <p class="lead">Simply integrate Reloadly’s contract-free airtime and data top-up API into your mobile or web application, and then start sendings mobile phone rewards and incentives through a vast global telecom network of over 750 operators.
                   </p>
                 </div>
               </div>
@@ -305,13 +313,13 @@ margin:3em auto 3em;
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-5"><img alt="Image" src="img/product-scr/scr-3.png" /></div>
-                <div class="col-md-5 col-lg-5">
+                <div class="col-md-6 col-lg-6">
                   <div class=" wallet-management">
                     <h5>WALLET MANAGEMENT</h5>
                     <h3>Incentives that break barriers</h3>
-                    <p>Transfer mobile rewards straight to your customer’s phone in 5 seconds.
+                    <p class="lead">Transfer mobile rewards straight to your customer’s phone in 5 seconds.
                     </p>
-                    <p>Manage wallet balances using over 100 currencies in one place and take advantage of auto-recharges to put your incentives and rewards programs on auto-pilot.
+                    <p class="lead">Manage wallet balances using over 100 currencies in one place and take advantage of auto-recharges to put your incentives and rewards programs on auto-pilot.
                     </p>
                     </div>
                   </div>
@@ -322,35 +330,35 @@ margin:3em auto 3em;
         <section class="value additional">
           <div class="container">
             <div class="row">
-              <div class="col-md-10 col-sm-12 discounts">
-                <img class="title-icon" alt="pic" src="img/landing-page/additional-benefits.svg" />
+              <div class="col-md-12 col-sm-12">
+                <img class="title-icon" alt="pic" src="img/landing-page/additional-benefits.svg"/>
                 <h2>Mobile phone rewards across industries </h2>
               <div class="airtime-getting-started-list col-sm-12">
                 <div class="airtime-rows text-left">
                   <img src="img/brand-loyalty.svg"/>
-                  <h4>Brand Loyalty 2.0</h4>
-                  <li>Build loyalty and engagement by offering top-up values for phone bills. As the new currency of the information age, mobile credit is incredibly valuable. Mobile phone rewards are also a frictionless incentives strategy -- there are no loyalty cards, vouchers or QR codes. This is used in industries as diverse as banking, FMCG, social media and
+                  <h3>Brand Loyalty 2.0</h3>
+                  <p class="lead">Build loyalty and engagement by offering top-up values for phone bills. As the new currency of the information age, mobile credit is incredibly valuable. Mobile phone rewards are also a frictionless incentives strategy -- there are no loyalty cards, vouchers or QR codes. This is used in industries as diverse as banking, FMCG, social media and
                     <a href="https://www.reloadly.com/blog/mobile-game-retention/" target="_blank">mobile gaming</a>.
-                  </li>
+                  </p>
                 </div>
                 <div class="airtime-rows text-left">
                   <img src="img/survey.svg"/>
-                  <h4>Survey Participation</h4>
-                  <li>Encourage higher response rates for your surveys and studies. Successfully soliciting participation from people living in remote markets is difficult. However, by tapping the world’s vast prepaid mobile market, you can offer airtime and data top-up rewards. Prepaid customers especially love gifts that help pay their phone bills. This is commonly used by pollsters, NGOs and academic institutions, as well as companies conduct market research.
-                  </li>
+                  <h3>Survey Participation</h3>
+                  <p class="lead">Encourage higher response rates for your surveys and studies. Successfully soliciting participation from people living in remote markets is difficult. However, by tapping the world’s vast prepaid mobile market, you can offer airtime and data top-up rewards. Prepaid customers especially love gifts that help pay their phone bills. This is commonly used by pollsters, NGOs and academic institutions, as well as companies conduct market research.
+                  </p>
                 </div></div>
                 <div class="airtime-getting-started-list col-sm-12">
                   <div class="airtime-rows text-left">
                     <img src="img/p-programs.svg"/>
-                    <h4>Commercial Partner Programs</h4>
-                    <li>Effectively incentivize small-scale commercial partners such as resellers to boost sales with low-cost mobile rewards. Incentivizing small entrepreneurs is normally very complicated because the ticket sale per visit is so small. However, by offering low-cost mobile rewards, these mom-and-pop stores are able to consistently sell more products. FMCG and other mass-market industries commonly use mobile rewards in this way.
-                    </li>
+                    <h3>Commercial Partner Programs</h3>
+                    <p class="lead">Effectively incentivize small-scale commercial partners such as resellers to boost sales with low-cost mobile rewards. Incentivizing small entrepreneurs is normally very complicated because the ticket sale per visit is so small. However, by offering low-cost mobile rewards, these mom-and-pop stores are able to consistently sell more products. FMCG and other mass-market industries commonly use mobile rewards in this way.
+                    </p>
                   </div>
                   <div class="airtime-rows text-left">
                     <img src="img/empl-r.svg"/>
-                    <h4>Employee Rewards and Incentives</h4>
-                    <li>Human resources departments use mobile rewards to incentivize behavior that fits their company culture. Offering mobile phone top-ups as a reward is especially valuable for  employees that travel a lot and use their personal phone to call home. Mobile phone rewards are also effective incentives for encouraging employees to participate in voluntary events and studys. HR departments across Latin America, Africa and Asia increasingly offer this type of incentive program.
-                    </li>
+                    <h3>Employee Rewards and Incentives</h3>
+                    <p class="lead">Human resources departments use mobile rewards to incentivize behavior that fits their company culture. Offering mobile phone top-ups as a reward is especially valuable for  employees that travel a lot and use their personal phone to call home. Mobile phone rewards are also effective incentives for encouraging employees to participate in voluntary events and studys. HR departments across Latin America, Africa and Asia increasingly offer this type of incentive program.
+                    </p>
                   </div></div>
               </div>
             </div><!--end of row-->
@@ -362,24 +370,29 @@ margin:3em auto 3em;
         <section class="">
             <div class="container">
                 <div class="row justify-content-center dgifts-middle">
-                <div class="col-md-10">
+                <div class="col-md-12">
                       <div class="text-center">
                           <h2>The solution for global incentives in <a class="highlighted"> 3 simple steps</a></h2>
                           <div class="text-left airtime-getting-started-list col-sm-12">
                           <div class="airtime-rows">
                             <img alt="Image" src="img/number-icon-1.svg"/>
-                            <p>Sign up for free -- no contract needed!</p>
+                            <p class="lead">Sign up for free -- no contract needed!</p>
                           </div>
                           <div class="airtime-rows">
                             <img alt="Image" src="img/number-icon-2.svg"/>
-                            <p>Get your API keys from the Reloadly portal.</p>
+                            <p class="lead">Get your API keys from the Reloadly portal.</p>
                           </div>
                           <div class="airtime-rows">
                             <img alt="Image" src="img/number-icon-3.svg"/>
-                            <p>Integrate our API and add balance to your wallet to go live.</p>
+                            <p class="lead">Integrate our API and add balance to your wallet to go live.</p>
                             </div>
+                          </div>
+
+                          <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                            <span class="btn__text" >Sign up</span></a>
+                            <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                              <span class="btn__text" >Talk to support</span></a>
                         </div>
-                  </div>
                 </div>
               </div><!--end of row-->
             </div><!--end of container-->
@@ -391,13 +404,13 @@ margin:3em auto 3em;
                       <div class="col-md-5 three-steps-1">
                           <img class="" alt="Image" src="img/product-scr/scr-2.png"/>
                       </div>
-                      <div class="col-md-5 col-lg-6">
+                      <div class="col-md-7 col-lg-7">
                       <div class=" switchable__text">
                         <h5>INTUITIVE SET UP </h5>
                         <h3>Integrate, without all the heavy lifting</h3>
-                        <p class="">Reloadly’s cloud platform offers a simple solution to complex coding, allowing you to set up an API, SDK or widget to fit your incentive program’s unique needs.
+                        <p class="lead">Reloadly’s cloud platform offers a simple solution to complex coding, allowing you to set up an API, SDK or widget to fit your incentive program’s unique needs.
                         </p>
-                        <p class="">Our platform is built by developers for developers, and includes the world’s first dedicated coding toolkit for mobile phone top-ups. If you ever need assistance, our support team is ready to respond within a day to your inquiry.
+                        <p class="lead">Our platform is built by developers for developers, and includes the world’s first dedicated coding toolkit for mobile phone top-ups. If you ever need assistance, our support team is ready to respond within a day to your inquiry.
                         </p>
                       </div>
                     </div>
@@ -408,19 +421,19 @@ margin:3em auto 3em;
                 <section class="switchable customer-stories">
                           <div class="container">
                             <div class="row justify-content-center">
-                              <div class="col-md-4">
-                                <h4>SOCIAL MEDIA</h4>
-                                <a href="https://www.reloadly.com/blog/social-media-rewards/" target="_blank"><img alt="Image" src="img/customers2.jpg"/></a>
-                                <p class="">“The Reloadly integration project went really smoothly. Now our end users have a smooth process and a wider choice of top-ups, with faster transaction process times and almost no errors. Reloadly remains the number one supplier for us.”
+                              <div class="col-md-5">
+                                <h4>NGO DATA COLLECTION</h4>
+                                <a><img alt="Image" src="img/ngo-data.png"/></a>
+                                <p class="lead">“As a token of appreciation for their time, Upinion rewarded 238 families with credit for their phones on the same day. Reloadly helped us reach hundreds of families within an instant and determine what kind of credit needed to be used, which required assistance in understanding the different mobile operators."
                                 </p>
-                                <p class="text-right">Rafal Markiewicz, Founder of Crypto2Mobile</p>
+                                <p class=" text-right">Pinar Okur-Kuipers, Senior Humanitarian Development Advisor at Upinion, a NGO-focused market research company</p>
                               </div>
-                              <div class="col-md-4">
-                                <h4>NGO</h4>
-                                  <div class=""><a href="https://www.reloadly.com/blog/crypto-mobile-top-up/" target="_blank"><img alt="Image" src="img/customers1.png"/></a>
-                                    <p class="">“We have so many users in different countries, but we also wanted to offer social media rewards that were more local and convenient for them wherever they lived… Reloadly has helped ClipClaps make our social media rewards reach our clients faster.”
+                              <div class="col-md-5">
+                                <h4>SOCIAL MEDIA REWARDS</h4>
+                                  <div class=""><a><img alt="Image" src="img/customers1.png"/></a>
+                                    <p class="lead">“We have so many users in different countries, but we also wanted to offer social media rewards that were more local and convenient for them wherever they lived… Reloadly has helped ClipClaps make our social media rewards reach our clients faster.”
                                     </p>
-                                    <p class="text-right">– Scott, the operation manager at ClipClaps, a social media network that rewards users for sharing short videos
+                                    <p class=" text-right">– Scott, the operation manager at ClipClaps, a social media network that rewards users for sharing short videos
                                     </p>
                                   </div>
                               </div>
