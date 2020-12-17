@@ -71,6 +71,9 @@ font-weight:300;
 #remittance-solutions .highlight{
 margin-top:5em;
 }
+#remittance-solutions .discounts h3{
+width:70%;
+}
 #remittance-solutions h5{
   margin-bottom:0;
 }
@@ -86,22 +89,17 @@ margin: 0 1em 2em;
 padding-right:15px;
 }
 #remittance-solutions .airtime-getting-started-list img{
-max-width:80%;
-height:200px;
-margin:auto;
-float:none;
-
+max-width:200px;
+margin: auto ;
+display: block;
 }
 #remittance-solutions .airtime-getting-started-list:last-child{
 margin-bottom:3em;
 }
-#remittance-solutions .airtime-getting-started-list :not(:last-child){
+#remittance-solutions .airtime-getting-started-list{
   display: grid;
   grid-template-rows: auto auto;
   }
-  #remittance-solutions .airtime-getting-started-list :last-child{
-    grid-template-columns: auto auto auto;
-    }
 #remittance-solutions .title-icon{
   margin-bottom:0;
 }
@@ -118,9 +116,6 @@ margin-bottom:3em;
   z-index:-400;
   position:absolute;
   margin-top:3em;
-}
-#remittance-solutions .three-steps-1{
-margin-top:-.5em;
 }
 #remittance-solutions .switchable__text{
   margin-top:0;
@@ -297,7 +292,7 @@ height: 38em;
       <section class="top-part">
         <div class="container">
           <div class="row">
-            <div class="col-md-5 col-sm-12 text-left">
+            <div class="col-md-6 col-sm-12 text-left">
               <h2>Top-up transfers.</h2>
               <h2> The most inclusive way to send money across the world.</h2>
               <p class="lead">Add an affordable and flexible money transfer solution to complement standard remittances. All thanks to the ubiquity of mobile phones.
@@ -307,7 +302,7 @@ height: 38em;
                 <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
                   <span class="btn__text" >Talk to an expert</span></a>
                 </div>
-                <div class="col-md-7"><img class="airtime-top-line" alt="pic" src="img/charge-phone.png" /></div>
+                <div class="col-md-6"><img class="airtime-top-line" alt="pic" src="img/charge-phone.png" /></div>
 
               </div><!--end of row-->
             </div><!--end of container-->
@@ -371,7 +366,7 @@ height: 38em;
             </div><!--end of container-->
           </section>
 
-          <section class="switchable middle-part">
+          <section class="switchable switchable--switch middle-part">
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-4"><img alt="Image" src="img/users2.png" /></div>
@@ -388,7 +383,7 @@ height: 38em;
               </div><!--end of container-->
             </section>
 
-            <section class="switchable switchable--switch">
+            <section class="switchable ">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-md-5"><img alt="Image" src="img/product-scr/scr-3.png" /></div>
@@ -406,17 +401,15 @@ height: 38em;
                 </div><!--end of container-->
               </section>
 
-              <section class="switchable middle-part">
+              <section class="switchable switchable--switch middle-part">
                 <div class="container">
                   <div class="row justify-content-center">
-                    <div class="col-md-5"><img alt="Image" src="img/security-lock.svg" /></div>
-                    <div class="col-md-7 col-lg-7">
+                    <div class="col-md-6"><img alt="Image" src="img/security-lock.svg" /></div>
+                    <div class="col-md-5 col-lg-5">
                       <div class=" wallet-management">
                         <h3>Secure money transfers</h3>
                         <p class="lead">The Reloadly Dashboard and API are encrypted and support two-factor authentication for added security. Data is unaffected by the communications protocols used by Reloadly’s other customers because of the logical segregation between customer accounts.
                           <a href="https://www.reloadly.com/security-information">Learn more</a>
-                        </p>
-                        <p class="lead">Using mobile top-ups as an inclusive remittance solution is increasingly popular for money transfer companies. But this is not the only industry using top-ups to diversify their remittance and payment offerings.
                         </p>
                       </div>
                       </div>
@@ -499,10 +492,10 @@ height: 38em;
                 <section class="switchable ">
                   <div class="container">
                     <div class="row justify-content-center">
-                      <div class="col-md-8 three-steps-1">
+                      <div class="col-md-6 three-steps-1">
                           <img class="" alt="Image" src="img/product-scr/scr-2.png"/>
                       </div>
-                      <div class="col-md-4 col-lg-4">
+                      <div class="col-md-6 col-lg-6">
                       <div class=" switchable__text">
                         <h5>INTUITIVE INTEGRATION</h5>
                         <h3>Customize a new remittance solution</h3>
