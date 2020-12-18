@@ -36,10 +36,6 @@
 #remittance-solutions .btn{
   margin-bottom:1em;
 }
-#remittance-solutions .top-part h2 {
-    margin-bottom: 0.78787878787879em;
-    margin-top: -.5em;
-}
 #remittance-solutions .discounts{
   margin:0 auto 0;
 }
@@ -74,13 +70,17 @@ margin-top:5em;
 #remittance-solutions .discounts h3{
 width:70%;
 }
+.ind-text{
+  margin-left:100px;
+  width:85%;
+}
 #remittance-solutions h5{
   margin-bottom:0;
 }
 #remittance-solutions .airtime-top-line{
 max-height:45em;
 left:0;
-margin-top:-4em;
+margin-top:-2em;
 }
 #remittance-solutions .airtime-rows {
 margin: 0 1em 2em;
@@ -98,8 +98,12 @@ margin-bottom:3em;
 }
 #remittance-solutions .airtime-getting-started-list{
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-columns: 50% 50%;
   }
+
+#remittance-solutions .dgifts-middle .airtime-getting-started-list {
+  grid-template-columns: auto auto auto;
+}
 #remittance-solutions .title-icon{
   margin-bottom:0;
 }
@@ -208,6 +212,14 @@ height: 38em;
 #remittance-solutions .value .title-icon{
   margin-bottom:2em;
 }
+#remittance-solutions .airtime-getting-started-list{
+  display: grid;
+  grid-template-columns: 100%;
+  }
+
+#remittance-solutions .dgifts-middle .airtime-getting-started-list {
+  grid-template-columns: auto;
+}
 }
 </style>
 <body class="landing-page" id="remittance-solutions">
@@ -293,8 +305,8 @@ height: 38em;
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12 text-left">
-              <h2>Top-up transfers.</h2>
-              <h2> The most inclusive way to send money across the world.</h2>
+              <h3>TOP-UP TRANSFERS.</h3>
+              <h3> THE MOST INCLUSIVE WAY TO SEND MONEY ACROSS THE WORLD.</h3>
               <p class="lead">Add an affordable and flexible money transfer solution to complement standard remittances. All thanks to the ubiquity of mobile phones.
               </p>
               <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
@@ -386,7 +398,7 @@ height: 38em;
             <section class="switchable ">
               <div class="container">
                 <div class="row justify-content-center">
-                  <div class="col-md-5"><img alt="Image" src="img/product-scr/scr-3.png" /></div>
+                  <div class="col-md-6"><img alt="Image" src="img/product-scr/scr-3.png" /></div>
                   <div class="col-md-6 col-lg-6">
                     <div class="">
                       <h5>TOP-UP COMMISSIONS OVERVIEW</h5>
@@ -420,10 +432,10 @@ height: 38em;
         <section class="value additional">
           <div class="container">
             <div class="row">
-              <div class="col-md-12 col-sm-12">
+              <div class="discounts col-md-12 col-sm-12">
                 <img class="title-icon" alt="pic" src="img/industries-icon.svg"/>
                 <h2>Industries diversifying their remittances and payments offerings</h2>
-                <p class="lead">Using mobile top-ups as an inclusive remittance solution is increasingly popular for money transfer companies. But this is not the only industry using top-ups to diversify their remittance and payment offerings.
+                <p class="lead ind-text">Using mobile top-ups as an inclusive remittance solution is increasingly popular for money transfer companies. But this is not the only industry using top-ups to diversify their remittance and payment offerings.
                 </p>
               <div class="airtime-getting-started-list col-sm-12">
                 <div class="airtime-rows text-left">
@@ -489,7 +501,7 @@ height: 38em;
             </div><!--end of container-->
               </section>
 
-                <section class="switchable ">
+                <section class="switchable middle-part">
                   <div class="container">
                     <div class="row justify-content-center">
                       <div class="col-md-6 three-steps-1">
