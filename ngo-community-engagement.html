@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Use mobile top-up reward for your business | Reloadly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send mobile phone top-ups as little as $0.05 to hard-to-reach communities in over 140 countries using Reloadly’s API, SDK, no-code widget or plugins.">
+  <meta property="og:url" content="https://www.reloadly.com/ngo-community-engagement">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mobile Top-up API for NGO Community Engagement">
+  <meta property="og:description" content="The Reloadly API platform is built for developers, the world's first toolkit for mobile airtime and mobile operator
+  services connecting you to billions of mobile subscribers">
+  <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
+  <meta name="Description" content="Mobile Rewards for NGO Community Engagement | Reloadly">
+  <meta property="Keywords" content="Mobile money transfers (2.6K global volume), Remittance solutions (390), Money transfer solutions (230)">
+  <style type="text/css" media="screen">
+  @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
+  @font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
+  </style>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+#ngo-c-e .highlighted{
+  background-color:#FF6346;
+}
+#ngo-c-e .btn{
+  margin-bottom:1em;
+}
+#ngo-c-e .discounts{
+  margin:0 auto 0;
+}
+#ngo-c-e section:not(:first-child){
+  padding-top:1em;
+}
+#ngo-c-e .switchable div[class*="col-"]:first-child{
+  float:left;
+}
+#ngo-c-e .row .process__body{
+height:27em;
+margin:0;
+}
+#ngo-c-e .row .process__body a{
+padding:0;
+margin:0 0 .5em;
+float:left;
+line-height: 1.1em;
+font-weight:300;
+}
+#ngo-c-e .process_item img{
+  width:4em;
+  height:4em;
+  margin-bottom:1.2em;
+}
+#ngo-c-e .switchable{
+  margin-top:4em;
+}
+#ngo-c-e .switchable img{
+  margin-top:3em;
+}
+#ngo-c-e .highlight{
+margin-top:5em;
+}
+#ngo-c-e .discounts h3{
+width:70%;
+}
+#ngo-c-e .discounts ul{
+  margin-bottom:3em;
+}
+#ngo-c-e h5{
+  margin-bottom:0;
+}
+#ngo-c-e .airtime-top-line{
+max-height:45em;
+left:0;
+margin-top:-4em;
+margin-left:3em;
+}
+#ngo-c-e .airtime-rows {
+margin: 0 1em 2em;
+}
+#ngo-c-e div[class*='col-'] > div[class*='col-']:last-child{
+padding-right:15px;
+}
+#ngo-c-e .airtime-getting-started-list img{
+max-width:200px;
+margin: auto ;
+}
+
+#ngo-c-e .airtime-getting-started-list{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  }
+
+#ngo-c-e .dgifts-middle .airtime-getting-started-list {
+  grid-template-columns: auto auto auto;
+}
+#ngo-c-e .title-icon{
+  margin-bottom:0;
+}
+.value{
+  margin-top:5em;
+  margin-bottom:1em;
+}
+#ngo-c-e .section-bgd2{
+  width:100%;
+  height:11em;
+  background-color:#334054;
+  z-index:-600;
+  transform: skewY(4deg);
+  z-index:-400;
+  position:absolute;
+  margin-top:3em;
+}
+#ngo-c-e .switchable__text{
+  margin-top:0;
+}
+#ngo-c-e .wallet-management{
+  transform: skewY(0deg);
+}
+#ngo-c-e .switchable .middle-list{
+  margin-top:0;
+  float: left;
+}
+.dash-scr{
+  transform: skewY(3deg);
+}
+.dash-scr img{
+  transform: skewY(0deg);
+
+}
+.pandemic{
+  margin-bottom:0;
+}
+#ngo-c-e .middle-list{
+  color:#fff;
+  margin-top:6em;
+}
+#ngo-c-e .discounts h4{
+  margin-left:0;
+  margin-bottom:.5em;
+}
+#ngo-c-e hr{
+margin:2em auto 3em;
+}
+#ngo-c-e .three-steps-1{
+  margin-top:2em;
+}
+#ngo-c-e .cta-bgd{
+  margin-top:-3.5em;
+}
+#ngo-c-e .cta-1 > div[class*='col-']:last-child {
+  margin-top: -.3em;
+}
+#ngo-c-e .footer-1{
+  padding-top:2em;
+}
+.down-footer {
+  width: 100%;
+  background: #334054;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+.down-footer span{
+  color: #a6b7bf;
+  font-size: 16px;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+  color: #42acba;
+  vertical-align: -0.125em;
+}
+#ngo-c-e footer ul a{
+  color:#a6b7bf;
+}
+#ngo-c-e footer ul a:hover{
+  color:#1fbad6;
+}
+@media screen and (max-width: 1024px) {
+  #ngo-c-e .bgd{
+    height:59em;
+  }
+}
+@media screen and (max-width: 767px) {
+  #ngo-c-e .bgd{
+    height:58em;
+  }
+  #ngo-c-e .airtime-top-line{
+  max-height:25em;
+  left:1em;
+  margin-top:1em;
+  }
+  #ngo-c-e hr{
+    margin-top: -3em;
+  }
+  #ngo-c-e .section-bgd2{
+    height:15em;
+    margin-top:-0.7em;
+}
+#ngo-c-e .highlight {
+    margin-top: 1em;
+}
+#ngo-c-e .row .process__body{
+margin-bottom:3em;
+height: 38em;
+}
+#ngo-c-e .process_item img {
+    margin-bottom: 2.5em;
+}
+#ngo-c-e .photos {
+    padding: 0;
+}
+#ngo-c-e .value .title-icon{
+  margin-bottom:2em;
+}
+#ngo-c-e .airtime-getting-started-list{
+  display: grid;
+  grid-template-columns: 100%;
+  }
+
+#ngo-c-e .dgifts-middle .airtime-getting-started-list {
+  grid-template-columns: auto;
+}
+}
+</style>
+<body class="landing-page" id="ngo-c-e">
+  <a id="start"></a>
+  <div class="nav-container">
+    <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
+
+            <div class="bar__module text-right">
+              <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+              <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+            </div>
+            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo-white.svg" /> </a></div>
+
+            <ul class="menu-line">
+              <li><a id="products-line" class="lead">Products</a>
+                <ul class="sub-menu-line">
+                  <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                  <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                  <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                  <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                </ul></li>
+                <li><a class="lead">Pricing</a>
+                  <ul class="sub-menu-line">
+                    <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                    <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                  </ul></li>
+                  <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                </ul>
+                <ul class="about-menu-line">
+                  <li><a class="lead">Company</a>
+                    <ul class="sub-menu-line">
+                      <li><a href="about.html" target="_blank">About Us</a></li>
+                      <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                      <li><a href="careers.html" target="_blank">Careers</a></li>
+                      <li><a href="contact.html" target="_blank">Contact</a></li>
+                    </ul></li>
+                    <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav role='navigation'>
+            <div id="menuToggle" onclick="nav.menu()">
+              <input type="checkbox"/><span></span><span></span><span></span>
+              <ul id="menu" class="main-menu">
+                <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+                <li><a id="products">Products</a>
+                  <ul class="sub-menu">
+                    <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                    <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                    <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                    <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                  </ul></li>
+                  <li><a>Pricing</a>
+                    <ul class="sub-menu">
+                      <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                      <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                    </ul></li>
+                    <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                    <li><a>Company</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html" target="_blank">About Us</a></li>
+                        <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                        <li><a href="careers.html" target="_blank">Careers</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                      </ul></li>
+                      <li><a href="support.html" target="_blank">Help</a></li>
+                    </ul>
+                  </div>
+                </nav>
+    </div><!--end module-->
+    <div class="main-container">
+
+      <section class="top-part">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 text-left">
+              <h2>Easily Reward Hard-to-Reach Places</h2>
+              <p class="lead">Automate mobile top-up rewards in bulk transfers for the communities that help NGOs better engage in research, education and relief projects.
+              </p>
+              <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                <span class="btn__text" >Sign up</span></a>
+                <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                  <span class="btn__text" >Talk to an expert</span></a>
+                </div>
+                <div class="col-md-5"><img class="airtime-top-line" alt="pic" src="img/ngo-hero-img.svg" /></div>
+              </div><!--end of row-->
+            </div><!--end of container-->
+          </section>
+
+          <div class="section-bgd2"></div>
+
+          <section class="highlight">
+            <div class="container">
+              <div class="row">
+                <div class="discounts col-md-12 text-center">
+                  <h3>Send top-up values as little as  <a class="highlighted">$0.05</a>
+                    to hard-to-reach NGO communities within <a class="highlighted">5 seconds</a> using automated bulk transfers.
+                  </h3>
+                </div>
+              </div><!--end of row-->
+            </div> <!--end of container-->
+          </section>
+
+          <section class="switchable switchable--switch ">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4"><img alt="Image" src="img/users3.png" /></div>
+                <div class="col-md-8 col-lg-8">
+                  <div class=" wallet-management">
+                    <h3>Overnight bulk top-up transfers to NGO communities, and keep the engagement going </h3>
+                    <p class="lead">Large-scale humanitarian programs operated by NGOs like UNICEF and Premis have long utilized mobile top-ups as rewards to compensate participants in surveys and development activities. Now NGOs can reward their communities even faster to maintain strong engagement.
+                    </p>
+                    <p class="lead">By simply integrating Reloadly’s contract-free airtime and data top-up API into your mobile or web application, your organization will be able to quickly send bulk top-ups to remote and/or crisis-hit communities across the world.
+                    </p>
+                    </div>
+                  </div>
+                </div><!--end of row-->
+              </div><!--end of container-->
+            </section>
+
+            <section class="switchable middle-part">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 dash-scr">
+                    <img alt="Image" src="img/product-scr/scr-9.png" />
+                  </div>
+                  <div class="col-md-6 col-lg-6 dash-scr">
+                    <div class="">
+                      <h5>TOP-UP TRANSFER DASHBOARD</h5>
+                      <h3>Put real-time mobile rewards on auto-pilot</h3>
+                      <p class="lead">Set up bulk airtime and data top-up transfers to automate mobile rewards straight to mobile phones within 5 seconds, keeping engagement fresh between communities and your NGO.
+                      </p>
+                      <p class="lead">Manage wallet balances using over 100 currencies through one convenient dashboard and tap a vast global telecom network of over 750 operators.
+                      </p>
+                      </div>
+                    </div>
+                  </div><!--end of row-->
+                </div><!--end of container-->
+              </section>
+
+              <section class="switchable switchable--switch">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6"><img alt="Image" src="img/globe-r-map.png" />
+                      <div class="col-md-10"><p class="lead">Review our full international mobile top-up operator network <a href="https://operators.reloadly.com">here</a>.
+                      </p></div></div>
+                    <div class="col-md-5 col-lg-5">
+                      <div class=" wallet-management">
+                        <h3>Quickly engage via mobile markets of hard-to-reach places</h3>
+                        <p class="lead">Reloadly’s vast network includes over 750 mobile operators in over 140 countries, including crisis-hit nations that our competitors don’t have access to. We enable fast access to large parts of the mobile sector in places like:
+                        </p>
+                        <div class="middle-list">
+                        <ul>
+                          <li><span>⦿</span> Afghanistan</li>
+                          <li><span>⦿</span> Iraq</li>
+                          <li><span>⦿</span> Somalia</li>
+                          <li><span>⦿</span> Myanmar</li>
+                          <li><span>⦿</span> Venezuela</li>
+                        </ul>
+
+                      </div>
+                      </div>
+                    </div><!--end of row-->
+                  </div><!--end of container-->
+                </section>
+
+        <section class="value additional">
+          <div class="container">
+            <div class="row">
+              <div class=" col-md-12 col-sm-12">
+                <img class="title-icon" alt="pic" src="img/industries-icon.svg"/>
+                <h2>How Non-Governmental Organizations Employ Mobile Top-Ups APIs to Better Engage with Hard-to-Reach Communities</h2>
+
+              <div class="airtime-getting-started-list col-sm-12">
+                <div class="airtime-rows text-left">
+                  <img src="img/ngo-data-col.svg"/>
+                  <h3>NGO Data Collection</h3>
+                  <p class="lead">Encourage higher response rates for your surveys and studies by providing top-ups as an incentive. NGOs know that successfully soliciting participation from people living in remote places is difficult. However, by tapping the world’s vast prepaid mobile market, you can offer airtime and data top-up rewards as a token of appreciation for participating in your data collection efforts. Prepaid customers especially love gifts that help pay their phone bills.
+                  </p>
+                </div>
+                <div class="airtime-rows text-left">
+                  <img src="img/pandemic-protected.svg"/>
+                  <h3 class="pandemic">Pandemic and Disaster Relief</h3>
+                  <p class="lead">Governments turn to NGOs during times of crisis to help provide relief and support to impacted communities. However, to provide relief, NGOs encounter conditions where businesses have been forced to close and physical pickup areas connected to existing remittance channels are inaccessible. By tapping the completely digital infrastructure used to carry mobile top-up transfers, NGOs can instead provide a virtual channel that allows users to continue to send remittances amid such challenging conditions.
+                  </p>
+                </div></div>
+                <div class="airtime-getting-started-list col-sm-12">
+                  <div class="airtime-rows text-left">
+                    <img src="img/payment-compensation.svg"/>
+                    <h3>Payment Compensation and Donation Gateway</h3>
+                    <p class="lead">Non-profits, social enterprises and charitable organizations increasingly utilize airtime and data top-ups as a payments solution. Often, these businesses need to make payments to people that operate in conflict zones, remote areas or other challenging environments. The closest physical pickup location may not be for many kilometers, but tapping the global top-up network allows for instant remittances to anyone that holds a phone. Moreover, these organizations can also integrate mobile top-ups into their donation payment gateway.
+                    </p>
+                  </div>
+                  <div class="airtime-rows text-left">
+                    <img src="img/micropayments-img.svg"/>
+                    <h3>Micropayments</h3>
+                    <p class="lead">NGOs often engage with communities that need access to microfinancing. However, the cost and transactional limits of conventional remittance services make micropayments expensive, slow and financially unviable. By enabling these communities to use top-ups as remittances they’ll be able to send small payments for low-cost goods and services that would otherwise make no sense sending via traditional remittances — transferring the money would simply be too expensive to rationalize the remittance fees.
+                    </p>
+                  </div></div>
+              </div>
+            </div><!--end of row-->
+          </div><!--end of container-->
+        </section>
+
+        <hr class="horizontal-line">
+
+        <section class="">
+            <div class="container">
+                <div class="row justify-content-center dgifts-middle">
+                <div class="col-md-12">
+                      <div class="text-center">
+                          <h2>An automated solution for global NGO rewards in <a class="highlighted"> 3 simple steps</a></h2>
+                          <div class="text-left airtime-getting-started-list col-sm-12">
+                          <div class="airtime-rows">
+                            <img alt="Image" src="img/number-icon-1.svg"/>
+                            <p class="lead">Sign up for free -- no contract needed!</p>
+                          </div>
+                          <div class="airtime-rows">
+                            <img alt="Image" src="img/number-icon-2.svg"/>
+                            <p class="lead">Get your API keys from the Reloadly portal.</p>
+                          </div>
+                          <div class="airtime-rows">
+                            <img alt="Image" src="img/number-icon-3.svg"/>
+                            <p class="lead">Integrate our API and add balance to your wallet to go live.</p>
+                            </div>
+                          </div>
+
+                          <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                            <span class="btn__text" >Sign up</span></a>
+                            <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                              <span class="btn__text" >Talk to support</span></a>
+                        </div>
+                </div>
+              </div><!--end of row-->
+            </div><!--end of container-->
+              </section>
+
+                <section class="switchable middle-part">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 three-steps-1">
+                          <img class="" alt="Image" src="img/product-scr/scr-2.png"/>
+                      </div>
+                      <div class="col-md-6 col-lg-6">
+                      <div class=" switchable__text">
+                        <h5>INTUITIVE SET UP</h5>
+                        <h3>Integrate, without all the heavy lifting</h3>
+                        <p class="">Reloadly’s cloud platform offers a simple solution to complex coding, allowing you to set up an API, SDK or widget to fit your NGO program’s unique needs. You can also choose to integrate plug-ins with a range of e-com platforms, such as Wordpress, Shopify and WooCommerce.
+                        </p>
+                        <p class="">Our platform is built by developers for developers, and includes the world’s first dedicated coding toolkit for sending mobile phone top-ups. If you ever need assistance, our support team is ready to respond within a day to your inquiry.
+                        </p>
+                      </div>
+                    </div>
+                    </div><!--end of row-->
+                  </div><!--end of container-->
+                </section>
+
+
+                <section>
+                  <div class="container">
+                    <div class="row">
+                <div class="discounts middle-list col-md-6">
+                <img class="title-icon" alt="pic" src="img/landing-page/m-op-choice-icon.svg"/>
+                <h2 >Let's get started</h2>
+                <ul><li><span>&ofcir;</span> No-contract accounts
+                </li>
+                <li><span>&ofcir;</span> Automated bulk transfers made within 5 seconds
+                </li>
+                <li><span>&ofcir;</span> Top-up values as low as $0.05
+                </li>
+                <li><span>&ofcir;</span> Access over 750 mobile operators in 140 countries
+                </li>
+                <li><span>&ofcir;</span> Over 100 currencies
+                </li>
+              </ul>
+                  <p class="lead">Make your API call and start building today. </p>
+                </div>
+
+                </div><!--end of row-->
+                </div><!--end of container-->
+                </section>
+
+        <section class="cta-bgd">
+          <div class="container">
+            <div class="row">
+              <div class="cta cta-1 col-md-12">
+                <div class="cta-text col-md-7">
+                  <h3>Start building today. Make your first API call. </h3>
+                </div>
+                <div class="cta-button col-md-3">
+                  <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
+                    <span class="btn__text" >
+                      Get Your Free API Key
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--end of row-->
+          </div>
+          <!--end of container-->
+        </section>
+
+
+        <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <a routerLink="/">
+                  <img src="https://cdn.reloadly.com/assets-v2/images/logo.svg" alt="Reloadly" width="150px">
+                </a>
+                <p>First mobile Top-up API made for developers. Enable your apps and websites to send mobile top-up
+                  worldwide.
+                </p>
+              </div>
+              <div class="col">
+                <h5 class="text-white">Products</h5>
+                <ul>
+                  <li>
+                    <a routerLink="/products/airtime">Airtime</a>
+                  </li>
+                  <li>
+                    <a routerLink="/products/data-bundles">Data bundles</a>
+                  </li>
+                </ul>
+                <h5 class="text-white">Operators</h5>
+                <ul>
+                  <li>
+                    <a href="https://operators.reloadly.com/">Global Mobile Operator Network</a>
+                  </li>
+                  <li>
+                    <a href="https://operators.reloadly.com/orange-international-mobile-airtime-api/">Orange Mobile
+                      Network</a>
+                    </li>
+                    <li>
+                      <a href="https://operators.reloadly.com/claro-dominican-republic-airtime-api/">Claro Dominican
+                        Republic</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-white">Customer stories</h5>
+                    <ul>
+                      <li>
+                        <a routerLink="/customerstory/julaya">Julaya</a>
+                      </li>
+                      <li>
+                        <a routerLink="/customerstory/cash-mobile-app">CashMobile App</a>
+                      </li>
+                    </ul>
+                    <h5 class="text-white">Use cases</h5>
+                    <ul>
+                      <li>
+                        <a routerLink="/mobile-rewards">Rewards & Incentives</a>
+                      </li>
+                      <li>
+                        <a routerLink="/money-transmitters">Money transmitters</a>
+                      </li>
+                      <li>
+                        <a routerLink="/usecase/moneytransfer">Money transfer</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-white">Resources</h5>
+                    <ul>
+                      <li>
+                        <a href="https://faq.reloadly.com">Support</a>
+                      </li>
+                      <li>
+                        <a href="https://developers.reloadly.com/">Developers</a>
+                      </li>
+                      <li>
+                        <a (click)="socialIcon('github', 'https://github.com/ReloadlyNetworks')">GitHub</a>
+                      </li>
+                      <li>
+                        <a href="https://reloadly.com/blog/">Blog</a>
+                      </li>
+                      <li>
+                        <a routerLink="/promotions">Promotions</a>
+                      </li>
+                      <li>
+                        <a routerLink="/white-paper">White paper</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-white">Company</h5>
+                    <ul>
+                      <li>
+                        <a routerLink="/about-us">About us</a>
+                      </li>
+                      <li>
+                        <a href="mailto:hello@reloadly.com">Contact us</a>
+                      </li>
+                      <li>
+                        <a href="https://reloadly.com/blog/careers/">Careers</a>
+                      </li>
+                      <li>
+                        <a routerLink="/pricing">Pricing</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="col">
+                    <h5 class="text-white">Legal</h5>
+                    <ul>
+                      <li>
+                        <a routerLink="/terms-of-use">Terms of use</a>
+                      </li>
+                      <li>
+                        <a routerLink="/privacy-policy">Privacy policy</a>
+                      </li>
+                      <li>
+                        <a routerLink="/security-information">Security information</a>
+                      </li>
+                      <li>
+                        <a routerLink="/cookie-policy">Cookie policy</a>
+                      </li>
+                      <li>
+                        <a routerLink="/user-agreement">User agreement</a>
+                      </li>
+                      <li>
+                        <a routerLink="/gdpr">GDPR</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-white">Social</h5>
+                    <ul>
+                      <li>
+                        <a (click)="socialIcon('twitter', 'https://twitter.com/Reloadly')">Twitter</a>
+                      </li>
+                      <li>
+                        <a (click)="socialIcon('instagram', 'https://www.instagram.com/reloadly')">Instagram</a>
+                      </li>
+                      <li>
+                        <a (click)="socialIcon('facebook', 'https://www.facebook.com/reloadly')">Facebook</a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/Reloadly" target="_blank">GitHub</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--end of row-->
+              </div>
+              <!--end of container-->
+
+
+              <div  class="down-footer"><div class="col-12 text-center"><span class="type--fine-print white"> Powered by <fa-icon class="heart ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+              </fa-icon>&nbsp;from Reloadly, Barcelona - Miami - Paris </span><br>
+              <span  class="type--fine-print white">Copyright ©
+                <span  class="update-year">2020</span> Reloadly Inc. </span></div>
+              </div>
+            </footer>
+
+</div>
+<!--<div class="loader"></div>-->
+<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+  <i class="stack-interface stack-up-open-big"></i>
+</a>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/flickity.min.js"></script>
+<script src="js/easypiechart.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/ytplayer.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/granim.min.js"></script>
+<script src="js/jquery.steps.min.js"></script>
+<script src="js/countdown.min.js"></script>
+<script src="js/twitterfetcher.min.js"></script>
+<script src="js/spectragram.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>
