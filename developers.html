@@ -32,7 +32,7 @@
 </head>
 <style>
 #developers .bar__module:not(:last-child) {
-    margin-right: 0;
+  margin-right: 0;
 }
 #developers .menu-line a{
   color:#fff;
@@ -44,21 +44,20 @@
   color:#1fbad6;
 }
 #developers input[type=text]{
-width:200px;
-line-height: 1.85714286em;
-background:#334054;
-color:#fff;
-border-style:none;
-margin-top:-3em;
-float:right;
+  width:200px;
+  line-height: 1.85714286em;
+  background:#334054;
+  color:#fff;
+  border-style:none;
+  margin-top:-3em;
+  float:right;
 }
 #developers ::placeholder {
-color:#fff;
+  color:#fff;
 }
 #developers .top-part p{
   font-size:1.35714286em;
 }
-
 #developers .section-bgd2{
   background:#334054;
   height:14em;
@@ -122,9 +121,9 @@ color:#fff;
     margin-bottom: 0;
   }
   #developers input[type=text]{
-width:100%;
-float:none;
-margin-top:1em;
+    width:100%;
+    float:none;
+    margin-top:1em;
   }
   #developers .switchable {
     margin-top: 0;
@@ -139,9 +138,9 @@ margin-top:1em;
 }
 @media all and (max-width: 767px) {
   #developers input[type=text]{
-width:100%;
-float:none;
-margin-top:1em;
+    width:100%;
+    float:none;
+    margin-top:1em;
   }
   .dev-img{
     margin:4em 0 0 0;
@@ -169,7 +168,6 @@ margin-top:1em;
   }
 }
 </style>
-
 <body class="" id="developers">
   <a id="start"></a>
   <div class="nav-container">
@@ -181,293 +179,284 @@ margin-top:1em;
               <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Sign up</span></a>
             </div>
             <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo-white.svg"/> </a></div>
-
             <ul class="menu-line">
               <li><a id="products-line" class="lead">For developers</a>
-                </li>
-                <li><a class="lead">API status</a>
-                  </li>
-                  <li><a href="" target="_blank" class="lead">Support</a></li>
-                </ul>
+              </li>
+              <li><a class="lead">API status</a>
+              </li>
+              <li><a href="" target="_blank" class="lead">Support</a></li>
+            </ul>
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+      </div>
+    </div>
 
-              <input type="text" placeholder="Search">
+    <nav role='navigation'>
+      <div id="menuToggle" onclick="nav.menu()">
+        <input type="checkbox"/><span></span><span></span><span></span>
+        <ul id="menu" class="main-menu">
+          <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Sign up</a></div></li>
+          <li><a id="products">For developers</a>
+          </li>
+          <li><a>API status</a>
+          </li>
+          <li><a href="" target="_blank">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div><!--end module-->
+
+  <div class="main-container">
+
+    <section class="top-part">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Reloadly Developer Tools</h2>
+            <h3>Airtime & Data Mobile Top Up</h3>
+            <p class="lead">Increase engagement with your services from Reloadly. Available in more than 150 countries, with billions of mobile subscribers each day that need to stay connected on their mobiles. Quickly get your users topped up with a widget for your site, wordpress and WooCommerce. Want more control? Build a custom integration with our Client Libraries or by using our API.
+            </p>
+            <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+              <span class="btn__text" >View showcase</span></a>
+              <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                <span class="btn__text" >View docs</span></a>
+              </div>
+              <div class="col-md-6">
+                <img class="dev-img" alt="pic" src="img/dev-scr.png" />
+              </div>
+            </div><!--end of row-->
+          </div> <!--end of container-->
+        </section>
+        <div class="section-bgd2"></div>
 
 
+        <section class="">
+          <div class="container">
+            <div class="row">
+              <div class="airtime-getting-started-list text-center col-sm-12">
+                <div class="airtime-rows">
+                  <img alt="Image" src="img/150.svg" />
+                  <h3>countries</h3>
+                </div>
+                <div class="airtime-rows">
+                  <img alt="Image" src="img/800.svg" />
+                  <h3>mobile operators</h3>
                 </div>
               </div>
             </div>
-          </div>
+          </div><!--end of row-->
+        </div><!--end of container-->
+      </section>
 
-          <nav role='navigation'>
-            <div id="menuToggle" onclick="nav.menu()">
-              <input type="checkbox"/><span></span><span></span><span></span>
-              <ul id="menu" class="main-menu">
-                <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Sign up</a></div></li>
-                <li><a id="products">For developers</a>
-                  </li>
-                  <li><a>API status</a>
-                    </li>
-                    <li><a href="" target="_blank">Support</a></li>
-                    </ul>
+      <section class="text-left">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="text-left airtime-rows-list col-sm-12">
+              <div class="airtime-rows">
+                <h3>Witget</h3>
+                <p>Development Effort: Low | Customizability: Limited</p>
+                <p class="lead">The easiest way to integrate Reloadly into your app or website. The airtime top up Widget displays a simple but powerful call-to-action in your site with just a few lines of code. The button displays real-time values for recharge, delivery amounts and detects the mobile operator based on the number for users. Tapping it opens a user friendly experience for the top up flow for an instant, full-featured mobile recharge experience. Add your own payment gateway for Stripe or Paypal to access payments.
+                </p>
+                <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                  <span class="btn__text" >View docs</span></a>
+                </div>
+                <div class="airtime-rows">
+                  <h3>Client Libraries - SDKs</h3>
+                  <p>Development Effort: Medium | Customizability: Full</p>
+                  <p class="lead">Deeply integrate the Reloadly top up experience into your apps with one of our SDKs — available in a range of languages (Php, Java, Python, and more). Control every aspect of the end-to-end flow to create novel user experiences that are unique to your app and brand.
+                  </p>
+                  <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                    <span class="btn__text" >View Github</span></a>
                   </div>
-                </nav>
-
-    </div><!--end module-->
-
-              <div class="main-container">
-
-                <section class="top-part">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <h2>Reloadly Developer Tools</h2>
-                        <h3>Airtime & Data Mobile Top Up</h3>
-                        <p class="lead">Increase engagement with your services from Reloadly. Available in more than 150 countries, with billions of mobile subscribers each day that need to stay connected on their mobiles. Quickly get your users topped up with a widget for your site, wordpress and WooCommerce. Want more control? Build a custom integration with our Client Libraries or by using our API.
-                        </p>
-                        <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                          <span class="btn__text" >View showcase</span></a>
-                          <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                            <span class="btn__text" >View docs</span></a>
-                      </div>
-                      <div class="col-md-6">
-                        <img class="dev-img" alt="pic" src="img/dev-scr.png" />
-                      </div>
-                    </div><!--end of row-->
-                  </div> <!--end of container-->
-                </section>
-  <div class="section-bgd2"></div>
-
-
-                <section class="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="airtime-getting-started-list text-center col-sm-12">
-                                  <div class="airtime-rows">
-                                  <img alt="Image" src="img/150.svg" />
-                                    <h3>countries</h3>
-                                </div>
-                                <div class="airtime-rows">
-                                <img alt="Image" src="img/800.svg" />
-                                    <h3>mobile operators</h3>
-                                </div>
-                            </div>
-                          </div>
-                          </div><!--end of row-->
-                    </div><!--end of container-->
-                 </section>
-
-                <section class="text-left">
-                  <div class="container">
-                    <div class="row justify-content-center">
-                      <div class="text-left airtime-rows-list col-sm-12">
-                        <div class="airtime-rows">
-                          <h3>Witget</h3>
-                          <p>Development Effort: Low | Customizability: Limited</p>
-                          <p class="lead">The easiest way to integrate Reloadly into your app or website. The airtime top up Widget displays a simple but powerful call-to-action in your site with just a few lines of code. The button displays real-time values for recharge, delivery amounts and detects the mobile operator based on the number for users. Tapping it opens a user friendly experience for the top up flow for an instant, full-featured mobile recharge experience. Add your own payment gateway for Stripe or Paypal to access payments.
-                              </p>
-                              <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                              <span class="btn__text" >View docs</span></a>
-                        </div>
-
-                        <div class="airtime-rows">
-                          <h3>Client Libraries - SDKs</h3>
-                          <p>Development Effort: Medium | Customizability: Full</p>
-                          <p class="lead">Deeply integrate the Reloadly top up experience into your apps with one of our SDKs — available in a range of languages (Php, Java, Python, and more). Control every aspect of the end-to-end flow to create novel user experiences that are unique to your app and brand.
-                          </p>
-                            <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                              <span class="btn__text" >View Github</span></a>
-                          </div>
-
-                        <div class="airtime-rows">
-                          <h3>REST APIs</h3>
-                          <p>Development Effort: High | Customizability: Full</p>
-                          <p class="lead">Don’t see a library for your language of choice in the client libraries? Get full control and create a unique custom user experience from scratch with our REST APIs.
-                              </p>
-                              <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                              <span class="btn__text" >View docs</span></a>
-                          </div>
-
-                      </div>
+                  <div class="airtime-rows">
+                    <h3>REST APIs</h3>
+                    <p>Development Effort: High | Customizability: Full</p>
+                    <p class="lead">Don’t see a library for your language of choice in the client libraries? Get full control and create a unique custom user experience from scratch with our REST APIs.
+                    </p>
+                    <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                      <span class="btn__text" >View docs</span></a>
                     </div>
-                  </div><!--end of row-->
-                </div><!--end of container-->
-              </section>
+                  </div>
+                </div>
+              </div><!--end of row-->
+            </div><!--end of container-->
+          </section>
 
-              <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <a routerLink="/">
-                        <img src="https://cdn.reloadly.com/assets-v2/images/logo.svg" alt="Reloadly" width="150px">
-                      </a>
-                      <p>First mobile Top-up API made for developers. Enable your apps and websites to send mobile top-up
-                        worldwide.
-                      </p>
-                    </div>
-                    <div class="col">
-                      <h5 class="text-white">Products</h5>
-                      <ul>
-                        <li>
-                          <a routerLink="/products/airtime">Airtime</a>
-                        </li>
-                        <li>
-                          <a routerLink="/products/data-bundles">Data bundles</a>
+          <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <a routerLink="/">
+                    <img src="https://cdn.reloadly.com/assets-v2/images/logo.svg" alt="Reloadly" width="150px">
+                  </a>
+                  <p>First mobile Top-up API made for developers. Enable your apps and websites to send mobile top-up
+                    worldwide.
+                  </p>
+                </div>
+                <div class="col">
+                  <h5 class="text-white">Products</h5>
+                  <ul>
+                    <li>
+                      <a routerLink="/products/airtime">Airtime</a>
+                    </li>
+                    <li>
+                      <a routerLink="/products/data-bundles">Data bundles</a>
+                    </li>
+                  </ul>
+                  <h5 class="text-white">Operators</h5>
+                  <ul>
+                    <li>
+                      <a href="https://operators.reloadly.com/">Global Mobile Operator Network</a>
+                    </li>
+                    <li>
+                      <a href="https://operators.reloadly.com/orange-international-mobile-airtime-api/">Orange Mobile
+                        Network</a>
+                      </li>
+                      <li>
+                        <a href="https://operators.reloadly.com/claro-dominican-republic-airtime-api/">Claro Dominican
+                          Republic</a>
                         </li>
                       </ul>
-                      <h5 class="text-white">Operators</h5>
+                    </div>
+                    <div class="col">
+                      <h5 class="text-white">Customer stories</h5>
                       <ul>
                         <li>
-                          <a href="https://operators.reloadly.com/">Global Mobile Operator Network</a>
+                          <a routerLink="/customerstory/julaya">Julaya</a>
                         </li>
                         <li>
-                          <a href="https://operators.reloadly.com/orange-international-mobile-airtime-api/">Orange Mobile
-                            Network</a>
-                          </li>
-                          <li>
-                            <a href="https://operators.reloadly.com/claro-dominican-republic-airtime-api/">Claro Dominican
-                              Republic</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col">
-                          <h5 class="text-white">Customer stories</h5>
-                          <ul>
-                            <li>
-                              <a routerLink="/customerstory/julaya">Julaya</a>
-                            </li>
-                            <li>
-                              <a routerLink="/customerstory/cash-mobile-app">CashMobile App</a>
-                            </li>
-                          </ul>
-                          <h5 class="text-white">Use cases</h5>
-                          <ul>
-                            <li>
-                              <a routerLink="/mobile-rewards">Rewards & Incentives</a>
-                            </li>
-                            <li>
-                              <a routerLink="/money-transmitters">Money transmitters</a>
-                            </li>
-                            <li>
-                              <a routerLink="/usecase/moneytransfer">Money transfer</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col">
-                          <h5 class="text-white">Resources</h5>
-                          <ul>
-                            <li>
-                              <a href="https://faq.reloadly.com">Support</a>
-                            </li>
-                            <li>
-                              <a href="https://developers.reloadly.com/">Developers</a>
-                            </li>
-                            <li>
-                              <a (click)="socialIcon('github', 'https://github.com/ReloadlyNetworks')">GitHub</a>
-                            </li>
-                            <li>
-                              <a href="https://reloadly.com/blog/">Blog</a>
-                            </li>
-                            <li>
-                              <a routerLink="/promotions">Promotions</a>
-                            </li>
-                            <li>
-                              <a routerLink="/white-paper">White paper</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col">
-                          <h5 class="text-white">Company</h5>
-                          <ul>
-                            <li>
-                              <a routerLink="/about-us">About us</a>
-                            </li>
-                            <li>
-                              <a href="mailto:hello@reloadly.com">Contact us</a>
-                            </li>
-                            <li>
-                              <a href="https://reloadly.com/blog/careers/">Careers</a>
-                            </li>
-                            <li>
-                              <a routerLink="/pricing">Pricing</a>
-                            </li>
-                          </ul>
-
-                        </div>
-                        <div class="col">
-                          <h5 class="text-white">Legal</h5>
-                          <ul>
-                            <li>
-                              <a routerLink="/terms-of-use">Terms of use</a>
-                            </li>
-                            <li>
-                              <a routerLink="/privacy-policy">Privacy policy</a>
-                            </li>
-                            <li>
-                              <a routerLink="/security-information">Security information</a>
-                            </li>
-                            <li>
-                              <a routerLink="/cookie-policy">Cookie policy</a>
-                            </li>
-                            <li>
-                              <a routerLink="/user-agreement">User agreement</a>
-                            </li>
-                            <li>
-                              <a routerLink="/gdpr">GDPR</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col">
-                          <h5 class="text-white">Social</h5>
-                          <ul>
-                            <li>
-                              <a (click)="socialIcon('twitter', 'https://twitter.com/Reloadly')">Twitter</a>
-                            </li>
-                            <li>
-                              <a (click)="socialIcon('instagram', 'https://www.instagram.com/reloadly')">Instagram</a>
-                            </li>
-                            <li>
-                              <a (click)="socialIcon('facebook', 'https://www.facebook.com/reloadly')">Facebook</a>
-                            </li>
-                            <li>
-                              <a href="https://github.com/Reloadly" target="_blank">GitHub</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <!--end of row-->
+                          <a routerLink="/customerstory/cash-mobile-app">CashMobile App</a>
+                        </li>
+                      </ul>
+                      <h5 class="text-white">Use cases</h5>
+                      <ul>
+                        <li>
+                          <a routerLink="/mobile-rewards">Rewards & Incentives</a>
+                        </li>
+                        <li>
+                          <a routerLink="/money-transmitters">Money transmitters</a>
+                        </li>
+                        <li>
+                          <a routerLink="/usecase/moneytransfer">Money transfer</a>
+                        </li>
+                      </ul>
                     </div>
-                    <!--end of container-->
-
-                    <div  class="down-footer"><div class="col-12 text-center"><span class="type--fine-print white"> Powered by <fa-icon class="heart ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
-                    </fa-icon>&nbsp;from Reloadly, Barcelona - Miami - Paris </span><br>
-                    <span  class="type--fine-print white">Copyright ©
-                      <span  class="update-year">2020</span> Reloadly Inc. </span></div>
+                    <div class="col">
+                      <h5 class="text-white">Resources</h5>
+                      <ul>
+                        <li>
+                          <a href="https://faq.reloadly.com">Support</a>
+                        </li>
+                        <li>
+                          <a href="https://developers.reloadly.com/">Developers</a>
+                        </li>
+                        <li>
+                          <a (click)="socialIcon('github', 'https://github.com/ReloadlyNetworks')">GitHub</a>
+                        </li>
+                        <li>
+                          <a href="https://reloadly.com/blog/">Blog</a>
+                        </li>
+                        <li>
+                          <a routerLink="/promotions">Promotions</a>
+                        </li>
+                        <li>
+                          <a routerLink="/white-paper">White paper</a>
+                        </li>
+                      </ul>
                     </div>
-                  </footer>
+                    <div class="col">
+                      <h5 class="text-white">Company</h5>
+                      <ul>
+                        <li>
+                          <a routerLink="/about-us">About us</a>
+                        </li>
+                        <li>
+                          <a href="mailto:hello@reloadly.com">Contact us</a>
+                        </li>
+                        <li>
+                          <a href="https://reloadly.com/blog/careers/">Careers</a>
+                        </li>
+                        <li>
+                          <a routerLink="/pricing">Pricing</a>
+                        </li>
+                      </ul>
 
+                    </div>
+                    <div class="col">
+                      <h5 class="text-white">Legal</h5>
+                      <ul>
+                        <li>
+                          <a routerLink="/terms-of-use">Terms of use</a>
+                        </li>
+                        <li>
+                          <a routerLink="/privacy-policy">Privacy policy</a>
+                        </li>
+                        <li>
+                          <a routerLink="/security-information">Security information</a>
+                        </li>
+                        <li>
+                          <a routerLink="/cookie-policy">Cookie policy</a>
+                        </li>
+                        <li>
+                          <a routerLink="/user-agreement">User agreement</a>
+                        </li>
+                        <li>
+                          <a routerLink="/gdpr">GDPR</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h5 class="text-white">Social</h5>
+                      <ul>
+                        <li>
+                          <a (click)="socialIcon('twitter', 'https://twitter.com/Reloadly')">Twitter</a>
+                        </li>
+                        <li>
+                          <a (click)="socialIcon('instagram', 'https://www.instagram.com/reloadly')">Instagram</a>
+                        </li>
+                        <li>
+                          <a (click)="socialIcon('facebook', 'https://www.facebook.com/reloadly')">Facebook</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/Reloadly" target="_blank">GitHub</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--end of row-->
                 </div>
-                <!--<div class="loader"></div>-->
-                <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
-                  <i class="stack-interface stack-up-open-big"></i>
-                </a>
-                <script src="js/jquery-3.1.1.min.js"></script>
-                <script src="js/flickity.min.js"></script>
-                <script src="js/easypiechart.min.js"></script>
-                <script src="js/parallax.js"></script>
-                <script src="js/typed.min.js"></script>
-                <script src="js/datepicker.js"></script>
-                <script src="js/isotope.min.js"></script>
-                <script src="js/ytplayer.min.js"></script>
-                <script src="js/lightbox.min.js"></script>
-                <script src="js/granim.min.js"></script>
-                <script src="js/jquery.steps.min.js"></script>
-                <script src="js/countdown.min.js"></script>
-                <script src="js/twitterfetcher.min.js"></script>
-                <script src="js/spectragram.min.js"></script>
-                <script src="js/smooth-scroll.min.js"></script>
-                <script src="js/scripts.js"></script>
-                <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                <!--end of container-->
 
-              </body>
-              </html>
+                <div  class="down-footer"><div class="col-12 text-center"><span class="type--fine-print white"> Powered by <fa-icon class="heart ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                </fa-icon>&nbsp;from Reloadly, Barcelona - Miami - Paris </span><br>
+                <span  class="type--fine-print white">Copyright ©
+                  <span  class="update-year">2020</span> Reloadly Inc. </span></div>
+                </div>
+              </footer>        
+            </div>
+            <!--<div class="loader"></div>-->
+            <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+              <i class="stack-interface stack-up-open-big"></i>
+            </a>
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script src="js/flickity.min.js"></script>
+            <script src="js/easypiechart.min.js"></script>
+            <script src="js/parallax.js"></script>
+            <script src="js/typed.min.js"></script>
+            <script src="js/datepicker.js"></script>
+            <script src="js/isotope.min.js"></script>
+            <script src="js/ytplayer.min.js"></script>
+            <script src="js/lightbox.min.js"></script>
+            <script src="js/granim.min.js"></script>
+            <script src="js/jquery.steps.min.js"></script>
+            <script src="js/countdown.min.js"></script>
+            <script src="js/twitterfetcher.min.js"></script>
+            <script src="js/spectragram.min.js"></script>
+            <script src="js/smooth-scroll.min.js"></script>
+            <script src="js/scripts.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+          </body>
+          </html>
