@@ -26,6 +26,7 @@
   <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/footer.scss" rel="stylesheet" type="text/css" media="all" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -36,10 +37,10 @@
   top:-27em;
 }
 #whitepaper-paap .top-part h2{
-margin-top:-2em;
+  margin-top:-2em;
 }
 #whitepaper-paap .top-part{
-margin-left:2em;
+  margin-left:2em;
 }
 .wp-art1{
   max-width:350px;
@@ -47,7 +48,7 @@ margin-left:2em;
   margin-left:1em;
 }
 #whitepaper-paap .contact-main{
-margin:1em 0 0;
+  margin:1em 0 0;
 }
 .whitepaper-paap-cover{
   max-width:300px;
@@ -71,73 +72,73 @@ margin:1em 0 0;
     transform: skewY(10deg);
   }
   .wp-art1{
-display:none;
+    display:none;
   }
   #whitepaper-paap .top-part{
-  margin-left:0;
+    margin-left:0;
   }
   #whitepaper-paap .contact-main{
-  margin-top:-1em;
-  margin-bottom:0;
+    margin-top:-1em;
+    margin-bottom:0;
   }
   .whitepaper-paap-cover{
-float:none;
-max-width:100%;
+    float:none;
+    max-width:100%;
+  }
 }
-    }
 .menu-line li, .about-menu-line li{
   display: inline-block;
   padding:1em;
-  }
-  .menu-line{
+}
+.menu-line{
   margin: .2em auto 0;
   width:400px;
   text-align: center;
-  }
-  .about-menu-line{
+}
+.about-menu-line{
   margin: -4.4em 1em 0 0 !important;
-  }
-    #whitepaper-paap .menu-line a,  #whitepaper-paap  .about-menu-line a{
-    color:#232D3D;
-  }
-  .sub-menu-line{
-    position:absolute;
-    border:1px solid #1fbad6;
-    background: none;
-    border-radius:6px;
-    padding:0 4px 0;
-    opacity: 0;
-    transition: all 1.5s ease-out;
-  }
-  .menu-line :hover, .about-menu-line :hover{
+}
+#whitepaper-paap .menu-line a,  #whitepaper-paap  .about-menu-line a{
+  color:#232D3D;
+}
+.sub-menu-line{
+  position:absolute;
+  border:1px solid #1fbad6;
+  background: none;
+  border-radius:6px;
+  padding:0 4px 0;
+  opacity: 0;
+  transition: all 1.5s ease-out;
+}
+.menu-line :hover, .about-menu-line :hover{
   color:#1FBAD6;
-  }
-  .menu-line li :hover + .sub-menu-line{
-    opacity: 1;
-    margin-top:.6em;
-    position:absolute;
-    text-align:left;
-    z-index:45;
-  }
-  .about-menu-line li :hover + .sub-menu-line{
-    opacity: 1;
-    margin-top:.6em;
-    position:absolute;
-    z-index:46;
-  }
-  #whitepaper-paap .horizontal-line{
-    width:100%;
-    margin-bottom:1.8em;
-  }
-  @media all and (min-width: 992px) {
+}
+.menu-line li :hover + .sub-menu-line{
+  opacity: 1;
+  margin-top:.6em;
+  position:absolute;
+  text-align:left;
+  z-index:45;
+}
+.about-menu-line li :hover + .sub-menu-line{
+  opacity: 1;
+  margin-top:.6em;
+  position:absolute;
+  z-index:46;
+}
+#whitepaper-paap .horizontal-line{
+  width:100%;
+  margin-bottom:1.8em;
+}
+@media all and (min-width: 992px) {
   #menuToggle{
     display:none;
   }
   #whitepaper-paap .bar__module{
-  margin-top:1em;
+    margin-top:1em;
   }
-  }
-  @media all and (max-width: 992px) {
+}
+@media all and (max-width: 992px) {
   .menu-line, .about-menu-line, #whitepaper-paap .bar__module{
     display:none;
   }
@@ -145,8 +146,30 @@ max-width:100%;
     max-width: 200px;
     margin-top: -6em;
     margin-left: 1em;
-}
   }
+}
+#whitepaper-paap .footer-1{
+  background-color: #232e3d;
+  padding-top:2em;
+}
+.down-footer {
+  width: 100%;
+  background: #334054;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+.down-footer span{
+  color: #a6b7bf;
+  font-size: 16px;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+  color: #42acba;
+  vertical-align: -0.125em;
+}
+#whitepaper-paap ul, #whitepaper-paap .footer-1 p, #whitepaper-paap .footer-1 a {
+  color:#a6b7bf;
+}
 }
 </style>
 <body class="secondary-page" id="whitepaper-paap">
@@ -226,186 +249,267 @@ max-width:100%;
                   </div>
                 </nav>
               </div><!--end module-->
+              <div class="main-container">
+                <div class="bgd"></div>
 
-    <div class="main-container">
-      <div class="bgd"></div>
+                <section class="top-part">
+                  <div class="container">
+                    <div class="row justify-content-left">
+                      <div class="col-md-8 col-xs-12 text-left">
+                        <h2>The Rise of Payments as a Platform: Trends and Applications in Digital Mobile Payments (Free Report, 2021)</h2>
+                        <p class="lead">In this special report, Reloadly uncovers the top trends and business applications that are influencing digital mobile payments as we move into 2021.
+                        </p>
+                      </div>
+                      <img class="wp-art1 col-md-4 col-xs-12" alt="whitepaper" src="img/wp-art1.svg" />
 
-      <section class="top-part">
-        <div class="container">
-          <div class="row justify-content-left">
-            <div class="col-md-8 col-xs-12 text-left">
-              <h2>The Rise of Payments as a Platform: Trends and Applications in Digital Mobile Payments (Free Report, 2021)</h2>
-              <p class="lead">In this special report, Reloadly uncovers the top trends and business applications that are influencing digital mobile payments as we move into 2021.
-              </p>
-            </div>
-            <img class="wp-art1 col-md-4 col-xs-12" alt="whitepaper" src="img/wp-art1.svg" />
+                    </div><!--end of row-->
+                  </div><!--end of container-->
+                </section>
 
-          </div><!--end of row-->
-        </div><!--end of container-->
-      </section>
+                <section class="contact-main">
+                  <div class="container">
+                    <div class="row justify-content-center">
 
-      <section class="contact-main">
-        <div class="container">
-          <div class="row justify-content-center">
+                      <div class="contact-text col-sm-12 col-md-8">
+                        <img class="whitepaper-paap-cover" alt="whitepaper" src="img/paapwp-cover.png" />
+                        <p>In so many ways, the Covid-19 pandemic turbo-charged trends in technology that were already beginning to pick up speed throughout the past decade. Among these trends is the rapid adoption of new digital payment methods made possible through emerging PaaP solutions.
+                        </p>
+                        <p>This 28-page whitepaper was produced to deliver to you the catalysts that are transforming the payments industry today. Each trend and business application that we cover is backed by current sources and accompanied by rich data in the forms of charts and graphs.
+                        </p>
+                      </div>
 
-            <div class="contact-text col-sm-12 col-md-8">
-              <img class="whitepaper-paap-cover" alt="whitepaper" src="img/paapwp-cover.png" />
-              <p>In so many ways, the Covid-19 pandemic turbo-charged trends in technology that were already beginning to pick up speed throughout the past decade. Among these trends is the rapid adoption of new digital payment methods made possible through emerging PaaP solutions.
-              </p>
-              <p>This 28-page whitepaper was produced to deliver to you the catalysts that are transforming the payments industry today. Each trend and business application that we cover is backed by current sources and accompanied by rich data in the forms of charts and graphs.
-                </p>
-            </div>
+                      <div class="form-contact col-sm-12 col-md-4">
+                        <form data-success="Thanks for contacting us." data-error="Please double-check if you filled in all fields correctly.">
+                          <div  class="">
+                            <input type="text" name="First Name" placeholder="First name" required/>
+                            <input type="text" name="Last Name" placeholder="Last name" required/>
+                            <input class="validate-required validate-email" type="email" name="Email" placeholder="Email" required/>
+                            <button href="mailto:hello@reloadly.com" type="submit" class="btn btn--primary type--uppercase">Download now!</button>
+                          </div>
+                        </div>
 
-            <div class="form-contact col-sm-12 col-md-4">
-              <form data-success="Thanks for contacting us." data-error="Please double-check if you filled in all fields correctly.">
-                <div  class="">
-                  <input type="text" name="First Name" placeholder="First name" required/>
-                  <input type="text" name="Last Name" placeholder="Last name" required/>
-                  <input class="validate-required validate-email" type="email" name="Email" placeholder="Email" required/>
-                <button href="mailto:hello@reloadly.com" type="submit" class="btn btn--primary type--uppercase">Download now!</button>
-                </div>
-              </div>
+                      </div><!--end of row-->
+                    </div><!--end of container-->
+                  </section>
 
-            </div><!--end of row-->
-          </div><!--end of container-->
-        </section>
-
-        <section class="f-c">
-          <div class="container">
-            <div class="row justify-content-left">
-              <div class="col-md-8">
-                <h4>Some insights that we have uncovered in this report include:</h4>
-                <ul class="contact-list">
-                <li><span>&ofcir;</span> 74% of shoppers who switched to online shopping during the pandemic intend to continue after the pandemic ends.</li>
-                <li><span>&ofcir;</span> In 2020, more people bought cryptocurrencies across the globe than any year before.</li>
-                <li><span>&ofcir;</span> In 2019, the payments sector witnessed a historic influx of investment, attracting $15 billion, 20% more than the preceding year.</li>
-                <li><span>&ofcir;</span> By 2019, mobile money providers had penetrated seven times the reach of ATMs and 20 times that of banks.</li>
-              </ul>
-              <hr class="horizontal-line">
-                <p class="lead">Our editorial team is always open to feedback to make our research stand out even more. Should you have comments or ideas about our whitepaper series, please contact us at:
-                  <a href="mailto:support@reloadly.com">support@reloadly.com</a>
-                </p>
-                </div>
-                  <div class="col-md-4">
-                  <img class="whitepaper-paap-contents" alt="whitepaper" src="img/paap-contents.png" />
-                  </div>
-            </div><!--end of row-->
-          </div><!--end of container-->
-        </section>
-
-
-        <section class="cta-bgd">
-          <div class="container">
-            <div class="row">
-              <div class="cta cta-1 col-md-12">
-                <div class="cta-text col-md-7">
-                  <h3>Make your first API call today with Reloadly</h3>
-                  <p>Signup for a developer account and connect to our API in minutes</p>
-                </div>
-                <div class="cta-button col-md-3">
-                  <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
-                    <span class="btn__text" >
-                      Get Your Free API Key
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!--end of row-->
-          </div>
-          <!--end of container-->
-        </section>
+                  <section class="f-c">
+                    <div class="container">
+                      <div class="row justify-content-left">
+                        <div class="col-md-8">
+                          <h4>Some insights that we have uncovered in this report include:</h4>
+                          <ul class="contact-list">
+                            <li><span>&ofcir;</span> 74% of shoppers who switched to online shopping during the pandemic intend to continue after the pandemic ends.</li>
+                            <li><span>&ofcir;</span> In 2020, more people bought cryptocurrencies across the globe than any year before.</li>
+                            <li><span>&ofcir;</span> In 2019, the payments sector witnessed a historic influx of investment, attracting $15 billion, 20% more than the preceding year.</li>
+                            <li><span>&ofcir;</span> By 2019, mobile money providers had penetrated seven times the reach of ATMs and 20 times that of banks.</li>
+                          </ul>
+                          <hr class="horizontal-line">
+                          <p class="lead">Our editorial team is always open to feedback to make our research stand out even more. Should you have comments or ideas about our whitepaper series, please contact us at:
+                            <a href="mailto:support@reloadly.com">support@reloadly.com</a>
+                          </p>
+                        </div>
+                        <div class="col-md-4">
+                          <img class="whitepaper-paap-contents" alt="whitepaper" src="img/paap-contents.png" />
+                        </div>
+                      </div><!--end of row-->
+                    </div><!--end of container-->
+                  </section>
 
 
+                  <section class="cta-bgd">
+                    <div class="container">
+                      <div class="row">
+                        <div class="cta cta-1 col-md-12">
+                          <div class="cta-text col-md-7">
+                            <h3>Make your first API call today with Reloadly</h3>
+                            <p>Signup for a developer account and connect to our API in minutes</p>
+                          </div>
+                          <div class="cta-button col-md-3">
+                            <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
+                              <span class="btn__text" >
+                                Get Your Free API Key
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>  <!--end of row-->
+                    </div><!--end of container-->
+                  </section>
 
-        <footer class="space--sm footer-2 text-center-xs ">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 text-center">
-                <ul class="options list-inline list--hover">
-                  <li><a href="#"><span class="lead">Top Up</span>
-                  </a>
-                </li>
-                <li><a href="#"><span class="lead">Support</span>
-                </a>
-              </li>
-              <li><a href="#"><span class="lead">Blog</span>
-              </a>
-            </li>
-            <li><a href="#"><span class="lead">Careers</span>
-            </a>
-          </li>
-          <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="social-list list-inline list--hover">
-        <li>
-          <a href="https://twitter.com/Reloadly" target="_blank">
-            <i class="socicon socicon-twitter icon icon--xs"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/reloadly" target="_blank">
-            <i class="socicon socicon-facebook icon icon--xs"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/reloadly" target="_blank">
-            <i class="socicon socicon-instagram icon icon--xs"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/ReloadlyNetworks" target="_blank">
-            <i class="socicon socicon-github icon icon--xs"></i>
-          </a>
-        </li>
-      </ul>
+                  <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <a routerLink="/">
+                            <img src="https://cdn.reloadly.com/assets-v2/images/logo.svg" alt="Reloadly" width="150px">
+                          </a>
+                          <p>First mobile Top-up API made for developers. Enable your apps and websites to send mobile top-up
+                            worldwide.
+                          </p>
+                        </div>
+                        <div class="col">
+                          <h5 class="text-white">Products</h5>
+                          <ul>
+                            <li>
+                              <a routerLink="/products/airtime">Airtime</a>
+                            </li>
+                            <li>
+                              <a routerLink="/products/data-bundles">Data bundles</a>
+                            </li>
+                          </ul>
+                          <h5 class="text-white">Operators</h5>
+                          <ul>
+                            <li>
+                              <a href="https://operators.reloadly.com/">Global Mobile Operator Network</a>
+                            </li>
+                            <li>
+                              <a href="https://operators.reloadly.com/orange-international-mobile-airtime-api/">Orange Mobile
+                                Network</a>
+                              </li>
+                              <li>
+                                <a href="https://operators.reloadly.com/claro-dominican-republic-airtime-api/">Claro Dominican
+                                  Republic</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col">
+                              <h5 class="text-white">Customer stories</h5>
+                              <ul>
+                                <li>
+                                  <a routerLink="/customerstory/julaya">Julaya</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/customerstory/cash-mobile-app">CashMobile App</a>
+                                </li>
+                              </ul>
+                              <h5 class="text-white">Use cases</h5>
+                              <ul>
+                                <li>
+                                  <a routerLink="/mobile-rewards">Rewards & Incentives</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/money-transmitters">Money transmitters</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/usecase/moneytransfer">Money transfer</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col">
+                              <h5 class="text-white">Resources</h5>
+                              <ul>
+                                <li>
+                                  <a href="https://faq.reloadly.com">Support</a>
+                                </li>
+                                <li>
+                                  <a href="https://developers.reloadly.com/">Developers</a>
+                                </li>
+                                <li>
+                                  <a (click)="socialIcon('github', 'https://github.com/ReloadlyNetworks')">GitHub</a>
+                                </li>
+                                <li>
+                                  <a href="https://reloadly.com/blog/">Blog</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/promotions">Promotions</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/white-paper">White paper</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col">
+                              <h5 class="text-white">Company</h5>
+                              <ul>
+                                <li>
+                                  <a routerLink="/about-us">About us</a>
+                                </li>
+                                <li>
+                                  <a href="mailto:hello@reloadly.com">Contact us</a>
+                                </li>
+                                <li>
+                                  <a href="https://reloadly.com/blog/careers/">Careers</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/pricing">Pricing</a>
+                                </li>
+                              </ul>
 
-    </div>
+                            </div>
+                            <div class="col">
+                              <h5 class="text-white">Legal</h5>
+                              <ul>
+                                <li>
+                                  <a routerLink="/terms-of-use">Terms of use</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/privacy-policy">Privacy policy</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/security-information">Security information</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/cookie-policy">Cookie policy</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/user-agreement">User agreement</a>
+                                </li>
+                                <li>
+                                  <a routerLink="/gdpr">GDPR</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col">
+                              <h5 class="text-white">Social</h5>
+                              <ul>
+                                <li>
+                                  <a (click)="socialIcon('twitter', 'https://twitter.com/Reloadly')">Twitter</a>
+                                </li>
+                                <li>
+                                  <a (click)="socialIcon('instagram', 'https://www.instagram.com/reloadly')">Instagram</a>
+                                </li>
+                                <li>
+                                  <a (click)="socialIcon('facebook', 'https://www.facebook.com/reloadly')">Facebook</a>
+                                </li>
+                                <li>
+                                  <a href="https://github.com/Reloadly" target="_blank">GitHub</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--end of row-->
+                        </div>
+                        <!--end of container-->
 
-  </div>
-  <!--end of row-->
-  <div class="row ">
-    <div class="col-12 text-center">
-      <span class="type--fine-print">&copy;
-        <span class="update-year"></span> Reloadly</span>
-      </div>
-      <div class="col-12 text-center">
-        <a class="type--fine-print" href="#">Terms of Use</a>
-        <a class="type--fine-print" href="#">Security Information</a>
-        <a class="type--fine-print" href="#">User Agreement</a>
-        <a class="type--fine-print" href="#">Cookie Policy</a>
-        <a class="type--fine-print" href="#">Privacy Policy</a>
-      </div>
 
-    </div>
-    <!--end of row-->
-  </div>
-  <!--end of container-->
-</footer>
+                        <div  class="down-footer"><div class="col-12 text-center"><span class="type--fine-print white"> Powered by <fa-icon class="heart ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                        </fa-icon>&nbsp;from Reloadly, Barcelona - Miami - Paris </span><br>
+                        <span  class="type--fine-print white">Copyright ©
+                          <span  class="update-year">2020</span> Reloadly Inc. </span></div>
+                        </div>
+                      </footer>
 
-</div>
-<!--<div class="loader"></div>-->
-<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
-  <i class="stack-interface stack-up-open-big"></i>
-</a>
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/flickity.min.js"></script>
-<script src="js/easypiechart.min.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/typed.min.js"></script>
-<script src="js/datepicker.js"></script>
-<script src="js/isotope.min.js"></script>
-<script src="js/ytplayer.min.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="js/granim.min.js"></script>
-<script src="js/jquery.steps.min.js"></script>
-<script src="js/countdown.min.js"></script>
-<script src="js/twitterfetcher.min.js"></script>
-<script src="js/spectragram.min.js"></script>
-<script src="js/smooth-scroll.min.js"></script>
-<script src="js/scripts.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-</body>
-</html>
+        </div><!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+          <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      </body>
+      </html>
