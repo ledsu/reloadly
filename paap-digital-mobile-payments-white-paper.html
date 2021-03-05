@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reloadly Mobile top up API for developers | Mobile Recharge API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cross border mobile top up API to send credits to 5 billion phones designed for easy developer implementation on apps and other platforms.">
+  <meta property="og:url" content="https://reloadly.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reloadly">
+  <meta property="og:description" content="The Reloadly API platform is built for developers, the world's first toolkit for mobile airtime and mobile operator
+  services connecting you to billions of mobile subscribers">
+  <meta property="og:image" content="https://reloadly.com/assets/images/reloadly.png">
+  <meta name="Description" content="The Reloadly API platform is built for developers, the worlds first toolkit for mobile airtime and mobile operator services connecting you to billions of mobile subscribers">
+  <meta property="Keywords" content="Top Up API, Mobile Recharge API, Prepaid top up API, Telecom API, Mobile Airtime API">
+  <style type="text/css" media="screen">
+  @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
+  @font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
+  </style>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+#whitepaper-paap .bgd{
+  height: 28em;
+  transform: skewY(20deg);
+  top:-27em;
+}
+#whitepaper-paap .top-part h2{
+margin-top:-2em;
+}
+#whitepaper-paap .top-part{
+margin-left:2em;
+}
+.wp-art1{
+  max-width:350px;
+  margin-top:-6em;
+  margin-left:1em;
+}
+#whitepaper-paap .contact-main{
+margin:1em 0 0;
+}
+.whitepaper-paap-cover{
+  max-width:300px;
+  object-fit: contain;
+  float:left;
+  margin:0 1em 1em 0;
+  padding:0 15px 0;
+}
+.whitepaper-paap-contents{
+  border-left: 1px solid #1fbad6;
+}
+#whitepaper-paap .contact-text,#whitepaper-paap .form-contact{
+  margin:0 0 1em;
+}
+.f-c{
+  margin-top:1em;
+}
+@media all and (max-width: 767px){
+  #whitepaper-paap .bgd{
+    height: 61em;
+    transform: skewY(10deg);
+  }
+  .wp-art1{
+display:none;
+  }
+  #whitepaper-paap .top-part{
+  margin-left:0;
+  }
+  #whitepaper-paap .contact-main{
+  margin-top:-1em;
+  margin-bottom:0;
+  }
+  .whitepaper-paap-cover{
+float:none;
+max-width:100%;
+}
+    }
+.menu-line li, .about-menu-line li{
+  display: inline-block;
+  padding:1em;
+  }
+  .menu-line{
+  margin: .2em auto 0;
+  width:400px;
+  text-align: center;
+  }
+  .about-menu-line{
+  margin: -4.4em 1em 0 0 !important;
+  }
+    #whitepaper-paap .menu-line a,  #whitepaper-paap  .about-menu-line a{
+    color:#232D3D;
+  }
+  .sub-menu-line{
+    position:absolute;
+    border:1px solid #1fbad6;
+    background: none;
+    border-radius:6px;
+    padding:0 4px 0;
+    opacity: 0;
+    transition: all 1.5s ease-out;
+  }
+  .menu-line :hover, .about-menu-line :hover{
+  color:#1FBAD6;
+  }
+  .menu-line li :hover + .sub-menu-line{
+    opacity: 1;
+    margin-top:.6em;
+    position:absolute;
+    text-align:left;
+    z-index:45;
+  }
+  .about-menu-line li :hover + .sub-menu-line{
+    opacity: 1;
+    margin-top:.6em;
+    position:absolute;
+    z-index:46;
+  }
+  #whitepaper-paap .horizontal-line{
+    width:100%;
+    margin-bottom:1.8em;
+  }
+  @media all and (min-width: 992px) {
+  #menuToggle{
+    display:none;
+  }
+  #whitepaper-paap .bar__module{
+  margin-top:1em;
+  }
+  }
+  @media all and (max-width: 992px) {
+  .menu-line, .about-menu-line, #whitepaper-paap .bar__module{
+    display:none;
+  }
+  .wp-art1 {
+    max-width: 200px;
+    margin-top: -6em;
+    margin-left: 1em;
+}
+  }
+}
+</style>
+<body class="secondary-page" id="whitepaper-paap">
+  <a id="start"></a>
+
+  <div class="nav-container">
+    <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
+
+            <div class="bar__module text-right">
+              <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+              <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+            </div>
+            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
+
+            <ul class="menu-line">
+              <li><a id="products-line" class="lead">Products</a>
+                <ul class="sub-menu-line">
+                  <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                  <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                  <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                  <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                </ul></li>
+                <li><a class="lead">Pricing</a>
+                  <ul class="sub-menu-line">
+                    <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                    <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                  </ul></li>
+                  <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                </ul>
+
+                <ul class="about-menu-line">
+                  <li><a class="lead">Company</a>
+                    <ul class="sub-menu-line">
+                      <li><a href="about.html" target="_blank">About Us</a></li>
+                      <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                      <li><a href="careers.html" target="_blank">Careers</a></li>
+                      <li><a href="contact.html" target="_blank">Contact</a></li>
+                    </ul></li>
+                    <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav role='navigation'>
+            <div id="menuToggle" onclick="nav.menu()">
+              <input type="checkbox"/><span></span><span></span><span></span>
+              <ul id="menu" class="main-menu">
+                <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+
+                <li><a id="products">Products</a>
+                  <ul class="sub-menu">
+                    <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                    <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                    <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                    <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                  </ul></li>
+                  <li><a>Pricing</a>
+                    <ul class="sub-menu">
+                      <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                      <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                    </ul></li>
+                    <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                    <li><a>Company</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html" target="_blank">About Us</a></li>
+                        <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                        <li><a href="careers.html" target="_blank">Careers</a></li>
+                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                      </ul></li>
+                      <li><a href="support.html" target="_blank">Help</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div><!--end module-->
+
+    <div class="main-container">
+      <div class="bgd"></div>
+
+      <section class="top-part">
+        <div class="container">
+          <div class="row justify-content-left">
+            <div class="col-md-8 col-xs-12 text-left">
+              <h2>The Rise of Payments as a Platform: Trends and Applications in Digital Mobile Payments (Free Report, 2021)</h2>
+              <p class="lead">In this special report, Reloadly uncovers the top trends and business applications that are influencing digital mobile payments as we move into 2021.
+              </p>
+            </div>
+            <img class="wp-art1 col-md-4 col-xs-12" alt="whitepaper" src="img/wp-art1.svg" />
+
+          </div><!--end of row-->
+        </div><!--end of container-->
+      </section>
+
+      <section class="contact-main">
+        <div class="container">
+          <div class="row justify-content-center">
+
+            <div class="contact-text col-sm-12 col-md-8">
+              <img class="whitepaper-paap-cover" alt="whitepaper" src="img/paapwp-cover.png" />
+              <p>In so many ways, the Covid-19 pandemic turbo-charged trends in technology that were already beginning to pick up speed throughout the past decade. Among these trends is the rapid adoption of new digital payment methods made possible through emerging PaaP solutions.
+              </p>
+              <p>This 28-page whitepaper was produced to deliver to you the catalysts that are transforming the payments industry today. Each trend and business application that we cover is backed by current sources and accompanied by rich data in the forms of charts and graphs.
+                </p>
+            </div>
+
+            <div class="form-contact col-sm-12 col-md-4">
+              <form data-success="Thanks for contacting us." data-error="Please double-check if you filled in all fields correctly.">
+                <div  class="">
+                  <input type="text" name="First Name" placeholder="First name" required/>
+                  <input type="text" name="Last Name" placeholder="Last name" required/>
+                  <input class="validate-required validate-email" type="email" name="Email" placeholder="Email" required/>
+                <button href="mailto:hello@reloadly.com" type="submit" class="btn btn--primary type--uppercase">Download now!</button>
+                </div>
+              </div>
+
+            </div><!--end of row-->
+          </div><!--end of container-->
+        </section>
+
+        <section class="f-c">
+          <div class="container">
+            <div class="row justify-content-left">
+              <div class="col-md-8">
+                <h4>Some insights that we have uncovered in this report include:</h4>
+                <ul class="contact-list">
+                <li><span>&ofcir;</span> 74% of shoppers who switched to online shopping during the pandemic intend to continue after the pandemic ends.</li>
+                <li><span>&ofcir;</span> In 2020, more people bought cryptocurrencies across the globe than any year before.</li>
+                <li><span>&ofcir;</span> In 2019, the payments sector witnessed a historic influx of investment, attracting $15 billion, 20% more than the preceding year.</li>
+                <li><span>&ofcir;</span> By 2019, mobile money providers had penetrated seven times the reach of ATMs and 20 times that of banks.</li>
+              </ul>
+              <hr class="horizontal-line">
+                <p class="lead">Our editorial team is always open to feedback to make our research stand out even more. Should you have comments or ideas about our whitepaper series, please contact us at:
+                  <a href="mailto:support@reloadly.com">support@reloadly.com</a>
+                </p>
+                </div>
+                  <div class="col-md-4">
+                  <img class="whitepaper-paap-contents" alt="whitepaper" src="img/paap-contents.png" />
+                  </div>
+            </div><!--end of row-->
+          </div><!--end of container-->
+        </section>
+
+
+        <section class="cta-bgd">
+          <div class="container">
+            <div class="row">
+              <div class="cta cta-1 col-md-12">
+                <div class="cta-text col-md-7">
+                  <h3>Make your first API call today with Reloadly</h3>
+                  <p>Signup for a developer account and connect to our API in minutes</p>
+                </div>
+                <div class="cta-button col-md-3">
+                  <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
+                    <span class="btn__text" >
+                      Get Your Free API Key
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--end of row-->
+          </div>
+          <!--end of container-->
+        </section>
+
+
+
+        <footer class="space--sm footer-2 text-center-xs ">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <ul class="options list-inline list--hover">
+                  <li><a href="#"><span class="lead">Top Up</span>
+                  </a>
+                </li>
+                <li><a href="#"><span class="lead">Support</span>
+                </a>
+              </li>
+              <li><a href="#"><span class="lead">Blog</span>
+              </a>
+            </li>
+            <li><a href="#"><span class="lead">Careers</span>
+            </a>
+          </li>
+          <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="social-list list-inline list--hover">
+        <li>
+          <a href="https://twitter.com/Reloadly" target="_blank">
+            <i class="socicon socicon-twitter icon icon--xs"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/reloadly" target="_blank">
+            <i class="socicon socicon-facebook icon icon--xs"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/reloadly" target="_blank">
+            <i class="socicon socicon-instagram icon icon--xs"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ReloadlyNetworks" target="_blank">
+            <i class="socicon socicon-github icon icon--xs"></i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+  <!--end of row-->
+  <div class="row ">
+    <div class="col-12 text-center">
+      <span class="type--fine-print">&copy;
+        <span class="update-year"></span> Reloadly</span>
+      </div>
+      <div class="col-12 text-center">
+        <a class="type--fine-print" href="#">Terms of Use</a>
+        <a class="type--fine-print" href="#">Security Information</a>
+        <a class="type--fine-print" href="#">User Agreement</a>
+        <a class="type--fine-print" href="#">Cookie Policy</a>
+        <a class="type--fine-print" href="#">Privacy Policy</a>
+      </div>
+
+    </div>
+    <!--end of row-->
+  </div>
+  <!--end of container-->
+</footer>
+
+</div>
+<!--<div class="loader"></div>-->
+<a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+  <i class="stack-interface stack-up-open-big"></i>
+</a>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/flickity.min.js"></script>
+<script src="js/easypiechart.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/datepicker.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/ytplayer.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/granim.min.js"></script>
+<script src="js/jquery.steps.min.js"></script>
+<script src="js/countdown.min.js"></script>
+<script src="js/twitterfetcher.min.js"></script>
+<script src="js/spectragram.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>
