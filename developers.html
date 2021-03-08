@@ -31,11 +31,20 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <style>
+#developers .bgd{
+  height:44em;
+}
+#developers .menu-line {
+    margin: .2em auto 0;
+  }
+#developers .sub-menu-line {
+background:transparent;
+}
+  #developers  .menu-line a{
+      color:#232D3D;
+    }
 #developers .bar__module:not(:last-child) {
   margin-right: 0;
-}
-#developers .menu-line a{
-  color:#fff;
 }
 #developers .menu-line a:hover{
   color:#1fbad6;
@@ -43,34 +52,21 @@
 #developers .about-menu-line a:hover{
   color:#1fbad6;
 }
-#developers input[type=text]{
-  width:200px;
-  line-height: 1.85714286em;
-  background:#334054;
-  color:#fff;
-  border-style:none;
-  margin-top:-3em;
-  float:right;
-}
-#developers ::placeholder {
-  color:#fff;
-}
 #developers .top-part p{
   font-size:1.35714286em;
 }
-#developers .section-bgd2{
-  background:#334054;
-  height:14em;
-  margin-top:6em;
-}
-.dev-img{
-  margin:-5em 0 0 1em;
+#developers .top-part{
+margin-bottom:10em;
 }
 #developers .mail-to: hover{
   color:#1fbad6;
 }
-#developers .airtime-rows h3{
-  color:#fff;
+#developers .horizontal-line{
+margin-top:2em;
+}
+#developers .three-steps-2 {
+    transform: skewY(0deg);
+    margin-top:0;
 }
 #developers .airtime-rows a:hover{
   font-weight: bold;
@@ -145,10 +141,6 @@
   .dev-img{
     margin:4em 0 0 0;
   }
-  #developers .section-bgd2{
-    height:14em;
-    margin-top:.5em;
-  }
   #developers .airtime-getting-started-list{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -168,120 +160,131 @@
   }
 }
 </style>
-<body class="" id="developers">
+<body class="secondary-page" id="developers">
   <a id="start"></a>
   <div class="nav-container">
-    <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+
+  <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
             <div class="bar__module text-right">
-              <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Sign up</span></a>
+              <a class="btn btn--xs btn--primary type--uppercase" href="https://www.reloadly.com/registration"><span class="btn__text">Sign up</span></a>
             </div>
-            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo-white.svg"/> </a></div>
-            <ul class="menu-line">
-              <li><a id="products-line" class="lead">For developers</a>
-              </li>
-              <li><a class="lead">API status</a>
-              </li>
-              <li><a href="" target="_blank" class="lead">Support</a></li>
-            </ul>
-            <input type="text" placeholder="Search">
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg"/> </a></div>
 
-    <nav role='navigation'>
-      <div id="menuToggle" onclick="nav.menu()">
-        <input type="checkbox"/><span></span><span></span><span></span>
-        <ul id="menu" class="main-menu">
-          <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Sign up</a></div></li>
-          <li><a id="products">For developers</a>
-          </li>
-          <li><a>API status</a>
-          </li>
-          <li><a href="" target="_blank">Support</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div><!--end module-->
+            <ul class="menu-line">
+              <li><a id="products-line" class="lead">Developers</a>
+                <ul class="sub-menu-line">
+                  <li><a href="" target="_blank">Widget</a></li>
+                  <li><a href="https://developers.reloadly.com/" target="_blank">API docs</a></li>
+                  <li><a href="" target="_blank">SDK</a></li>
+                </ul></li>
+                <li><a class="lead">API status</a></li>
+                  <li><a href="" target="_blank" class="lead">Support</a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav role='navigation'>
+            <div id="menuToggle" onclick="nav.menu()">
+              <input type="checkbox"/><span></span><span></span><span></span>
+              <ul id="menu" class="main-menu">
+                <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="https://www.reloadly.com/registration" target="_blank">Sign up</a></div></li>
+
+                <li><a id="products">Developers</a>
+                  <ul class="sub-menu">
+                    <li><a href="" target="_blank">Widget</a></li>
+                    <li><a href="https://developers.reloadly.com/" target="_blank">API docs</a></li>
+                    <li><a href="" target="_blank">SDK</a></li>
+                  </ul></li>
+                  <li><a>API status</a>
+                    </li>
+                    <li><a href="" target="_blank">Support</a></li>
+                    </ul>
+                  </div>
+                </nav>
+
+              </div><!--end module-->
+
 
   <div class="main-container">
+    <div class="bgd"></div>
 
     <section class="top-part">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-12 text-center">
             <h2>Reloadly Developer Tools</h2>
-            <h3>Airtime & Data Mobile Top Up</h3>
-            <p class="lead">Increase engagement with your services from Reloadly. Available in more than 150 countries, with billions of mobile subscribers each day that need to stay connected on their mobiles. Quickly get your users topped up with a widget for your site, wordpress and WooCommerce. Want more control? Build a custom integration with our Client Libraries or by using our API.
+            <p class="lead">Increase engagement with your services from Reloadly. Available in more than 150 countries, with billions of mobile subscribers each day that need to stay connected on their mobiles
             </p>
             <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
               <span class="btn__text" >View showcase</span></a>
-              <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+              <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="https://developers.reloadly.com" target="_blank">
                 <span class="btn__text" >View docs</span></a>
               </div>
-              <div class="col-md-6">
-                <img class="dev-img" alt="pic" src="img/dev-scr.png" />
-              </div>
+
             </div><!--end of row-->
           </div> <!--end of container-->
         </section>
-        <div class="section-bgd2"></div>
 
-
-        <section class="">
-          <div class="container">
-            <div class="row">
-              <div class="airtime-getting-started-list text-center col-sm-12">
-                <div class="airtime-rows">
-                  <img alt="Image" src="img/150.svg" />
-                  <h3>countries</h3>
-                </div>
-                <div class="airtime-rows">
-                  <img alt="Image" src="img/800.svg" />
-                  <h3>mobile operators</h3>
-                </div>
+      <section class="switchable feature-large">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-5 three-steps-2"><img alt="Image" src="img/widget-scr.png" /></div>
+            <div class="col-md-6 col-lg-6">
+              <div class="">
+                <h3>Widget</h3>
+                <p class="lead">The easiest way to integrate Reloadly into your app or website. The airtime top up Widget displays a simple but powerful call-to-action in your site with just a few lines of code.
+                </p>
+                <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                  <span class="btn__text" >View docs</span></a>
               </div>
             </div>
           </div><!--end of row-->
         </div><!--end of container-->
       </section>
 
-      <section class="text-left">
+<hr class="horizontal-line">
+
+      <section class="switchable switchable--switch feature-large">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="text-left airtime-rows-list col-sm-12">
-              <div class="airtime-rows">
-                <h3>Widget</h3>
-                <p>Development Effort: Low | Customizability: Limited</p>
-                <p class="lead">The easiest way to integrate Reloadly into your app or website. The airtime top up Widget displays a simple but powerful call-to-action in your site with just a few lines of code. The button displays real-time values for recharge, delivery amounts and detects the mobile operator based on the number for users. Tapping it opens a user friendly experience for the top up flow for an instant, full-featured mobile recharge experience. Add your own payment gateway for Stripe or Paypal to access payments.
+          <div class="row justify-content-around">
+            <div class="col-md-5 three-steps-2"><img alt="Image" src="img/sdk.png" /></div>
+            <div class="col-md-6 col-lg-6">
+              <div class="">
+                <h3>Client Libraries - SDKs</h3>
+                <p class="lead">Control every aspect of the end-to-end flow to create novel user experiences that are unique to your app and brand.
                 </p>
                 <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+                  <span class="btn__text" >View Github</span></a>
+              </div>
+            </div>
+          </div><!--end of row-->
+        </div><!--end of container-->
+      </section>
+
+              <hr class="horizontal-line">
+
+      <section class="switchable feature-large">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-5 three-steps-2"><img alt="Image" src="img/dev-scr.png" /></div>
+            <div class="col-md-6 col-lg-6">
+              <div class="">
+                <h3>REST APIs</h3>
+                <p class="lead">Don’t see a library for your language of choice in the client libraries? Get full control and create a unique custom user experience from scratch with our REST APIs.
+                </p>
+                <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="https://developers.reloadly.com" target="_blank">
                   <span class="btn__text" >View docs</span></a>
-                </div>
-                <div class="airtime-rows">
-                  <h3>Client Libraries - SDKs</h3>
-                  <p>Development Effort: Medium | Customizability: Full</p>
-                  <p class="lead">Deeply integrate the Reloadly top up experience into your apps with one of our SDKs — available in a range of languages (Php, Java, Python, and more). Control every aspect of the end-to-end flow to create novel user experiences that are unique to your app and brand.
-                  </p>
-                  <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                    <span class="btn__text" >View Github</span></a>
-                  </div>
-                  <div class="airtime-rows">
-                    <h3>REST APIs</h3>
-                    <p>Development Effort: High | Customizability: Full</p>
-                    <p class="lead">Don’t see a library for your language of choice in the client libraries? Get full control and create a unique custom user experience from scratch with our REST APIs.
-                    </p>
-                    <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                      <span class="btn__text" >View docs</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!--end of row-->
-            </div><!--end of container-->
-          </section>
+              </div>
+            </div>
+          </div><!--end of row-->
+        </div><!--end of container-->
+      </section>
+
 
           <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
             <div class="container">
