@@ -32,7 +32,9 @@
 </head>
 <style>
 #developers .bgd{
-  height:44em;
+  height:25em;
+  transform: skewY(-20deg);
+  top: -40%;
 }
 #developers .menu-line {
     margin: .2em auto 0;
@@ -54,6 +56,9 @@ background:transparent;
 }
 #developers .top-part p{
   font-size:1.35714286em;
+}
+#developers .top-part h2{
+  margin-bottom:2em;
 }
 #developers .top-part{
 margin-bottom:10em;
@@ -116,11 +121,6 @@ margin-top:2em;
   #developers .top-part {
     margin-bottom: 0;
   }
-  #developers input[type=text]{
-    width:100%;
-    float:none;
-    margin-top:1em;
-  }
   #developers .switchable {
     margin-top: 0;
   }
@@ -133,11 +133,6 @@ margin-top:2em;
   }
 }
 @media all and (max-width: 767px) {
-  #developers input[type=text]{
-    width:100%;
-    float:none;
-    margin-top:1em;
-  }
   .dev-img{
     margin:4em 0 0 0;
   }
@@ -218,8 +213,9 @@ margin-top:2em;
         <div class="row">
           <div class="col-12 text-center">
             <h2>Reloadly Developer Tools</h2>
-            <p class="lead">Increase engagement with your services from Reloadly. Available in more than 150 countries, with billions of mobile subscribers each day that need to stay connected on their mobiles
+            <div class="col-10 discounts"><p class="lead">Increase engagement with your services from Reloadly. Available in more than 150 countries, with billions of mobile subscribers each day that need to stay connected on their mobiles
             </p>
+            </div>
             <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
               <span class="btn__text" >View showcase</span></a>
               <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="https://developers.reloadly.com" target="_blank">
