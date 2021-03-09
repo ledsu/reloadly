@@ -66,6 +66,53 @@ margin-bottom:10em;
 #developers .mail-to: hover{
   color:#1fbad6;
 }
+.wid-carousel{
+max-width:50%;
+ position: relative;
+ }
+/* Hide the images by default */
+ .mySlides {
+   display: none;
+   box-shadow:0 7px 8px #ddd;
+   max-width:70%;
+   margin:auto;
+ }
+/* Next & previous buttons */
+ #developers .prev,  #developers .next{
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: #232D3D;
+   font-weight: bold;
+   font-size: 28px;
+ }
+/* Position the "next button" to the right */
+ .next {
+   right: 0;
+   margin-right:.5em;
+ }
+/* On hover, add a black background color with a little bit see-through */
+  #developers .prev:hover,  #developers .next:hover {
+   color:#1fbad6;
+ }
+ /* Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ @-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
 #developers .horizontal-line{
 margin-top:2em;
 }
@@ -140,6 +187,10 @@ margin-top:2em;
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top:0;
+  }
+  .wid-carousel{
+    max-width:100%;
+    margin-bottom:2em;
   }
   #developers .airtime-rows-list {
     display: grid;
@@ -226,17 +277,39 @@ margin-top:2em;
           </div> <!--end of container-->
         </section>
 
-      <section class="switchable feature-large">
-        <div class="container">
-          <div class="row justify-content-around">
-            <div class="col-md-5 three-steps-2"><img alt="Image" src="img/widget-scr.png" /></div>
-            <div class="col-md-6 col-lg-6">
+        <section class="switchable feature-large">
+          <div class="container">
+            <div class="row justify-content-around">
+              <div class="col-md-5 wid-carousel">
+
+                <div class="mySlides fade">
+                  <img src="img/wid-p/blue1.png">
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/wid-p/blue2.png">
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/wid-p/blue3.png">
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/wid-p/blue4.png">
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/wid-p/blue5.png">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              </div>
+
+            <div class="col-md-5 col-lg-5">
               <div class="">
                 <h3>Widget</h3>
                 <p class="lead">The easiest way to integrate Reloadly into your app or website. The airtime top up Widget displays a simple but powerful call-to-action in your site with just a few lines of code.
                 </p>
-                <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                  <span class="btn__text" >View docs</span></a>
+                  <a class="btn btn-xs btn--primary type--uppercase"><span class="btn__text" >View docs</span></a>
+                  <a class="btn btn-xs btn--primary type--uppercase" href="https://www.reloadly.com/registration" target="_blank"><span class="btn__text">Get started</span></a>
               </div>
             </div>
           </div><!--end of row-->
@@ -249,13 +322,13 @@ margin-top:2em;
         <div class="container">
           <div class="row justify-content-around">
             <div class="col-md-5 three-steps-2"><img alt="Image" src="img/sdk.png" /></div>
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-5 col-lg-5">
               <div class="">
                 <h3>Client Libraries - SDKs</h3>
                 <p class="lead">Control every aspect of the end-to-end flow to create novel user experiences that are unique to your app and brand.
                 </p>
-                <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
-                  <span class="btn__text" >View Github</span></a>
+                <a class="btn btn-xs btn--primary type--uppercase"><span class="btn__text" >View Github</span></a>
+                <a class="btn btn-xs btn--primary type--uppercase" href="https://www.reloadly.com/registration" target="_blank"><span class="btn__text">Get started</span></a>
               </div>
             </div>
           </div><!--end of row-->
@@ -268,13 +341,13 @@ margin-top:2em;
         <div class="container">
           <div class="row justify-content-around">
             <div class="col-md-5 three-steps-2"><img alt="Image" src="img/dev-scr.png" /></div>
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-5 col-lg-5">
               <div class="">
                 <h3>REST APIs</h3>
                 <p class="lead">Don’t see a library for your language of choice in the client libraries? Get full control and create a unique custom user experience from scratch with our REST APIs.
                 </p>
-                <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="https://developers.reloadly.com" target="_blank">
-                  <span class="btn__text" >View docs</span></a>
+                <a class="btn btn-xs btn--primary type--uppercase"><span class="btn__text" >View docs</span></a>
+                <a class="btn btn-xs btn--primary type--uppercase" href="https://www.reloadly.com/registration" target="_blank"><span class="btn__text">Get started</span></a>
               </div>
             </div>
           </div><!--end of row-->
@@ -456,6 +529,35 @@ margin-top:2em;
             <script src="js/smooth-scroll.min.js"></script>
             <script src="js/scripts.js"></script>
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
           </body>
           </html>
