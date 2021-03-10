@@ -55,6 +55,13 @@ background:transparent;
 #developers .about-menu-line a:hover{
   color:#1fbad6;
 }
+#developers .special-b{
+  border: 2px solid #1fbad6;
+  background-color:#fff;
+}
+#developers .special-b span{
+  color:#1fbad6;
+}
 #developers .top-part p{
   font-size:1.35714286em;
 }
@@ -68,18 +75,199 @@ margin-bottom:10em;
   color:#1fbad6;
 }
 .wid-carousel{
-max-width:50%;
+  max-width:50%;
  position: relative;
  }
-/* Hide the images by default */
+.area{
+  position: absolute;
+  transform: rotate(90deg);
+  z-index:-870;
+  top:2em;
+  left:3em;
+  width:10em;
+}
+.squares li{
+    list-style: none;
+    animation: animate 10s ease-in forwards infinite;
+    border-radius: 50%;
+}
+.squares li:nth-child(1){
+    width: 11px;
+    height: 11px;
+    animation-delay: 2s;
+    border: 2px solid #1fbad6;
+
+}
+.squares li:nth-child(2){
+    width: 19px;
+    height: 19px;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    border: 2px solid #1fbad6;
+
+}
+.squares li:nth-child(3){
+    width: 23px;
+    height: 23px;
+    border: 2px solid #1fbad6;
+
+}
+.squares li:nth-child(4){
+    width: 36px;
+    height: 36px;
+    animation-duration: 6s;
+    border: 2px solid #1fbad6;
+
+}
+.squares li:nth-child(5){
+    width: 14px;
+    height: 14px;
+    animation-delay: .5s;
+    border: 2px solid #1fbad6;
+
+}
+@keyframes animate {
+    0%{transform: rotate(0deg) translateX(0);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{transform: rotate(360deg) translateX(100px);
+        opacity: 0;
+    }
+}
+.area2{
+  position: absolute;
+  z-index:43;
+  width:5em;
+  height:5em;
+  left:11em;
+}
+ .circles li{
+    list-style: none;
+    border: 2px solid #1fbad6;
+    opacity:0.2;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    transform-origin: left;
+    animation: animate2 15s ease-in forwards infinite;
+}
+.circles li:nth-child(1){
+    width: 9px;
+    height: 9px;
+    animation-delay: 3s;
+    margin-top:2em;
+    margin-left:-2em;
+}
+.circles li:nth-child(2){
+    width: 11px;
+    height: 11px;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    margin-top:.5em;
+    margin-left:4em;
+}
+.circles li:nth-child(3){
+    width: 12px;
+    height: 12px;
+    margin-top:0;
+    margin-left:-3em;
+}
+.circles li:nth-child(4){
+    width: 16px;
+    height: 16px;
+    animation-duration: 8s;
+    margin-top:-1em;
+    margin-left:5em;
+  }
+.circles li:nth-child(5){
+    width: 14px;
+    height: 14px;
+    animation-delay: 1s;
+    margin-top:2em;
+    margin-left:2em;
+}
+
+@keyframes animate2 {
+    0%{transform: scale(0);
+        opacity: 1;
+    }
+    100%{transform: scale(7);
+        opacity: 0;
+    }
+}
+.area3{
+  position: absolute;
+  z-index:43;
+  width:5em;
+  height:5em;
+  bottom:5em;
+  left:7em;
+}
+.lines li{
+   list-style: none;
+   border-top: 2px solid #1fbad6;
+   transform:rotate(-45deg);
+   opacity:0.5;
+   transform-origin: left;
+   animation: animate3 4s ease-in-out forwards infinite;
+
+}
+.lines li:nth-child(1){
+   width: 29px;
+   height: 19px;
+   animation-delay: 1s;
+   margin-top:4em;
+   margin-left:-4em;
+}
+.lines li:nth-child(2){
+   width: 31px;
+   height: 11px;
+   animation-delay: 2s;
+   animation-duration: 3s;
+   margin-top:.5em;
+   margin-left:-3em;
+}
+.lines li:nth-child(3){
+   width: 22px;
+   height: 12px;
+   margin-top:0;
+   margin-left:-2em;
+}
+.lines li:nth-child(4){
+   width: 46px;
+   height: 16px;
+   animation-duration: 3s;
+   margin-top:-4em;
+   margin-left:3em;
+ }
+.lines li:nth-child(5){
+   width: 24px;
+   height: 14px;
+   animation-delay: 1s;
+   margin-top:1em;
+   margin-left:2em;
+}
+
+@keyframes animate3 {
+  0% {width:0;
+ }
+  50% {
+    opacity: 0.5;
+    width:50px
+ }
+ 100% {
+   opacity: 0;
+   width:100px;
+}
+    }
+
  .mySlides {
-   display: none;
    box-shadow:0 7px 8px #ddd;
    max-width:70%;
    margin:auto;
  }
-/* Next & previous buttons */
- #developers .prev,  #developers .next{
+ #developers .prev, #developers .next{
    cursor: pointer;
    position: absolute;
    top: 50%;
@@ -90,47 +278,19 @@ max-width:50%;
    font-weight: bold;
    font-size: 28px;
  }
-/* Position the "next button" to the right */
  .next {
    right: 0;
    margin-right:.5em;
  }
-/* On hover, add a black background color with a little bit see-through */
-  #developers .prev:hover,  #developers .next:hover {
+  #developers .prev:hover, #developers .next:hover {
    color:#1fbad6;
- }
- /* Fading animation */
- .fade {
-   -webkit-animation-name: fade;
-   -webkit-animation-duration: 1.5s;
-   animation-name: fade;
-   animation-duration: 1.5s;
- }
- @-webkit-keyframes fade {
-   from {opacity: .4}
-   to {opacity: 1}
- }
- @keyframes fade {
-   from {opacity: .4}
-   to {opacity: 1}
  }
 #developers .horizontal-line{
 margin-top:2em;
 }
-#developers .three-steps-2 {
-    transform: skewY(0deg);
-    margin-top:0;
-}
-#developers .airtime-rows a:hover{
-  font-weight: bold;
-}
-#developers .airtime-rows-list {
-  margin-top:-5em;
-}
-#developers .airtime-getting-started-list{
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-top:2em;
+#developers .three-steps-2{
+  transform: rotate(0deg);
+  margin-top:-2em;
 }
 #developers .cta-button{
   margin-top:8%;
@@ -184,19 +344,9 @@ margin-top:2em;
   .dev-img{
     margin:4em 0 0 0;
   }
-  #developers .airtime-getting-started-list{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top:0;
-  }
   .wid-carousel{
     max-width:100%;
     margin-bottom:2em;
-  }
-  #developers .airtime-rows-list {
-    display: grid;
-    grid-template-columns: auto;
-    margin-bottom: -1em;
   }
   #developers .cta-bgd{
     height: 12em;
@@ -280,7 +430,7 @@ margin-top:2em;
             <div class="col-10 discounts"><p class="lead">Increase engagement with your services from Reloadly. Available in more than 150 countries, with billions of mobile subscribers each day that need to stay connected on their mobiles
             </p>
             </div>
-            <a class="btn btn-xs btn--primary type--uppercase top-button-1 modal-trigger" data-modal-index="0">
+            <a class="btn btn-xs btn--primary type--uppercase top-button-1 special-b">
               <span class="btn__text" >View showcase</span></a>
               <a class="btn btn-xs btn--primary type--uppercase top-button-1" href="https://developers.reloadly.com" target="_blank">
                 <span class="btn__text" >View docs</span></a>
@@ -294,34 +444,41 @@ margin-top:2em;
           <div class="container">
             <div class="row justify-content-around">
               <div class="col-md-5 wid-carousel">
-
-                <div class="mySlides fade">
+                <div class="area" >
+                <ul class="squares">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="mySlides slide">
                   <img src="img/wid-p/blue1.png">
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides slide">
                   <img src="img/wid-p/blue2.png">
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides slide">
                   <img src="img/wid-p/blue3.png">
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides slide">
                   <img src="img/wid-p/blue4.png">
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides slide">
                   <img src="img/wid-p/blue5.png">
                 </div>
-
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
               </div>
 
             <div class="col-md-5 col-lg-5">
               <div class="">
                 <h3>Widget</h3>
+                <h5>Development efford: Low | Customizability: Limited</h5>
                 <p class="lead">The easiest way to integrate Reloadly into your app or website. The airtime top up Widget displays a simple but powerful call-to-action in your site with just a few lines of code.
                 </p>
-                  <a class="btn btn-xs btn--primary type--uppercase"><span class="btn__text" >View docs</span></a>
+                  <a class="btn btn-xs btn--primary type--uppercase special-b"><span class="btn__text" >View docs</span></a>
                   <a class="btn btn-xs btn--primary type--uppercase" href="https://www.reloadly.com/registration" target="_blank"><span class="btn__text">Get started</span></a>
               </div>
             </div>
@@ -334,13 +491,27 @@ margin-top:2em;
       <section class="switchable switchable--switch feature-large">
         <div class="container">
           <div class="row justify-content-around">
-            <div class="col-md-5 three-steps-2"><img alt="Image" src="img/sdk.png" /></div>
+
+            <div class="col-md-6 three-steps-2">
+              <div class="area2" >
+              <ul class="circles">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <img class="col-md-10"  alt="Image" src="img/sdk.png" />
+            </div>
+
             <div class="col-md-5 col-lg-5">
               <div class="">
                 <h3>Client Libraries - SDKs</h3>
+                <h5>Development efford: Medium | Customizability: Full</h5>
                 <p class="lead">Control every aspect of the end-to-end flow to create novel user experiences that are unique to your app and brand.
                 </p>
-                <a class="btn btn-xs btn--primary type--uppercase"><span class="btn__text" >View Github</span></a>
+                <a class="btn btn-xs btn--primary type--uppercase special-b"><span class="btn__text" >View Github</span></a>
                 <a class="btn btn-xs btn--primary type--uppercase" href="https://www.reloadly.com/registration" target="_blank"><span class="btn__text">Get started</span></a>
               </div>
             </div>
@@ -348,18 +519,31 @@ margin-top:2em;
         </div><!--end of container-->
       </section>
 
-              <hr class="horizontal-line">
+      <hr class="horizontal-line">
 
       <section class="switchable feature-large">
         <div class="container">
           <div class="row justify-content-around">
-            <div class="col-md-5 three-steps-2"><img alt="Image" src="img/dev-scr.png" /></div>
+            <div class="col-md-5 three-steps-2">
+              <div class="area3" >
+              <ul class="lines">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <img alt="Image" src="img/dev-scr.png"/>
+            </div>
             <div class="col-md-5 col-lg-5">
               <div class="">
                 <h3>REST APIs</h3>
+                <h5>Development efford: High | Customizability: Full</h5>
+
                 <p class="lead">Don’t see a library for your language of choice in the client libraries? Get full control and create a unique custom user experience from scratch with our REST APIs.
                 </p>
-                <a class="btn btn-xs btn--primary type--uppercase"><span class="btn__text" >View docs</span></a>
+                <a class="btn btn-xs btn--primary type--uppercase special-b"><span class="btn__text" >View docs</span></a>
                 <a class="btn btn-xs btn--primary type--uppercase" href="https://www.reloadly.com/registration" target="_blank"><span class="btn__text">Get started</span></a>
               </div>
             </div>
@@ -569,7 +753,6 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
 </script>
           </body>
