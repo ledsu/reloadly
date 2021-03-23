@@ -28,71 +28,318 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-<body class="secondary-page" id="about">
+    <style>
+        #about-page section{
+          margin-bottom:3em;
+          padding:0;
+        }
+    #about-page .bgd{
+      height: 46em;
+    }
+    .bgd-block1{
+      position: absolute;
+      top: 35%;
+      background-color: #1fbad6;
+      height: 2px;
+      width: 15%;
+      z-index: -600;
+      transform: skewY(-10deg);
+      overflow: hidden;
+    }
+    .bgd-block2{
+      position: absolute;
+      top: 30%;
+      background-color: #1fbad6;
+      height: 2px;
+      width: 10%;
+      z-index: -599;
+      transform: skewY(-10deg);
+      overflow: hidden;
+    }
+    .bgd-block3{
+      position: absolute;
+      top: 30%;
+      right:0;
+      background-color: #1fbad6;
+      height: 2px;
+      width: 9em;
+      z-index: -598;
+      transform: skewY(-10deg);
+      overflow: hidden;
+    }
+    .bgd-block4{
+      position: absolute;
+      top: 50%;
+      background-color: #1fbad6;
+      height: 2px;
+      width: 22%;
+      z-index: -597;
+      transform: skewY(-10deg);
+      overflow: hidden;
+    }
+    .bgd-block5{
+      position: absolute;
+      top: 74%;
+      background-color: #1fbad6;
+      height: 2px;
+      width: 14%;
+      z-index: -596;
+      transform: skewY(-10deg);
+      overflow: hidden;
+    }
+    #about-page .top-part{
+      margin-top:4em;
+    }
+
+    .menu-line li, .about-menu-line li{
+      display: inline-block;
+      padding:1em;
+    }
+    .menu-line{
+      margin: .2em auto 0;
+      width:400px;
+      text-align: center;
+    }
+    .about-menu-line{
+      margin: -4.4em 1em 0 0 !important;
+    }
+    #about-page .menu-line a,  #about-page  .about-menu-line a{
+      color:#232D3D;
+    }
+    .sub-menu-line{
+      position:absolute;
+      border:1px solid #1fbad6;
+      background: none;
+      border-radius:6px;
+      padding:0 4px 0;
+      opacity: 0;
+      transition: all 1.5s ease-out;
+    }
+    .menu-line :hover, .about-menu-line :hover{
+      color:#1FBAD6;
+    }
+    .menu-line li :hover + .sub-menu-line{
+      opacity: 1;
+      margin-top:.6em;
+      position:absolute;
+      text-align:left;
+      z-index:45;
+    }
+    .about-menu-line li :hover + .sub-menu-line{
+      opacity: 1;
+      margin-top:.6em;
+      position:absolute;
+      z-index:46;
+    }
+.rocket{
+  max-width:300px;
+  margin:auto;
+}
+    #about-page .cta-bgd{
+      margin-bottom:0;
+    }
+    @media all and (min-width: 992px) {
+      #menuToggle{
+        display:none;
+      }
+      #about-page .bar__module{
+        margin-top:1em;
+      }
+    }
+    @media all and (max-width: 992px) {
+      .menu-line, .about-menu-line, #about-page .bar__module{
+        display:none;
+      }
+    }
+    @media all and (max-width: 767px){
+      #about-page .bgd{
+        height: 61em;
+        transform: skewY(10deg);
+      }
+      #about-page .top-part{
+        margin-left:0;
+      }
+    }
+    #about-page .footer-1{
+      background-color: #232e3d;
+      padding-top:2em;
+    }
+    .down-footer {
+      width: 100%;
+      background: #334054;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+    .down-footer span{
+      color: #a6b7bf;
+      font-size: 16px;
+    }
+    .svg-inline--fa.fa-w-16 {
+      width: 1em;
+      color: #42acba;
+      vertical-align: -0.125em;
+    }
+    #about-page .footer-1 p, #about-page .footer-1 a {
+      color:#a6b7bf;
+    }
+    }
+    </style>
+<body class="secondary-page" id="about-page">
         <a id="start"></a>
-  <div class="nav-container">
-    <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
-       	 <div class="container">
-            <div class="row">
-        	  <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
-            	 <div class="col-3 col-md-2">
-                        <a href="index.html"><img class="logo" alt="logo" src="img/logo-dark.svg" /> </a>
-                 </div>
-                 <div class="bar__module">
-                        <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
-                        <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
-                 </div>
-              </div>
-            </div>
-         </div>
-     </div>
+        <div class="nav-container">
+          <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 text-right text-left-xs text-left-sm">
 
-<nav role='navigation'>
-  <div id="menuToggle" onclick="nav.menu()">
-    <input type="checkbox"/><span></span><span></span><span></span>
-    <ul id="menu" class="main-menu">
-      <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
-      <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
-	  <li><a href="index.html" target="_blank">Home</a></li>
-	  <li><a href="about.html" target="_blank">About Us</a></li>
-	  <li><a href="#" id="products">Products</a>
-	  	<ul id="sub-menu">
-	  		<li><a href="airtime.html" target="_blank">Airtime</a></li>
-	  		<li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
-	  		<li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
-       </ul></li>
-      <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
-      <li><a href="pricing.html" target="_blank">Pricing</a></li>
-      <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
-      <li><a href="support.html" target="_blank">Support</a></li>
-      <li><a href="blog.html" target="_blank">Blog</a></li>
-      <li><a href="careers.html" target="_blank">Careers</a></li>
-      <li><a href="api-docs.html" target="_blank">API Docs</a></li>
-    </ul>
-  </div>
-</nav>
+                  <div class="bar__module text-right">
+                    <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
+                    <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
+                  </div>
+                  <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
 
-	</div><!--end module-->
+                  <ul class="menu-line">
+                    <li><a id="products-line" class="lead">Products</a>
+                      <ul class="sub-menu-line">
+                        <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                        <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                        <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                        <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                      </ul></li>
+                      <li><a class="lead">Pricing</a>
+                        <ul class="sub-menu-line">
+                          <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                          <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                        </ul></li>
+                        <li><a href="api-docs.html" target="_blank" class="lead">Developers</a></li>
+                      </ul>
+
+                      <ul class="about-menu-line">
+                        <li><a class="lead">Company</a>
+                          <ul class="sub-menu-line">
+                            <li><a href="about.html" target="_blank">About Us</a></li>
+                            <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                            <li><a href="careers.html" target="_blank">Careers</a></li>
+                            <li><a href="contact.html" target="_blank">Contact</a></li>
+                          </ul></li>
+                          <li><a href="support.html" target="_blank" class="lead">Help</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav role='navigation'>
+                  <div id="menuToggle" onclick="nav.menu()">
+                    <input type="checkbox"/><span></span><span></span><span></span>
+                    <ul id="menu" class="main-menu">
+                      <li><div class="signup hidden-sm hidden-md hidden-lg"><a href="signup.html" target="_blank">Sign up</a></div></li>
+                      <li><div class="login hidden-sm hidden-md hidden-lg"><a href="login.html" target="_blank">Log in</a></div></li>
+
+                      <li><a id="products">Products</a>
+                        <ul class="sub-menu">
+                          <li><a href="mobile-app.html" target="_blank">Mobile App</a></li>
+                          <li><a href="airtime.html" target="_blank">Airtime</a></li>
+                          <li><a href="data-bundles.html" target="_blank">Data bundles</a></li>
+                          <li><a href="digital-gifts.html" target="_blank">Digital gifts</a></li>
+                        </ul></li>
+                        <li><a>Pricing</a>
+                          <ul class="sub-menu">
+                            <li><a href="mobile-operators.html" target="_blank">Mobile operators</a></li>
+                            <li><a href="pricing.html" target="_blank">Pricing</a></li>
+                          </ul></li>
+                          <li><a href="api-docs.html" target="_blank">Developers</a></li>
+                          <li><a>Company</a>
+                            <ul class="sub-menu">
+                              <li><a href="about.html" target="_blank">About Us</a></li>
+                              <li><a href="use-cases.html" target="_blank">Use Cases</a></li>
+                              <li><a href="careers.html" target="_blank">Careers</a></li>
+                              <li><a href="contact.html" target="_blank">Contact</a></li>
+                            </ul></li>
+                            <li><a href="support.html" target="_blank">Help</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div><!--end module-->
         <div class="main-container">
 
-        <section class="top-part">
-            <div class="bgd"></div>
+<div class="bgd"></div>
+<div class="bgd-block1"></div><div class="bgd-block2"></div><div class="bgd-block3"></div><div class="bgd-block4"></div><div class="bgd-block5"></div>
+      <section class="top-part">
 			<div class="container">
                 <div class="row">
-                    <div class="col-10 text-center discounts">
+                    <div class="col-md-8 text-center discounts">
                      <h1>Our mission is to fuel mobile network access across the world</h1>
+                     <p class="lead">Reloadly is a technology company that builds airtime APIs for developers and their brands. Businesses of every size in a wide variety of industries use our software to enable the transfer of digital mobile payments, digital goods and mobile top-ups.
+                     </p>
                      </div>
-                        <div class="about-top">
-                            <div class="about-text col-md-10 discounts">
-                            	<p class="lead">Reloadly is a technology company that builds airtime APIs for developers and their brands. Businesses of every size in a wide variety of industries use our software to enable the transfer of digital mobile payments, digital goods and mobile top-ups.
-                              </p></div>
-                         </div>
+
                     </div> <!--end of row-->
                 </div><!--end of container-->
+                <div class="rocket"><img alt="Image" src="img/rocket.svg"/></div>
            </section>
-		<section>
 
-            </section>
+      <section class="switchable demand">
+        <div class="container">
+               <div class="row">
+                 <div class="col-md-5"><img alt="Image" src="img/mpusers.svg"/></div>
+                 <div class="col-md-7">
+                   <h2>The Demand for Payments as a Platform </h2>
+                   <p class="lead">While 66% of the world’s population today own mobile devices, only a fraction regularly use their phones for everyday payments services, including mobile money and the transfer of digital goods.
+                   </p>
+                   <p class="lead">Despite this global population of 5.22 billion mobile users growing larger every year, outdated regulations, legacy digital telecom infrastructure, and complex coding still hold back businesses from empowering our increasingly mobile-first economy with better mobile payment services.
+                   </p>
+                   <p class="lead">Reloadly’s airtime API cuts down these barriers, bringing the vast world of mobile connectivity closer to the rapidly evolving changes occurring in financial technology.
+                   </p>
+                </div>
+               </div> <!--end of row-->
+           </div><!--end of container-->
+      </section>
+      <hr class="horizontal-line">
+      <section>
+           <div class="container">
+                  <div class="row">
+                      <div class="col-md-10 about-middle text-center">
+                          <div class="team-text">
+                              <p class="lead">Since Reloadly’s launch in August, 2019, we have added over 750 mobile operators in over 144 countries to our airtime API network, enabling developers to easily connect their businesses to the world’s 5.22 billion mobile users.
+                              </p>
+                            </div>
+                         </div>
+                          </div><!--end of row-->
+                          </div><!--end of container-->
+                      </div><div class="team-bgd"></div>
+                      <div class="container">
+                      <div class="row">
+                              <div class="text-center col-md-12">
+                                  <div class="team-members">
+                                      <div class="feature feature-8">
+                                        <a href="https://www.linkedin.com/in/michel-francis-64113636/" target="blank_"> <img alt="Image" src="img/michel-francis.jpg"/></a>
+                                          <h5>Michel Francis</h5>
+                                      </div>
+                                      <div class="feature feature-8">
+                                         <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
+                                          <h5>Greg Piard</h5>
+                                      </div>
+                                      <div class="feature feature-8">
+                                         <a href="https://www.linkedin.com/in/jean-olivier-buteau-8b650536/" target="blank_"><img alt="Image" src="img/jean-olivier.jpg"/></a>
+                                          <h5>Jean Olivier Buteau</h5>
+                                      </div>
+                                      <div class="feature feature-8">
+                                         <a href="https://www.linkedin.com/in/hirlemann/" target="blank_"><img alt="Image" src="img/enrique-hirlemann.jpg" /></a>
+                                          <h5> Enrique Hirlemann</h5>
+                                      </div>
+                                      <div class="feature feature-8">
+                                         <a href="https://www.linkedin.com/in/samherring/" target="blank_"><img alt="Image" src="img/sam-herring.jpg" /></a>
+                                          <h5>Sam Herring</h5>
+                                      </div>
+                                      <div class="feature feature-8">
+                                         <a  href="https://www.linkedin.com/in/johnnytmd/" target="blank_"> <img alt="Image" src="img/johnny-ion.jpg"/></a>
+                                          <h5>Johnny Ion</h5>
+                                      </div>
+                                    </div>
+                                 </div>
+                              </div><!--end of row-->
+                          </div><!--end of container-->
+                      </section>
 
             <section>
                  <div class="container">
@@ -102,7 +349,7 @@
                                 <div class="team-text">
                                     <h2>Our team</h2>
                                     <p class="lead">Based in beautiful Barcelona, we are developers, designers, marketers, and full of creative people. We are passionate, driven individuals with a lot of team spirit and a shared appreciation for Tech and Tapas
-                                    <p>
+                                    </p>
                                 	</div>
                                </div>
                                 </div><!--end of row-->
@@ -232,72 +479,159 @@
             </section>
 
 
-<footer class="space--sm footer-2 text-center-xs ">
-             <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                             <ul class="options list-inline list--hover">
-                                <li><a href="#"><span class="lead">Top Up</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Support</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Blog</span>
-                                    </a>
-                                </li>
-                                <li><a href="#"><span class="lead">Careers</span>
-                                    </a>
-                                </li>
-                                <li><a href="mailto:hello@reloadly.com"><span class="lead">Contact Us</span>
-                                    </a>
-                                </li>
-                            </ul>
-                             <ul class="social-list list-inline list--hover">
-                                <li>
-                                    <a href="https://twitter.com/Reloadly" target="_blank">
-                                        <i class="socicon socicon-twitter icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-facebook icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/reloadly" target="_blank">
-                                        <i class="socicon socicon-instagram icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                 <li>
-                                    <a href="https://github.com/ReloadlyNetworks" target="_blank">
-                                        <i class="socicon socicon-github icon icon--xs"></i>
-                                    </a>
-                                </li>
-                            </ul>
+            <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <a routerLink="/">
+                      <img src="https://cdn.reloadly.com/assets-v2/images/logo.svg" alt="Reloadly" width="150px">
+                    </a>
+                    <p>First mobile Top-up API made for developers. Enable your apps and websites to send mobile top-up
+                      worldwide.
+                    </p>
+                  </div>
+                  <div class="col">
+                    <h5 class="text-white">Products</h5>
+                    <ul>
+                      <li>
+                        <a routerLink="/products/airtime">Airtime</a>
+                      </li>
+                      <li>
+                        <a routerLink="/products/data-bundles">Data bundles</a>
+                      </li>
+                    </ul>
+                    <h5 class="text-white">Operators</h5>
+                    <ul>
+                      <li>
+                        <a href="https://operators.reloadly.com/">Global Mobile Operator Network</a>
+                      </li>
+                      <li>
+                        <a href="https://operators.reloadly.com/orange-international-mobile-airtime-api/">Orange Mobile
+                          Network</a>
+                        </li>
+                        <li>
+                          <a href="https://operators.reloadly.com/claro-dominican-republic-airtime-api/">Claro Dominican
+                            Republic</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h5 class="text-white">Customer stories</h5>
+                        <ul>
+                          <li>
+                            <a routerLink="/customerstory/julaya">Julaya</a>
+                          </li>
+                          <li>
+                            <a routerLink="/customerstory/cash-mobile-app">CashMobile App</a>
+                          </li>
+                        </ul>
+                        <h5 class="text-white">Use cases</h5>
+                        <ul>
+                          <li>
+                            <a routerLink="/mobile-rewards">Rewards & Incentives</a>
+                          </li>
+                          <li>
+                            <a routerLink="/money-transmitters">Money transmitters</a>
+                          </li>
+                          <li>
+                            <a routerLink="/usecase/moneytransfer">Money transfer</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h5 class="text-white">Resources</h5>
+                        <ul>
+                          <li>
+                            <a href="https://faq.reloadly.com">Support</a>
+                          </li>
+                          <li>
+                            <a href="https://developers.reloadly.com/">Developers</a>
+                          </li>
+                          <li>
+                            <a (click)="socialIcon('github', 'https://github.com/ReloadlyNetworks')">GitHub</a>
+                          </li>
+                          <li>
+                            <a href="https://reloadly.com/blog/">Blog</a>
+                          </li>
+                          <li>
+                            <a routerLink="/promotions">Promotions</a>
+                          </li>
+                          <li>
+                            <a routerLink="/white-paper">White paper</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h5 class="text-white">Company</h5>
+                        <ul>
+                          <li>
+                            <a routerLink="/about-us">About us</a>
+                          </li>
+                          <li>
+                            <a href="mailto:hello@reloadly.com">Contact us</a>
+                          </li>
+                          <li>
+                            <a href="https://reloadly.com/blog/careers/">Careers</a>
+                          </li>
+                          <li>
+                            <a routerLink="/pricing">Pricing</a>
+                          </li>
+                        </ul>
 
-                       </div>
-
+                      </div>
+                      <div class="col">
+                        <h5 class="text-white">Legal</h5>
+                        <ul>
+                          <li>
+                            <a routerLink="/terms-of-use">Terms of use</a>
+                          </li>
+                          <li>
+                            <a routerLink="/privacy-policy">Privacy policy</a>
+                          </li>
+                          <li>
+                            <a routerLink="/security-information">Security information</a>
+                          </li>
+                          <li>
+                            <a routerLink="/cookie-policy">Cookie policy</a>
+                          </li>
+                          <li>
+                            <a routerLink="/user-agreement">User agreement</a>
+                          </li>
+                          <li>
+                            <a routerLink="/gdpr">GDPR</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <h5 class="text-white">Social</h5>
+                        <ul>
+                          <li>
+                            <a (click)="socialIcon('twitter', 'https://twitter.com/Reloadly')">Twitter</a>
+                          </li>
+                          <li>
+                            <a (click)="socialIcon('instagram', 'https://www.instagram.com/reloadly')">Instagram</a>
+                          </li>
+                          <li>
+                            <a (click)="socialIcon('facebook', 'https://www.facebook.com/reloadly')">Facebook</a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/Reloadly" target="_blank">GitHub</a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <!--end of row-->
-                    <div class="row ">
-                    <div class="col-12 text-center">
-                        <span class="type--fine-print">&copy;
-                                <span class="update-year"></span> Reloadly</span>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="type--fine-print" href="#">Terms of Use</a>
-                            <a class="type--fine-print" href="#">Security Information</a>
-                            <a class="type--fine-print" href="#">User Agreement</a>
-                            <a class="type--fine-print" href="#">Cookie Policy</a>
-                            <a class="type--fine-print" href="#">Privacy Policy</a>
-                        </div>
+                  </div>
+                  <!--end of container-->
 
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </footer>
+
+                  <div  class="down-footer"><div class="col-12 text-center"><span class="type--fine-print white"> Powered by <fa-icon class="heart ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                  </fa-icon>&nbsp;from Reloadly, Barcelona - Miami - Paris </span><br>
+                  <span  class="type--fine-print white">Copyright ©
+                    <span  class="update-year">2020</span> Reloadly Inc. </span></div>
+                  </div>
+                </footer>
 
         </div>
         <!--<div class="loader"></div>-->
