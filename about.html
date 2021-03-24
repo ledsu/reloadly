@@ -34,61 +34,86 @@
           padding:0;
         }
     #about-page .bgd{
-      height: 46em;
+      height: 49em;
     }
     .bgd-block1{
       position: absolute;
-      top: 35%;
+      top: 15em;
       background-color: #1fbad6;
       height: 2px;
-      width: 15%;
-      z-index: -600;
+      width: 7%;
+      z-index: -599;
       transform: skewY(-10deg);
       overflow: hidden;
     }
     .bgd-block2{
       position: absolute;
-      top: 30%;
-      background-color: #1fbad6;
-      height: 2px;
-      width: 10%;
-      z-index: -599;
+      top: 21em;
+      background-color: #FF6346;
+      height: 1em;
+      width: 19%;
+      z-index: -600;
       transform: skewY(-10deg);
       overflow: hidden;
     }
     .bgd-block3{
       position: absolute;
-      top: 30%;
-      right:0;
-      background-color: #1fbad6;
+      top: 25em;
+      background-color: #283142;
       height: 2px;
-      width: 9em;
-      z-index: -598;
+      width: 13%;
+      z-index: -597;
       transform: skewY(-10deg);
       overflow: hidden;
     }
     .bgd-block4{
       position: absolute;
-      top: 50%;
-      background-color: #1fbad6;
-      height: 2px;
-      width: 22%;
+      top: 34em;
+      background-color: #FFE161;
+      height: .3em;
+      width: 30%;
       z-index: -597;
       transform: skewY(-10deg);
       overflow: hidden;
     }
     .bgd-block5{
       position: absolute;
-      top: 74%;
+      top: 10em;
+      right:0;
       background-color: #1fbad6;
+      height: .5em;
+      width: 9em;
+      z-index: -598;
+      transform: skewY(-10deg);
+      overflow: hidden;
+    }
+    .bgd-block6{
+      position: absolute;
+      top: 14em;
+      right:0;
+      background-color: #334054;
       height: 2px;
-      width: 14%;
+      width: 15em;
+      z-index: -596;
+      transform: skewY(-10deg);
+      overflow: hidden;
+    }
+    .bgd-block7{
+      position: absolute;
+      top: 30em;
+      right:0;
+      background-color: #F4F9F9;
+      height: 3em;
+      width: 27em;
       z-index: -596;
       transform: skewY(-10deg);
       overflow: hidden;
     }
     #about-page .top-part{
       margin-top:4em;
+    }
+    #about-page .about-middle{
+      margin-top:1em;
     }
 
     .menu-line li, .about-menu-line li{
@@ -103,7 +128,7 @@
     .about-menu-line{
       margin: -4.4em 1em 0 0 !important;
     }
-    #about-page .menu-line a,  #about-page  .about-menu-line a{
+    #about-page .menu-line a, #about-page .about-menu-line a{
       color:#232D3D;
     }
     .sub-menu-line{
@@ -132,12 +157,50 @@
       z-index:46;
     }
 .rocket{
-  max-width:300px;
+  max-width:250px;
   margin:auto;
 }
-    #about-page .cta-bgd{
-      margin-bottom:0;
-    }
+#about-page .middle-part .discounts, #about-page .middle-part img:not(.title-icon), #about-page .middle-part p{
+  transform: skewY(-5deg);
+}
+#about-page .middle-part .discounts{
+  margin-top:3em;
+}
+#about-page .middle-part .title-icon{
+  margin: 0 .5em 0 0;
+  width:2.5em;
+}
+#about-page .middle-part p:not(.lead){
+  margin-left:4.2em;
+}
+#about-page .middle-part p:last-child, #about-page .about-middle p:last-child{
+  margin-bottom:3em;
+}
+#about-page .middle-part a{
+  font-weight: 600;
+}
+#about-page .middle-part .lead{
+  margin-bottom:.5em;
+}
+#about-page hr:not(first-child){
+  margin-bottom:5em;
+}
+.ceo-quote img{
+  float:right;
+}
+#about-page .investors-logos img{
+  width:100%;
+  margin:auto;
+}
+.three-cta{
+background:#F4F9F9;
+border-radius:6px;
+padding:1em;
+margin-left:1em;
+  }
+  .three-cta a{
+font-weight:600;
+  }
     @media all and (min-width: 992px) {
       #menuToggle{
         display:none;
@@ -150,8 +213,24 @@
       .menu-line, .about-menu-line, #about-page .bar__module{
         display:none;
       }
+      #about-page .bgd{
+        height: 52em;
+      }
+      .bgd-block5{
+        width: 5em;
+      }
+      .bgd-block6{
+        width: 8em;
+      }
+      .bgd-block7{
+        top: 35em;
+        width:10em;
+      }
     }
     @media all and (max-width: 767px){
+      .bgd-block1, .bgd-block2, .bgd-block3, .bgd-block4, .bgd-block5, .bgd-block6, .bgd-block7{
+        display:none;
+      }
       #about-page .bgd{
         height: 61em;
         transform: skewY(10deg);
@@ -159,6 +238,10 @@
       #about-page .top-part{
         margin-left:0;
       }
+      .ceo-quote img {
+        margin-top:1em;
+      }
+      .three-cta{margin-bottom:1em;}
     }
     #about-page .footer-1{
       background-color: #232e3d;
@@ -264,10 +347,11 @@
 
 <div class="bgd"></div>
 <div class="bgd-block1"></div><div class="bgd-block2"></div><div class="bgd-block3"></div><div class="bgd-block4"></div><div class="bgd-block5"></div>
+<div class="bgd-block6"></div><div class="bgd-block7"></div>
       <section class="top-part">
 			<div class="container">
                 <div class="row">
-                    <div class="col-md-8 text-center discounts">
+                    <div class="col-md-9 text-center discounts">
                      <h1>Our mission is to fuel mobile network access across the world</h1>
                      <p class="lead">Reloadly is a technology company that builds airtime APIs for developers and their brands. Businesses of every size in a wide variety of industries use our software to enable the transfer of digital mobile payments, digital goods and mobile top-ups.
                      </p>
@@ -308,80 +392,94 @@
                                  <h4>5.22 billion</h4>
                                  <p>mobile phones reached</p>
                              </div>
-
                            <div class="pricing-text">
                                <img alt="Image" src="img/digital-gifts-1.svg" />
                                  <h4>144+</h4>
                                  <p>countries</p>
                            </div>
-
                              <div class="pricing-text">
                                <img alt="Image" src="img/pricing-4.svg" />
                                  <h4>750+</h4>
                                  <p>mobile operators</p>
                              </div>
-
                            <div class="pricing-text">
                                <img alt="Image" src="img/agreements.svg" />
                                  <h4>120+</h4>
                                  <p>direct telco partnership agreements</p>
                            </div>
-             </div>
-             <!--end of row-->
-         </div>
-         <!--end of container-->
+                           </div>
+             </div><!--end of row-->
+         </div><!--end of container-->
      </section>
-      <section>
-           <div class="container">
-                  <div class="row">
-                      <div class="col-md-10 about-middle text-center">
-                          <div class="team-text">
-                              <p class="lead">Since Reloadly’s launch in August, 2019, we have added over 750 mobile operators in over 144 countries to our airtime API network, enabling developers to easily connect their businesses to the world’s 5.22 billion mobile users.
-                              </p>
-                            </div>
-                         </div>
-                          </div><!--end of row-->
-                          </div><!--end of container-->
-                      </div><div class="team-bgd"></div>
-                      <div class="container">
-                      <div class="row">
-                              <div class="text-center col-md-12">
-                                  <div class="team-members">
-                                      <div class="feature feature-8">
-                                        <a href="https://www.linkedin.com/in/michel-francis-64113636/" target="blank_"> <img alt="Image" src="img/michel-francis.jpg"/></a>
-                                          <h5>Michel Francis</h5>
-                                      </div>
-                                      <div class="feature feature-8">
-                                         <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
-                                          <h5>Greg Piard</h5>
-                                      </div>
-                                      <div class="feature feature-8">
-                                         <a href="https://www.linkedin.com/in/jean-olivier-buteau-8b650536/" target="blank_"><img alt="Image" src="img/jean-olivier.jpg"/></a>
-                                          <h5>Jean Olivier Buteau</h5>
-                                      </div>
-                                      <div class="feature feature-8">
-                                         <a href="https://www.linkedin.com/in/hirlemann/" target="blank_"><img alt="Image" src="img/enrique-hirlemann.jpg" /></a>
-                                          <h5> Enrique Hirlemann</h5>
-                                      </div>
-                                      <div class="feature feature-8">
-                                         <a href="https://www.linkedin.com/in/samherring/" target="blank_"><img alt="Image" src="img/sam-herring.jpg" /></a>
-                                          <h5>Sam Herring</h5>
-                                      </div>
-                                      <div class="feature feature-8">
-                                         <a  href="https://www.linkedin.com/in/johnnytmd/" target="blank_"> <img alt="Image" src="img/johnny-ion.jpg"/></a>
-                                          <h5>Johnny Ion</h5>
-                                      </div>
-                                    </div>
-                                 </div>
-                              </div><!--end of row-->
-                          </div><!--end of container-->
-                      </section>
 
+     <section class="switchable middle-part">
+       <div class="container">
+         <div class="col-md-12 discounts text-center">
+
+           <h3>A technology-first approach solving the complexities in the telecom market</h3>
+           <h4>As the world’s first developer platform for connecting to global telcos, Reloadly provides better building blocks for integrating digital mobile payments</h4>
+         </div>
+         <div class="row justify-content-center">
+           <div class="col-md-6"><img alt="Image" src="img/dev.svg" /></div>
+           <div class="col-md-6 ">
+               <p class="lead"><img class="title-icon" src="img/onboarding.svg">World-class developer onboarding</p>
+               <p>Our <a href="https://developers.reloadly.com">documentation</a> delivers a world-class developer onboarding experience, including tools needed for the building blocks of digital mobile payments.
+               </p>
+               <p class="lead"><img class="title-icon" src="img/support.svg">Rapid support response</p>
+               <p>Our support team aims to answer questions from our developer community within 24 hours. To solve common problems, we have built a library to answer the most
+                 <a href="https://faq.reloadly.com/en/">frequent questions</a>.
+               </p>
+               <p class="lead"><img class="title-icon" src="img/open-source.svg">Open source library</p>
+               <p>Reloadly has built several open source solutions for our developer community. Visit our <a href="https://github.com/Reloadly">GitHub</a> page to browse what projects have been launched.
+               </p>
+             </div>
+           </div><!--end of row-->
+         </div><!--end of container-->
+       </section>
+
+       <section>
+          <div class="container">
+              <div class="row">
+                <div class="col-md-10 about-middle text-center">
+                  <h2>Taking the complexity out of integrating with telcos</h2>
+                  <p class="lead">Reloadly works directly with global mobile operators to enable services for digital mobile payments, digital goods and mobile top-up transfers so that businesses don’t have to.
+                  </p>
+                </div>
+                <img src="img/use-cases2.svg">
+              </div><!--end of row-->
+          </div><!--end of container-->
+       </section>
+        <hr class="horizontal-line">
+
+       <section class="switchable ceo-quote">
+         <div class="container">
+           <div class="row justify-content-around">
+             <div class="col-md-5">
+               <div class="">
+                 <p class="lead">“There's still a huge digital divide that exists for many people in the world. Reloadly can help bridge that divide by better enabling merchants and brands to accept mobile payments instead of solely relying on cash.”
+                 </p>
+                 <p>Michel Francis, CEO</p>
+               </div>
+             </div>
+             <div class="col-md-4"><img alt="Image" src="img/michel2.png" /></div>
+           </div><!--end of row-->
+         </div><!--end of container-->
+       </section>
+<hr class="horizontal-line">
+          <section>
+                   <div class="container">
+                       <div class="row justify-content-center">
+                       <div class="investors-logos">
+                        <h2 class="text-center">Our Partners & Investors</h2>
+                        <img alt="Image" src="img/investors-logos2.jpg"/>
+                       </div>
+                   </div><!--end of row-->
+               </div><!--end of container-->
+             </section>
             <section>
                  <div class="container">
                         <div class="row">
                             <div class="col-md-10 about-middle text-center">
-                            <img alt="Image" src="img/rocket.svg"/>
                                 <div class="team-text">
                                     <h2>Our team</h2>
                                     <p class="lead">Based in beautiful Barcelona, we are developers, designers, marketers, and full of creative people. We are passionate, driven individuals with a lot of team spirit and a shared appreciation for Tech and Tapas
@@ -425,45 +523,12 @@
                                 </div><!--end of container-->
                             </section>
 
-	 	<section>
-                <div class="container">
-                    <div class="row investors">
-                    <div class="investors-presentation col-md-8">
-                  	</div>
-                    <div class="col-md-4 investors-logos justify-content-right">
-                     <h2 class="text-md-right text-sm-center">Our Partners & Investors</h2>
-                     <img alt="Image" src="img/investors-logos.jpg"/>
-                    </div>
-                </div><!--end of row-->
-            </div><!--end of container-->
 
-          	<div class="container">
-                    <div class="row">
-                        <div class="investors-text-list col-12 text-left">
-                     	 	<div class="investors-text">
-                     	 	<h4>Shake things up</h4>
-							<p class="lead">We work hard and smart. We define our goals, set our metrics and hustle towards them with extreme attention to detail.
-							</p>
-							</div>
-							<div  class="investors-text">
-							<h4>Learn from the best</h4>
-							<p class="lead">We look beyond our own industry for inspiration. We look at other great companies for inspiration
-							</p>
-							</div>
-							<div class="investors-text">
-							<h4>Work hard play hard</h4>
-							<p class="lead">We take our work very seriously, but what is work without some fun? We make sure to celebrate every milestone and accomplishments
-							</p>
-							</div>
-						</div>
-						</div><!--end of row-->
-                      </div><!--end of container-->
-            </section>
 
             <section>
                 <div class="container">
                     <div class="row">
-                      <div class="col-md-12 text-center about-address">
+                      <div class="col-md-12 text-center ">
                         <h2>Our offices</h2>
                         <div class="office-contacts">
                            	<div class="office-address">
@@ -492,28 +557,30 @@
                 </div><!--end of container-->
             </section>
 
-        <section class="cta-bgd">
-                <div class="container">
-                    <div class="row">
-                            <div class="cta cta-1 col-md-12">
-                                <div class="cta-text col-md-7">
-                                    <h3>Make your first API call today with Reloadly</h3>
-                                    <p>Signup for a developer account and connect to our API in minutes</p>
-                                </div>
-                                <div class="cta-button col-md-3">
-                                    <a class="btn btn--primary type--uppercase" href="https://reloadly.com/registration" target="_blank">
-                                        <span class="btn__text" >
-                                        Get Your Free API Key
-                                        </span>
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
+            <section class="switchable">
+                      <div class="container">
+                      <div class="row justify-content-center">
 
+                          <div class="col-md-4 three-cta">
+                            <h4>Download Our Media Kit</h4>
+                                  <p class="">Looking to write about us? Visit our <a href="https://www.reloadly.com/media-kit" target="blank">media kit</a>
+                                     to download leadership photos, product screenshots, logo guidelines and more.
+                                </p>
+                              </div>
+                              <div class="col-md-4 three-cta">
+                                <h4>Stay updated with telecom API events</h4>
+                                      <p class="">Share your email to receive monthly updates and news from Reloadly.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-4 three-cta">
+                                    <h4>Work With Reloadly</h4>
+                                    <p class="">We’re looking for ambitious people with an entrepreneurial mindset that want to change how companies interact with global telecommunications.
+                                    </p>
+                                  </div>
+                          </div>
+                          </div><!--end of row-->
+                      </div><!--end of container-->
+                  </section>
 
             <footer class="footer-1 space--xs text-center-xs" style="margin-top: 0px;">
               <div class="container">
