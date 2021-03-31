@@ -6917,12 +6917,7 @@ margin-top:2em;
   padding:.5em 0 .5em;
   margin:8em auto 1em;
 }
-.team-members {
-	display:grid;
-  	grid-template-columns: auto auto auto auto auto auto;
-	padding: 1em 0 4em;
-	margin:-18em 0 4em;
-	}
+
 .secondary-page .feature-8:hover{
 cursor:pointer;
 }
@@ -6982,15 +6977,7 @@ margin-top:-1em;
 .team-bgd{
 display:none;
 }
-.team-members {
-	display:grid;
-  	grid-template-columns: auto;
-  	margin-top:0;
-  	margin-bottom:0;
-	}
-.team-members .feature{
-margin-bottom:1em;
-}
+
 .secondary-page .about-text p{
 margin-left:1.5em;
 }
