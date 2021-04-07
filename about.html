@@ -14,8 +14,10 @@
         <meta property="Keywords" content="Top Up API, Mobile Recharge API, Prepaid top up API, Telecom API, Mobile Airtime API">
 		<style type="text/css" media="screen">
             @font-face {font-family: "Futura PT Bold";font-weight: bold; src: url("fonts/ftn85-webfont.woff") format("woff");}
-			@font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
+			      @font-face {font-family: "Futura PT Book"; font-weight: normal; src: url("fonts/ftn45-webfont.woff") format("woff");}
 		</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
@@ -27,7 +29,6 @@
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     </head>
     <style>
@@ -203,184 +204,28 @@ margin-left:1em;
   .three-cta a{
 font-weight:600;
   }
-/*Carousel*/
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Show 4th slide on md  if col-md-4*/
-    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.3333%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  /* Show 3rd slide on sm  if col-sm-6*/
-    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -50%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-}
-@media (min-width: 576px) {
-    .carousel-item {
-        margin-right: 0;
-    }
-    /* show 2 items */
-    .carousel-inner .active + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
-        transition: none;
-    }
-    .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-    }
-    /* left or forward direction */
-    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-    .carousel-item-next.carousel-item-left + .carousel-item,
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    /* right or prev direction */
-    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-    .carousel-item-prev.carousel-item-right + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-}
-@media (min-width: 768px) {
-    /* show 3rd of 3 item slide */
-  .carousel-inner .active + .carousel-item + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-        transition: none;
-    }
-    .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
-    }
-    /* left or forward direction */
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* right or prev direction */
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-}
-@media (min-width: 991px) {
-    /* show 4th item */
-    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-        display: block;
-    }
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-        transition: none;
-    }
-    /* Show 5th slide on lg if col-lg-3 */
-    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;  /*change this with javascript in the future*/
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-    /* left or forward direction */
-    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-    /* right or prev direction //t - previous slide direction last item animation fix */
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-}
-@media (min-width: 991px) {
-        /* show 5th and 6th item */
- /*   .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
-  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        display: block;
-    }
-
-
-
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      transition: none;
-    }
-*/
-
-
-  /*show 7th slide for animation when its a 6 slides carousel */
- /*      .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item  + .carousel-item {
-        position: absolute;
-        top: 0;
-        right: -16.666666666%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
+  .team-gallery-inner{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
   }
-  */
-
-      /* forward direction > */
- /*   .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-  */
-      /* prev direction < last item animation fix */
- /*   .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
-    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-*/
+.team-gallery-item h5{
+  margin-bottom:2em;
 }
-    @media all and (min-width: 992px) {
+.team-gallery-item img{
+  margin:5px;
+max-height:150px;
+max-width:150px;
+}
+    @media all and (max-width: 1024px) {
       #menuToggle{
         display:none;
       }
       #about-page .bar__module{
         margin-top:1em;
+      }
+      .team-gallery-inner{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
       }
     }
     @media all and (max-width: 992px) {
@@ -400,6 +245,10 @@ font-weight:600;
         top: 35em;
         width:10em;
       }
+      .team-gallery-inner{
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
     }
     @media all and (max-width: 767px){
       .bgd-block1, .bgd-block2, .bgd-block3, .bgd-block4, .bgd-block5, .bgd-block6, .bgd-block7{
@@ -415,14 +264,9 @@ font-weight:600;
       .ceo-quote img {
         margin-top:1em;
       }
-      #team-members {
-      	display:grid;
-        	grid-template-columns: auto;
-        	margin-top:0;
-        	margin-bottom:0;
-      	}
-      #team-members .feature{
-      margin-bottom:1em;
+      .team-gallery-inner{
+        display: grid;
+        grid-template-columns: auto;
       }
       .three-cta{margin-bottom:1em;}
     }
@@ -661,6 +505,7 @@ font-weight:600;
                    </div><!--end of row-->
                </div><!--end of container-->
              </section>
+
             <section>
                  <div class="container">
                         <div class="row">
@@ -672,48 +517,99 @@ font-weight:600;
                                 	</div>
                                </div>
 
-
                                <div class="container-fluid">
-                                 <div id="team-carousel" class="carousel slide" data-ride="carousel">
-                                   <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                                       <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center member active">
+                                 <div class="team-gallery">
+                                   <div class="team-gallery-inner row w-100 mx-auto">
+                                       <div class="team-gallery-item text-center">
                                          <a href="https://www.linkedin.com/in/michel-francis-64113636/" target="blank_"> <img alt="Image" src="img/michel-francis.jpg"/></a>
                                            <h5>Michel Francis</h5>
-                                 </div>
-                                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                                         </div>
+                                 <div class="team-gallery-item text-center">
                                    <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
                                     <h5>Greg Piard</h5>
                                   </div>
-                                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                                 <div class="team-gallery-item text-center">
                                    <a href="https://www.linkedin.com/in/jean-olivier-buteau-8b650536/" target="blank_"><img alt="Image" src="img/jean-olivier.jpg"/></a>
                                     <h5>Jean Olivier Buteau</h5>
                                  </div>
-                                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                                 <div class="team-gallery-item text-center">
                                    <a href="https://www.linkedin.com/in/samherring/" target="blank_"><img alt="Image" src="img/sam-herring.jpg" /></a>
                                     <h5>Sam Herring</h5>
                                  </div>
-                                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                                 <div class="team-gallery-item text-center">
                                    <a  href="https://www.linkedin.com/in/johnnytmd/" target="blank_"> <img alt="Image" src="img/johnny-ion.jpg"/></a>
                                     <h5>Johnny Ion</h5>
                                  </div>
-                                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                                 <div class="team-gallery-item text-center">
                                    <a href="https://www.linkedin.com/in/michel-francis-64113636/" target="blank_"> <img alt="Image" src="img/michel-francis.jpg"/></a>
                                      <h5>Michel Francis</h5>
                                  </div>
-                                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                                 <div class="team-gallery-item text-center">
                                    <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
                                     <h5>Greg Piard</h5>
                                  </div>
-                                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                                 <div class="team-gallery-item text-center">
                                    <a href="https://www.linkedin.com/in/jean-olivier-buteau-8b650536/" target="blank_"><img alt="Image" src="img/jean-olivier.jpg"/></a>
                                     <h5>Jean Olivier Buteau</h5>
                                  </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
+                                    <h5>Greg Piard</h5>
+                                  </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/jean-olivier-buteau-8b650536/" target="blank_"><img alt="Image" src="img/jean-olivier.jpg"/></a>
+                                    <h5>Jean Olivier Buteau</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/samherring/" target="blank_"><img alt="Image" src="img/sam-herring.jpg" /></a>
+                                    <h5>Sam Herring</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a  href="https://www.linkedin.com/in/johnnytmd/" target="blank_"> <img alt="Image" src="img/johnny-ion.jpg"/></a>
+                                    <h5>Johnny Ion</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/michel-francis-64113636/" target="blank_"> <img alt="Image" src="img/michel-francis.jpg"/></a>
+                                     <h5>Michel Francis</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
+                                    <h5>Greg Piard</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/jean-olivier-buteau-8b650536/" target="blank_"><img alt="Image" src="img/jean-olivier.jpg"/></a>
+                                    <h5>Jean Olivier Buteau</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
+                                    <h5>Greg Piard</h5>
+                                  </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/jean-olivier-buteau-8b650536/" target="blank_"><img alt="Image" src="img/jean-olivier.jpg"/></a>
+                                    <h5>Jean Olivier Buteau</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/samherring/" target="blank_"><img alt="Image" src="img/sam-herring.jpg" /></a>
+                                    <h5>Sam Herring</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a  href="https://www.linkedin.com/in/johnnytmd/" target="blank_"> <img alt="Image" src="img/johnny-ion.jpg"/></a>
+                                    <h5>Johnny Ion</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/michel-francis-64113636/" target="blank_"> <img alt="Image" src="img/michel-francis.jpg"/></a>
+                                     <h5>Michel Francis</h5>
+                                 </div>
+                                 <div class="team-gallery-item text-center">
+                                   <a href="https://www.linkedin.com/in/emmanuel-gregory-piard-77711456/" target="blank_"><img alt="Image" src="img/greg-piard.jpg"/></a>
+                                    <h5>Greg Piard</h5>
+                                 </div>
                                    </div>
-                                   <a class="carousel-control-prev" href="#team-carousel" role="button" data-slide="prev">
+                                   <a class="carousel-control-prev" href="#team-gallery" role="button" data-slide="prev">
                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                  <span class="sr-only">Previous</span>
                                </a>
-                               <a class="carousel-control-next" href="#team-carousel" role="button" data-slide="next">
+                               <a class="carousel-control-next" href="#team-gallery" role="button" data-slide="next">
                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                  <span class="sr-only">Next</span>
                                </a>
@@ -958,32 +854,6 @@ font-weight:600;
         <script src="js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script>
-/*
-    Carousel
-*/
-$('#team-carousel').on('slide.bs.carousel', function (e) {
-    /*
-        CC 2.0 License Iatek LLC 2018 - Attribution required
-    */
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 5;
-    var totalItems = $('.carousel-item').length;
 
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
-        }
-    }
-});
-</script>
  </body>
 </html>
