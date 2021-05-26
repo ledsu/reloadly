@@ -47,21 +47,38 @@
   height:24em;
   transform: skewY(-5deg);
 }
-#widgetsim{
-  position:fixed;
-  bottom:0; left:3em;
-  width:400px;
-  height:380px;
-  z-index:239;
-  margin-top:0;
-  display:none;
-}
 #widget-plugin hr{
   margin-top:3em;
 }
+.w1{
+  margin-top:-2em;
+}
 .wid-1{
-  margin: -2em 0 3em 7em;
-  width:90%;
+  margin: -15em 0 0 17em;
+  width:250px;
+  position:relative;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+
+  animation: mymove 2s ease-out forwards;
+}
+@keyframes fadeIn {0% {opacity:0;}
+  100% {opacity:1;}}
+@-moz-keyframes fadeIn {0% {opacity:0;}
+  100% {opacity:1;}}
+@-webkit-keyframes fadeIn {0% {opacity:0;}
+  100% {opacity:1;}}
+@-o-keyframes fadeIn {0% {opacity:0;}
+  100% {opacity:1;}}
+@-ms-keyframes fadeIn {0% {opacity:0;}
+  100% {opacity:1;}}
+
+  @keyframes mymove  {
+from {bottom:0px; opacity: 0;}
+to {bottom:80px; opacity: 1;}
 }
 #widget-plugin .airtime-rows a{
   color:#1FBAD6;
@@ -264,7 +281,8 @@
                         <p class="lead">Install a customizable airtime widget or WordPress plugin without any coding, and start offering airtime transfers through Reloadly’s telco network on your website.
                         </p>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-7 w1">
+                        <img class="" alt="pic" src="img/wid-p/laptop.svg" />
                         <img class="wid-1" alt="pic" src="img/wid-p/widget-1.png" />
                       </div>
 
@@ -281,9 +299,6 @@
                       </div> <!--end of container-->
                     </section>
 
-                    <section id="widgetsim">
-                      <div  onClick="myFunction2()"><img alt="pic" src="img/wid-p/red1.png"></div>
-                    </section>
 
                     <hr class"horizontal-line">
 
@@ -662,21 +677,6 @@
                           <script src="js/smooth-scroll.min.js"></script>
                           <script src="js/scripts.js"></script>
 
-                          <script>
-                          $(window).on('scroll',function() {
-                            $( "#widgetsim" ).show();
-                            $(window).off('scroll');
-                          });
-                          </script>
 
-                          <script>function myFunction2() {
-                            var x = document.getElementById("widgetsim");
-                            if (x.style.display === "none") {
-                              x.style.display = "block";
-                            } else {
-                              x.style.display = "none";
-                            }
-                          }
-                          </script>
                         </body>
                         </html>
