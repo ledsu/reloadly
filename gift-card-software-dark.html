@@ -30,14 +30,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <style>
-#gift-card-s .menu-line a, #gift-card-s .about-menu-line a{
-  color:#232D3D;
-}
-#gift-card-s .sub-menu-line{
-  background-color: transparent;
-}
 #gift-card-s .highlighted{
-  background-color:#D6F2F1;
+  background-color:#FF6346;
 }
 #gift-card-s .btn{
   margin-bottom:1em;
@@ -101,7 +95,7 @@ margin-bottom:3em;
 #gift-card-s .section-bgd2{
   width:100%;
   height:12em;
-  background-color:#F4F9F9;
+  background-color:#334054;
   z-index:-600;
   transform: skewY(4deg);
   z-index:-400;
@@ -113,9 +107,6 @@ margin-top:3em;
 }
 #gift-card-s .switchable__text{
   margin-top:0;
-}
-#gift-card-s .switchable img{
-    transform: skewY(-5deg);
 }
 .logos-gallery-inner{
   display: grid;
@@ -137,14 +128,14 @@ margin:auto;
 }
 #gift-card-s .discounts h3{
   width:100%;
-  margin-top:1em;
+  margin-top:2em;
 }
 #gift-card-s .wallet-management{
   margin-top:1em;
-  transform: skewY(-5deg);
+  transform: skewY(3deg);
 }
 #gift-card-s .middle-list{
-  color:#232D3D;
+  color:#fff;
   margin:8em auto 3em;
 }
 #gift-card-s .discounts h4{
@@ -162,17 +153,14 @@ margin:2em auto 3em;
 }
 #gift-card-s .cta-bgd{
   margin-top:-5em;
-  margin-bottom:0;
 }
-
-#gift-card-s .cta-button{
-  margin-top:2.7em;
+#gift-card-s .cta-1 > div[class*='col-']:last-child {
+  margin-top: -.3em;
 }
 #gift-card-s .cta-1 a{
   color:#ffffff;
 }
 #gift-card-s .footer-1{
-  background-color: #232e3d;
   padding-top:2em;
 }
 .down-footer {
@@ -190,8 +178,11 @@ margin:2em auto 3em;
   color: #42acba;
   vertical-align: -0.125em;
 }
-#gift-card-s .footer-1 p, #gift-card-s .footer-1 a {
+#gift-card-s footer ul a{
   color:#a6b7bf;
+}
+#gift-card-s footer ul a:hover{
+  color:#1fbad6;
 }
 @media screen and (max-width: 1024px) {
   #gift-card-s .bgd{
@@ -210,13 +201,11 @@ margin:2em auto 3em;
 }
 }
 @media all and (max-width: 992px) {
-.logos-gallery-inner{
+
+  .logos-gallery-inner{
     display: grid;
     grid-template-columns: auto auto auto;
   }
-  #gift-card-s .cta-button {
-    margin-top: .7em;
-}
 }
 @media screen and (max-width: 767px) {
   #gift-card-s .bgd{
@@ -234,6 +223,7 @@ margin:2em auto 3em;
     height:18em;
     margin-top:-0.7em;
 }
+
 .logos-gallery-inner{
   display: grid;
   grid-template-columns: auto auto;
@@ -248,12 +238,9 @@ margin:2em auto 3em;
 #gift-card-s .photos {
     padding: 0;
 }
-#gift-card-s .cta .btn{
-  margin-top:0;
-}
 }
 </style>
-<body class="secondary-page" id="gift-card-s">
+<body class="landing-page" id="gift-card-s">
   <a id="start"></a>
   <div class="nav-container">
     <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
@@ -265,7 +252,7 @@ margin:2em auto 3em;
               <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
               <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
             </div>
-            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
+            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo-white.svg" /> </a></div>
 
             <ul class="menu-line">
               <li><a id="products-line" class="lead">Products</a>
@@ -362,7 +349,7 @@ margin:2em auto 3em;
             </div> <!--end of container-->
           </section>
 
-          <section class=" switchable--switch photos">
+          <section class="switchable switchable--switch photos">
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-4 "><img class="" alt="Image" src="img/congrats.png"/>
