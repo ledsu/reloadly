@@ -29,8 +29,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <style>
+#crypto-top-up .menu-line a, #crypto-top-up .about-menu-line a{
+  color:#232D3D;
+}
+#crypto-top-up .sub-menu-line{
+  background-color: transparent;
+}
 #crypto-top-up .highlighted{
-  background-color:#FF6346;
+  background-color:#D6F2F1;
 }
 #crypto-top-up .btn{
   margin-bottom:1em;
@@ -94,7 +100,7 @@ margin-bottom:3em;
 #crypto-top-up .section-bgd2{
   width:100%;
   height:14em;
-  background-color:#334054;
+  background-color:#F4F9F9;
   z-index:-600;
   transform: skewY(4deg);
   z-index:-400;
@@ -109,10 +115,13 @@ margin-top:3em;
 }
 #crypto-top-up .wallet-management{
   margin-top:1em;
-  transform: skewY(3deg);
+  transform: skewY(-5deg);
 }
+#crypto-top-up .middle-part img {
+    transform: skewY(-5deg);
+  }
 #crypto-top-up .middle-list{
-  color:#fff;
+  color:#000;
   margin:8em auto 3em;
 }
 #crypto-top-up .discounts h4{
@@ -124,6 +133,7 @@ margin:2em auto 3em;
 }
 #crypto-top-up .cta-bgd{
   margin-top:-5em;
+  margin-bottom: 0;
 }
 #crypto-top-up .cta-1 > div[class*='col-']:last-child {
   margin-top: -3em;
@@ -135,6 +145,7 @@ margin:2em auto 3em;
     margin-top: .3em;
 }
 #crypto-top-up .footer-1{
+  background-color: #232e3d;
   padding-top:2em;
 }
 .down-footer {
@@ -157,6 +168,9 @@ margin:2em auto 3em;
 }
 #crypto-top-up footer ul a:hover{
   color:#1fbad6;
+}
+#crypto-top-up .footer-1 p, #crypto-top-up .footer-1 a {
+  color:#a6b7bf;
 }
 @media screen and (max-width: 1023px) {
   #crypto-top-up .bgd{
@@ -204,7 +218,7 @@ margin:2em auto 3em;
 }
 }
 </style>
-<body class="landing-page" id="crypto-top-up">
+<body class="secondary-page" id="crypto-top-up">
   <a id="start"></a>
   <div class="nav-container">
     <div class="bar bar--sm visible-xs visible-sm visible-md visible-lg">
@@ -216,7 +230,7 @@ margin:2em auto 3em;
               <a class="btn signup btn--xs type--uppercase" href="signup.html"><span class="btn__text">Start now</span></a>
               <a class="btn btn--xs btn--primary type--uppercase" href="login.html"><span class="btn__text">Log in</span></a>
             </div>
-            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo-white.svg" /> </a></div>
+            <div class="col-3 col-md-2"><a href="index.html"><img class="logo" alt="logo" src="img/logo.svg" /> </a></div>
 
             <ul class="menu-line">
               <li><a id="products-line" class="lead">Products</a>
@@ -377,7 +391,7 @@ margin:2em auto 3em;
           <div class="container">
             <div class="row">
               <div class="col-md-12 col-sm-12">
-                <img class="title-icon" alt="pic" src="img/landing-page/additional-benefits.svg"/>
+                <img class="title-icon" alt="pic" src="img/additional-benefits.svg"/>
                 <h2>How Crypto Mobile Top Ups Are Being Used By Innovative Businesses Today </h2>
               <div class="airtime-getting-started-list col-sm-12">
                 <div class="airtime-rows text-left">
@@ -459,7 +473,7 @@ margin:2em auto 3em;
                   <div class="container">
                     <div class="row">
                 <div class="discounts middle-list col-md-7">
-                <img class="title-icon" alt="pic" src="img/landing-page/m-op-choice-icon.svg"/>
+                <img class="title-icon" alt="pic" src="img/m-op-choice-icon.svg"/>
                 <h2 >Let's get started</h2>
                 <li><span>&ofcir;</span> No-contract accounts
                 </li>
